@@ -1,4 +1,4 @@
-# Inheritance versus Composition
+# Composition vs Inheritance 
 
 _Class Inheritance_ is defined statically at compile-time and is straightforward to use. It also makes it easier to modify the implementation being reused. When a subclass overrides some but not all operations, it can affect the operations it inherits as well.
 
