@@ -32,6 +32,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 		* Encapsulation
 		* Polymorphism
 	* [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)
+	* [Subtyping - Interface Inheritance](./paradigms/oop/subtyping.md)
 * Declarative
 * Functional
 
