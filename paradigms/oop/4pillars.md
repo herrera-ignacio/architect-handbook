@@ -33,6 +33,8 @@ Requests are the only way to get an object to execute an operation, and operatio
 
 Issuing a __request doesn't commit you to a particular implementation until run-time__, this is defined as __Dynamic Binding__.
 
+> The run-time association of a request to an object and one of its operations is known as __dynamic binding__.
+
 Consequently, you can write programs that expect an object with a particular interface, knowing that any object that has the correct interface will accept the request.
 
 This __substitutability is known as Polymorphism__.
