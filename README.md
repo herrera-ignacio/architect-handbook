@@ -31,6 +31,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 		* Inheritance
 		* Encapsulation
 		* Polymorphism
+	* [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)
 * Declarative
 * Functional
 
