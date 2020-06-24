@@ -24,7 +24,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ## Programming Paradigms
 
 * [Imperative and Procedural](./paradigms/imperative)
-* Object Oriented Programming (OOP)
+* [Object Oriented Programming](./paradigms/oop)
+	* [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
 * Declarative
 * Functional
 
