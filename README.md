@@ -23,7 +23,9 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ## Programming Paradigms
 
+* [Imperative and Procedural](./paradigms/imperative)
 * Object Oriented Programming (OOP)
+* Declarative
 * Functional
 
 ## Design Patterns
