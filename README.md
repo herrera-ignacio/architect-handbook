@@ -26,6 +26,11 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Imperative and Procedural](./paradigms/imperative)
 * [Object Oriented Programming](./paradigms/oop)
 	* [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
+	* [4 Pillars of OOP](./paradigms/oop/4pillars.md)
+		* Abstraction
+		* Inheritance
+		* Encapsulation
+		* Polymorphism
 * Declarative
 * Functional
 
