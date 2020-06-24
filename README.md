@@ -25,16 +25,23 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Imperative and Procedural](./paradigms/imperative)
 * [Object Oriented Programming](./paradigms/oop)
+	* Objects and Classes
+	* Class-based vs Prototype-based languages
 	* [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
 	* [4 Pillars of OOP](./paradigms/oop/4pillars.md)
 		* Abstraction
 		* Inheritance
 		* Encapsulation
 		* Polymorphism
-	* [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)
+	* [Abstract Class](./paradigms/oop/abstract-class.md)
+	* [Mixin Class](./paradigms/oop/mixin.md)
+	* [Traits](./paradigms/oop/traits.md)
+	* [Interface & Type](./paradigms/oop/interface.md)
+	* [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)]
 	* [Subtyping - Interface Inheritance](./paradigms/oop/subtyping.md)
 	* [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
 	* [Parameterized Types vs Inheritance](./paradigms/oop/inheritance-parameterized.md)
+	* [OMT Notation & UML](./notations.md)
 * Declarative
 * Functional
 
