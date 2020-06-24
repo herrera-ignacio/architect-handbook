@@ -64,7 +64,7 @@ Works well for medium and large applications.
 
 ## Key Principles
 
-![architecture](./architeture.png)
+![architecture](./architecture.png)
 
 ![framework boundary](./framework-boundary.png)
 
