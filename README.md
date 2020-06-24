@@ -38,9 +38,12 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Declarative
 * Functional
 
-## Design Patterns
+## Design Patterns & Principles
 
-* Object Oriented, Classical
+* [Object-Oriented](./paradigms/oop/design-principles.md)
+	* [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
+	* Program to an interface, not an implementation
+	* Favor object composition over class inheritance
 * Functional
 
 ## Architecture Patterns & Principles
