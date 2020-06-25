@@ -18,6 +18,11 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ## Software Design Principles
 
 * [SOLID](./principles/solid)
+	* [Single Responsibility Principle](./principles/solid/srp.md)
+	* [Open-Closed Principle](./principles/solid/ocp.md)
+	* [Liskov-Substitution Principle](./principles/solid/lsp.md)
+	* [Interface Segregation Principle](./principles/solid/isp.md)
+	* [Dependency Inversion Principle](./principle/solid/dip.md)
 * DRY
 * KISS
 
@@ -57,7 +62,11 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ## Architecture Patterns & Principles
 
 * [Best Architectural Decision](./principles/architectural.md)
-* [Clean Architecture - Components Principles](./principles/clean/components)
+* [Component Cohesion Principles (Clean Architecture)](./principles/component-cohesion)
+	* [Reuse/Release Equivalence Principle](./principles/component-cohesion/rep.md)
+	* [Common Closure Principle](./principles/component-cohesion/ccp.md)
+	* [Common Reuse Principle](./principles/component-cohesion/crp.md)
+* [Component Coupling Principles (Clean Architecture)](./principles/component-coupling)
 * Active Record
 * Data Mapper
 
