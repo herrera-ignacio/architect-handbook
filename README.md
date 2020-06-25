@@ -17,7 +17,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ## Software Design Principles
 
-* SOLID
+* [SOLID](./principles/solid)
 * DRY
 * KISS
 
@@ -57,6 +57,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ## Architecture Patterns & Principles
 
 * [Best Architectural Decision](./principles/architectural.md)
+* [Clean Architecture - Components Principles](./principles/clean/components)
 * Active Record
 * Data Mapper
 
