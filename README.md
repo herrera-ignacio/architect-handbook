@@ -15,13 +15,13 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Architectural Styles
 * Language & Frameworks Specifics
 
-## Design Principles
+## Software Design Principles
 
 * SOLID
 * DRY
 * KISS
 
-## Programming Paradigms
+## Programming Paradigms - Fundamentals
 
 * [Imperative and Procedural](./paradigms/imperative)
 * [Object Oriented Programming](./paradigms/oop)
@@ -41,11 +41,11 @@ The idea of this collection is not to help you become a expert of, let's say a p
 	* [Subtyping - Interface Inheritance](./paradigms/oop/subtyping.md)
 	* [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
 	* [Parameterized Types vs Inheritance](./paradigms/oop/inheritance-parameterized.md)
-	* [OMT Notation & UML](./notations.md)
-* Declarative
+	* [OMT Notation & UML](./paradigms/notations.md)
+* [Declarative](./paradigms/declarative)
 * Functional
 
-## Design Patterns & Principles
+## Programming Paradigm - Patterns & Principles
 
 * [Object-Oriented](./paradigms/oop/design-principles.md)
 	* [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
