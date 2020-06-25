@@ -51,7 +51,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 	* [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
 	* Program to an interface, not an implementation
 	* Favor object composition over class inheritance
-* Functional
+* Functional & Declarative
+	* [Referentially Transparent (No Side Effects)](./principles/functional/referentially-transparent.md)
 
 ## Architecture Patterns & Principles
 
