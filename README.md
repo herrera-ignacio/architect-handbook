@@ -13,6 +13,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Design Patterns
 * Architecture Patterns & Principles
 * Architectural Styles
+* Glossary
 * Language & Frameworks Specifics
 
 ## Software Design Principles
@@ -76,6 +77,12 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * WIP
 
+## Glossary
+
+* [Components](./glossary/components)
+* [Component Cohesion](./glossary/component-cohesion)
+* [Component Coupling](./glossary/component-coupling)
+
 ## Languages & Frameworks
 
 Specifics that should be considered while developing a software solution relying on a particular language/framework.
@@ -84,4 +91,4 @@ Specifics that should be considered while developing a software solution relying
 
 * [Considerations for a better architecture](./js/considerations.md)
 * [AfterAcademy, backend architecture considerations](https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro)
-* [The Working Architecture - Viktor Turskyi](js/working-architecture)
+* [The Working Architecture, Viktor Turskyi](js/working-architecture)
