@@ -82,6 +82,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Components](./glossary/components)
 * [Component Cohesion](./glossary/component-cohesion)
 * [Component Coupling](./glossary/component-coupling)
+* [Web API](./glossary/web-api)
 
 ## Languages & Frameworks
 
