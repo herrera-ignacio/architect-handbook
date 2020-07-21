@@ -8,6 +8,6 @@ A Web API is defined by the types of requests that it can handle, which is deter
 
 One Web API can be used to provide data for different frontends. Since a Web API can provide data without really specifying how the data is viewed, multiple different HTML pages or mobile applications can be created to view the data from the Web API in different ways.
 
-## What kind of responses can s erver send?
+## What kind of responses can server send?
 
 The data that the server sends back can come in different forms. For example, a server might serve up an HTML file, send data as JSON, or it might send back only an HTTP status code. You’ve probably seen the status code “404 - Not Found” whenever you’ve tried navigating to a URI that doesn’t exist, but there are many more status codes that indicate what happened when the server received the request.

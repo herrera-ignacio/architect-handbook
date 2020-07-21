@@ -27,7 +27,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * DRY
 * KISS
 
-## Programming Paradigms - Fundamentals
+## Programming Paradigms: Fundamentals
 
 * [Imperative and Procedural](./paradigms/imperative)
 * [Object Oriented Programming](./paradigms/oop)
@@ -44,14 +44,14 @@ The idea of this collection is not to help you become a expert of, let's say a p
 	* [Traits](./paradigms/oop/traits.md)
 	* [Interface & Type](./paradigms/oop/interface.md)
 	* [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)]
-	* [Subtyping - Interface Inheritance](./paradigms/oop/subtyping.md)
+	* [Subtyping: Interface Inheritance](./paradigms/oop/subtyping.md)
 	* [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
 	* [Parameterized Types vs Inheritance](./paradigms/oop/inheritance-parameterized.md)
 	* [OMT Notation & UML](./paradigms/notations.md)
 * [Declarative](./paradigms/declarative)
 * Functional
 
-## Programming Paradigm - Patterns & Principles
+## Programming Paradigms: Patterns & Principles
 
 * [Object-Oriented](./paradigms/oop/design-principles.md)
 	* [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
@@ -60,7 +60,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Functional & Declarative
 	* [Referentially Transparent (No Side Effects)](./principles/functional/referentially-transparent.md)
 
-## Architecture Patterns & Principles
+## Architectural Patterns & Principles
 
 * [Best Architectural Decision](./principles/architectural.md)
 * [Component Cohesion Principles (Clean Architecture)](./principles/component-cohesion)
@@ -72,6 +72,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Data Mapper
 
 ## Architectural Styles
+
+* [REST: Representational State Transfer](./architectures/rest)
 
 ### Clean Architecture
 
