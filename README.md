@@ -77,7 +77,14 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### Clean Architecture
 
-* WIP
+* Objects
+	* [Boundaries](./clean/objects/boundaries)
+	* [Entities](./clean/objects/entities)
+	* [Interactor](./clean/objects/interactor)
+* [Use Cases](./clean/use-cases)
+* [Model-View-Controler (MVC) Problems](./clean/mvc)
+* [Model-View-Presenter (MVP)](./clean/mvp)
+* [Model-Controler-Presenter (MVP)](./clean/mcp)
 
 ## Glossary
 
