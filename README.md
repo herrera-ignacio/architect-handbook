@@ -23,7 +23,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 	* [Open-Closed Principle](./principles/solid/ocp.md)
 	* [Liskov-Substitution Principle](./principles/solid/lsp.md)
 	* [Interface Segregation Principle](./principles/solid/isp.md)
-	* [Dependency Inversion Principle](./principle/solid/dip.md)
+	* [Dependency Inversion Principle](./principles/solid/dip.md)
 * DRY
 * KISS
 
@@ -82,9 +82,9 @@ The idea of this collection is not to help you become a expert of, let's say a p
 	* [Entities](./clean/objects/entities)
 	* [Interactor](./clean/objects/interactor)
 * [Use Cases](./clean/use-cases)
-* [Model-View-Controler (MVC) Problems](./clean/mvc)
-* [Model-View-Presenter (MVP)](./clean/mvp)
-* [Model-Controler-Presenter (MVP)](./clean/mcp)
+* [MVC Problems](./clean/mvc)
+* [Plugin Architecture: MCP](./clean/mcp)
+* WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
 
 ## Glossary
 
