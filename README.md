@@ -86,6 +86,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Plugin Architecture: MCP](./clean/mcp)
 * WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
 
+#### Notes & Extras
+
+* [Clean Architecture Essentials](https://dev.to/ivanpaulovich/clean-architecture-essentials-5a0m)
+
 ## Glossary
 
 * [Components](./glossary/components)
