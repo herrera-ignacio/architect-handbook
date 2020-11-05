@@ -8,6 +8,8 @@ _Transactions_ are a fundamental concept of all database systems. It bundles mul
 
 E.g. a bank account deposit involves selecting accounts, and performing updates on two accounts.
 
+In the context of databases, a __sequence of database operations that satisfies the ACID properties is called a transaction__.
+
 ## Postgres Example
 
 Consider a bank database that contains balances for various customer accounts, as well as total deposit balances for branches. Suppose that we want to record a payment of $100.00 from Alice's account to Bob's.
