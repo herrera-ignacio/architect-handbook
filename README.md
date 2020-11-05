@@ -15,6 +15,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Architectural Styles
 * Glossary
 * Language & Frameworks Specifics
+* Databases
 
 ## Software Design Principles
 
@@ -106,3 +107,8 @@ Specifics that should be considered while developing a software solution relying
 * [Considerations for a better architecture](./js/considerations.md)
 * [AfterAcademy, backend architecture considerations](https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro)
 * [The Working Architecture, Viktor Turskyi](js/working-architecture)
+
+## Databases
+
+* [ACID](./databases/acid.md)
+* [Transactions](./databases/transactions.md)
