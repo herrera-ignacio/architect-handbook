@@ -113,4 +113,5 @@ Specifics that should be considered while developing a software solution relying
 * [ACID](./databases/acid.md)
 * [Transactions](./databases/transactions.md)
 * [2PC Protocol / XA Transactions](./databases/2pc.md)
-* [View](./databases/view.md)
+* [Views](./databases/view.md)
+* [Joins](./databases/joins.md)
