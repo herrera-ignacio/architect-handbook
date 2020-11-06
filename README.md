@@ -115,3 +115,5 @@ Specifics that should be considered while developing a software solution relying
 * [2PC Protocol / XA Transactions](./databases/2pc.md)
 * [Views](./databases/view.md)
 * [Joins](./databases/joins.md)
+* Stored Procedures
+* Indexing

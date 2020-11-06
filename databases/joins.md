@@ -67,8 +67,8 @@ Finally, for a list of all records for both tables.
 ```sql
 SELECT first_name, last_name, order_date, order_amount
 FROM customers c
-FULL join orders o
-ON c.customer_id = o.customer_id
+JOIN orders o
+ON c.customer_id = o.customer_id -- If we don't specify how to relate tables, it will do a cartesian product A x B
 ```
 
 ### Self Join
@@ -80,4 +80,46 @@ SELECT c1.first_name as first_name1, c2.last_name as last_name2, c1.city
 FROM customers c1, customers c2
 WHERE c1.id <> c2.id -- or !=
 ORDER BY c1.city
+```
+
+## Joining Three or more tables
+
+### Does Join order matter?
+
+Keep in mind that SQL is a __non-procedural language__, meaning that you describe what you want to retrieve and which database objects need to be involved, but it's up to the database server to determine how to best execute your query.
+
+Using statistic gathered from your database objects, the server must pick one of three tables as a starting point (the chosen table is thereafter known as the __driving table__), and then decide in which order ot join the remaining tables.
+
+__The order in which tables appear in your `FROM` clause is not significant__.
+
+If, however, you believe the tables in your query should always be joined in a particular order, you can place the tables in the desired order and specify it with a specific database server keyword, which in MySQL case is `STRAIGHT_JOIN`.
+
+```sql
+SELECT STRAIGHT_JOIN a.account_id, c.fed_id, e.fname, e.lname
+FROM employee e INNER JOIN account a
+  ON e.emp_id = a.open_emp_id
+  INNER JOIN customer c
+  ON a.cust_id = c.cust_id
+WHERE c.cust_type_cd = 'B';
+```
+
+### Subqueries as Tables
+
+```sql
+SELECT a.account_id, a.cust_id, a.open_date, a.product_cd
+FROM account a INNER JOIN
+  (
+    SELECT emp_id, assigned_branch_id
+    FROM employee
+    WHERE start_date < '2007-01-01'
+      AND (title = 'Teller' OR title = 'Head Teller')
+  ) e
+  ON a.open_emp.id = e_emp_id
+  INNER JOIN
+    (
+      SELECT branch_id
+      FROM branch
+      WHERE name = 'Woburn Branch' 
+    ) b
+    ON e.assigned_branch_id = b.branch_id;
 ```
