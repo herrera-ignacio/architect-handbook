@@ -6,7 +6,7 @@
 
 Parallelism is about _doing multiple things at the same time_.
 
-For this, it uses multiple CPUs/cores to operate multiple processes/threads. Thus, results in overlaping of CPU and I/O activities in one process/thread with the CPU and I/O activities of another process/thread.
+For this, it uses multiple CPUs/cores to operate multiple processes/threads (Multiprocessing vs Multihreading). Thus, results in overlaping of CPU and I/O activities in one process/thread with the CPU and I/O activities of another process/thread.
 
 ## Concurrency
 

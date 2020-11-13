@@ -18,7 +18,17 @@ The threaded programming model provides developers with a useful abstraction of 
 * __Synchronization__: threads share the same address space, so programmer must be careful to avoid __race conditions__ and other non-intuitive behaviors. Threads will often need to rendezvous in time, in order to process the data in the correct order. Threads may also require mutually exclusive operations to prevent common data from being read or overwritten in one thread while being modified by another. Careless use of such primitives can lead to __deadlocks, livelocks or races over resources__.
 * __Thread crashes a process__: an illegal operation performed b a thread crashes the entire process, therefore, one misbehaving thread can disrupt the processing of all others.
 
-## Single processor systems
+## Vs Multiprocessing
+
+Multiprocessing differs in:
+
+* Requires no synchrnization (processes run in different address spaces)
+* OS prevents processes from writing to another processes' address space.
+* Address spaces large, thus processes can take up much more memory.
+
+## Implementation
+
+### Single processor systems
 
 Systems with a single processor generally implement multithreading by __time slicing__.
 
@@ -26,11 +36,11 @@ The CPU (Central Processing Unit) switches between different software threads. T
 
 On a processor or core with __hardware threads__ separate software threads can also be executed __concurrently__ by separate hardware threads.
 
-## Multiprocessor or multi-core systems
+### Multiprocessor or multi-core systems
 
 Multiple threads can execute in __parallel__, with every processor or core executing a separate thread simultaneously, and those processor/core can also have hardware threads.
 
-## OS Implementations
+### OS Implementations
 
 Process schedulers of many modern operating systems directly support both time-sliced and multiprocessor threading, and the operating system kernel allows programmers to manipulate threads by exposing required functionality through the __system-call interface__.
 
