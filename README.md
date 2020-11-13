@@ -121,5 +121,6 @@ Specifics that should be considered while developing a software solution relying
 
 ## Operating Systems
 
-* [Process & Thread](./os/process-thread)
 * [Multithreading](./os/multithreading)
+* [Parallelism & Concurrency](./os/parallelism)
+* [Process & Thread](./os/process-thread)
