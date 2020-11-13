@@ -16,6 +16,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Glossary
 * Language & Frameworks Specifics
 * Databases
+* Operating Systems
 
 ## Software Design Principles
 
@@ -87,11 +88,11 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Plugin Architecture: MCP](./clean/mcp)
 * WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
 
-#### Notes & Extras
+#### Extra material
 
 * [Clean Architecture Essentials](https://dev.to/ivanpaulovich/clean-architecture-essentials-5a0m)
 
-## Glossary
+#### Clean Architecture Glossary
 
 * [Components](./glossary/components)
 * [Component Cohesion](./glossary/component-cohesion)
@@ -117,3 +118,8 @@ Specifics that should be considered while developing a software solution relying
 * [Joins](./databases/joins.md)
 * Stored Procedures
 * Indexing
+
+## Operating Systems
+
+* [Process & Thread](./os/process-thread)
+* [Multithreading](./os/multithreading)
