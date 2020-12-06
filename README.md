@@ -29,39 +29,45 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * DRY
 * KISS
 
-## Programming Paradigms: Fundamentals
+## Programming Paradigms
 
 * [Imperative and Procedural](./paradigms/imperative)
-* [Object Oriented Programming](./paradigms/oop)
-	* Objects and Classes
-	* Class-based vs Prototype-based languages
-	* [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
-	* [4 Pillars of OOP](./paradigms/oop/4pillars.md)
-		* Abstraction
-		* Inheritance
-		* Encapsulation
-		* Polymorphism
-	* [Abstract Class](./paradigms/oop/abstract-class.md)
-	* [Mixin Class](./paradigms/oop/mixin.md)
-	* [Traits](./paradigms/oop/traits.md)
-	* [Interface & Type](./paradigms/oop/interface.md)
-	* [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)]
-	* [Subtyping: Interface Inheritance](./paradigms/oop/subtyping.md)
-	* [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
-	* [Parameterized Types vs Inheritance](./paradigms/oop/inheritance-parameterized.md)
-	* [OMT Notation & UML](./paradigms/notations.md)
 * [Declarative](./paradigms/declarative)
 * Functional
+  * Design principles
+    * [Referentially Transparent (No Side Effects)](./principles/functional/referentially-transparent.md)
+
+
+### OOP: Object Oriented Programming
+
+* [OOP Introduction](./paradigms/oop)
+  * Objects and Classes
+  * Class-based vs Prototype-based languages
+* [4 Pillars of OOP](./paradigms/oop/4pillars.md)
+  * Abstraction
+  * Inheritance
+  * Encapsulation
+  * Polymorphism
+* [Abstract Class](./paradigms/oop/abstract-class.md)
+* [Mixin Class](./paradigms/oop/mixin.md)
+* [Traits](./paradigms/oop/traits.md)
+* [Interface & Type](./paradigms/oop/interface.md)
+* [Subtyping: Interface Inheritance](./paradigms/oop/subtyping.md)
+* [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)]
+  * [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
+* [Parameterized Types](./paradigms/oop/inheritance-parameterized.md)
+* [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
+* [OMT Notation & UML](./paradigms/notations.md)
+* [Object-Oriented Design Principles](./paradigms/oop/design-principles.md)
+	* Program to an interface, not an implementation
+	* Favor object composition over class inheritance
+* [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
 
 ## Programming Paradigms: Patterns & Principles
 
-* [Object-Oriented](./paradigms/oop/design-principles.md)
-	* [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
-	* Program to an interface, not an implementation
-	* Favor object composition over class inheritance
-* Functional & Declarative
-	* [Referentially Transparent (No Side Effects)](./principles/functional/referentially-transparent.md)
 
+* Functional & Declarative
+	
 ## Architectural Patterns & Principles
 
 * [Best Architectural Decision](./principles/architectural.md)

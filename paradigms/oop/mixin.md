@@ -12,14 +12,14 @@ Mixins encourage code reuse and can be used to avoid the inheritance ambiguity t
 
 ## Definition
 
-Mixins are a language concept that allows a programmer to inject some code int oa class. Units of functionality are created in a class and then mixed in with other classes.
+Mixins are a language concept that allows a programmer to inject some code into a class. Units of functionality are created in a class and then mixed in with other classes.
 
 A Mixin Class acts as the parent class, containing the desired functionality. A Subclass can then inherit or simple reuse this functionality, but not as a means of specialization. Typically, the mixin will export the desired functionality to a child class, without creating a rigid, single "is a" relationship. Here lies the important difference between the concepts of mixins and inheritance, in that the child class can still inheirt all the features of the parent class, but, the semantincs about the child "being a kind of" the parent need not be necessarily applied.
 
 ## Advantages
 
 1. Provides a mechanism for Multiple Inheritance by allowing multiple classes to use the common functionality, but without the complex semantic of multiple inheritance.
-2. Code Reusability: Mixins are useful when a programer wants to share functionality between different classes. Instead of repeating the same code, the common functionality can simple be grouped into a Mixin and then included into each class that requires it.
+2. Code Reusability: Mixins are useful when a programmer wants to share functionality between different classes. Instead of repeating the same code, the common functionality can simple be grouped into a Mixin and then included into each class that requires it.
 3. Mixins allow inheritance and use of only the desired features from the parent class, not necessarily all of them.
 
 ## Examples

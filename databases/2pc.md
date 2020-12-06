@@ -16,7 +16,6 @@ Many protocol variants exist that primarily differ in logging strategies and rec
 ### Examples
 
 * https://xenovation.com/blog/development/java/java-professional-developer/what-is-a-two-phase-commit-2pc-xa-transaction
-* 
 
 ## Disadvantage
 

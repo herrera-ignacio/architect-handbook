@@ -55,7 +55,7 @@ No isolation, any change from the outside is visible to the transaction.
 
 #### 2. Read commiteted
 
-Each query in a transaction ly sees comitted stuff.
+Each query in a transaction only sees comitted stuff.
 
 * Lost updates
 * Non-repeatable reads

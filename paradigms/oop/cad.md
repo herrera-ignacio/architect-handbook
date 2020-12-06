@@ -14,7 +14,7 @@ Object composition is also __an alternative to class inheritance__. Here, new fu
 
 Object aggregation is used to represent "__uses__" relationships. Object A "_uses_" an object B, where B exists independently (conceptually) from A.
 
-## Composition vs Aggregation
+### Composition vs Aggregation
 
 Composition an aggregation are usually confused.
 
