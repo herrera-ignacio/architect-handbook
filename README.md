@@ -10,22 +10,27 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * Design Principles
 * Programming Paradigms
-* Design Patterns
-* Architecture Patterns & Principles
-* Architectural Styles
-* Glossary
-* Language & Frameworks Specifics
-* Databases
-* Operating Systems
+  * Imperative and Procedural
+  * Declarative
+  * Functional
+  * Object-oriented
+* Architectural Patterns & Principles
+  * Clean Architecture
+  * REST
+* Technolgoy Specifics
+  * Languages & Frameworks
+  * Databases
+  * Operating Systems
+* Fundamentals Glossary
 
 ## Software Design Principles
 
 * [SOLID](./principles/solid)
-	* [Single Responsibility Principle](./principles/solid/srp.md)
-	* [Open-Closed Principle](./principles/solid/ocp.md)
-	* [Liskov-Substitution Principle](./principles/solid/lsp.md)
-	* [Interface Segregation Principle](./principles/solid/isp.md)
-	* [Dependency Inversion Principle](./principles/solid/dip.md)
+  * [Single Responsibility Principle](./principles/solid/srp.md)
+  * [Open-Closed Principle](./principles/solid/ocp.md)
+  * [Liskov-Substitution Principle](./principles/solid/lsp.md)
+  * [Interface Segregation Principle](./principles/solid/isp.md)
+  * [Dependency Inversion Principle](./principles/solid/dip.md)
 * DRY
 * KISS
 
@@ -36,7 +41,6 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Functional
   * Design principles
     * [Referentially Transparent (No Side Effects)](./principles/functional/referentially-transparent.md)
-
 
 ### OOP: Object Oriented Programming
 
@@ -59,36 +63,30 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
 * [OMT Notation & UML](./paradigms/notations.md)
 * [Object-Oriented Design Principles](./paradigms/oop/design-principles.md)
-	* Program to an interface, not an implementation
-	* Favor object composition over class inheritance
+  * Program to an interface, not an implementation
+  * Favor object composition over class inheritance
 * [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
 
-## Programming Paradigms: Patterns & Principles
-
-
-* Functional & Declarative
-	
 ## Architectural Patterns & Principles
 
-* [Best Architectural Decision](./principles/architectural.md)
-* [Component Cohesion Principles (Clean Architecture)](./principles/component-cohesion)
-	* [Reuse/Release Equivalence Principle](./principles/component-cohesion/rep.md)
-	* [Common Closure Principle](./principles/component-cohesion/ccp.md)
-	* [Common Reuse Principle](./principles/component-cohesion/crp.md)
-* [Component Coupling Principles (Clean Architecture)](./principles/component-coupling)
+* [General Architectural Principles](./principles/architectural)
 * Active Record
 * Data Mapper
 
-## Architectural Styles
-
-* [REST: Representational State Transfer](./architectures/rest)
-
 ### Clean Architecture
 
+* [Components](./glossary/components)
+* [Component Cohesion](./glossary/component-cohesion)
+* [Component Cohesion Principles (Clean Architecture)](./principles/component-cohesion)
+  * [Reuse/Release Equivalence Principle](./principles/component-cohesion/rep.md)
+  * [Common Closure Principle](./principles/component-cohesion/ccp.md)
+  * [Common Reuse Principle](./principles/component-cohesion/crp.md)
+* [Component Coupling](./clean/component-coupling)
+* [Component Coupling Principles (Clean Architecture)](./principles/component-coupling)
 * Objects
-	* [Boundaries](./clean/objects/boundaries)
-	* [Entities](./clean/objects/entities)
-	* [Interactor](./clean/objects/interactor)
+  * [Boundaries](./clean/objects/boundaries)
+  * [Entities](./clean/objects/entities)
+  * [Interactor](./clean/objects/interactor)
 * [Use Cases](./clean/use-cases)
 * [MVC Problems](./clean/mvc)
 * [Plugin Architecture: MCP](./clean/mcp)
@@ -98,16 +96,13 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Clean Architecture Essentials](https://dev.to/ivanpaulovich/clean-architecture-essentials-5a0m)
 
-#### Clean Architecture Glossary
+### REST: Representational State Transfer
 
-* [Components](./glossary/components)
-* [Component Cohesion](./glossary/component-cohesion)
-* [Component Coupling](./glossary/component-coupling)
-* [Web API](./glossary/web-api)
+* [REST intro](./architectures/rest)
 
-## Languages & Frameworks
+## Technology specifics
 
-Specifics that should be considered while developing a software solution relying on a particular language/framework.
+Specifics that should be considered while developing a software solution relying on a particular technology.
 
 ### Javascript & Node.js
 
@@ -115,7 +110,7 @@ Specifics that should be considered while developing a software solution relying
 * [AfterAcademy, backend architecture considerations](https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro)
 * [The Working Architecture, Viktor Turskyi](js/working-architecture)
 
-## Databases
+### Databases
 
 * [ACID](./databases/acid.md)
 * [Transactions](./databases/transactions.md)
@@ -125,8 +120,15 @@ Specifics that should be considered while developing a software solution relying
 * Stored Procedures
 * Indexing
 
-## Operating Systems
+### Operating Systems
 
 * [Multithreading](./os/multithreading)
 * [Parallelism & Concurrency](./os/parallelism)
 * [Process & Thread](./os/process-thread)
+
+## Fundamentals Glossary
+
+Must know terminology.
+
+* [Modularization](./glossary/modularization)
+* [Web API](./glossary/web-api)
