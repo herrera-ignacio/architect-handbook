@@ -104,7 +104,7 @@ Safe means that, when requested, it does not modify or cause any side effects on
 
 Idempotent means that, response stays the same, regardless of the number of times it is requested.
 
-## REST vs SOP
+## REST vs SOAP
 
 Unlike SOAP-based Web services, there is no 'official' standard for RESTful Web APIs. This is because REST is an architectural style, while SOAP is a protocol.
 

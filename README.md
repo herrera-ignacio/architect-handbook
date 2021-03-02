@@ -17,7 +17,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Architectural Patterns & Principles
   * Clean Architecture
   * REST
-* Technolgoy Specifics
+* Technology Specifics
   * Languages & Frameworks
   * Databases
   * Operating Systems
@@ -25,12 +25,12 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ## Software Design Principles
 
-* [SOLID](./principles/solid)
-  * [Single Responsibility Principle](./principles/solid/srp.md)
-  * [Open-Closed Principle](./principles/solid/ocp.md)
-  * [Liskov-Substitution Principle](./principles/solid/lsp.md)
-  * [Interface Segregation Principle](./principles/solid/isp.md)
-  * [Dependency Inversion Principle](./principles/solid/dip.md)
+* [SOLID](./pp/solid)
+  * [Single Responsibility Principle](./pp/solid/srp.md)
+  * [Open-Closed Principle](./pp/solid/ocp.md)
+  * [Liskov-Substitution Principle](./pp/solid/lsp.md)
+  * [Interface Segregation Principle](./pp/solid/isp.md)
+  * [Dependency Inversion Principle](./pp/solid/dip.md)
 * DRY
 * KISS
 
@@ -40,7 +40,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Declarative](./paradigms/declarative)
 * Functional
   * Design principles
-    * [Referentially Transparent (No Side Effects)](./principles/functional/referentially-transparent.md)
+    * [Referentially Transparent (No Side Effects)](./paradigms/functional/referentially-transparent.md)
 
 ### OOP: Object Oriented Programming
 
@@ -69,20 +69,18 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ## Architectural Patterns & Principles
 
-* [General Architectural Principles](./principles/architectural)
-* Active Record
+* [General Architectural Principles](./pp/architectural)
+* [Active Record](./pp/active-record)
 * Data Mapper
 
 ### Clean Architecture
 
-* [Components](./glossary/components)
-* [Component Cohesion](./glossary/component-cohesion)
-* [Component Cohesion Principles (Clean Architecture)](./principles/component-cohesion)
-  * [Reuse/Release Equivalence Principle](./principles/component-cohesion/rep.md)
-  * [Common Closure Principle](./principles/component-cohesion/ccp.md)
-  * [Common Reuse Principle](./principles/component-cohesion/crp.md)
-* [Component Coupling](./clean/component-coupling)
-* [Component Coupling Principles (Clean Architecture)](./principles/component-coupling)
+* [Components](./clean/components)
+* [Component Cohesion](./clean/component-cohesion)
+  * [Reuse/Release Equivalence Principle]()
+  * [Common Closure Principle]()
+  * [Common Reuse Principle]()
+* [Component Coupling]()
 * Objects
   * [Boundaries](./clean/objects/boundaries)
   * [Entities](./clean/objects/entities)
