@@ -135,3 +135,4 @@ Must know terminology.
 * [Modularization](./glossary/modularization)
 * [Web API](./glossary/web-api)
 * [Leaky Abstraction](./glossary/leaky-abstraction)
+* [Anti-Pattern](./glossary/anti-pattern)
