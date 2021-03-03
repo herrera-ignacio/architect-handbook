@@ -71,6 +71,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [General Architectural Principles](./pp/architectural)
 * [DAO: Data Access Object](./pp/dao)
+* [Abstraction Inversion](./pp/abstraction-inversion)
 
 ### Clean Architecture
 
