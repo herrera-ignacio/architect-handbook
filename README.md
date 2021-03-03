@@ -70,8 +70,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ## Architectural Patterns & Principles
 
 * [General Architectural Principles](./pp/architectural)
-* [Active Record](./pp/active-record)
-* Data Mapper
+* [DAO: Data Access Object](./pp/dao)
 
 ### Clean Architecture
 
@@ -117,6 +116,10 @@ Specifics that should be considered while developing a software solution relying
 * [Joins](./databases/joins.md)
 * Stored Procedures
 * Indexing
+* [Object-oriented databases](./databases/object-oriented)
+* [ORM: Object-relational Mapping](./databases/orm)
+* [Active Record Pattern](./databases/active-record)
+* Data Mapper
 
 ### Operating Systems
 
@@ -130,3 +133,4 @@ Must know terminology.
 
 * [Modularization](./glossary/modularization)
 * [Web API](./glossary/web-api)
+* [Leaky Abstraction](./glossary/leaky-abstraction)
