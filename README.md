@@ -119,6 +119,7 @@ Specifics that should be considered while developing a software solution relying
 * Indexing
 * [Object-oriented databases](./databases/object-oriented)
 * [ORM: Object-relational Mapping](./databases/orm)
+* [Object-relational impedance mismatch](./databases/impedance-mismatch)
 * [Active Record Pattern](./databases/active-record)
 * Data Mapper
 
@@ -136,3 +137,4 @@ Must know terminology.
 * [Web API](./glossary/web-api)
 * [Leaky Abstraction](./glossary/leaky-abstraction)
 * [Anti-Pattern](./glossary/anti-pattern)
+* [First-class citizen](./glossary/first-class-citizen)
