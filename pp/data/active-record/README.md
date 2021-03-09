@@ -8,16 +8,19 @@ This object carries both data and behavior. Much of this data is persistent and 
 
 An object that wraps a row in a database table or view, encapsulates the database access and adds domain logic on that data.
 
-## Active Record as ORM
+## Pros
 
-Active Record Pattern is a description of an ORM system. It gives us several mechanisms, the most important being the ability to:
+* __Simple__. Because of how tightly matched the records in your database and the objects in your system are conceptually.
 
-* Represent models and their data.
+* __Easy to understand__. Intuitive understanding of how you can work with the system even if you've never had the least exposure to an ORM before.
 
-* Represent associations between these models.
+## Cons
 
-* Represent inheritance hierarchies through related models.
+* __Coupling__. The main drawback is that domain becomes tightly coupled to a particular persistence mechanism. Should that mechanism require a global change, every class that implements this pattern may change.
 
-* Validate models before they get persisted to the database.
+* __Tricky atomic operations__. If a group of objects must be saved in an all-or-nothing fashion, either one object must know about all these other objects and control their persistence, or the control over the entire transaction must be handled from outside the domain.
 
-* Perform database operations in an object-related fashion.
+
+### Active Record vs Data Mapper
+
+The biggest different between them is that the Data Mapper is meant to be a layer between the actual business domain and the database, where Active Record seeks to invisibly bridge the gaps between the two as seamlessly as possible.

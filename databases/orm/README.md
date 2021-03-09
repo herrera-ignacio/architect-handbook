@@ -10,9 +10,20 @@ This involves translating the logical representation of the objects into an atom
 
 * Often reduces the amount of code that needs to be written
 
+	* Represent models and their data.
+
+	* Represent associations between these models.
+
+	* Represent inheritance hierarchies through related models.
+
+	* Validate models before they get persisted to the database.
+
+	* Perform database operations in an object-related fashion.
+
 ### Disadvatages
 
 * High level of abstraction, obscuring what is actually happening in the implementation code.
+
 * Heavy reliance on ORM software may be a major factor in producing poorly designed databases.
 
 ## Challenges
