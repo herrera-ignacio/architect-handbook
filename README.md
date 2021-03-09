@@ -70,8 +70,20 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ## Architectural Patterns & Principles
 
 * [General Architectural Principles](./pp/architectural)
-* [DAO: Data Access Object](./pp/dao)
 * [Abstraction Inversion](./pp/abstraction-inversion)
+
+### Base Patterns
+
+### Data Source & Persistence
+
+* [DAO: Data Access Object](./pp/data/dao)
+* [Active Record](./pp/data/active-record)
+* [Data Mapper](./pp/data/data-mapper)
+
+
+#### Object-relational Metadata Mapping
+
+* [Repository](./pp/data/repository)
 
 ### Clean Architecture
 
@@ -120,9 +132,6 @@ Specifics that should be considered while developing a software solution relying
 * [Object-oriented databases](./databases/object-oriented)
 * [ORM: Object-relational Mapping](./databases/orm)
 * [Object-relational impedance mismatch](./databases/impedance-mismatch)
-* [Active Record Pattern](./databases/active-record)
-* [Data Mapper Pattern](./databases/data-mapper)
-* [Repository Pattern](./databases/repository)
 
 ### Operating Systems
 
