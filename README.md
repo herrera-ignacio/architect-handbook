@@ -74,6 +74,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### Base Patterns
 
+* [Mapper](./pp/base/mapper)
+
 ### Data Source & Persistence
 
 * [DAO: Data Access Object](./pp/data/dao)
