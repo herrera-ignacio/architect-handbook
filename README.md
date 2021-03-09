@@ -121,7 +121,8 @@ Specifics that should be considered while developing a software solution relying
 * [ORM: Object-relational Mapping](./databases/orm)
 * [Object-relational impedance mismatch](./databases/impedance-mismatch)
 * [Active Record Pattern](./databases/active-record)
-* Data Mapper
+* [Data Mapper Pattern](./databases/data-mapper)
+* [Repository Pattern](./databases/repository)
 
 ### Operating Systems
 
