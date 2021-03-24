@@ -65,7 +65,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
 * [Parameterized Types](./paradigms/oop/inheritance-parameterized.md)
 * [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
-* [OMT Notation & UML](./paradigms/notations.md)
+* [OMT Notation & UML](./paradigms/oop/omt-notations.md)
 * [Object-Oriented Design Principles](./paradigms/oop/design-principles.md)
   * Program to an interface, not an implementation
   * Favor object composition over class inheritance
