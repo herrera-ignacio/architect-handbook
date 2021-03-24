@@ -14,7 +14,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * Declarative
   * Functional
   * Object-oriented
-* Architectural Patterns & Principles
+* Design Patterns & Principles
+  * Base patterns
+  * Data source & persistence
+* Architectural styles
   * Clean Architecture
   * REST
 * Technology Specifics
@@ -23,16 +26,17 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * Operating Systems
 * Fundamentals Glossary
 
-## Software Design Principles
+## Design Principles
 
-* [SOLID](./pp/solid)
-  * [Single Responsibility Principle](./pp/solid/srp.md)
-  * [Open-Closed Principle](./pp/solid/ocp.md)
-  * [Liskov-Substitution Principle](./pp/solid/lsp.md)
-  * [Interface Segregation Principle](./pp/solid/isp.md)
-  * [Dependency Inversion Principle](./pp/solid/dip.md)
+* [SOLID](./principles/solid)
+  * [Single Responsibility Principle](./principles/solid/srp.md)
+  * [Open-Closed Principle](./principles/solid/ocp.md)
+  * [Liskov-Substitution Principle](./principles/solid/lsp.md)
+  * [Interface Segregation Principle](./principles/solid/isp.md)
+  * [Dependency Inversion Principle](./principles/solid/dip.md)
 * DRY
 * KISS
+* [General Architectural Principles](./principles/architectural)
 
 ## Programming Paradigms
 
@@ -67,25 +71,27 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * Favor object composition over class inheritance
 * [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
 
-## Architectural Patterns & Principles
+## Design Patterns & Principles
 
-* [General Architectural Principles](./pp/architectural)
-* [Abstraction Inversion](./pp/abstraction-inversion)
+* [Abstraction Inversion](./design-patterns/abstraction-inversion)
+* [MVC: Model-View-Controller](./design-patterns/mvc)
 
 ### Base Patterns
 
-* [Mapper](./pp/base/mapper)
+* [Madesign-patternser](./design-patterns/base/madesign-patternser)
 
 ### Data Source & Persistence
 
-* [DAO: Data Access Object](./pp/data/dao)
-* [Active Record](./pp/data/active-record)
-* [Data Mapper](./pp/data/data-mapper)
+* [DAO: Data Access Object](./design-patterns/data/dao)
+* [Active Record](./design-patterns/data/active-record)
+* [Data Madesign-patternser](./design-patterns/data/data-madesign-patternser)
 
 
-#### Object-relational Metadata Mapping
+#### Object-relational Metadata Madesign-patternsing
 
-* [Repository](./pp/data/repository)
+* [Repository](./design-patterns/data/repository)
+
+## Architectural Styles
 
 ### Clean Architecture
 
@@ -132,7 +138,7 @@ Specifics that should be considered while developing a software solution relying
 * Stored Procedures
 * Indexing
 * [Object-oriented databases](./databases/object-oriented)
-* [ORM: Object-relational Mapping](./databases/orm)
+* [ORM: Object-relational Madesign-patternsing](./databases/orm)
 * [Object-relational impedance mismatch](./databases/impedance-mismatch)
 
 ### Operating Systems
