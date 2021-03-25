@@ -78,16 +78,16 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### Base Patterns
 
-* [Madesign-patternser](./design-patterns/base/madesign-patternser)
+* [Mapper](./design-patterns/base/mapper)
 
 ### Data Source & Persistence
 
 * [DAO: Data Access Object](./design-patterns/data/dao)
 * [Active Record](./design-patterns/data/active-record)
-* [Data Madesign-patternser](./design-patterns/data/data-madesign-patternser)
+* [Data Mapper](./design-patterns/data/data-mapper)
 
 
-#### Object-relational Metadata Madesign-patternsing
+#### Object-relational Metadata Mapper
 
 * [Repository](./design-patterns/data/repository)
 
