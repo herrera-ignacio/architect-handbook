@@ -157,3 +157,4 @@ Must know terminology.
 * [Anti-Pattern](./glossary/anti-pattern)
 * [First-class citizen](./glossary/first-class-citizen)
 * [Side Effect](./glossary/side-effect)
+* [Idempotence](./glossary/idempotence)
