@@ -156,3 +156,4 @@ Must know terminology.
 * [Leaky Abstraction](./glossary/leaky-abstraction)
 * [Anti-Pattern](./glossary/anti-pattern)
 * [First-class citizen](./glossary/first-class-citizen)
+* [Side Effect](./glossary/side-effect)
