@@ -86,28 +86,27 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Active Record](./design-patterns/data/active-record)
 * [Data Mapper](./design-patterns/data/data-mapper)
 
-
 #### Object-relational Metadata Mapper
 
 * [Repository](./design-patterns/data/repository)
 
 ## Architectural Styles
 
-### Clean Architecture
+### [Clean Architecture](./architectures/clean)
 
-* [Components](./clean/components)
-* [Component Cohesion](./clean/component-cohesion)
+* [Components](./architectures/clean/components)
+* [Component Cohesion](./architectures/clean/component-cohesion)
   * [Reuse/Release Equivalence Principle]()
   * [Common Closure Principle]()
   * [Common Reuse Principle]()
 * [Component Coupling]()
 * Objects
-  * [Boundaries](./clean/objects/boundaries)
-  * [Entities](./clean/objects/entities)
-  * [Interactor](./clean/objects/interactor)
-* [Use Cases](./clean/use-cases)
-* [MVC Problems](./clean/mvc)
-* [Plugin Architecture: MCP](./clean/mcp)
+  * [Boundaries](./architectures/clean/objects/boundaries)
+  * [Entities](./architectures/clean/objects/entities)
+  * [Interactor](./architectures/clean/objects/interactor)
+* [Use Cases](./architectures/clean/use-cases)
+* [MVC Problems](./architectures/clean/mvc)
+* [Plugin Architecture: MCP](./architectures/clean/mcp)
 * WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
 
 #### Extra material
