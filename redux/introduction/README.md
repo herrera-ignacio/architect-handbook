@@ -77,6 +77,26 @@ This is the basic idea behind Redux: __a single centralized place to contain the
 
 ![redux flow](https://redux.js.org/assets/images/ReduxDataFlowDiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif)
 
+* Initial setup
+  * Redux store is created using a root reducer function.
+
+  * Store calls the root reducer once, and saves the return value as its initial `state`.
+
+  * When UI is first rendered, UI components access the current state of the Redux store, and use that data to decide what to render. They also subscribe to any future store updates so they can know if the state has changed.
+
+* Updates
+  * Something happens in the app, such as a user clicking a button.
+
+  * The app code dispatches an action to the Redux store.
+
+  * The store runs the reducer function again the previous `state` and the current `action`, and saves the return value as the new `state`.
+
+  * The store notifies all parts of the UI that are subscribed that the store has been updated.
+
+  * Each UI component that needs data from the store checks to see if the parts of the state they need have changed.
+
+  * Each component that sees its data has changed forces a re-render with the new data, so it can update what's shown on the screen.
+
 ### Immutability
 
 In order to update values immutably, your code must make _copies_ of existing objects/arrays, and then modify the copies. __Redux expects that all state updates are done immutably__.
@@ -120,3 +140,21 @@ Reducers must _always_ follow some specific rules:
 * They are not allowed to modify the existing `state`. Instead, they must make _immutable updates_, by copying the existing `state` and making changes to the copied values.
 
 * They must not do any asynchronous logic, calculate random values, or cause other "side effects".
+
+> The name "reducer" comes from `Array.reduce()`. We can say that __Redux reduce a set of actions (over time) into a single state__. The difference is that with `Array.reduce()` it happens all at once, and with Redux, it happens over the lifetime of your running app.
+
+### Store
+
+The current Redux application state lives in an object called the __store__.
+
+The store is created by passing in a reducer, and has a method called `getState` that returns the current state value.
+
+### Dispatch
+
+The Redux store has a method called `dispatch`. __The only way to update the state is to call `store.dispatch()` and pass in an action object__. The store will run its reducer function and save the new state value inside.
+
+You can think of dispatching actions as "triggering an event" in the application.
+
+### Selectors
+
+___Selectors__ are functions that know how to extract specific pieces of information from a store state value. This can help avoid repeating logic as different parts of the app need to read the same data.
