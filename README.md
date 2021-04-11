@@ -132,6 +132,7 @@ Specifics that should be considered while developing a software solution relying
 ### Redux
 
 * [Redux must know](./redux/introduction)
+* [Three Fundamental Principles](./redux/three-principles)
 * [Best Practices](./redux/best-practices)
 * Structuring Reducers
   * [Immutable Update Patterns](./redux/immutable-updates)

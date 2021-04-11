@@ -14,6 +14,15 @@
 * Model Actions as Events, Not Setters / Meaningful Action Names
 * Allow Many Reducers to Respond to the Same Action
 * Avoid Dispatching Many Actions Sequentially
+* Connect More Components to Read Data from the Store
+* Call `useSelector` Multiple Times in Function Components
+* Use Plain JavaScript Objects For State
+* Write Action Types as `domain/eventName`
+* Write Actions Using the Flux Standard Action (FSA) Convention
+* Use Thunks for Async Logic
+* Use Selector Functions to Read from Store State
+* Name Selector Functions as `selectThing`
+* Avoid Putting Form State In Redux
 
 ## Do Not Mutate State
 
@@ -135,3 +144,99 @@ Prefer dispatching a single "event"-type action that results in all of the appro
 > Each dispatched action does result in execution of all store subscription callbacks, and will usually result in UI updates.
 
 > If multiple dispatches are truly necessary, consider batching the updates in some way. Depending on your use case, this may just be batching React's own renders (possibly using `batch()` from `react-redux`), debouncing the store notification callbacks, or grouping many actions into a larger single dispatch that only results in one subscriber notification.
+
+## Connect More Components to Read Data from the Store
+
+Prefer having more UI components subscried to the Redux store and reading data at a more granular level. This typically leads to better UI performance, as fewer components will need to render when a given piece of state changes.
+
+For example, rather than just connecting a `<UserList>` component and reading the entire array of users, have `<UserList>` retrieve a list of all user IDs, render list tems as `<UserListItem userId={userId}>`, and have `<UserListItem>` be connected and extract its own user entry from the store.
+
+## Call `useSelector` Multiple Times in Function Components
+
+When retrieving data using the `useSelector` hook, prefer calling `useSelector` many times and retrieving smaller amounts of data, instead of having a single larger `useSelector` call that returns multiple results in an object. Unlike `mapState`, `useSelector` is not required to return an object, and having selectors read smaller values means it is less likely that a given state change will cause this component to render.
+
+However, try to find an appropriate balance of granualarity. If a single component does need all fields in a slice of the state, just write one `useSelector` that returns the whole slice instead of separate selectors for each individual field.
+
+## Use Plain JavaScript Objects For State
+
+Prefer using plain JS objects and arrays for your state tree, rather than specialized libraries like _Immutable.js_. While there are some potential benefits to using _Immutable.js_, most of the commonly stated goals such as easy reference comparisons are a property of immutable updates in general, and do not require a specific library. This also keeps bundle sizes smaller and reduces complexity from data type conversions.
+
+It is specifically recommended using Immer if you want to simplify immutable update logic, specifically as part of Redux Toolkit.
+
+Immtuable.js has been semi-frequently used in Redux apps since the beginning. There are several common reasons stated for using Immutable.js:
+
+* Performance improvements from cheap reference comparisons.
+
+* Performance improvements from making updates thanks to specialized data structures.
+
+* Prevention of accidental mutations.
+
+* Easier nested updates.
+
+There are some valid aspects to those reasons, but in practice, the benefits aren't as good as stated, and there's multiple negatives to using it:
+
+* Cheap reference comparisons are a property of any immutable updates, not just _Immutable.js_.
+
+* Accidental mutations can be prevented via other mechanisms, such as using _Immer_ or `redux-immutable-state-invariant`.
+
+* Immer allows simpler update logic overall, eliminating the need for specific libraries APIs.
+
+* Immutable.js has a very large bundle size, and API is fairly complex.
+
+* Libraries APIs "infects" your application code. All logic must know whether it's dealing with plain JS objects or Immutable objects.
+
+* Converting from Immutable.js objects to plain JS objects is relatively expensive, and always produce completely new deep object references.
+
+The strongest remaining reason to use Immutable.js is fast updates of _very_ large objects (tens of thousands of keys). Most applications won't deal with objects that large.
+
+Overall, Immutable.js adds too much overhead for too little practical benefit. Immer is much better option.
+
+## Write Action Types as `domain/eventName`
+
+Redux Toolkit's `createSlice` function currently generates action types that look like `"domain/action"`, such as `"todos/addTodo"`. It is encouraged this convention for readability.
+
+## Write Actions Using the Flux Standard Action (FSA) Convention
+
+The original "Flux Architecture" documentation only specified that action objects should have a `type` field, and did not give any further guidance on what kinds of fields or naming conventions should be used for fields in actions. To provide consistency, Andrew Clark created a convention called ["Flux Standard Actions"](https://github.com/redux-utilities/flux-standard-action) early in Redux's development. 
+
+Summarized, the FSA convention says that actions:
+
+* Should always put their data into a `payload` field.
+
+* May have a `meta` field for additional info.
+
+* May have an `error: true` field to indicate the action represents a failure of some kind, and use the same action type as the "valid" form of the action. In practice, most developers write separate action types for the "success" and "error" cases. Either is acceptable.
+
+Redux Toolkit generates action creators that match the FSA format, and it is prefered using FSA-formatted actions for consistency.
+
+## Use Thunks for Async Logic
+
+The middleware API was specifically created to allow different forms of async logic to be plugged into the Redux store.
+
+It is recommended __using the Redux Thunk middleware by default__, as it is sufficient for most typical use cases (such as basic AJAX data fetching). In addition, use of the `async/await` syntax in thunks makes them easier to read.
+
+If you have truly complex async workflows that involve things like cancelation, debouncing, running logic after a given action was dispatched, or "background-thread"-type behavior, then consider adding more powerful async middleware like __Redux-Saga__ or __Redux-Observable__.
+
+## Use Selector Functions to Read from Store State
+
+"Selector functions" are a powerful tool for encapsulating reading values from the Redux store state and deriving ruther data from those values.
+
+It is strongly recommended __using memoized selector functions for reading store state whenever possible__, and recommended creating those selectors with __Reselect__.
+
+Find a reasonable balance for granularity, based on how often fields are accessed and updated, and how much actual benefit the selectors are providing in your application.
+
+## Name Selector Functions as `selectThing`
+
+It is recommended __prefixing selector function names with the word `select`__, combined with a description of the value being selected.
+
+> Examples of this would be `selectTodos`, `selectVisibleTodos`, and `selectTodoById`.
+
+# Avoid Putting Form State In Redux
+
+Most form state shouldn't go in Redux. __In most use cases, the data is not truly global, is not being cached, and is not being used by multiple components at once__.
+
+In addition, connecting forms to Redux often involves dispatching actions on every single change event, which causes performance overhead and provides no real benefit.
+
+Even if the data ultimately ends up in Redux, prefer keeping the form edits themselves in local component state, and only dispatching an action to update the Redux store once the user has completed the form.
+
+There are use cases when keeping form state in Redux does actually make sense, such as WYSIWYG live prefies of edited item attributes. But, in most cases, this isn't necessary.
