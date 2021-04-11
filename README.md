@@ -92,6 +92,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ## Architectural Styles
 
+### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
+
 ### [Clean Architecture](./architectures/clean)
 
 * [Components](./architectures/clean/components)
@@ -129,7 +131,8 @@ Specifics that should be considered while developing a software solution relying
 
 ### Redux
 
-[Redux must know](./redux/introduction)
+* [Redux must know](./redux/introduction)
+* [Best Practices](./redux/best-practices)
 
 ### Databases
 
@@ -150,15 +153,19 @@ Specifics that should be considered while developing a software solution relying
 * [Parallelism & Concurrency](./os/parallelism)
 * [Process & Thread](./os/process-thread)
 
+## Models of Computation
+
+* [Finite State Machine](/./models-of-computation/fsm)
+
 ## Fundamentals Glossary
 
 Must know terminology.
 
+* [Abstract Syntax Tree](./glossary/ast)
+* [Anti-Pattern](./glossary/anti-pattern)
 * [Modularization](./glossary/modularization)
 * [Web API](./glossary/web-api)
 * [Leaky Abstraction](./glossary/leaky-abstraction)
-* [Anti-Pattern](./glossary/anti-pattern)
 * [First-class citizen](./glossary/first-class-citizen)
 * [Side Effect](./glossary/side-effect)
 * [Idempotence](./glossary/idempotence)
-* [Abstract Syntax Tree](./glossary/ast)
