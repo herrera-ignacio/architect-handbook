@@ -12,6 +12,8 @@
 * Treat Reducers as State Machines
 * Normalize Complex Nested/Relational State
 * Model Actions as Events, Not Setters / Meaningful Action Names
+* Allow Many Reducers to Respond to the Same Action
+* Avoid Dispatching Many Actions Sequentially
 
 ## Do Not Mutate State
 
@@ -117,3 +119,19 @@ Redux does not care what the contents of the `action.type` feild are, it just ha
 It is recommended trying to treat actions more as __"describing events that occurred"__, rather than "setters". Treating actions as "events" generally leads to more meaningful action names, fewer total actions being dispatched, and a more meaningful action log history.
 
 Actions should be written with meaningful, informative, descriptive type fields. Ideally, you should be able to read through a list of dispatched action types, and have a good understanding of what happened in the application without even looking at the contents of each action.
+
+## Allow Many Reducers to Respond to the Same Action
+
+You are encouraged to have many reducer functions all handle the same action separately if possible.
+
+In practice, experience has shown that most actions are typically only handled by a single reducer function, which is fine. But, modeling actions as "events" and allowing many reducers to respond to those actions will typically allow your application's codebase to scale better, and minimize the number of times you need to dispatch multiple actions to accomplish one meaningful update.
+
+## Avoid Dispatching Many Actions Sequentially
+
+Avoid dispatching many actions in a row to accomplish a larger conceptual "transaction". This is legal, but will usually result in multiple relatively expensive UI updates, and some of the intermediate states could be potentially invalid by other parts of the application logic.
+
+Prefer dispatching a single "event"-type action that results in all of the appropriate state updates at once, or consider use of action batching addons to dispatch multiple actions with only a single UI update at the end.
+
+> Each dispatched action does result in execution of all store subscription callbacks, and will usually result in UI updates.
+
+> If multiple dispatches are truly necessary, consider batching the updates in some way. Depending on your use case, this may just be batching React's own renders (possibly using `batch()` from `react-redux`), debouncing the store notification callbacks, or grouping many actions into a larger single dispatch that only results in one subscriber notification.
