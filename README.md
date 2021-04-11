@@ -133,6 +133,9 @@ Specifics that should be considered while developing a software solution relying
 
 * [Redux must know](./redux/introduction)
 * [Best Practices](./redux/best-practices)
+* Structuring Reducers
+  * [Immutable Update Patterns](./redux/immutable-updates)
+* [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
 
 ### Databases
 
