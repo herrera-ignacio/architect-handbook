@@ -131,6 +131,7 @@ Specifics that should be considered while developing a software solution relying
 
 ### Redux
 
+* [When and when not to reach for Redux](./redux/when)
 * [Redux must know](./redux/introduction)
 * [Three Fundamental Principles](./redux/three-principles)
 * [Best Practices](./redux/best-practices)
