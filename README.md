@@ -129,6 +129,10 @@ Specifics that should be considered while developing a software solution relying
 * [AfterAcademy, backend architecture considerations](https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro)
 * [The Working Architecture, Viktor Turskyi](js/working-architecture)
 
+### React
+
+* [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+
 ### Redux
 
 * [When and when not to reach for Redux](./redux/when)
