@@ -146,6 +146,7 @@ Specifics that should be considered while developing a software solution relying
 * Structuring Reducers
   * [Immutable Update Patterns](./redux/immutable-updates)
 * [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
+* [Flux Comparison](./redux/flux-comparison)
 
 ### Databases
 
