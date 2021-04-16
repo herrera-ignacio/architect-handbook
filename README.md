@@ -96,6 +96,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### [Clean Architecture](./architectures/clean)
 
+* [MVC and Hexagonal Architectures as Precursors](./architectures/clean/precursors)
 * [MVC Problems](./architectures/clean/mvc)
 * [Plugin Architecture: MCP](./architectures/clean/mcp)
 * WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
