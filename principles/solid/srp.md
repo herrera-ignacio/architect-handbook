@@ -1,6 +1,15 @@
 # Single Responsibility Principle
 
-This principle is usually mistake with another principle that is not one of the SOLID principles:
+* Definition
+* Symptoms of violating SRP
+    * Accidental Duplication
+    * Merges
+    * Others
+* SRP Implementation Ideas
+
+## Definition
+
+This principle is __usually mistaken with another principle__ that is not one of the SOLID principles:
 
 > A function should do one, and only one thing.
 
@@ -8,9 +17,14 @@ Software systems are changed to satisfy users and stakeholders, those are the "r
 
 Thus the final version of SRP is:
 
-__A module should be _responsible_ to one, and only one, actor.__
+> A module should be _responsible_ to one, and only one, actor.
 
 The simplest definition of _module_ is just a source file, which menas a cohesive set of functions and data structures. _Cohesion_ is the force that binds together the code responsible to a single a actor.
+
+The _Single Responsibility Principle_ is about __functions and classes__, but it reappears in a different form at two more levels:
+
+* Component level: __Common Closure Principle__.
+* Architectural level: __Axis of Change__ (responsible for the creation of Architectural Boundaries).
 
 ## Symptoms of violating SRP
 
@@ -28,7 +42,7 @@ This `Employee` class violates the SRP because those three methods are responsib
 * `reportHours()` method is specified and used by the human resources department, which reports to the COO.
 * `save()` method is specified by the database administrators (DBAs), who report to the CTO.
 
-By putting the source code for these three methods int oa single `Employee` class, the developers have coupled each of these actors to the others. This coupling can cause the actions of the CFO's team to affect something that the COO's team depends on.
+By putting the source code for these three methods into a single `Employee` class, the developers have coupled each of these actors to the others. This coupling can cause the actions of the CFO's team to affect something that the COO's team depends on.
 
 For example, suppose that the `calculatePay()` function and the `reportHours()` function share a common algorithm for calculating non-overtime hours. Suppose also that the developers, who are careful not to duplicate code, put that algorithm into a function named `regularHours()`.
 
@@ -56,7 +70,7 @@ There are many other symptoms that we could investigate, but they all involve mu
 
 Once again, the way to avoid this problem is to __separate the code that supports different actors__.
 
-## SRP Solution
+## SRP Implementation Ideas
 
 There are many solutions, each moves functions into different classes. Perhaps the most obvious way to solve the problem is to __separate the data from the functions__.
 
@@ -75,10 +89,3 @@ Some developers prefer to __keep the most important business rules closer to the
 ![srp-solution-3](./srp-solution-3.png)
 
 The number of functions required to calculate pay, generate a report, or save the data is likely to be large in each case. Each of those classes would have many _private_ methods in them. Each of the classes that contain such a family of method is a __scope__. Outside of that scope, no one knows that the private members of that family exist.
-
-## Conclusion
-
-The _Single Responsibility Principle_ is aobut __functions and classes__, but it reappears in a different form at two more levels:
-
-* Component level: __Common Closure Principle__.
-* Architectural level: __Axis of Change__ (responsible for the creation of Architectural Boundaries).

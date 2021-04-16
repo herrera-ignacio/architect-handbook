@@ -96,6 +96,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### [Clean Architecture](./architectures/clean)
 
+* [MVC and Hexagonal Architectures as Precursors](./architectures/clean/precursors)
 * [MVC Problems](./architectures/clean/mvc)
 * [Plugin Architecture: MCP](./architectures/clean/mcp)
 * WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
@@ -103,6 +104,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 #### Clean Architecture - Glossary
 
+* [Stable Abstractions Rule](./architectures/clean/stable-abstractions)
 * [Components](./architectures/clean/components)
 * [Component Cohesion](./architectures/clean/component-cohesion)
   * [Reuse/Release Equivalence Principle]()
@@ -121,7 +123,11 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### REST: Representational State Transfer
 
-* [REST intro](./architectures/rest)
+* [Introduction](./architectures/rest/intro.md)
+* [History](./architectures/rest/history.md)
+* [Architectural Properties](./architectures/rest/properties.md)
+* [Architectural Constraints](./architectures/rest/constraints.md)
+* [Semantics of HTTP APIs](./architecture/rest/http-methods.md)
 
 ## Technology specifics
 
@@ -175,6 +181,7 @@ Specifics that should be considered while developing a software solution relying
 
 Must know terminology.
 
+* [CRUD](./glossary/crud)
 * [Abstract Syntax Tree](./glossary/ast)
 * [Anti-Pattern](./glossary/anti-pattern)
 * [Modularization](./glossary/modularization)

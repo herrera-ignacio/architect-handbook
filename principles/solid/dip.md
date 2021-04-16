@@ -1,5 +1,16 @@
 # Dependency Inversion Principle
 
+* Definition
+* Traditional Layers Pattern Problem
+* Implementations
+  * Direct
+  * Flexible
+  * Factories
+  * General Restrictions
+
+
+## Definition
+
 > Most flexible systems are those in which __source code dependencies refer only to abstractions__, not to concretions.
 
 In statically typed languages, this means that import/include statements should refer only to source modules containing interfaces/abstract classes.
@@ -10,7 +21,7 @@ We tend to ignore the stable background of operating system and platform facilit
 
 It is the volatile concrete elements of our system that we want to avoid depending on. Those are the modules that we are actively developing, and that are undergoing frequent change.
 
-## Traditional Layers Pattern problem 
+## Traditional Layers Pattern Problem 
 
 In conventional application architecture, lower-level components (e.g. Utility Layer) are designed to be consumed by higher-level components (e.g. Policy Layer). In this composition, __higher-level components depend directly upon lower-level components to achieve some task__. This dependency upon lower-level components limits the reuse opportunities of the higher-level components.
 
@@ -153,28 +164,7 @@ const programmer = new Programmer('Nacho', javascript, computer);
 programmer.startCoding();
 ```
 
-## General Restrictions
-
-The use of interfaces to accomplish DIP has design implications in object-oriented software:
-
-* All member variables in a class must be interfaces or abstracts.
-* All concrete class packages must connect only through interface or abstract class packages.
-* No class should derive from a concrete class.
-* No method should override an implemented method.
-* All variable instantiation requires the implementation of a _Creational Pattern_ such as the _Factory Method_ or the _Factory_ pattern, or the use of a _Dependency-Injection_ framework.
-
-### Stable Abstractions Rules
-
-Changes to concrete implementations do not always, or even usually, require changes to the interfaces they implement. Therefore __interfaces are less volatile than implementations__.
-
-Indeed, good software designers and architects work hard to reduce the volatility of interfaces. They try to find ways to add functionality to implementations without making changes to the interfaces. This is Software Design 101.
-
-* Don't refer to volatile concrete classes, refer to abstract interfaces instead.
-* Don't derive from volatile concrete classes.
-* Don't override concrete functions (you inherit its dependencies)
-* Never mention the name of anything concrete and volatile
-
-## Factories
+### Factories
 
 The creation of volatile concrete objects requires special handling (_
 Abstract Factories_).
@@ -187,7 +177,7 @@ Abstract components contain all the high-level business rules of the application
 
 Concrete components contain all the implementation details that those business rules manipulate.
 
-### Example
+#### Factories - Example
 
 ```ts
 //== Layer 1 - PROGRAMMER: HIGH-LEVEL COMPONENT //==
@@ -291,6 +281,12 @@ const programmer = new Programmer(
 programmer.startCoding();
 ```
 
-## Conclusion
+### General Restrictions
 
-DIP will be the most visible organizing principle in our achitecture diagrams. The curved line will become the architectural boundaries. The way the dependencies cross that curved line in one direction, and toward more abstract entities, will become a new rule that we will call the Dependency Rule.
+The use of interfaces to accomplish DIP has design implications in object-oriented software:
+
+* All member variables in a class must be interfaces or abstracts.
+* All concrete class packages must connect only through interface or abstract class packages.
+* No class should derive from a concrete class.
+* No method should override an implemented method.
+* All variable instantiation requires the implementation of a _Creational Pattern_ such as the _Factory Method_ or the _Factory_ pattern, or the use of a _Dependency-Injection_ framework.
