@@ -17,7 +17,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Architectural Patterns & Principles
   * Clean Architecture
   * REST
-* Technolgoy Specifics
+* Technology Specifics
   * Languages & Frameworks
   * Databases
   * Operating Systems
@@ -98,7 +98,11 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### REST: Representational State Transfer
 
-* [REST intro](./architectures/rest)
+* [Introduction](./architectures/rest/intro.md)
+* [History](./architectures/rest/history.md)
+* [Architectural Properties](./architectures/rest/properties.md)
+* [Architectural Constraints](./architectures/rest/constraints.md)
+* [Semantics of HTTP APIs](./architecture/rest/http-methods.md)
 
 ## Technology specifics
 
@@ -130,5 +134,6 @@ Specifics that should be considered while developing a software solution relying
 
 Must know terminology.
 
+* [CRUD](./glossary/crud)
 * [Modularization](./glossary/modularization)
 * [Web API](./glossary/web-api)
