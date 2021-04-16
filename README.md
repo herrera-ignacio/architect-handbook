@@ -70,6 +70,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * Program to an interface, not an implementation
   * Favor object composition over class inheritance
 * [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
+* [Prototypal OO](./paradigms/oop/prototypal-oo)
 
 ## Design Patterns & Principles
 
@@ -100,7 +101,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [MVC Problems](./architectures/clean/mvc)
 * [Plugin Architecture: MCP](./architectures/clean/mcp)
 * WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
-* [Tradeoffs](./clean/tradeoffs)
+* [Tradeoffs](./architectures/clean/tradeoffs)
 
 #### Clean Architecture - Glossary
 
