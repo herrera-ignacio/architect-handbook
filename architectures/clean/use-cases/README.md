@@ -4,6 +4,10 @@ List of actions or event steps typically defining the interactions between a rol
 
 An Use Case doesn't describe nothing about data structure, validation mechanisms, etc.
 
+> Use Cases are algorithms that interpret the input to generate the output data, their implementation should be closer as possible to the business vocabulary.
+
+> A set of use cases is used to describe software.
+
 ## Example
 
 ```

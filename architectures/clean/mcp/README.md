@@ -22,6 +22,6 @@ Plugins are defenselss and vulnerable against the thing they plug into, because 
 
 We can think of our own modules as plugins.
 
-There are things in our systema that we want to be __immune__ from other things in the system. For example, we'd want Business Rules to be immune to changes in the UI. That means, we'd like the UI to act as a plugin for the Business Rules.
+There are things in our system that we want to be __immune__ from other things in the system. For example, we'd want Business Rules to be immune to changes in the UI. That means, we'd like the UI to act as a plugin for the Business Rules.
 
 __If something changes a lot, it should be a Plugin__.

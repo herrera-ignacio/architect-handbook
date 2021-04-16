@@ -14,7 +14,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * Declarative
   * Functional
   * Object-oriented
-* Architectural Patterns & Principles
+* Design Patterns & Principles
+  * Base patterns
+  * Data source & persistence
+* Architectural styles
   * Clean Architecture
   * REST
 * Technology Specifics
@@ -23,7 +26,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * Operating Systems
 * Fundamentals Glossary
 
-## Software Design Principles
+## Design Principles
 
 * [SOLID](./principles/solid)
   * [Single Responsibility Principle](./principles/solid/srp.md)
@@ -33,6 +36,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Dependency Inversion Principle](./principles/solid/dip.md)
 * DRY
 * KISS
+* [General Architectural Principles](./principles/architectural)
 
 ## Programming Paradigms
 
@@ -40,7 +44,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Declarative](./paradigms/declarative)
 * Functional
   * Design principles
-    * [Referentially Transparent (No Side Effects)](./principles/functional/referentially-transparent.md)
+    * [Referentially Transparent (No Side Effects)](./paradigms/functional/referentially-transparent.md)
 
 ### OOP: Object Oriented Programming
 
@@ -61,38 +65,57 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
 * [Parameterized Types](./paradigms/oop/inheritance-parameterized.md)
 * [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
-* [OMT Notation & UML](./paradigms/notations.md)
+* [OMT Notation & UML](./paradigms/oop/omt-notations.md)
 * [Object-Oriented Design Principles](./paradigms/oop/design-principles.md)
   * Program to an interface, not an implementation
   * Favor object composition over class inheritance
 * [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
 
-## Architectural Patterns & Principles
+## Design Patterns & Principles
 
-* [General Architectural Principles](./principles/architectural)
-* Active Record
-* Data Mapper
+* [Abstraction Inversion](./design-patterns/abstraction-inversion)
+* [MVC: Model-View-Controller](./design-patterns/mvc)
 
-### Clean Architecture
+### Base Patterns
 
-* [Components](./glossary/components)
-* [Component Cohesion](./glossary/component-cohesion)
-* [Component Cohesion Principles (Clean Architecture)](./principles/component-cohesion)
-  * [Reuse/Release Equivalence Principle](./principles/component-cohesion/rep.md)
-  * [Common Closure Principle](./principles/component-cohesion/ccp.md)
-  * [Common Reuse Principle](./principles/component-cohesion/crp.md)
-* [Component Coupling](./clean/component-coupling)
-* [Component Coupling Principles (Clean Architecture)](./principles/component-coupling)
-* Objects
-  * [Boundaries](./clean/objects/boundaries)
-  * [Entities](./clean/objects/entities)
-  * [Interactor](./clean/objects/interactor)
-* [Use Cases](./clean/use-cases)
-* [MVC Problems](./clean/mvc)
-* [Plugin Architecture: MCP](./clean/mcp)
+* [Mapper](./design-patterns/base/mapper)
+
+### Data Source & Persistence
+
+* [DAO: Data Access Object](./design-patterns/data/dao)
+* [Active Record](./design-patterns/data/active-record)
+* [Data Mapper](./design-patterns/data/data-mapper)
+
+#### Object-relational Metadata Mapper
+
+* [Repository](./design-patterns/data/repository)
+
+## Architectural Styles
+
+### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
+
+### [Clean Architecture](./architectures/clean)
+
+* [MVC Problems](./architectures/clean/mvc)
+* [Plugin Architecture: MCP](./architectures/clean/mcp)
 * WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
+* [Tradeoffs](./clean/tradeoffs)
 
-#### Extra material
+#### Clean Architecture - Glossary
+
+* [Components](./architectures/clean/components)
+* [Component Cohesion](./architectures/clean/component-cohesion)
+  * [Reuse/Release Equivalence Principle]()
+  * [Common Closure Principle]()
+  * [Common Reuse Principle]()
+* [Component Coupling]()
+* Objects
+  * [Boundaries](./architectures/clean/objects/boundaries)
+  * [Entities](./architectures/clean/objects/entities)
+  * [Interactor](./architectures/clean/objects/interactor)
+* [Use Cases](./architectures/clean/use-cases)
+
+#### Clean Architecture - Extra material
 
 * [Clean Architecture Essentials](https://dev.to/ivanpaulovich/clean-architecture-essentials-5a0m)
 
@@ -114,6 +137,21 @@ Specifics that should be considered while developing a software solution relying
 * [AfterAcademy, backend architecture considerations](https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro)
 * [The Working Architecture, Viktor Turskyi](js/working-architecture)
 
+### React
+
+* [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+
+### Redux
+
+* [When and when not to reach for Redux](./redux/when)
+* [Redux must know](./redux/introduction)
+* [Three Fundamental Principles](./redux/three-principles)
+* [Best Practices](./redux/best-practices)
+* Structuring Reducers
+  * [Immutable Update Patterns](./redux/immutable-updates)
+* [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
+* [Flux Comparison](./redux/flux-comparison)
+
 ### Databases
 
 * [ACID](./databases/acid.md)
@@ -123,6 +161,9 @@ Specifics that should be considered while developing a software solution relying
 * [Joins](./databases/joins.md)
 * Stored Procedures
 * Indexing
+* [Object-oriented databases](./databases/object-oriented)
+* [ORM: Object-relational Madesign-patternsing](./databases/orm)
+* [Object-relational impedance mismatch](./databases/impedance-mismatch)
 
 ### Operating Systems
 
@@ -130,10 +171,20 @@ Specifics that should be considered while developing a software solution relying
 * [Parallelism & Concurrency](./os/parallelism)
 * [Process & Thread](./os/process-thread)
 
+## Models of Computation
+
+* [Finite State Machine](/./models-of-computation/fsm)
+
 ## Fundamentals Glossary
 
 Must know terminology.
 
 * [CRUD](./glossary/crud)
+* [Abstract Syntax Tree](./glossary/ast)
+* [Anti-Pattern](./glossary/anti-pattern)
 * [Modularization](./glossary/modularization)
 * [Web API](./glossary/web-api)
+* [Leaky Abstraction](./glossary/leaky-abstraction)
+* [First-class citizen](./glossary/first-class-citizen)
+* [Side Effect](./glossary/side-effect)
+* [Idempotence](./glossary/idempotence)
