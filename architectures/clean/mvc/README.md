@@ -1,5 +1,10 @@
 # MVC Architecture Analysis
 
+* Not Clean
+* Clean Architecture Proposal: MVP
+
+## Not Clean
+
 ![how mvc goes wrong](.wrong.jpg)
 
 User make a requests, Controllers are responsible for processing the request, url query params, etc, and then invoke and orchestate Business Model objects. Then, controller delegates control to View, which queries resulting data from Business Model objects, and returns with a proper response to the user.

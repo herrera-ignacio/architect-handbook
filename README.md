@@ -96,6 +96,13 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### [Clean Architecture](./architectures/clean)
 
+* [MVC Problems](./architectures/clean/mvc)
+* [Plugin Architecture: MCP](./architectures/clean/mcp)
+* WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
+* [Tradeoffs](./clean/tradeoffs)
+
+#### Clean Architecture - Glossary
+
 * [Components](./architectures/clean/components)
 * [Component Cohesion](./architectures/clean/component-cohesion)
   * [Reuse/Release Equivalence Principle]()
@@ -107,11 +114,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Entities](./architectures/clean/objects/entities)
   * [Interactor](./architectures/clean/objects/interactor)
 * [Use Cases](./architectures/clean/use-cases)
-* [MVC Problems](./architectures/clean/mvc)
-* [Plugin Architecture: MCP](./architectures/clean/mcp)
-* WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
 
-#### Extra material
+#### Clean Architecture - Extra material
 
 * [Clean Architecture Essentials](https://dev.to/ivanpaulovich/clean-architecture-essentials-5a0m)
 
