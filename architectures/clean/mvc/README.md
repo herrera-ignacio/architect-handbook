@@ -13,6 +13,7 @@ The main problem of MVC 'web architecture' is the __lack of boundaries__.
 
 Controller-like / View-like functions end up in business objects, and easily gets closer to a big-ball-of-mud architecture without strict discipline.
 
+> Our Model ends up knowing about our infrastructure and low-level modules, thus, depending on them.
 
 ## Clean Architecture Proposal: Model View Presenter
 
