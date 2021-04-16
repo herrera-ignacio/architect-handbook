@@ -129,6 +129,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Architectural Constraints](./architectures/rest/constraints.md)
 * [Semantics of HTTP APIs](./architecture/rest/http-methods.md)
 
+### [Flux](./architectures/flux)
+
+* [MVC Comparison](./mvc-comparison)
+
 ## Technology specifics
 
 Specifics that should be considered while developing a software solution relying on a particular technology.
