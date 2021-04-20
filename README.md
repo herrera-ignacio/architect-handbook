@@ -93,6 +93,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ## Architectural Styles
 
+* [Architecture](./architectures/general/definition)
+
 ### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
 
 ### [Clean Architecture](./architectures/clean)
