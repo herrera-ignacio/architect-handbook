@@ -43,9 +43,6 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Imperative and Procedural](./paradigms/imperative)
 * [Declarative](./paradigms/declarative)
 * [Structured](./paradigms/structured)
-* Functional
-  * Design principles
-    * [Referentially Transparent (No Side Effects)](./paradigms/functional/referentially-transparent.md)
 
 ### OOP: Object Oriented Programming
 
@@ -72,6 +69,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * Favor object composition over class inheritance
 * [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
 * [Prototypal OO](./paradigms/oop/prototypal-oo)
+
+### [Functional](./paradigms/functional/README.md) 
+
+* [Referentially Transparent (No Side Effects)](./paradigms/functional/referentially-transparent.md)
 
 ## Design Patterns & Principles
 
