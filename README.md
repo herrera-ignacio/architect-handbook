@@ -42,7 +42,11 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Imperative and Procedural](./paradigms/imperative)
 * [Declarative](./paradigms/declarative)
-* [Structured](./paradigms/structured)
+
+### [Structured](./paradigms/structured)
+
+* [Functional Decomposition](./paradigms/structured/functional-decomposition)
+* [Tests](./paradigms/structured/tests)
 
 ### OOP: Object Oriented Programming
 
