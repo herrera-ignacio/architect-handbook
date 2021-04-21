@@ -42,6 +42,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Imperative and Procedural](./paradigms/imperative)
 * [Declarative](./paradigms/declarative)
+* [Structured](./paradigms/structured)
 * Functional
   * Design principles
     * [Referentially Transparent (No Side Effects)](./paradigms/functional/referentially-transparent.md)
@@ -94,6 +95,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ## Architectural Styles
 
 * [Architecture](./architectures/general/definition)
+* [Development Overconfidence](./architecture/general/overconfidence)
+* [Developer Struggle](./architecture/general/developer-struggle)
 
 ### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
 

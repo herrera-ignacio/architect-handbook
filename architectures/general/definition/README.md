@@ -16,3 +16,11 @@ Good software architecture __recognizes the softness__ of software and __aims to
 
 > _The only way to go fast, is to go well._ - Robert C. Martin
 
+When software is done right, it requires a fraction of the human resources to create and maintain. Changes are simple and rapid. Defects are few and far between. Effort is minimizsed, and functionality and flexibility are maximized.
+
+> The goal of software architecture is to minimize the human resources required to build and maintain the required system.
+
+The measure of design quality is simply the measure of the effort required to meeth the needs of the customer. If that effort is low, and stays low throughout the lifetime of the system, the design is good. If that effort grows with each new release, the design is bad.
+
+> To build a system with a design and an architecture that minimize effort and maximize productivity, you need to know which attributes of system architecture lead to that end.
+
