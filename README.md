@@ -58,6 +58,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * Inheritance
   * Encapsulation
   * Polymorphism
+* [The Power of Polymorphism](./paradigms/oop/polymorphism)
 * [Abstract Class](./paradigms/oop/abstract-class.md)
 * [Mixin Class](./paradigms/oop/mixin.md)
 * [Traits](./paradigms/oop/traits.md)
