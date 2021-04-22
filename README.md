@@ -78,6 +78,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ### [Functional](./paradigms/functional/README.md) 
 
 * [Referentially Transparent (No Side Effects)](./paradigms/functional/referentially-transparent.md)
+* [Immutability](./paradigms/functional/immutability)
 
 ## Design Patterns & Principles
 
