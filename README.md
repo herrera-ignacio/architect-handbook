@@ -33,7 +33,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Open-Closed Principle](./principles/solid/ocp)
   * [Liskov-Substitution Principle](./principles/solid/lsp)
   * [Interface Segregation Principle](./principles/solid/isp)
-  * [Dependency Inversion Principle](./principles/solid/dip.md)
+  * [Dependency Inversion Principle](./principles/solid/dip)
 * DRY
 * KISS
 * [General Architectural Principles](./principles/architectural)

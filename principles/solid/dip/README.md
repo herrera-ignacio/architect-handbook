@@ -8,10 +8,11 @@
   * Factories
   * General Restrictions
 
-
 ## Definition
 
 > Most flexible systems are those in which __source code dependencies refer only to abstractions__, not to concretions.
+
+> DIP relies on "Stable Abstractions" and "Concrete Components".
 
 In statically typed languages, this means that import/include statements should refer only to source modules containing interfaces/abstract classes.
 
@@ -19,7 +20,7 @@ In dynamically typed languages, source code dependencies should not refer to con
 
 We tend to ignore the stable background of operating system and platform facilities when it comes to DIP, because __we know we can rely on them not to change__.
 
-It is the volatile concrete elements of our system that we want to avoid depending on. Those are the modules that we are actively developing, and that are undergoing frequent change.
+> It is the _volatile_ concrete elements of our system that we want to avoid depending on. Those are the modules that we are actively developing, and that are undergoing frequent change.
 
 ## Traditional Layers Pattern Problem 
 
