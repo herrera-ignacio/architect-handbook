@@ -1,6 +1,7 @@
 # Single Responsibility Principle
 
 * Definition
+* Usual mistake
 * Symptoms of violating SRP
     * Accidental Duplication
     * Merges
@@ -9,22 +10,24 @@
 
 ## Definition
 
-This principle is __usually mistaken with another principle__ that is not one of the SOLID principles:
-
-> A function should do one, and only one thing.
-
-Software systems are changed to satisfy users and stakeholders, those are the "reason to change". We'll refer to those groups as an actor.
-
-Thus the final version of SRP is:
+Software systems are changed to satisfy users and stakeholders, those are the "reason to change". We'll refer to those groups as an actor. SRP states:
 
 > A module should be _responsible_ to one, and only one, actor.
 
-The simplest definition of _module_ is just a source file, which menas a cohesive set of functions and data structures. _Cohesion_ is the force that binds together the code responsible to a single a actor.
+The simplest definition of _module_ is just a source file, which means a "cohesive" set of functions and data structures. _Cohesion_ is the force that binds together the code responsible to a single a actor.
+
+> The word "cohesive" implies the SRP.
 
 The _Single Responsibility Principle_ is about __functions and classes__, but it reappears in a different form at two more levels:
 
 * Component level: __Common Closure Principle__.
 * Architectural level: __Axis of Change__ (responsible for the creation of Architectural Boundaries).
+
+## Usual Mistake
+
+This principle is __usually mistaken with another principle__ that is not one of the SOLID principles:
+
+> A function should do one, and only one thing.
 
 ## Symptoms of violating SRP
 
@@ -72,7 +75,7 @@ Once again, the way to avoid this problem is to __separate the code that support
 
 ## SRP Implementation Ideas
 
-There are many solutions, each moves functions into different classes. Perhaps the most obvious way to solve the problem is to __separate the data from the functions__.
+There are many solutions, __each moves functions into different classes__. Perhaps the most obvious way to solve the problem is to __separate the data from the functions__.
 
 In our example, the three classes share access to `EmployeeData`, which is a simple data structure with no methods. Each class holds only the source code necessary for its particular function. The three classes are not allowed to know about each other. Thus accidental duplication is avoided.
 
@@ -88,4 +91,4 @@ Some developers prefer to __keep the most important business rules closer to the
 
 ![srp-solution-3](./srp-solution-3.png)
 
-The number of functions required to calculate pay, generate a report, or save the data is likely to be large in each case. Each of those classes would have many _private_ methods in them. Each of the classes that contain such a family of method is a __scope__. Outside of that scope, no one knows that the private members of that family exist.
+The number of functions required to calculate pay, generate a report, or save the data is likely to be large in each case. Each of those classes would have many _private_ methods in them. Each of the classes that contain such a family of methods is a __scope__. Outside of that scope, no one knows that the private members of that family exist.
