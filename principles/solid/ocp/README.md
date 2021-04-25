@@ -5,6 +5,8 @@
     * Directional Control
     * Information Hiding
 
+> Coined in 1988 by Bertrand Meyer.
+
 ## Definition
 
 > A software artifact should be __open for extension but closed for modification__. - Bertrand Mayer
@@ -14,7 +16,6 @@ The behavior of a software artifact ought to be extendible, without having to mo
 This is the most fundamental reason that we study software architecture. Clearly, if simply extensions to the requirements for massive changes to the software, then the architects of that software system have engaged in a failure.
 
 > The OCP is one of the driving forces behind the architecture of systems. We want to make systems easy to extend without incurring a high impact of change.
-
 > This goal is accomplished by partitioning the system into components, and arranging those components into a dependency hierarchy that protects higher-level components from changes in lower-level components.
 
 ## Example Problem
@@ -31,18 +32,20 @@ How?
 
 > By properly separating the things that change for different reasons (_SRP_) and then organizing the dependencies between those things properly (_DIP_).
 
-By applying the SRP, we might come up with the following data-flow. Some analysis procedure inspects the financial data and produces reportable data, which is then formatted appropriately by the two reporter processes.
+By applying the SRP, we might come up with the following data-flow: Some analysis procedure inspects the financial data and produces reportable data, which is then formatted appropriately by the two reporter processes, a `WebReporter` and a `PrinterReporter`.
 
 The essential insight here is that generating the report involves two separate responsibilities:
 
 * Calculation of the reported data
 * Presentation of that data into a web- and printer-friendly form
 
-__We need to organize the source code dependencies to ensure that changes to one of those responsibilities do not cause changes in the other__. Also, the new organization should ensure that the behavior can be extended without undo modification.
+__We need to organize the source code dependencies to ensure that changes to one of those responsibilities do not cause changes in the other__.
+
+> Also, the new organization should ensure that the behavior can be extended without undo modification.
 
 How?
 
-__Partitioning the processes into classes, and separating those classes into components__. We'll have the following components: Controller, Database, Presenters and Views.
+> __Partitioning the processes into classes, and separating those classes into components__. We'll have the following components: Controller, Database, Presenters and Views.
 
 ![ocp partitioning](./ocp-partitioning.png)
 
