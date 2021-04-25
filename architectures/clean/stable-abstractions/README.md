@@ -11,6 +11,8 @@ Changes to concrete implementation do not always, or even usually, require chang
 
 ## Factories
 
+![dip](../../../principles/solid/dip/dip-1.png)
+
 To comply with these rules, the creation of volatile concrete objects require special handling. This caution is warranted because, in virtually all languages, the creation of an object requires a source code dependency on the concrete definition of that object.
 
 In most object-oriented languages, such as Java, we would use an _Abstract Factory_ to manage this undesirable dependency.

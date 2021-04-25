@@ -118,6 +118,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 #### Clean Architecture - Glossary
 
 * [Stable Abstractions Rule](./architectures/clean/stable-abstractions)
+* [Concrete Components](,/architectures/clean/concrete-components)
 * [Components](./architectures/clean/components)
 * [Component Cohesion](./architectures/clean/component-cohesion)
   * [Reuse/Release Equivalence Principle]()
