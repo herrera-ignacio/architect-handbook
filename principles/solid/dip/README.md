@@ -12,7 +12,7 @@
 
 > Most flexible systems are those in which __source code dependencies refer only to abstractions__, not to concretions.
 
-> DIP relies on "Stable Abstractions" and "Concrete Components".
+> DIP relies on "[Stable Abstractions](../../architectures/clean/stable-abstractions)" and "[Concrete Components](../../architectures/clean/concrete-components)".
 
 In statically typed languages, this means that import/include statements should refer only to source modules containing interfaces/abstract classes.
 
