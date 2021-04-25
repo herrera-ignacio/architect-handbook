@@ -31,7 +31,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [SOLID](./principles/solid)
   * [Single Responsibility Principle](./principles/solid/srp
   * [Open-Closed Principle](./principles/solid/ocp)
-  * [Liskov-Substitution Principle](./principles/solid/lsp.md)
+  * [Liskov-Substitution Principle](./principles/solid/lsp)
   * [Interface Segregation Principle](./principles/solid/isp.md)
   * [Dependency Inversion Principle](./principles/solid/dip.md)
 * DRY

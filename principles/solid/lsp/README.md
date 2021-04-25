@@ -8,13 +8,11 @@
 
 ## Definition
 
-> If for each object `o_1` of type `S` there is an object `o_2` of type `T` such that for all programs `P` defined in terms of `T`, the behavior of `P` is unchanged when `o_1` is sustituted for `o_2` then `S` is a subtype of `T`.
-
-> The LSP can, and should, be extended to the level of architecture. A simple violation of substitutability, can cause a system's architecture to be polluted with a significant amount of extra mechanisms.
+> "If for each object `o_1` of type `S` there is an object `o_2` of type `T` such that for all programs `P` defined in terms of `T`, the behavior of `P` is unchanged when `o_1` is sustituted for `o_2` then `S` is a subtype of `T`" - Barbara Liskov, 1988.
 
 ## Guiding the Use of Inheritance
 
-Suppose we have a class named `License`, that has a method named `calcFee()`, which is called by the `Billing` application. There are two "subtyes" of `Licence` that use different algorithms to calculate the license fee.
+Suppose we have a class named `License`, that has a method named `calcFee()`, which is called by the `Billing` application. There are two "subtyes" of `Licence` that use different algorithms to calculate the license fee, `PersonalLicense` and `BusinessLicense`.
 
 ![lsp](./lsp-1.png)
 
@@ -28,11 +26,22 @@ Canonical example of a violation of the LSP is the famed square/rectangle proble
 
 In this example, `Square` is not a proper subtype of `Reactangle` because the height and width of the `Rectangle` are independently mutable, where as the ones from `Square` must change together. Since the `User` believes it is communicating with a `Rectangle`, it could easily get confused.
 
+For example, if the following code produced a `Square` then the assertion will fail:
+
+```
+Reactangle r = ...
+r.setW(5)
+r.setH(2)
+assert(r.area() == 10); // Would fail if 'r' is a Square
+```
+
 The only way to defend against this kind of LSP violation is to add mechanisms to the `User` that detects whether the `Rectangle` is, in fact, a `Square`. Since the behavior of the `User` depends on the types it uses, those types are not substitutable.
 
 ## LSP and Architecture
 
 LSP has morphed into a broader principle of software design that pertains to interfaces and implementations. __Users depend on well-defined interfaces, and on the substitutability of the implementations of those interfaces__.
+
+> The LSP can, and should, be extended to the level of architecture. A simple violation of substitutability, can cause a system's architecture to be polluted with a significant amount of extra mechanisms.
 
 ### LSP Architecture Violation
 
@@ -56,9 +65,11 @@ Now suppose the Acme taxi company didn't read the spec very carefully and abbrev
 The simplest way to accomplish this goal would be to add an if statement before constructing the dispatch command...
 
 ```text
-if (driver.getDispatchUri().startsWith("acme.com)) ...
+if (driver.getDispatchUri().startsWith("acme.com")) ...
 ```
 
 No architect would allow such a construction to exist in the system. Putting the world "acme" into the code itself creates an opportunity for all kinds of horrible and mysterious errors, not to mention security breaches.
+
+For example, if Acme buys a new company "Purple" and unified all the original companies' systems while keeping the separated brands and websites. Would we have to add another `if` statement?
 
 > We need then to add significant and complex mechanism to deal with the fact that the interfaces of the restful services are not all substitutable.
