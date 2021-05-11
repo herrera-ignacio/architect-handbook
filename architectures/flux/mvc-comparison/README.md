@@ -21,7 +21,7 @@ MVC is well-known for its three-layer development architecture and dividing appl
 
 ![mvc](./mvc.webp)
 
-Whenever a controller receives a request from the user, it uses the appropriate Model & View and generates the response sending it ack to the user.
+Whenever a controller receives a request from the user, it uses the appropriate Model & View and generates the response sending it back to the user.
 
 ### Flux
 
