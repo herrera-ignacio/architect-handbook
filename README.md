@@ -127,6 +127,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
     * [Common Reuse Principle](architectures/clean/component-principles/component-cohesion/crp)
   * [Component Coupling](architectures/clean/component-principles/component-coupling)
     * [Acyclic Dependencies Principle](architectures/clean/component-principles/component-coupling/adp)
+    * [Stable Dependencies Principle](architectures/clean/component-principles/component-coupling/sdp)
+* [Stability](architectures/clean/stability)
 * Objects
   * [Boundaries](./architectures/clean/objects/boundaries)
   * [Entities](./architectures/clean/objects/entities)
