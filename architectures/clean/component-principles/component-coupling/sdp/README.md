@@ -8,6 +8,8 @@ Any component that we expect to be volatile should not be depended on by a compo
 
 > A module that you have designed to be easy to change can be made difficult to change by someone else who simply hangs a dependency on it.
 
+The *SDP* combined with *Stable Abstractions Principle* amount to the *Dependency Inversion* principle for components. **Dependencies rtun in the direction of abstraction**.
+
 ## Not All Components Should Be Stable
 
 > If all the components in a system were maximally stable, the system would be unchangeable.
