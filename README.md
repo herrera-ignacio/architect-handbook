@@ -118,12 +118,13 @@ The idea of this collection is not to help you become a expert of, let's say a p
 #### Clean Architecture - Glossary
 
 * [Stable Abstractions Rule](./architectures/clean/stable-abstractions)
-* [Concrete Components](,/architectures/clean/concrete-components)
 * [Components](./architectures/clean/components)
-* [Component Cohesion](./architectures/clean/component-cohesion)
-  * [Reuse/Release Equivalence Principle]()
-  * [Common Closure Principle]()
-  * [Common Reuse Principle]()
+  * [Concrete Components](architectures/clean/concrete-components)
+* [Component Principles](architectures/clean/component-principles)
+  * [Component Cohesion](architectures/clean/component-principles/component-cohesion)
+    * [Reuse/Release Equivalence Principle](architectures/clean/component-principles/component-cohesion/rep)
+    * [Common Closure Principle](architectures/clean/component-principles/component-cohesion/ccp)
+    * [Common Reuse Principle](architectures/clean/component-principles/component-cohesion/crp)
 * [Component Coupling]()
 * Objects
   * [Boundaries](./architectures/clean/objects/boundaries)
