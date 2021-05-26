@@ -114,9 +114,12 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Plugin Architecture: MCP](./architectures/clean/mcp)
 * WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
 * [Tradeoffs](./architectures/clean/tradeoffs)
+* [What is Architecture](architectures/clean/architecture)
+* [Keeping options open](architecture/clean/keeping-options)
 
 #### Clean Architecture - Glossary
 
+* [Details](architectures/clean/details)
 * [Stable Abstractions Rule](./architectures/clean/stable-abstractions)
 * [Components](./architectures/clean/components)
   * [Concrete Components](architectures/clean/concrete-components)
