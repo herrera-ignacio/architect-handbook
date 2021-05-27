@@ -118,6 +118,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Request and Response Models](architecture/clean/req-res)
 * [Screaming Architecture](architecture/clean/screaming-architecture)
 * [Testable Architecture](architecture/testable-architecture)
+* [Humble Object Pattern](architecture/humble-object-pattern)
 
 #### Clean Architecture - Glossary
 
