@@ -116,6 +116,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Tradeoffs](./architectures/clean/tradeoffs)
 * [What is Architecture](architectures/clean/architecture)
 * [Keeping options open](architecture/clean/keeping-options)
+* [Request and Response Models](architecture/clean/req-res)
 
 #### Clean Architecture - Glossary
 
@@ -136,9 +137,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Boundaries](./architectures/clean/boundaries)
   * [Entities](./architectures/clean/objects/entities)
   * [Interactor](./architectures/clean/objects/interactor)
-* [Use Cases](./architectures/clean/use-cases)
 * [Policy](architectures/clean/policy)
 * [Business Rules](architectures/clean/business-rules)
+* [Entities](architectures/clean/entities)
+* [Use Cases](./architectures/clean/use-cases)
 
 #### Clean Architecture - Extra material
 
