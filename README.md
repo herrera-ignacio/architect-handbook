@@ -111,12 +111,12 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [MVC and Hexagonal Architectures as Precursors](./architectures/clean/precursors)
 * [MVC Problems](./architectures/clean/mvc)
-* [Plugin Architecture: MCP](./architectures/clean/mcp)
-* WIP https://www.youtube.com/watch?v=o_TH-Y78tt4 46.41
 * [Tradeoffs](./architectures/clean/tradeoffs)
 * [What is Architecture](architectures/clean/architecture)
 * [Keeping options open](architecture/clean/keeping-options)
+* [Plugin Architecture: MCP](./architectures/clean/mcp)
 * [Request and Response Models](architecture/clean/req-res)
+* [Screaming Architecture](architecture/clean/screaming-architecture)
 
 #### Clean Architecture - Glossary
 
