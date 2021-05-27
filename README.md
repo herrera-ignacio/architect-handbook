@@ -142,6 +142,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Use Cases](architecture/clean/objects/use-cases)
   * [Interactor](architectures/clean/objects/interactor)
   * [Interface Adapters](architectures/clean/objects/iadapters)
+  * [Presenter and View](architectures/clean/objects/presenter-view)
 * [Policy](architectures/clean/policy)
 * [Business Rules](architectures/clean/business-rules)
 * [Dependency Rule](architectures/clean/dependency-rule)

@@ -16,4 +16,3 @@ This pattern is often applied at the boundaries of a system where logic is diffi
 ## Example
 
 For example, GUIs are hard to unit test because it is very difficult to write tests that can see the screen and check that the appropriate elements are displayed there. However, most of the behavior of a GUI is, in fact, easy to test. Using the *Humble Object* pattern, we can separate these two kinds of behaviors into two different classes called the `Presenter` and the `View`.
-
