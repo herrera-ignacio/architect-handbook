@@ -135,13 +135,15 @@ The idea of this collection is not to help you become a expert of, let's say a p
     * [Stable Dependencies Principle](architectures/clean/component-principles/component-coupling/sdp)
     * [Stable Abstractions Principle](architectures/clean/component-principles/component-coupling/sap)
 * [Stability](architectures/clean/stability)
-  * [Boundaries](./architectures/clean/boundaries)
-  * [Entities](./architectures/clean/objects/entities)
-  * [Interactor](./architectures/clean/objects/interactor)
+* [Boundaries](./architectures/clean/boundaries)
+* Objects
+  * [Entities](architectures/clean/objects/entities)
+  * [Use Cases](architecture/clean/objects/use-cases)
+  * [Interactor](architectures/clean/objects/interactor)
+  * [Interface Adapters](architectures/clean/objects/iadapters)
 * [Policy](architectures/clean/policy)
 * [Business Rules](architectures/clean/business-rules)
-* [Entities](architectures/clean/entities)
-* [Use Cases](./architectures/clean/use-cases)
+* [Dependency Rule](architectures/clean/dependency-rule)
 
 #### Clean Architecture - Extra material
 
