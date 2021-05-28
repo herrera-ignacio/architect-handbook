@@ -115,10 +115,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [What is Architecture](architectures/clean/architecture)
 * [Keeping options open](architecture/clean/keeping-options)
 * [Plugin Architecture: MCP](./architectures/clean/mcp)
-* [Request and Response Models](architecture/clean/req-res)
-* [Screaming Architecture](architecture/clean/screaming-architecture)
-* [Testable Architecture](architecture/testable-architecture)
-* [Humble Object Pattern](architecture/humble-object-pattern)
+* [Request and Response Models](architectures/clean/req-res)
+* [Screaming Architecture](architectures/clean/screaming-architecture)
+* [Testable Architecture](architectures/clean/testable-architecture)
+* [Humble Object Pattern](architectures/clean/humble-object-pattern)
 
 #### Clean Architecture - Glossary
 
@@ -143,6 +143,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Interactor](architectures/clean/objects/interactor)
   * [Interface Adapters](architectures/clean/objects/iadapters)
   * [Presenter and View](architectures/clean/objects/presenter-view)
+  * [Database Gateways](architectures/clean/objects/database-gateways)
 * [Policy](architectures/clean/policy)
 * [Business Rules](architectures/clean/business-rules)
 * [Dependency Rule](architectures/clean/dependency-rule)
