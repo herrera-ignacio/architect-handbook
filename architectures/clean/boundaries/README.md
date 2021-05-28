@@ -20,6 +20,10 @@ Some boundaries are drawn very early in a project's life, even before any code i
 
 > Note the two arrows leaving `DatabaseAccess` class. That means that none of these classes knows the class exists.
 
+As architects, we have to be aware that boundaries, when fully implemented, are expensive. At the same time, we have to recognize that when such boundaries are ignored, they are very expensive to add in later. You must *guess intelligently*, weigh the costs and determine where the architectural boundaries lie, which should be fully implemented, which should be partially implemented, and which should be ignored.
+
+This is not a one-time decision. You *watch*. You pay attention as the system evolves. You note where boudnaries may be required, and the ncarefully watch for the first inkling of friction because those boundaries don't exist. At that point, you weigh the costs of implementing those boundaries versus the cost of ignoring them, and you review that decision frequently. *Your goal is to implement the boundaries right at the inflection point where the cost of implementing becomes less than the cost of ignoring*.
+
 ## Implementation
 
 > Boundaries objects are _Interfaces_, that are implemented usually by Interactors.
