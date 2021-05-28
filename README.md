@@ -144,6 +144,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
   * [Interface Adapters](architectures/clean/objects/iadapters)
   * [Presenter and View](architectures/clean/objects/presenter-view)
   * [Database Gateways](architectures/clean/objects/database-gateways)
+  * [Main Component](architectures/clean/objects/main)
 * [Policy](architectures/clean/policy)
 * [Business Rules](architectures/clean/business-rules)
 * [Dependency Rule](architectures/clean/dependency-rule)
