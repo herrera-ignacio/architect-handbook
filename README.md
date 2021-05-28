@@ -119,6 +119,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Screaming Architecture](architectures/clean/screaming-architecture)
 * [Testable Architecture](architectures/clean/testable-architecture)
 * [Humble Object Pattern](architectures/clean/humble-object-pattern)
+* [Services and boundaries](architectures/clean/services-boundaries)
 
 #### Clean Architecture - Glossary
 
