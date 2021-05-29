@@ -35,3 +35,17 @@ The `com.mycompany.myapp.domain` package here is the "inside", and the other pac
 `OrdersRepository` from previous diagram has been renamed to simply be `Orders`. This comes from the world of domain-driven design, where the advice is that the naming of everything on the "inside" should be stated in terms of the "ubiquitous domain language". We talk about "orders" when we're having a discussion about the domain, not the "orders repository".
 
 > It's worth pointing out that this is a simplified version of what the UML class diagram might look like, because it's missing things like interactors and objects to marshal the data across the dependency boundaries.
+
+## Relaxed Layer Architecture
+
+Layers are allowed to skip around their adjacent neighbor(s).
+
+In some situations, this is the intended outcome (for example, if you are trying to follow the *CQRS* pattern where you have separate patterns for updating and reading data). In many other cases, bypassing the business logic layer is undesirable, especially if that business logic is responsible for ensuring authorized access to individual recors, for example.
+
+To avoid this scenarios you need a *guideline* to enforce. 
+
+Some teams enforce this through discipline and code reviews.
+
+Some teams use static analysis tools to check and automatically enforce architecture violations at build time. They usually manifest themselves as regular expressions or wildcard string that state "types in package `**/web` should not access types in `**/data`" and they are executed after the compilation step.
+
+The problem with both approaches is that they are fallible, and the feedback loop is longer than it should be. If left unchecked, this practice can turn a code base into a "big ball of mud". It'd be better to use the compiler to enforce the architecture.

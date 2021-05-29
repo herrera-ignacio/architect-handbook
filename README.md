@@ -153,7 +153,9 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [The Fragile Tests Problem](architectures/clean/fragile-tests)
 * [Target Hardware Bottleneck](architectures/clean/target-hardware-bottleneck)
 * Code organization
-  * [Package by layer](architecture/clean/code-org/by-layers)
+  * [Package by layer](architectures/clean/code-org/by-layers)
+  * [Package by feature](architectures/clean/code-org/by-feature)
+  * [Package by component](architectures/clean/code-org/by-component)
 
 #### Clean Architecture - Extra material
 
