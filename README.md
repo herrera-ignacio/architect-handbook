@@ -120,6 +120,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Testable Architecture](architectures/clean/testable-architecture)
 * [Humble Object Pattern](architectures/clean/humble-object-pattern)
 * [Services and boundaries](architectures/clean/services-boundaries)
+* [Test Boundaries](architectures/clean/test-boundaries)
 
 #### Clean Architecture - Glossary
 
@@ -149,6 +150,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Policy](architectures/clean/policy)
 * [Business Rules](architectures/clean/business-rules)
 * [Dependency Rule](architectures/clean/dependency-rule)
+* [The Fragile Tests Problem](architectures/clean/fragile-tests)
+* [Target Hardware Bottleneck](architectures/clean/target-hardware-bottleneck)
+* Code organization
+  * [Package by layer](architecture/clean/code-org/by-layers)
 
 #### Clean Architecture - Extra material
 
