@@ -19,3 +19,19 @@ In this example, we have the following Java types:
 * `OrdersController`: A web controller, something like a Spring MVC controrller, that handles requessts from the web.
 
 * `OrdersService`: An interface that defines the "business logic" related to orders.
+
+## Ports and Adapters
+
+This approach aims to create architectures where business/domain-focused code is independent and separate from the technical implementation details such as frameworks and databases. To summarize, you often see such code bases being composed of an "inside" (domain) and an "outside" (infrastructure).
+
+![](2021-05-29-15-24-56.png)
+
+The "inside" region contains all of the domain concepts, whereas the "outside" region contains the interactions with the outside world. The major rule here is that *the "outside" depends on the "inside"*.
+
+![](2021-05-29-15-36-26.png)
+
+The `com.mycompany.myapp.domain` package here is the "inside", and the other packages are the "outside". Note how dependencies flow toward the "inside".
+
+`OrdersRepository` from previous diagram has been renamed to simply be `Orders`. This comes from the world of domain-driven design, where the advice is that the naming of everything on the "inside" should be stated in terms of the "ubiquitous domain language". We talk about "orders" when we're having a discussion about the domain, not the "orders repository".
+
+> It's worth pointing out that this is a simplified version of what the UML class diagram might look like, because it's missing things like interactors and objects to marshal the data across the dependency boundaries.
