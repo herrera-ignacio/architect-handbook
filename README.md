@@ -74,6 +74,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Abstraction Inversion](./design-patterns/abstraction-inversion)
 * [MVC: Model-View-Controller](./design-patterns/mvc)
+* [Event Sourcing](design-patterns/event-sourcing)
 
 ### Base Patterns
 
