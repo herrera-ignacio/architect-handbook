@@ -10,20 +10,10 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * Design Principles
 * Programming Paradigms
-  * Imperative and Procedural
-  * Declarative
-  * Functional
-  * Object-oriented
 * Design Patterns & Principles
-  * Base patterns
-  * Data source & persistence
 * Architectural styles
-  * Clean Architecture
-  * REST
 * Technology Specifics
-  * Languages & Frameworks
-  * Databases
-  * Operating Systems
+* Models of Computation
 * Fundamentals Glossary
 
 ## Design Principles
@@ -168,11 +158,21 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [History](./architectures/rest/history.md)
 * [Architectural Properties](./architectures/rest/properties.md)
 * [Architectural Constraints](./architectures/rest/constraints.md)
-* [Semantics of HTTP APIs](./architecture/rest/http-methods.md)
+* [Semantics of HTTP APIs](./architectures/rest/http-methods.md)
 
 ### [Flux](./architecture/flux)
 
-* [MVC Comparison](./architecture/flux/mvc-comparison)
+* [MVC Comparison](architectures/flux/mvc-comparison)
+
+### Micro Services
+
+* [Micro services overview](architectures/microservices/overview)
+* [Properties](architectures/microservices/properties)
+* [Service granularity](architectures/microservices/granularity)
+* [Benefits](architectures/microservices/benefits)
+* [Criticism](architectures/microservices/issues)
+* [Concerns](architectures/microservices/concerns)
+* [Event Streaming Platform](architectures/microservices/event-stremaing-platform)
 
 ## Technology specifics
 
@@ -202,6 +202,10 @@ Specifics that should be considered while developing a software solution relying
   * [Immutable Update Patterns](./redux/immutable-updates)
 * [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
 * [Flux Comparison](./redux/flux-comparison)
+
+### Java
+
+* [Apache Kafka](java/kafka)
 
 ### Databases
 
@@ -233,6 +237,7 @@ Must know terminology.
 * [CRUD](./glossary/crud)
 * [Abstract Syntax Tree](./glossary/ast)
 * [Anti-Pattern](./glossary/anti-pattern)
+* [Micro Services Architecture](./glossary/microservices)
 * [Modularization](./glossary/modularization)
 * [Web API](./glossary/web-api)
 * [Leaky Abstraction](./glossary/leaky-abstraction)
