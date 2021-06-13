@@ -231,6 +231,11 @@ Specifics that should be considered while developing a software solution relying
 
 * [Finite State Machine](/./models-of-computation/fsm)
 
+## Data Science & Big Data
+
+* [Batch Processing](ds/batch-processing)
+* [ETL](ds/etl)
+
 ## Fundamentals Glossary
 
 Must know terminology.
@@ -245,4 +250,3 @@ Must know terminology.
 * [First-class citizen](./glossary/first-class-citizen)
 * [Side Effect](./glossary/side-effect)
 * [Idempotence](./glossary/idempotence)
-* [Batch Processing](glossary/batch-processing)
