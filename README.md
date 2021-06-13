@@ -245,3 +245,4 @@ Must know terminology.
 * [First-class citizen](./glossary/first-class-citizen)
 * [Side Effect](./glossary/side-effect)
 * [Idempotence](./glossary/idempotence)
+* [Batch Processing](glossary/batch-processing)
