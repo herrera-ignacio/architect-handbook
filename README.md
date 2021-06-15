@@ -84,7 +84,6 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Mapper](./design-patterns/base/mapper)
 
 ### Data Source & Persistence
-
 * [DAO: Data Access Object](./design-patterns/data/dao)
 * [Active Record](./design-patterns/data/active-record)
 * [Data Mapper](./design-patterns/data/data-mapper)
@@ -272,3 +271,12 @@ Must know terminology.
 * [Leaky Abstraction](./glossary/leaky-abstraction)
 * [First-class citizen](./glossary/first-class-citizen)
 * [Side Effect](./glossary/side-effect)
+* [Performance Measures](glossary/performance-measures)
+  * Response time
+  * Responsiveness
+  * Latency
+  * Throughput
+  * Load
+  * Load sensitivity
+  * Capacity
+  * Scalability
