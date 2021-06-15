@@ -206,7 +206,16 @@ Specifics that should be considered while developing a software solution relying
 
 ### Java
 
-* [Apache Kafka](java/kafka)
+Check my [java-handbook repository](https://github.com/herrera-ignacio/java-handbook) that includes:
+
+* Java Basics, OOP, Functional Programing
+* JVM
+* Java SE
+* Maven
+* Spring
+* Sprint Boot
+* Apache Kafka
+* Apache Storm
 
 ### Databases
 
