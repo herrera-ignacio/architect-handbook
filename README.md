@@ -64,7 +64,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Object-Oriented Design Principles](./paradigms/oop/design-principles.md)
   * Program to an interface, not an implementation
   * Favor object composition over class inheritance
-* [GoF Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
+* [Gamma Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
 * [Prototypal OO](./paradigms/oop/prototypal-oo)
 
 ### [Functional](./paradigms/functional/README.md) 
@@ -78,6 +78,24 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Abstraction Inversion](./design-patterns/abstraction-inversion)
 * [MVC: Model-View-Controller](./design-patterns/mvc)
 * [Event Sourcing](design-patterns/event-sourcing)
+
+### Gamma Design Patterns
+
+Please check the [this repository](https://github.com/herrera-ignacio/design_patterns/) for a detailed explanation and examples of each of the following patterns.
+
+| [Creational](https://github.com/herrera-ignacio/design_patterns/tree/master/creational) | [Structural](https://github.com/herrera-ignacio/design_patterns/tree/master/structural) | [Behavioral](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/behavioral-patterns) |
+|------------------	|------------	|------------	|
+| [Abstract Factory](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/abstract-factory) | [Adapter](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/adapter) | [Chain of Responsibility](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/chain-of-responsibility) |
+| [Builder](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/builder) | [Bridge](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/bridge) | [Command](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/command) |
+| [Factory Method](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/factory-method) | [Composite](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/composite) | [Interpreter](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/interpreter) |
+| [Prototype](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/prototype) | [Decorator](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/decorator) | [Iterator](./behavioral/iterator) |
+| [Singleton](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/singleton) | [Facade](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/facade) | [Mediator](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/mediator) |
+| | [Flyweight](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/flyweight) | [Memento](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/memento) |
+| | [Proxy](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/proxy) | [Observer](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/observer) |
+| | | [State](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/state) |
+| | | [Strategy](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/strategy) |
+| | | [Template Method](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/template-method) |
+| | | [Visitor](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/visitor) |
 
 ### Base Patterns
 
@@ -264,6 +282,7 @@ Must know terminology.
 
 * [CRUD](./glossary/crud)
 * [Abstract Syntax Tree](./glossary/ast)
+* [Patterns]
 * [Anti-Pattern](./glossary/anti-pattern)
 * [Micro Services Architecture](./glossary/microservices)
 * [Modularization](./glossary/modularization)
