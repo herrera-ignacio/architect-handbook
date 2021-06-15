@@ -99,7 +99,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### Enterprise Applications
 
-* [Enterprise Applications Challenges](./enterprise/challenges)
+* [EAPPs Challenges](enterprise/challenges)
+* [Kinds of EAPPs](enterprise/kinds)
 
 ## Architectural Styles
 
