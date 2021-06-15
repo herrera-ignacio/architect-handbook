@@ -11,6 +11,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Design Principles
 * Programming Paradigms
 * Design Patterns & Principles
+* Types of Software
+  * Enterprise Applications
 * Architectural styles
 * Technology Specifics
 * Models of Computation
@@ -69,6 +71,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Referentially Transparent (No Side Effects)](./paradigms/functional/referentially-transparent.md)
 * [Immutability](./paradigms/functional/immutability)
+* [Idempotence](paradigms/functional/idempotence)
 
 ## Design Patterns & Principles
 
@@ -90,11 +93,21 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Repository](./design-patterns/data/repository)
 
+## Types of Software
+
+> Altouhgh some techniques and patterns are relevant for all kinds of software, many are relevant for only one particular branch.
+
+### Enterprise Applications
+
+* [Enterprise Applications Challenges](./enterprise/challenges)
+
 ## Architectural Styles
 
+> Recommended book: https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture
+
 * [Architecture](./architectures/general/definition)
-* [Development Overconfidence](./architecture/general/overconfidence)
-* [Developer Struggle](./architecture/general/developer-struggle)
+* [Development Overconfidence](./architectures/general/overconfidence)
+* [Developer Struggle](./architectures/general/developer-struggle)
 
 ### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
 
@@ -258,4 +271,3 @@ Must know terminology.
 * [Leaky Abstraction](./glossary/leaky-abstraction)
 * [First-class citizen](./glossary/first-class-citizen)
 * [Side Effect](./glossary/side-effect)
-* [Idempotence](./glossary/idempotence)

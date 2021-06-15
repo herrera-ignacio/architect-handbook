@@ -1,5 +1,7 @@
 # Software Architecture
 
+## Robert C. Martin
+
 The obvious appeal of architecture is __structure__ (components, classes, functions, modules, layers, and services, micro or macro).
 
 > _Architecture represents the significant design decisions that shape a system, where significant is measured by cost of change._ - Grady Booch
@@ -23,4 +25,12 @@ When software is done right, it requires a fraction of the human resources to cr
 The measure of design quality is simply the measure of the effort required to meeth the needs of the customer. If that effort is low, and stays low throughout the lifetime of the system, the design is good. If that effort grows with each new release, the design is bad.
 
 > To build a system with a design and an architecture that minimize effort and maximize productivity, you need to know which attributes of system architecture lead to that end.
+
+## Ralph Johnson
+
+Architecture is a subjective thing, a **shared understanding of a system's design** by the expert developers on a project. Commonly this shared understanding is in the form of the major components of the system and how they interact.
+
+It's also about decisions, in that it's the decisions that developers wish they could get right early on because they're perceived as hard to change.
+
+> In the end, architecture boils down to the important stuff, whatever that is.
 
