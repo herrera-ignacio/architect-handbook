@@ -75,6 +75,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ## Design Patterns & Principles
 
+> [What is a design pattern?](https://github.com/herrera-ignacio/design_patterns/blob/master/introduction/design-pattern.md)
+
 * [Abstraction Inversion](./design-patterns/abstraction-inversion)
 * [MVC: Model-View-Controller](./design-patterns/mvc)
 * [Event Sourcing](design-patterns/event-sourcing)
@@ -280,16 +282,16 @@ Check my [java-handbook repository](https://github.com/herrera-ignacio/java-hand
 
 Must know terminology.
 
-* [CRUD](./glossary/crud)
-* [Abstract Syntax Tree](./glossary/ast)
-* [Patterns]
-* [Anti-Pattern](./glossary/anti-pattern)
-* [Micro Services Architecture](./glossary/microservices)
-* [Modularization](./glossary/modularization)
-* [Web API](./glossary/web-api)
-* [Leaky Abstraction](./glossary/leaky-abstraction)
-* [First-class citizen](./glossary/first-class-citizen)
-* [Side Effect](./glossary/side-effect)
+* [CRUD](glossary/crud)
+* [Abstract Syntax Tree](glossary/ast)
+* [Patterns](glossary/pattern)
+* [Anti-Pattern](glossary/anti-pattern)
+* [Micro Services Architecture](glossary/microservices)
+* [Modularization](glossary/modularization)
+* [Web API](glossary/web-api)
+* [Leaky Abstraction](glossary/leaky-abstraction)
+* [First-class citizen](glossary/first-class-citizen)
+* [Side Effect](glossary/side-effect)
 * [Performance Measures](glossary/performance-measures)
   * Response time
   * Responsiveness
