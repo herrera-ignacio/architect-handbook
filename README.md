@@ -129,6 +129,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Development Overconfidence](./architectures/general/overconfidence)
 * [Developer Struggle](./architectures/general/developer-struggle)
 * [Layering](architectures/general/layering)
+* [Organizing Domain Logic](architectures/general/domain-logic)
 
 ### Three-Layer System (Martin Fowler)
 
