@@ -128,6 +128,11 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Architecture](./architectures/general/definition)
 * [Development Overconfidence](./architectures/general/overconfidence)
 * [Developer Struggle](./architectures/general/developer-struggle)
+* [Layering](architectures/general/layering)
+
+### Three-Layer System (Martin Fowler)
+
+* [Three Fundamental Layers](architectures/fowler/three-layers)
 
 ### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
 
