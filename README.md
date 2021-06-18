@@ -125,11 +125,14 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 > Recommended book: https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture
 
+### General Concerns
+
 * [Architecture](./architectures/general/definition)
 * [Development Overconfidence](./architectures/general/overconfidence)
 * [Developer Struggle](./architectures/general/developer-struggle)
 * [Layering](architectures/general/layering)
 * [Organizing Domain Logic](architectures/general/domain-logic)
+* [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
 
 ### Three-Layer System (Martin Fowler)
 
