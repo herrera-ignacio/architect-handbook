@@ -19,6 +19,9 @@
   * Mapping Relationships
   * Inheritance
 * Building the Mapping
+* Double Mapping
+* Using Metadata
+* Database Connections
 
 ## Architectural Patterns
 
@@ -209,8 +212,16 @@ Besides *compositional hierarchies*, there's the *class hierarchy linked by inhe
 For any inheritance structure there are basically three options:
 
 1. *Single Table Inheritance*: one table for all the classes in the hierarchy.
+
+![](2021-06-18-20-05-20.png)
+
 2. *Concrete Table Inheritance*: one table for each concrete class.
+
+![](2021-06-18-20-08-49.png)
+
 3. *Class Table Inheritance*: one table per class in the hierarchy.
+
+![](2021-06-18-20-09-57.png)
 
 The trade-offs are all between duplication of data structure and speed of access. *Class Table Inheritance* is the simplest relationship between the class and the tables, but it needs multiple joins to load a single object, which usually reduces performance. *Concrete Table Inheritance* avoids the joins, allowing you pull a single object from one table, but it's brittle to changes. With any change to a superclass you have to remember to alter all the tables (and the mapping code). Altering the hierarcy itself can cause even bigger changes. Also, the lack of a superclass table can make key management awkward and get in the way of referential integrity, although it does reduce lock contentions on the superclass table.
 
@@ -245,3 +256,60 @@ Although building the model first is a reasonable way of thinking about it, this
 When the schema's already there, your choices are similar but the process is slighlty different. With simple domain domain logic you build *Row Data Gateway* or *Table Data Gateway* classes that mimic the database, and layer domain logic on top of that. With more complex domain logic you'll need a *Domain Model*, which is highly unlikely to match the database design. Therefore, gradually build up the *Domain Model* and include *Data MAppers* to persist the data to the existing database.
 
 ## Double Mapping
+
+Occasionally, the **same kind of data needs to be pulled from more than one source**. There may be multiple databases that hold the same data but have small differences in the schema because of some copy and paste reuse. Another possibility is using different mechanisms, storing the data sometimes in a database and sometimes in messages. You may want to pull similar data from a a combination of XML messages, CICS transactions, and relational tables.
+
+The simplest option is to **have multiple mapping layers, one for each data source**. However, if data is very similar this can lead to a lot of duplication. In this situation you might consider a **two'step mapping scheme**. **The first step converts data from the in-memory schema to a logical data store schema**. 
+gical data store schema is designed to maximize the similarities in the data source formats. **The second step maps from the logical data store scheme to the actual physical data store schema**. This second step contains the differences.
+
+The extra step only pays for itself when you have many commonalities, so you should use it when you have similar but annoyingly different physical data stores. Treat the mapping from the logical data store to the physical data store as a *Gateway* and use any of the mapping techniques to map from the application logic to the logical data store.
+
+## Using Metadata
+
+There's much you can do by factoring out common behaviors with inheritance and delegation, good honest OO practices, but there's also a more sophisticated approach using **Metadata Mapping**.
+
+*Metadata Mapping* is based on boiling down the mapping into a metadata file that details how columns in the database map to fields in objects. The point of this is that once you have the metadata you can avoid the repetitive code by using either code generation or reflective programming.
+
+Using metadata buys you a lot of expresiveness from a little metadata. One line of metadata can say something like:
+
+```html
+<filed name="customer" targetClass="Customer" dbColumn="custId" targetTable="customers" lowerBound="1" upperBound="1" setter="loadCustomer" />
+```
+
+From that you can define the read and write code, automatically generate ad hoc joins, do all of the SQL, enforce the multiplicity of the relationship, and even do fancy things like computing write orders under the presence of referential integrity.
+
+> This is why commercial O/R mapping tools tend to use metadata.
+
+When you use *Metadata Mapping* you have the necessarty foundation to build queries in terms of in-memory objects. A *Query Object* allows you to build your queries in terms of in-memory objects and data in such a way that developers don't need to know either SQL or the details of the relational schema. The *Query Object* can then use the *Metadata Mapping* to translate expressions based on object fields into the appropriate SQL.
+
+Take this far enough and you can form a *Repository* that largely hides the database from view. Any queries to the database can be made as *Query Objects* against a *Repository*, and developers can't tell whether the objects were retrieved from memory or from the database.
+
+## Database Connections
+
+Most database interfaces rely on some kind of database connection object to act as the link between application code and the database.
+
+Typically a connection must be opened before you can execute commands against the database. Indeed, usually you need an explicit connection to create and execute a command. The whole time you execute the command this same connection must be open.
+
+Queries return a *Record Set*. Some interfaces provide for disconnected *Record Sets*, which can be manipulated after the connection is closed. Other interfaces provide only connected *Record Sets*, implying that the connection must remain open while the *Record Set* is manipulated. If you're running inside a transaction, usually the transaction is bound to a particular connection and the connection must remaion open while the transaction is taking place.
+
+In many environments **it's expensive to create a connection**, which makes it worthwhile to create a **connection pool**. In this situation developers request a connection from the pool and release it when they're done, instead of creating and closing the connection.
+
+> Most platforms these days give you pooling. If you do have to do it yourself, first check to see if pooling actually does help performance. INcreasingly environments make it quicker to create a new connection so there's no need to pool.
+
+Environments that give you pooling **often put it behind an interface that looks like creating a new connection**. Similarly, closing the connection may not actually close it but just return it to the pool.
+
+Expensive to create or not, **connections need management**, so they **must be released as soon as you're done using them**. Furthermore, if you're using a transaction ,usually you need to ensure that every command inside a particular transaction goes with the same connection.
+
+The most common advice is to get a **connection explicitly**, usng a call to a pool or connection manager, and then supply it to each database command you want to make. Once you're done with the connection, close it. This advice leads to a couple of issues: *making sure you have the connection everywhere you need it and ensuring that you don't forget to close it at the end*.
+
+To ensure that you have a connection where you need it there are two choices. One is to **pass the connection around as an explicit parameter**. The problem problem with this is that the connection gets added to all sorts of method calls where its only purpose is to be passed so some other method five layers down the call stack. Of course, this is the situation to bring out **Registry**. Since you don't want multiple threads using the same connections, you'll want a *thread-scoped Registry*.
+
+For avoiding explicit connection, modern environments these days provide automatic memory management and garbage collection, so one way to ensure that connections are closed is to use the garbage collector, which uses the same managment scheme that's used for memory. A problem is that unreferenced connections may sit around a while before they're collected by the garbage collector.
+
+Since connections are so tied to transactions, a good way to manage them is to **tie them to a transaction**. Open a connection when you begin a transaction, and close it when you commit or roll back. Have the transaction know what connection it's using so you can ignore the connection completely and just deal with the transaction. Since the transaction's completion has a visible effect, it's easier to remember to commit and to spot if you forget. A *Unit of Work* makes a natural fit to manage both the transaction and the connection.
+
+If you do things outside of your transaction, such as reading immutable data, you use a fresh connection for each command. Pooling can deal with any issues in creating short-lived connections.
+
+If you're using a disconnected *Record Set*, you can open a connection to put the data in the record set and lcose it while you manipulate the *Record Set* data. Then, when you're done with the data, you can open a new connection, and transaction, to write the data out. If you do this, you'll need to worry about the data being changed while the *Record Set* was being manipulated (concurrency control).
+
+> The specifics of connection management are very much a feature of your database interaction software, so the strategy uou use is often dictated by your environment.
