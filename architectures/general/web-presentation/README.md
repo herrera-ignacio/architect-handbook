@@ -9,6 +9,11 @@
   * Overview
   * Why
   * Application Controller
+* View Patterns
+  * Template View
+  * Transform View
+  * Two Step View
+* Input Controller Patterns
 
 ## Web Server
 
@@ -77,3 +82,64 @@ The purpose of an *Application Controller* is to handle the flow of an applicati
 Not all systems need an *Application Controller*. They're **useful if your system has a lot of logic about the order of screens and the navigatio nbetween them.** They're also useful **if you haven't got a simple mapping between your pages and the actions on the domain**. But if someone can pretty much see any screen in any order, you'll porbably have little need for an *Application Controller*.
 
 > "A good test is this: If the machine is in control of the screen flow, you need an *Application Controller*; if the user is in control, you don't." - Martin Fowler.
+
+## View Patterns
+
+On the view side there are three patterns to think about:
+
+* *Template View*
+* *Transform View*
+* *Two Step View* (variation that you can apply to either)
+
+These give rise to essentialy two choices:
+
+1. Use *Transform View* or *Template View*.
+2. Whether eiher of them uses one stage or a *Two Step View*.
+
+### Template View
+
+The *Template View* allows you to write the presentation in the structure of the page and embed markers into the page to indicate where dynamic content needs to go.
+
+> Quite a few popular platforms are based on this pattern, many of which are the server pages technologies (ASP, JSP, PHP) that allow you to put a full programming language into the page.
+
+This clearly provides a lot of power and flexibility; sadly, it also leads to very messy code that's difficult to maintain.
+
+As a result if you use server page technology, you must be very disciplined to keep programming logic out of the page structure, often by using a helper object.
+
+### Transform View
+
+The *Transform View* uses a transform style of program.
+
+> The usual example is XSLT.
+
+This can be very effective if you're working with domain data that's in XML format or can easily be converted to it. An *input controller* picks the appropriate XSLT stylesheet and applies it to XML gleaned from the model.
+
+### Two Step View
+
+The second decision is whether to be *single-stage* or to use *Two Step View*.
+
+A *single-stage* view  mostly has one view component for each screen in the application. The view takes domain oriented data and renders it in HTML.
+
+![](2021-06-19-17-09-34.png)
+
+> Similar logical screens may share views. Even so, most of the time you can think of it as one view per screen.
+
+A *two-stage* view breaks this process into two stages, producing a logical screen from the domain data and then rendering it in HTML. There's one first-stage view for each screen but only one second-stage view for the whole application.
+
+The advantage of the *Two Step View* is that it puts the decision of what HTML to use in a single place. This makes global changes to the HTML easy since there's only one object to alter in order to alter every screen on the site. Of course, you only get that advantage if your logical presentation stays the same, so it works best with sites where different screens use the same basic layout.
+
+> Highly design intensive sites won't be able to come up with a good logical screen structure.
+
+![](2021-06-19-17-20-44.png)
+
+## Input Controller Patterns
+
+There are two patterns for the *input controller*: *Page Controller* & *Front Controller*.
+
+The most common is **an input controller object for every page on your Web site**.
+
+In the simplest case this **Page Controller** can be a server page itself, combining the roles of *view* and *input controller*. In many implementations it makes things easier to split the *input controller* into a separate object. The *input controller* can then create appropriate models to do the processing and instantiate a view to return the result
+
+Often you'll find that there isn't quite a one-to-one relationship between *Page Controllers* and views. A more precise thought is that you have a **Page Controller for each action**, where an action is a button or link. Most of the time the actions correspond to pages, but occasionally they don't, such as a link that may go to a couple of different pages depending on some conditions.
+
+With any *input controller* there are two responsibilities: handling the HTTP request and deciding what to do wih it, and it often makes sense to separate them. A server page can handle the request, delegating a separate helper object to decide what to do with it. *Front Controller* goes further in this spearation by **having only one object handling all requests**. This single handler interprets the URL to figure out what kind of request it's delaing with and creates a separate object to process it. In this way you can centralize all HTTP handling with a single object, avoiding the need to reconfigure the Web server whenever you change the action structure of the site.
