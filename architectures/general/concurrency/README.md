@@ -28,6 +28,8 @@ Another complicated area is **application servers**, supporting multiple threads
 
 ## Essential Problems
 
+> Concurrency problems occu when more than one active agent, such as a process or thread, has access to the same piece of data.
+
 Problems will be illustrated with examples from source code control systems used by teams to coordinate changes to a code base.
 
 Both problems cause a failure of **correctness** (or safety), and they result in incorrect behavior that would not have occurred without two people trying to work with the same data at the same time.
@@ -88,3 +90,14 @@ Some environments allow you to control what data a thread may access, aallowing 
 
 Transactions pull together several requests that the client wants treated as if they were a single request. They can occur from the application to the database (a system transaction) or from the user to an application (a business transaction).
 
+## Isolation and Immutability
+
+Two common solutions for concurrency problems: *isolation* and *immutability*.
+
+With **isolation**, you partition the data so that any piece of it can only be accessed by one active agent. With it you arrange things so that the program enters an isolated zone, within which you don't have to worry about concurrency.
+
+> "Good concurrency design is thus to find ways of creaing such zones and to ensure that as much programming as possible is done in one of them." - Martin Fowler & David Rice
+
+You only get concurrency problems if the data you're sharing can be modified. So one way to avoid concurrency conflicts is to recognize **immutable data**. By identifying some data as immutable, or at least immutable almost all the time, we can relax our concurrency concerns for it and share it widely.
+
+Another option is to separate applications that are only reading data, and have them use copied data sources, from which we can then relax all concurrency controls.
