@@ -211,15 +211,15 @@ Besides *compositional hierarchies*, there's the *class hierarchy linked by inhe
 
 For any inheritance structure there are basically three options:
 
-1. *Single Table Inheritance*: one table for all the classes in the hierarchy.
+1. **Single Table Inheritance**: one table for all the classes in the hierarchy.
 
 ![](2021-06-18-20-05-20.png)
 
-2. *Concrete Table Inheritance*: one table for each concrete class.
+2. **Concrete Table Inheritance**: one table for each concrete class.
 
 ![](2021-06-18-20-08-49.png)
 
-3. *Class Table Inheritance*: one table per class in the hierarchy.
+3. **Class Table Inheritance**: one table per class in the hierarchy.
 
 ![](2021-06-18-20-09-57.png)
 

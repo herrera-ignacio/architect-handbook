@@ -133,6 +133,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Layering](architectures/general/layering)
 * [Organizing Domain Logic](architectures/general/domain-logic)
 * [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
+* [Web Presentation](architectures/web-presentation)
 
 ### Three-Layer System (Martin Fowler)
 
