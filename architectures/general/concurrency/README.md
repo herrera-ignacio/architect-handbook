@@ -18,6 +18,15 @@
   * Transactional Resources
   * Lock Escalation
   * Reducing Transaction Isolation for Liveness
+  * Business and System Transactions
+* Patterns of Offline Concurrency Control
+  * Offline Locks
+  * Coarse-Grained Locks
+  * Implicit Locks
+* Application Server Concurrency
+  * Process-per-Session
+  * Pooling Process-per-Request
+  * Thread-per-Request
 
 ## Overview
 
@@ -189,6 +198,8 @@ This **lock escalation** can have a serious impact on concurrency, and it's part
 
 ### Reducing Transaction Isolation for Liveness
 
+> For more information on isolation levels read: [ACID - Isolation](../../databases/acid.md)
+
 it's common to restrict the full protection of transactions so that you can get better liveness. This is particulary the case when it comes to handling isolation.
 
 > We will be using the previous example of Martin counting files while David modifies them. There are two packages: locking and multiphase. Before David's update there are seven files in the locking package and five in the multiphase package; after his update there are nine in the locking package and eight in the multiphase package. Martin looks at the locking package and David then updates both; then Martin looks at the multiphase package.
@@ -218,3 +229,81 @@ The lowest level of isolation is **read uncommited**, which allows **dirty reads
 > Martin might look at the locking package when David adds the first of his files but before he adds the second. As a result he sees eight files in the locking package. Another kind of error comes if David adds his files but then rolls back his transaction, in which case Martin sees files that were never really there.
 
 To be sure of correctness you should always use the serializable isolation level. The problem is that it messes up the liveness of a system, so much that you often have to reduce serializability in order to increase throughput. You have to decide what risks you want to take and make your own trade-off of errors versus performance. You don't have to use the same isolation level for all transactions, so you should look at each transaction and decide how to balance liveness versus correctness for it.
+
+### Business and System Transactions
+
+RDBMS systems and application server transaction managers are well understood by application developers. However, a **system transaction** has no meaning to the user of a business system.
+
+To an online banking system user a transaction consists of logging in, selecting an account, setting up some bill payments, and finally clicking the OK button to pay the bills. This is what we call a **business transaction**, and that it displays the same ACID properties a system transaction seems a reasonable expectation.
+
+The obvious answer to supporting the ACID properties of a business transaction is to execute the entire business transaction within a single system transaction. Unfortunately, they often take multiple requests to complete, so this would result in a *long system transaction*.
+
+This doesn't mean that you should never use *long transactions*, they actually avoid a lot of awkward problems. However, the application won't be scalable because they will turn the database into a major bottleneck. In addition, the refactoring from long to short transactions is both complex and not well understood.
+
+For this reason many enterprise applications can't risk long transactions. In this case, you have to **break the business transaction down into a series of short transactions**. This means that you are left to your own devides to support the ACID properties of business transactions between system transactions, we refer to this as **offline concurrency**. Whenever the business transaction interacts with a transactional resource, the interaction will execute within a system transaction in order to maintain the integrity of that resource. However, **it's not enough to string together a series of system transactions to properly support a business transaction**. The business application must provide a bit of glue between them.
+
+**Atomicity** and **durability** are the ACID properties most easily support for business transactions. Both are supported by running the **commit phase of he business transaction, when the user hits Save, within a system transaction**. Before the session attempts to commit all its changes to the record set, it first opens a system transaction, which guarantees that the changes will commit as a unit and will be made permanent. The  only potentially tricky part here is maintaining an accurate change set during the life of the business transaction. If the application uses a *Domain Model*, a *Unit of Work* can track changes accurately. Placing business logic in a *Transaction Script* requires a manual tracking of changes.
+
+The tricky ACID property to enforce with business transactions is **isolation**. Failures of isolation lead to failures of **consistency**. Consistency dictates that a business transaction does not leave the record set in an invalid state. Within a single transaction the application's responsibility in support consistency is to enforce all available business rules. Across multiple transactions the application's responsibility is to ensure that one session deosn't step all over another session's changes, leaving the record set in the invalid state of having lost a user's work.
+
+> As well as the obvious problems of clashing updates, there are the more subtle problems of inconsistent reads.
+
+Business transactions are closely tied to sessions. In the user's view each session is a sequence of business transactions (unless they're only reading data), so we usually make the assumption that all business transactions execute in a single client session.
+
+## Patterns of Offline Concurrency Control
+
+Offline Concurrency Control means handling concurrency control that spans system transactions by yourself instead of using a transaction system.
+
+> You should only use these techniques if you have to. If you can make all your business transactions ifit into a system transaction by ensuring that they fit within a single request, or can get away with long transactions by forsaking scalability, then do that and avoid a great deal of trouble.
+
+### Offline Locks
+
+*Optimistic Offline Lock* essentially uses optimistic concurrency control across the business transactions.
+
+It yields the best liveness and you avoid managing locks on every object, but the limitation is that you only find out that a business transaction is going to fail when you try to commit it, and in some circumstances the pain of late discovery is too much.
+
+> Users may have put an hour's work into entering details about a lease, and if you got lots of failures users lose faith in the system.
+
+Your alternative is *Pessimistic Offline Lock*, with which you find out early if you're in trouble but lose out because it's harder to program and it reduces your liveness.
+
+### Coarse-Grained Lock
+
+It allows you to manage the concurrency of a group of objects together.
+
+### Implicit Lock
+
+It saves you from having to manage locks directly. Not only does this save work, it also avoids bugs when people forget.
+
+## Application Server Concurrency
+
+Another form of concurrency is the **process concurrency of the application server itself**. How does that server handle multiple requests concurrently and how does this affect the design of the application on the server?
+
+### Process-per-Session
+
+The simplest way to handle this is to use **process-per-session**, where each session runs in its own process. Its great advantage is that the state of **each process is completely isolated**. As far as memory isolation goes, it's almost equally effective to have each request start a new process or to have one process tied to the session that's idle between requests.
+
+### Pooled Process-per-Request
+
+The problem is that it **uses up a lot resources**, since processes are expensive. To be more efficient you can **pool the processes**, so that each one only handles a single request at one time but can handle multiple requests from different session in a sequence. This approach of **pooled process-per-request** will use many fewer processes to support a given number of session. Your isolation is almost as good, avoiding multithreading issues.
+
+The main problem is that you have to ensure that any resources used to handle a request are released at the end of the request.
+
+Although it's less efficient than thread-per-request, it is equally **scalable**. You also get **better robustness** (if one thread fails, it can bring down an entire process).
+
+> Particularly with a less experienced team, the reduction of threading headaches (and the time and cost of fixing bugs) is worth the extra hardware costs.
+
+### Thread-per-Request
+
+You can further imrpvoe throughput by having a single process run multiple threads. With this approach, **each request is handled by a single thread within a process**. Since threads use much fewer server resources than a process, you can handle more requests with less hardware.
+
+The problem is that **there's no isolation between treads** and any thread can touch any piece of data that it can get access to.
+
+> Some environments provide a middle ground of allowing isolated areas of data to be assigned to a single thread.
+
+If you use this approach, the most important thing is to **create and enter an isolated zone** where application developers can mostly ignore multithreaded issuies. **The usual way to do this is to have the thread create new objects as it starts handling the request** and to ensure that these objects aren't put anywhere (such as in a static variable) where other threads can see them.
+
+> The problem with pooling objects is that you have to synchronize access in some way. You should compare this against the cost of object creation when using multithreading.
+
+Creating fresh objects for each session avoids a lot of concurrency bugs and can actually improve scalability.
+
+> While this tactic works in many cases, you should avoid static, class-based variables, global variables, or singletons, because any use of these has to be synchronized.
