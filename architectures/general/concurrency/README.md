@@ -11,6 +11,9 @@
   * Thread
   * Transactions
 * Isolation and Immutability
+* Optimistic and Pessimistic Concurrency Control
+  * Preventing Inconsistent Reads
+  * Deadlocks
 
 ## Overview
 
@@ -101,3 +104,59 @@ With **isolation**, you partition the data so that any piece of it can only be a
 You only get concurrency problems if the data you're sharing can be modified. So one way to avoid concurrency conflicts is to recognize **immutable data**. By identifying some data as immutable, or at least immutable almost all the time, we can relax our concurrency concerns for it and share it widely.
 
 Another option is to separate applications that are only reading data, and have them use copied data sources, from which we can then relax all concurrency controls.
+
+## Optimistic and Pessimistic Concurrency Control
+
+What happens when we have **mutable data that we can't isolate**?
+
+Let's suppose that Martin and David both want to edit the Customer file at the same time. With **optimistic locking** both of them can make a copy of the file and edit it freely. If David is the first to finish, he can check in his work without trouble. The concurrency control kicks in when Martin tries to commit his changes. At this point the source code control system detects a conflict between Martin's changes and David's changes. Martin's commit is rejected and it's up to him to figure out how to deal  with the situation.
+
+With **pessimistic locking** whoever checks out the file first prevents anyone else from editing it. So if Martin is first to check out, David can't work with the file until Martin is finished with it and commits his changes.
+
+> "Optimistic lock is about conflict detection while a pessimistic lock is about conflict prevention." - Martin Fowler & David Rice
+
+The essence of the choice between optimistic and pessimistic locks is the frequency and severity of conflicts. If conflicts are sufficiently rare, or if the consequences are no big deal, you should usually pick optimistic locks because they give you better concurrency and are usually easier to implement. However, if the results of a conflict are painful for users, you'll need to use a pessimistic technique instead.
+
+### Preventing Inconsistent Reads
+
+Consider this situation. Martin edits the Customer class and adds some calls to the Order class. Meanwhile David edits the Order class and changes the interface. David compiles and checks in; Martin then compiles and checks in. Now the shared code is broken because Martin didn't realize that the Order class was altered underneath him.
+
+> Some source code control systems will spot this inconsistent read, but others require some kind of manual discipline to enforce consistency, such as updating your files from the trunk before you check in.
+
+**Pessimistic locks** have a well-worn way of dealing with this problem through read and write locks. To read data you need a read (or shared) lock; to write data you need a write (or exclusive) lock. Many people can have read locks on the data at one time, but if anyone has a read lock nobody can get a write lock. Conversely, once somebody has a write lock, then nobody else can have any lock.
+
+**Optimistic locks** usually base their conflict detection on some kind of version marker on the data. This can be a timestamp or a sequential counter. To detect lost updates the system checks the version marker of your update with the version marker of the shared data. If they're the same, the system allows the update and updates the version marker.
+
+Detecting an inconsistent read with optimistic locks is similar: In this case every bit of data that was read also needs to have its version marker compared with the shared data. Any differences indicate a conflict.
+
+> controlling access to every bit of data that's read often causes unnecessary problems due to conflicts or waits on data thaat doesn't actually matter that much. You can reduce this burden by separating out data you've *used* from data you've merely read.
+
+Another way is using **Temporal Reads**. These prefix each read of data with some kind of timestamp or immutable label, and the database returns the data as it was according to that time or label. The problem is that the data source needs to provide a full temporal history of changes, which takes time and space to process. You may need to provide this capability for specific areas of your domain logic.
+
+### Deadlocks
+
+A particular problem with **pessimistic techniques** is **deadlock**.
+
+Say Martin starts editing the Customer file and David starts editing the Order file. David realizes that to complete his task he needs to edit the Customer file too, but Martin has a lock on it so he has to wait. Then Martin realizes he has to edit the Order file, which David has locked. They are now deadlocked, **neither can make progress until the other completes**.
+
+It's very easy to think you have a deadlock-proof scheme and then fine some chain of events you didn't consider.
+
+> "We prefer very simple and conservative schemes for enterprise application development. They may cause unecessary victims, but that's usually much better than the consequences of missing a deadlock scenario." - Martin Fowler and David Rice
+
+#### Deal with deadlocks
+
+There are various techniques to deal with deadlocks.
+
+One is to have software that can detect a deadlock when it occurs. In this case you pick a **victim**, who has to throw away his work and his locks so the others can make progress. **Deadlock detection** is very difficult and causes pain for victims.
+
+A similar approach is to **give every lock a time limit**. Once you hit that limit you lose your locks and your work, essentially becoming a victim. **Timeouts** are easier to implement than a deadlock detection mechanism, but if anyone holds locks for a while some people will be victimized when there actually is no deadlock present.
+
+#### Prevent deadlocks
+
+Other approaches try to stop deadlocks occurring at all. Deadlocks essentially occur when people who already have locks try to get more (or to upgrade from read to write locks). Thus, one way of preventing them is to **force people to acquire all their locks at once** at the beginning of their work and then **prevent them gaining more**.
+
+You can **force an order on how everybody gets locks**. An example might be to always get locks on files in alphabetical order. This way, once David had a lock on the Order file, he can't try to get a lock on the Customer file because it's earlier in the sequence. At that point he essentially becomes a victim.
+
+You can also make it so that, if Martin tries to acquire a lock and David already has one, Martin automatically becomes a victim. It's a drastic technique, but it's simple to implement.
+
+> You can use multiple schemes. For example, you force everyone to get all their locks at the beginning, but add a timeout in case something goes wrong.
