@@ -14,6 +14,10 @@
 * Optimistic and Pessimistic Concurrency Control
   * Preventing Inconsistent Reads
   * Deadlocks
+* [Transactions](../../databases/../../databases/transactions.md)
+  * Transactional Resources
+  * Lock Escalation
+  * Reducing Transaction Isolation for Liveness
 
 ## Overview
 
@@ -160,3 +164,57 @@ You can **force an order on how everybody gets locks**. An example might be to a
 You can also make it so that, if Martin tries to acquire a lock and David already has one, Martin automatically becomes a victim. It's a drastic technique, but it's simple to implement.
 
 > You can use multiple schemes. For example, you force everyone to get all their locks at the beginning, but add a timeout in case something goes wrong.
+
+## [Transactions](../../databases/../../databases/transactions.md)
+
+### Transactional Resources
+
+Most enterprise applications run into transactions in term of databases. But there are plenty of other things that can be controlled using transactions, such as message queues, printers, and ATMs.
+
+As a result, technical discussions of transactions use the term *transactional resource* to mean anything that's transactional, that is, **that uses transactions to control concurrency**.
+
+To handle the greatest throughput, **modern transaction systems are designed to keep transactions as short as possible**. As a result the general advice is to **never make a transaction span multiple request**, these are generally known as **long transactions**.
+
+For this reason, a common approach is to **start a transaction at the beginning of a request and complete it at the end**. This is known as **request transaction** model.
+
+A variation on this is to open a transaction **as late as possible**. With a **late transaction** you may do all the reads outside it and only open it up when you do updates.
+
+### Lock Escalation
+
+When you use transactions, you need to be somewhat aware of what exactly is being locked.
+
+For many database actions the transaction system locks the rows involved, which allows multiple transactions to access the same table. However, if a transaction locks a lot of rows in a table, then the database has more locks that it can handle and escalates the locking to the entire table, locking out other transactions.
+
+This **lock escalation** can have a serious impact on concurrency, and it's particularly why **you shouldn't have some "object" table for data at the domain's _Layer Supertype_ level**. Such a table is a prime candidate for lock escalation, and locking that table shuts everybody else out of the database.
+
+### Reducing Transaction Isolation for Liveness
+
+it's common to restrict the full protection of transactions so that you can get better liveness. This is particulary the case when it comes to handling isolation.
+
+> We will be using the previous example of Martin counting files while David modifies them. There are two packages: locking and multiphase. Before David's update there are seven files in the locking package and five in the multiphase package; after his update there are nine in the locking package and eight in the multiphase package. Martin looks at the locking package and David then updates both; then Martin looks at the multiphase package.
+
+If you have full isolation, you get **serializable transactions**. Transactions are serializable if they can be executed concurrently and you get a result that's the same as you get from some sequence of executing the transactions serially.
+
+> Serializability guarantees that Martin gets a result that corresponds to compelting his transaction either entirely before David's transaction starts (twelve) or entirely after David's finishes (seventeen). Serializability can't guarantee which result, as in this case, but at least it guarantees a correct one.
+
+Most transactional systems use the **SQL standard which defines four levels of isolation**.
+
+**Serializable is the strongest level**, and each level below allows a particular kind of inconsistent read to enter the picture.
+
+If the isolation level is serializable, the system guarantees that Martin's answer is either twelve or seventeen, both of which are correct. **Serializability can't guarantee that every run through this scenario will give the same result, but it always gets a consistent one** either the number before David's update or the number afterwards.
+
+The next isolation level below serializable is **repeatable read**, which allows **phanthoms**. *Phantoms* occur when you add some elements to a collection and the reader sees only some of them.
+
+> The case here is that Martin looks at the files in the locking package and sees seven. David then commits his transaction, after which Martin looks at the multiphase package and sees eight. Hence, Martin gets an incorrect result. Phanthoms occur because they are valid for some of Martin's transaction but not all of it, and they're always things that are inserted.
+
+Then next isolation level is **read commited**, which allows **unrepeatable reads**.
+
+> Imagine that Martin looks at the total rather than the actual files. An unrepeatable read allows him to read a total of seven for the locking package. Next David commits, then he reads a total of eights for the multiphase package. It's called an unrepeatable read because, if Martin were to reread the total for the locking package after David committed, he would get the new number of nine. His original read of seven can't be repeated after David's update.
+
+It's easier for databases to spot unrepeatable reads than phantoms, so repeatable reads give you more correctness than read comitted but less liveness.
+
+The lowest level of isolation is **read uncommited**, which allows **dirty reads**. At read uncommitted you can read data that another transaction hasn't actually committed yet.
+
+> Martin might look at the locking package when David adds the first of his files but before he adds the second. As a result he sees eight files in the locking package. Another kind of error comes if David adds his files but then rolls back his transaction, in which case Martin sees files that were never really there.
+
+To be sure of correctness you should always use the serializable isolation level. The problem is that it messes up the liveness of a system, so much that you often have to reduce serializability in order to increase throughput. You have to decide what risks you want to take and make your own trade-off of errors versus performance. You don't have to use the same isolation level for all transactions, so you should look at each transaction and decide how to balance liveness versus correctness for it.
