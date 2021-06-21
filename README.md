@@ -135,6 +135,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
 * [Web Presentation](architectures/general/web-presentation)
 * [Concurrency](architectures/general/concurrency)
+* [Session State](architectures/general/session-state)
 
 ### Three-Layer System (Martin Fowler)
 
