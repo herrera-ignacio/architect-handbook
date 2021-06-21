@@ -136,6 +136,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Web Presentation](architectures/general/web-presentation)
 * [Concurrency](architectures/general/concurrency)
 * [Session State](architectures/general/session-state)
+* [Distribution Strategies](architectures/general/distribution-strategies)
 
 ### Three-Layer System (Martin Fowler)
 
