@@ -142,6 +142,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [Three Fundamental Layers](architectures/fowler/three-layers)
 * [Narratives summary](architectures/fowler/narratives)
+* [Other layering schemes](architectures/fowler/other-layering-schemes)
 
 ### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
 
