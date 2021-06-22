@@ -141,6 +141,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Three-Layer System (Martin Fowler)
 
 * [Three Fundamental Layers](architectures/fowler/three-layers)
+* [Narratives summary](architectures/fowler/narratives)
 
 ### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
 
