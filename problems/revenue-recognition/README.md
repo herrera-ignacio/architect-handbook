@@ -10,4 +10,3 @@ If I sell you a cup of coffee, it's a simple matter: I give you the coffee, I ta
 
 Imagine a company that sells three kinds of products: word processors, databases, and spreadsheets. According to the rules, when you sign a contract for a word processor you can book all the revenue right away. if it's a spreadsheet, you can book one-third today, one-third in sixty days, ad one-third in thirty days. If it's a database, you can book one-third today, one-third in thirty days, and one-third in sixty days. There's no basis for these rules other than imagination.
 
-![](2021-06-25-01-31-10.png)
