@@ -16,6 +16,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Architectural styles
 * Technology Specifics
 * Models of Computation
+* Well-known problems
 * Fundamentals Glossary
 
 ## Design Principles
@@ -77,6 +78,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 > [What is a design pattern?](https://github.com/herrera-ignacio/design_patterns/blob/master/introduction/design-pattern.md)
 
+### Uncategorized
+
 * [Abstraction Inversion](./design-patterns/abstraction-inversion)
 * [MVC: Model-View-Controller](./design-patterns/mvc)
 * [Event Sourcing](design-patterns/event-sourcing)
@@ -102,6 +105,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Base Patterns
 
 * [Mapper](./design-patterns/base/mapper)
+
+### Domain Logic Patterns
+
+* [Transaction Script](design-patterns/domain-logic/transaction-script)
 
 ### Data Source & Persistence
 * [DAO: Data Access Object](./design-patterns/data/dao)
@@ -292,6 +299,10 @@ Check my [java-handbook repository](https://github.com/herrera-ignacio/java-hand
 
 * [Batch Processing](ds/batch-processing)
 * [ETL](ds/etl)
+
+## Well-known Problems
+
+* [The Revenue Recognition Problem](problems/revenue-recognition)
 
 ## Fundamentals Glossary
 
