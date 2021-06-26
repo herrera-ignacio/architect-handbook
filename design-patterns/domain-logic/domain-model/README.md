@@ -9,6 +9,8 @@
 
 ## Overview
 
+![](2021-06-25-21-55-26.png)
+
 A *Domain Model* creates a web of interconnected objects, where each object represents some meaningful individual, whether as large as a corporation or as small as single line or an order form.
 
 ## How It Works
@@ -44,8 +46,6 @@ One factor that comes into this is how comfortable the development team is with 
 ## Case Study: The Revenue Recognition Problem
 
 > [The Revenue Recognition Problem](../../../problems/revenue-recognition)
-
-![](2021-06-25-21-55-26.png)
 
 ### Java example
 

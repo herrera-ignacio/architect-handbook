@@ -9,6 +9,8 @@
 
 ## Overview
 
+![](2021-06-24-23-24-08.png)
+
 Most business applications can be though of as a series of transactions. A transaction may view some information as organized in a particular way, another will make changes to it.
 
 Each interaction between a client system and a server system contains a certain amount of logic. In some cases this can be as simple as displaying information in the database. In others it may involve many steps of validations and calculations.
@@ -48,8 +50,6 @@ One particular problem to watch for is its duplication between transactions. Car
 ## Case Study: The Revenue Recognition Problem
 
 > [The Revenue Recognition Problem](../../../problems/revenue-recognition)
-
-![](2021-06-24-23-24-08.png)
 
 ### Java Example
 
