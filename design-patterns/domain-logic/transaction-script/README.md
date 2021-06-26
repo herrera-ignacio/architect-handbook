@@ -2,7 +2,10 @@
 
 > *"Organizes business logic by procedures where each procedure handles a single request from the presentation."* - Martin Fowler
 
-![](2021-06-24-23-24-08.png)
+* Overview
+* How It Works
+* When to Use It
+* Case Study: The Revenue Recognition Problem
 
 ## Overview
 
@@ -45,6 +48,8 @@ One particular problem to watch for is its duplication between transactions. Car
 ## Case Study: The Revenue Recognition Problem
 
 > [The Revenue Recognition Problem](../../../problems/revenue-recognition)
+
+![](2021-06-24-23-24-08.png)
 
 ### Java Example
 

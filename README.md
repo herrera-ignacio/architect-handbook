@@ -109,6 +109,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Domain Logic Patterns
 
 * [Transaction Script](design-patterns/domain-logic/transaction-script)
+* [Domain Model](design-patterns/domain-logic/domain-model)
 
 ### Data Source & Persistence
 * [DAO: Data Access Object](./design-patterns/data/dao)
