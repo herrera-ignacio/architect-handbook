@@ -110,8 +110,11 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [Transaction Script](design-patterns/domain-logic/transaction-script)
 * [Domain Model](design-patterns/domain-logic/domain-model)
+* [Table Module](design-patterns/domain-logic/table-module)
+* [Service Layer](design-patterns/domain-logic/service-layer)
 
 ### Data Source & Persistence
+
 * [DAO: Data Access Object](./design-patterns/data/dao)
 * [Active Record](./design-patterns/data/active-record)
 * [Data Mapper](./design-patterns/data/data-mapper)
