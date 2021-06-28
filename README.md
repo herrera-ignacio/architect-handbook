@@ -237,6 +237,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ## System Design
 
 * [Introduction](../system-design)
+* [How to approach](../system-design/how-to)
 
 ## Technology specifics
 
