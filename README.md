@@ -12,8 +12,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Programming Paradigms
 * Design Patterns & Principles
 * Types of Software
-  * Enterprise Applications
 * Architectural styles
+* System Design
 * Technology Specifics
 * Models of Computation
 * Well-known problems
@@ -233,6 +233,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Criticism](architectures/microservices/issues)
 * [Concerns](architectures/microservices/concerns)
 * [Event Streaming Platform](architectures/microservices/event-stremaing-platform)
+
+## System Design
+
+* [Introduction](../system-design)
 
 ## Technology specifics
 
