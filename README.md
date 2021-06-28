@@ -239,6 +239,14 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Introduction](../system-design)
 * [How to approach](../system-design/how-to)
 
+### Sources & Further Reading
+
+* [Back of the envelope calculations](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html)
+* [How to ace a systems design interview](https://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
+* [The system design interview](https://www.hiredintech.com/system-design)
+* [Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
+* [System design template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)
+
 ## Technology specifics
 
 Specifics that should be considered while developing a software solution relying on a particular technology.
