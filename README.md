@@ -267,6 +267,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
 * [System design template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)
 
+### Case Studies
+
+* [Instagram News Feed - Gaurav Sen](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
+
 ## Databases
 
 * [Object-oriented databases](databases/object-oriented)
