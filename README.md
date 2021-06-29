@@ -253,6 +253,9 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Load Balancing](system-design/load-balancing)
 * [Caching](system-design/caching)
 * [RAID](system-design/raid)
+* [CAP Theorem](system-design/cap)
+  * Consistency Patterns
+  * Availability Patterns
 
 ### Sources & Further Reading
 

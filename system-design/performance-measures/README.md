@@ -33,6 +33,8 @@ Amount of **time it takes for the system to process a request from the outside**
 
 **How much stuff you can do in a given amount of time**. If you're timing the copying of a file, throughput might be measured in bytes per second. For enterprise applications a typical measure is transactions per second (*tps*).
 
+> Generally, you should aim for **maximal throughput with acceptable latency**.
+
 ## Load
 
 **How much stress a system is under**, which might be measured in how many users are currently connected to it. The load is usually in *context for some other measurement*, such as a response time. Thus, you may say that the response time for some request is 0.5 seconds with 10 users and 2 seconds with 20 users.

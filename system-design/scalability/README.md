@@ -1,6 +1,7 @@
 # Scalability
 
 * Overview
+* Scalability vs Performance
 * Domains
 
 ## Overview
@@ -10,6 +11,13 @@
 In *computing* scalability is a characteristic of computers, networks, algorithms, networking protocosl, programs and applications.
 
 > An example is *search engine*, which must support increasing numbers of users, and the number of topics it indexes.
+
+## Scalability vs Performance
+
+A service is scalable if it results in **increased performance in a manner proportional to resources added**.
+
+* If you have a performance problem, your system is slow for a single user.
+* If you have a scalability problem, your system is fast for a single user but slow under heavy load.
 
 ## Domains
 
