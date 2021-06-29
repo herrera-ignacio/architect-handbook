@@ -254,8 +254,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Caching](system-design/caching)
 * [RAID](system-design/raid)
 * [CAP Theorem](system-design/cap)
-  * [Consistency](system-design/consistency)
-  * [Availability](system-design/availability)
+* [Consistency](system-design/consistency)
+* [Availability](system-design/availability)
+  * Fail-over
+  * Replication
 
 ### Sources & Further Reading
 
@@ -264,6 +266,23 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [The system design interview](https://www.hiredintech.com/system-design)
 * [Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
 * [System design template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)
+
+## Databases
+
+* [Object-oriented databases](databases/object-oriented)
+
+### Relational Databases
+
+* [ACID](databases/relational/acid.md)
+* [Transactions](databases/relational/transactions.md)
+* [2PC Protocol / XA Transactions](databases/relational/2pc.md)
+* [Views](databases/relational/view.md)
+* [Joins](databases/relational/joins.md)
+* Stored Procedures
+* Indexing
+* [ORM: Object-relational Mapping](databases/relational/orm)
+* [Object-relational impedance mismatch](databases/relational/impedance-mismatch)
+* [Replication](databases/replication)
 
 ## Technology specifics
 
@@ -307,20 +326,7 @@ Check my [java-handbook repository](https://github.com/herrera-ignacio/java-hand
 * Apache Kafka
 * Apache Storm
 
-### Databases
-
-* [ACID](./databases/acid.md)
-* [Transactions](./databases/transactions.md)
-* [2PC Protocol / XA Transactions](./databases/2pc.md)
-* [Views](./databases/view.md)
-* [Joins](./databases/joins.md)
-* Stored Procedures
-* Indexing
-* [Object-oriented databases](./databases/object-oriented)
-* [ORM: Object-relational Madesign-patternsing](./databases/orm)
-* [Object-relational impedance mismatch](./databases/impedance-mismatch)
-
-### Operating Systems
+## Operating Systems
 
 * [Multithreading](./os/multithreading)
 * [Parallelism & Concurrency](./os/parallelism)
