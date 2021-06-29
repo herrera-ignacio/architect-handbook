@@ -236,8 +236,23 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ## System Design
 
-* [Introduction](../system-design)
-* [How to approach](../system-design/how-to)
+* [Introduction](system-design)
+* [How to approach](system-design/how-to)
+* [Performance Measures](system-design/performance-measures)
+  * Response time
+  * Responsiveness
+  * Latency
+  * Throughput
+  * Load
+  * Load sensitivity
+  * Capacity
+  * Scalability
+* [Scalability](system-design/scalability)
+  * [Vertical Scaling (scale up/down)](system-design/scalability/vertical-scaling)
+  * [Horizontal Scaling (scale out/in)](system-design/scalability/horizontal-scaling)
+* [Load Balancing](system-design/load-balancing)
+* [Caching](system-design/caching)
+* [RAID](system-design/raid)
 
 ### Sources & Further Reading
 
@@ -335,12 +350,3 @@ Must know terminology.
 * [Leaky Abstraction](glossary/leaky-abstraction)
 * [First-class citizen](glossary/first-class-citizen)
 * [Side Effect](glossary/side-effect)
-* [Performance Measures](glossary/performance-measures)
-  * Response time
-  * Responsiveness
-  * Latency
-  * Throughput
-  * Load
-  * Load sensitivity
-  * Capacity
-  * Scalability
