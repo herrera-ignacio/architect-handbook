@@ -273,6 +273,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Case Studies
 
 * [Instagram News Feed - Gaurav Sen](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
+* [Software Engineering at Google](system-design/case-studies/google-software-engineering)
 
 ## Databases
 
