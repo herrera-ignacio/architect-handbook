@@ -14,4 +14,4 @@ As an API owner, you will gain *some* flexibility and freedom by being clear abo
 
 Code that depends on brittle and unpublished features of its dependencies is likely to be described as "hacky" or "clever", whereas code that follows best practices and has planned for the future is more likely to be described as "clean" and "maintainable". Both have their purposes, and which one you select depends crucially on the expected life span of the code in question.
 
-> We've taken to saying, *"It's programming if 'clever' isa compliment, but it's software engineering if 'clever' is an accusation."*.
+> We've taken to saying, *"It's programming if 'clever' is a compliment, but it's software engineering if 'clever' is an accusation."*.
