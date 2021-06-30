@@ -106,7 +106,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [Mapper](./design-patterns/base/mapper)
 
-### Domain Logic Patterns
+### Domain Logic 
 
 * [Transaction Script](design-patterns/domain-logic/transaction-script)
 * [Domain Model](design-patterns/domain-logic/domain-model)
@@ -118,6 +118,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [DAO: Data Access Object](./design-patterns/data/dao)
 * [Active Record](./design-patterns/data/active-record)
 * [Data Mapper](./design-patterns/data/data-mapper)
+* [Table Data Gateway](./design-patterns/data/table-data-gateway)
 
 #### Object-relational Metadata Mapper
 
