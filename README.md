@@ -300,7 +300,7 @@ Specifics that should be considered while developing a software solution relying
 
 ### Golang
 
-* [Why Go?](./go/why)
+Check my [go-handbook repository](https://github.com/herrera-ignacio/go-handbook).
 
 ### React
 
