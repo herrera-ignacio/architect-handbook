@@ -17,7 +17,8 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Technology Specifics
 * Models of Computation
 * Well-known problems
-* Fundamentals Glossary
+* Glossary
+  * Laws & Theorems
 
 ## Design Principles
 
@@ -351,9 +352,9 @@ Check my [java-handbook repository](https://github.com/herrera-ignacio/java-hand
 
 * [The Revenue Recognition Problem](problems/revenue-recognition)
 
-## Fundamentals Glossary
+## Glossary
 
-Must know terminology.
+### Common Terms
 
 * [CRUD](glossary/crud)
 * [Abstract Syntax Tree](glossary/ast)
@@ -365,3 +366,7 @@ Must know terminology.
 * [Leaky Abstraction](glossary/leaky-abstraction)
 * [First-class citizen](glossary/first-class-citizen)
 * [Side Effect](glossary/side-effect)
+
+### Laws & Theorems
+
+* [Hyrum's Law: The Law of Implicit Dependencies](glossary/laws/hyrum)
