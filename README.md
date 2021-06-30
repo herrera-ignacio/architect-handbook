@@ -370,3 +370,5 @@ Check my [java-handbook repository](https://github.com/herrera-ignacio/java-hand
 ### Laws & Theorems
 
 * [Hyrum's Law: The Law of Implicit Dependencies](glossary/laws/hyrum)
+* [Churn Rule](glossary/laws/churn-rule)
+* [Beyoncé Rule](glossary/laws/beyonce-rule)
