@@ -4,3 +4,5 @@
 
 * [Flexibility of a codebase](./codebase-flexibility)
 * [Shifting Left](./shifting-left)
+* [Sofware Engineering Vs Programming](./swe-vs-programming)
+* [Making decisions](./making-decisions)

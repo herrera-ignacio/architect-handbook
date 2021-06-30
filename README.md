@@ -250,6 +250,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * Load sensitivity
   * Capacity
   * Scalability
+* [Sustainability](system-design/sustainability)
 * [Scalability](system-design/scalability)
   * [Vertical Scaling (scale up/down)](system-design/scalability/vertical-scaling)
   * [Horizontal Scaling (scale out/in)](system-design/scalability/horizontal-scaling)
