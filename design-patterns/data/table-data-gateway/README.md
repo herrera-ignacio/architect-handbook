@@ -5,7 +5,6 @@
 * Overview
 * How It Works
 * When to Use It
-* Example
 
 ## Overview
 
