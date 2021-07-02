@@ -283,6 +283,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Object-oriented databases](databases/object-oriented)
 * [Replication](databases/replication)
 * [CAP/Brewer's Theorem](databases/cap)
+* [Eventual Consistency/BASE](databases/base)
 
 ### Relational Databases
 
@@ -303,6 +304,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 #### HBase
 
 * [Overview](databases/wide-column/hbase/overview)
+* [HBase Architecture](https://www.youtube.com/watch?v=V1fXSCASVDc)
+* [HBase Interaction](https://www.youtube.com/watch?v=KQMCOgVdsiw)
 
 ## Technology specifics
 
