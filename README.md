@@ -15,6 +15,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Architectural styles
 * System Design
 * Databases
+* Distributed Systems
 * Technology Specifics
 * Models of Computation
 * Well-known problems
@@ -304,8 +305,15 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 #### HBase
 
 * [Overview](databases/wide-column/hbase/overview)
+* [Vs Relational Databases](databases/wide-column/hbase/vs-relational)
+* [Architectural Components](databases/wide-column/hbase/architecture)
 * [HBase Architecture](https://www.youtube.com/watch?v=V1fXSCASVDc)
 * [HBase Interaction](https://www.youtube.com/watch?v=KQMCOgVdsiw)
+
+## Distributed Systems
+
+* Message Brokers
+  * [Kafka](distributed/message-brokers/kafka)
 
 ## Technology specifics
 
