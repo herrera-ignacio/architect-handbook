@@ -14,6 +14,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Types of Software
 * Architectural styles
 * System Design
+* Databases
 * Technology Specifics
 * Models of Computation
 * Well-known problems
@@ -279,6 +280,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ## Databases
 
 * [Object-oriented databases](databases/object-oriented)
+* [Replication](databases/replication)
 
 ### Relational Databases
 
@@ -291,7 +293,14 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * Indexing
 * [ORM: Object-relational Mapping](databases/relational/orm)
 * [Object-relational impedance mismatch](databases/relational/impedance-mismatch)
-* [Replication](databases/replication)
+
+### Wide-column store
+
+* [Overview](databases/wide-column)
+
+#### HBase
+
+* [Overview](databases/wide-column/hbase/overview)
 
 ## Technology specifics
 
