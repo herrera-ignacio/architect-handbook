@@ -307,7 +307,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Overview](databases/wide-column/hbase/overview)
 * [Vs Relational Databases](databases/wide-column/hbase/vs-relational)
 * [Architectural Components](databases/wide-column/hbase/architecture)
-* [HBase Architecture](https://www.youtube.com/watch?v=V1fXSCASVDc)
+* [Write Mechanism](databases/wide-column/hbase/writes)
 * [HBase Interaction](https://www.youtube.com/watch?v=KQMCOgVdsiw)
 
 ## Distributed Systems
