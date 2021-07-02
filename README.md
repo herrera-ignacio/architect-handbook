@@ -240,6 +240,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ## System Design
 
+> For a complete System Design study, you should also be familiar with Databases related topics such as CAP Theorem.
+
 * [Introduction](system-design)
 * [How to approach](system-design/how-to)
 * [Performance Measures](system-design/performance-measures)
@@ -258,7 +260,6 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Load Balancing](system-design/load-balancing)
 * [Caching](system-design/caching)
 * [RAID](system-design/raid)
-* [CAP Theorem](system-design/cap)
 * [Consistency](system-design/consistency)
 * [Availability](system-design/availability)
   * Fail-over
@@ -281,6 +282,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [Object-oriented databases](databases/object-oriented)
 * [Replication](databases/replication)
+* [CAP/Brewer's Theorem](databases/cap)
 
 ### Relational Databases
 
