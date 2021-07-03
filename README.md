@@ -308,7 +308,11 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Vs Relational Databases](databases/wide-column/hbase/vs-relational)
 * [Architectural Components](databases/wide-column/hbase/architecture)
 * [Write Mechanism](databases/wide-column/hbase/writes)
-* [HBase Interaction](https://www.youtube.com/watch?v=KQMCOgVdsiw)
+* [Interacting with Shell](databases/wide-column/hbase/shell)
+* [ACID in HBase](https://hadoop-hbase.blogspot.com/2012/03/acid-in-hbase.html)
+* [HBase Shell Interaction](databases/wide-column/hbase/shell)
+* [HBase Interaction](https://www.youtube.com/watch?v=9YkurBN5Pt0)
+* [HBase for Java Developers](https://www.youtube.com/playlist?list=PLf0swTFhTI8r6wUT9dcSQ-sLeaIMbbLm_)
 
 ## Distributed Systems
 
