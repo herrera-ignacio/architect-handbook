@@ -2,6 +2,10 @@
 
 ![](2021-06-28-22-02-47.png)
 
+![](2021-07-03-16-01-09.png)
+
+> Great explanation: https://www.youtube.com/watch?v=k-Yaq8AHlFA
+
 *CAP theorem*, also named *Brewer's theorem*, states that is impossible for a **distributed data store** to **simultaneously** provide **more than two** (CP vs AP) of the following three guarantees:
 
 * **Consistency**: Every read receives the most recent write or an error.
