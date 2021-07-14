@@ -129,6 +129,7 @@ Moonlight Serenade
 
 * [Unit of Work](design-patterns/or-behavioral/unit-of-work)
 * [Identity Map](design-patterns/or-behavioral/identity-map)
+* [Lazy Load](design-patterns/or-behavioral/lazy-load)
 
 ## Types of Software
 
