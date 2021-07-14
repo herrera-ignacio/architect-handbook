@@ -110,7 +110,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Mapper](./design-patterns/base/mapper)
 
 ### Domain Logic 
-
+Moonlight Serenade
 * [Transaction Script](design-patterns/domain-logic/transaction-script)
 * [Domain Model](design-patterns/domain-logic/domain-model)
 * [Table Module](design-patterns/domain-logic/table-module)
@@ -128,6 +128,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Object-Relational Behavioral
 
 * [Unit of Work](design-patterns/or-behavioral/unit-of-work)
+* [Identity Map](design-patterns/or-behavioral/identity-map)
 
 ## Types of Software
 
