@@ -57,3 +57,26 @@ The decision varies between **one map per class/table** and **one map for the wh
   * It helps avoid update conflicts within a single session, but it doesn't do anything across sessions (Instead, you should use *Optimistic/Pessimistic Offline Lock*).
 
 * **Cache**
+
+## Example
+
+### Java
+
+```java
+private Map people = new HashMap();
+
+public static void addPerson(Person arg) {
+  soleInstance.people.put(arg.getID(), arg);
+}
+
+public static Person getPerson(Long key) {
+  return (Person) soleInstance.people.get(key);
+}
+
+public static Person getPerson(long key) {
+  return getPerson(new Long(key));
+}
+```
+
+> `long` isn't an object so you can't use it as an index for a map. This is troublesome if you want to retrieve an object with a literal which you often do in test code, so you can include a getting method that takes a `long` to make testing easier.
+
