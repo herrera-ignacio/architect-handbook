@@ -134,6 +134,7 @@ Moonlight Serenade
 ### Object-Relational Structural
 
 * [Identity Field](design-patterns/or-structural/identity-field)
+* [Foreign Key Mapping](design-patterns/or-structural/foreign-key-mapping)
 
 ## Types of Software
 
