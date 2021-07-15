@@ -131,6 +131,10 @@ Moonlight Serenade
 * [Identity Map](design-patterns/or-behavioral/identity-map)
 * [Lazy Load](design-patterns/or-behavioral/lazy-load)
 
+### Object-Relational Structural
+
+* [Identity Field](design-patterns/or-structural/identity-field)
+
 ## Types of Software
 
 > Altouhgh some techniques and patterns are relevant for all kinds of software, many are relevant for only one particular branch.
