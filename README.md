@@ -137,6 +137,7 @@ Moonlight Serenade
 * [Foreign Key Mapping](design-patterns/or-structural/foreign-key-mapping)
 * [Association Table Mapping](design-patterns/or-structural/association-table-mapping)
 * [Dependent Mapping](design-patterns/or-structural/dependent-mapping)
+* [Embedded Value / Aggregate Mapping](design-patterns/or-structural/embedded-value)
 
 ## Types of Software
 
