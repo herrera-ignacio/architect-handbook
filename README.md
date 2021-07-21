@@ -139,6 +139,7 @@ Moonlight Serenade
 * [Dependent Mapping](design-patterns/or-structural/dependent-mapping)
 * [Embedded Value / Aggregate Mapping](design-patterns/or-structural/embedded-value)
 * [Serializd LOB](design-patterns/or-structural/serialized-lob)
+* [Single Table Inheritance](design-patterns/or-structural/single-table-inheritance)
 
 ## Types of Software
 
