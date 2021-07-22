@@ -141,6 +141,7 @@ Moonlight Serenade
 * [Serializd LOB](design-patterns/or-structural/serialized-lob)
 * [Single Table Inheritance](design-patterns/or-structural/single-table-inheritance)
 * [Class Table Inheritance / Root-Leaf Mapping](design-patterns/or-structural/class-table-inheritance)
+* [Concrete Table Inheritance](design-patterns/or-structural/concrete-table-inheritance)
 
 ## Types of Software
 
