@@ -142,6 +142,7 @@ Moonlight Serenade
 * [Single Table Inheritance](design-patterns/or-structural/single-table-inheritance)
 * [Class Table Inheritance / Root-Leaf Mapping](design-patterns/or-structural/class-table-inheritance)
 * [Concrete Table Inheritance](design-patterns/or-structural/concrete-table-inheritance)
+* [Inheritance Mappers](design-patterns/or-structural/inheritance-mappers)
 
 ## Types of Software
 
