@@ -46,4 +46,4 @@ The presentation can't tell if the record sets came directly from the relational
 
 You have to trade off *Domain Model*'s ability to handle complex logic against *Table Module*'s easier integration with the underlying table-oriented data structures.
 
-> In Microsfot COM designs (and .NET), the *Record Set* is the primary repository of data in an application. Record sets can e passed to the UI, where data-aware widgets display information.
+> In Microsoft COM designs (and .NET), the *Record Set* is the primary repository of data in an application. Record sets can be passed to the UI, where data-aware widgets display information.

@@ -80,8 +80,20 @@ The idea of this collection is not to help you become a expert of, let's say a p
 ## Design Patterns & Principles
 
 > [What is a design pattern?](https://github.com/herrera-ignacio/design_patterns/blob/master/introduction/design-pattern.md)
+* Base Patterns
+* General / Architectural
+* Gamma Design Patterns (GoF) 
+* Domain Logic
+* Data Source Pesistence
+* Object-Relational Behavioral 
+* Object-Relational Structusral
+* Object-Relational Metadata Mapping
 
-### Uncategorized
+### Base Patterns
+
+* [Mapper](./design-patterns/base/mapper)
+
+### General / Architectural 
 
 * [Abstraction Inversion](./design-patterns/abstraction-inversion)
 * [MVC: Model-View-Controller](./design-patterns/mvc)
@@ -105,12 +117,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 | | | [Template Method](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/template-method) |
 | | | [Visitor](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/visitor) |
 
-### Base Patterns
-
-* [Mapper](./design-patterns/base/mapper)
-
 ### Domain Logic 
-Moonlight Serenade
+
 * [Transaction Script](design-patterns/domain-logic/transaction-script)
 * [Domain Model](design-patterns/domain-logic/domain-model)
 * [Table Module](design-patterns/domain-logic/table-module)
@@ -125,24 +133,30 @@ Moonlight Serenade
 * [Row Data Gateway](design-patterns/data/row-data-gateway)
 * [Repository](./design-patterns/data/repository)
 
-### Object-Relational Behavioral
+### Object Relational
 
-* [Unit of Work](design-patterns/or-behavioral/unit-of-work)
-* [Identity Map](design-patterns/or-behavioral/identity-map)
-* [Lazy Load](design-patterns/or-behavioral/lazy-load)
+#### Behavioral
 
-### Object-Relational Structural
+* [Unit of Work](design-patterns/object-relational/behavioral/unit-of-work)
+* [Identity Map](design-patterns/object-relational/behavioral/identity-map)
+* [Lazy Load](design-patterns/object-relational/behavioral/lazy-load)
 
-* [Identity Field](design-patterns/or-structural/identity-field)
-* [Foreign Key Mapping](design-patterns/or-structural/foreign-key-mapping)
-* [Association Table Mapping](design-patterns/or-structural/association-table-mapping)
-* [Dependent Mapping](design-patterns/or-structural/dependent-mapping)
-* [Embedded Value / Aggregate Mapping](design-patterns/or-structural/embedded-value)
-* [Serializd LOB](design-patterns/or-structural/serialized-lob)
-* [Single Table Inheritance](design-patterns/or-structural/single-table-inheritance)
-* [Class Table Inheritance / Root-Leaf Mapping](design-patterns/or-structural/class-table-inheritance)
-* [Concrete Table Inheritance](design-patterns/or-structural/concrete-table-inheritance)
-* [Inheritance Mappers](design-patterns/or-structural/inheritance-mappers)
+#### Structural
+
+* [Identity Field](design-patterns/object-relational/structural/identity-field)
+* [Foreign Key Mapping](design-patterns/object-relational/structural/foreign-key-mapping)
+* [Association Table Mapping](design-patterns/object-relational/structural/association-table-mapping)
+* [Dependent Mapping](design-patterns/object-relational/structural/dependent-mapping)
+* [Embedded Value / Aggregate Mapping](design-patterns/object-relational/structural/embedded-value)
+* [Serializd LOB](design-patterns/object-relational/structural/serialized-lob)
+* [Single Table Inheritance](design-patterns/object-relational/structural/single-table-inheritance)
+* [Class Table Inheritance / Root-Leaf Mapping](design-patterns/object-relational/structural/class-table-inheritance)
+* [Concrete Table Inheritance](design-patterns/object-relational/structural/concrete-table-inheritance)
+* [Inheritance Mappers](design-patterns/object-relational/structural/inheritance-mappers)
+
+#### Metadata Mapping
+
+* [Metadata Mapping](design-patterns/object-relational/metadata-mapping/metadata-mapping)
 
 ## Types of Software
 

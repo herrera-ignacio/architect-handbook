@@ -32,7 +32,7 @@ The simplest is *Transaction Script*, it fits with a precedural model and nicely
 
 At the other end of the scale is the *Domain Model*, which is the way to go for complex domain logic. Yet it has its faults. High on the list is the difficulty of learning how to use a domain model, because done poorly it's a disaster. The second big difficulty is its connection to a relational database. The complexity of many O/R mapping patterns is the result.
 
-*Table Module* represents an attractivce middle groud between these poles. It can handle domain logic better than *Transaction Scripts*, and it fits really well with a relational database. If you haven an environment such as .NET, where many tools orbit around the *Record Set*, then *Table Module* works nicely.
+*Table Module* represents an attractivce middle groud between these poles. It can handle domain logic better than *Transaction Scripts*, and it fits really well with a relational database. If you have an environment such as .NET, where many tools orbit around the *Record Set*, then *Table Module* works nicely.
 
 > Tools you have also affect your architecture. Sometimes you're able to choose the tools based on the architecture, and in theory that's the way you should go. In practice, however, you often have to match your architecture to your tools.
 

@@ -36,6 +36,6 @@ The first decision is whether to use a *Gateway* approach at all and then which 
 
 *Table Data Gateway* is probably the simplest database interface pattern to use, as it maps so nicely onto a database table or record type. It also makes a natural point to encapsulate the precise access logic of the data source.
 
-*Table Data Gateway* works particularly well with *Table Module*, where it produces a record set data structure for the *Table Module* to work on. It is also very suitable for *Transaction Scripts*. *Data Mapper* gives a bettewr isolation between *Domain Model* and the database.
+*Table Data Gateway* works particularly well with *Table Module*, where it produces a record set data structure for the *Table Module* to work on. It is also very suitable for *Transaction Scripts*. *Data Mapper* gives a better isolation between *Domain Model* and the database.
 
 Interestingly, it often makes sense to have the *Data Mappers* talk to the database via *Table Data Gateways*. It can be very effective if you want to use metadata for the *Table Data Gateways* but prefer handcoding for the actual mapping to the domain objects.
