@@ -157,6 +157,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 #### Metadata Mapping
 
 * [Metadata Mapping](design-patterns/object-relational/metadata-mapping/metadata-mapping)
+* [Query Object](design-patterns/object-relational/metadata-mapping/query-object)
+* [Repository](design-patterns/object-relational/metadata-mapping/repository)
 
 ## Types of Software
 
