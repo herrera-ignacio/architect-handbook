@@ -162,6 +162,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Web Presentation
 
 * [Model View Controller](design-patterns/web-presentation/mvc)
+* [Page Controller](design-patterns/web-presentation/page-controller)
 
 ## Anti-Patterns
 
