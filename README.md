@@ -163,6 +163,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [Model View Controller](design-patterns/web-presentation/mvc)
 * [Page Controller](design-patterns/web-presentation/page-controller)
+* [Front Controller](desigtn-patterns/web-presentation/front-controller)
 
 ## Anti-Patterns
 
