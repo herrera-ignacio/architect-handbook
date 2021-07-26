@@ -11,6 +11,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * Design Principles
 * Programming Paradigms
 * Design Patterns & Principles
+* Anti-Patterns
 * Types of Software
 * Architectural styles
 * System Design
@@ -95,9 +96,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 ### General / Architectural 
 
-* [Abstraction Inversion](./design-patterns/abstraction-inversion)
-* [MVC: Model-View-Controller](./design-patterns/mvc)
-* [Event Sourcing](design-patterns/event-sourcing)
+* [Event Sourcing](design-patterns/architectural/event-sourcing)
 
 ### Gamma Design Patterns
 
@@ -159,6 +158,14 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Metadata Mapping](design-patterns/object-relational/metadata-mapping/metadata-mapping)
 * [Query Object](design-patterns/object-relational/metadata-mapping/query-object)
 * [Repository](design-patterns/object-relational/metadata-mapping/repository)
+
+### Web Presentation
+
+* [Model View Controller](design-patterns/web-presentation/mvc)
+
+## Anti-Patterns
+
+* [Abstraction Inversion](anti-patterns/abstraction-inversion)
 
 ## Types of Software
 
