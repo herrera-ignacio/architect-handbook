@@ -159,7 +159,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Query Object](design-patterns/object-relational/metadata-mapping/query-object)
 * [Repository](design-patterns/object-relational/metadata-mapping/repository)
 
-### Web Presentation
+#### Web Presentation
 
 * [Model View Controller](design-patterns/web-presentation/mvc)
 * [Page Controller](design-patterns/web-presentation/page-controller)
@@ -167,6 +167,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Template View](design-patterns/web-presentation/template-view)
 * [Transform View](design-patterns/web-presentation/transform-view)
 * [Two Step View](design-patterns/web-presentation/two-step-view)
+
+#### Distribution Patterns
+
+* [Remote Facade](design-patterns/distribution/remote-facade)
 
 ## Anti-Patterns
 
