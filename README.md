@@ -102,7 +102,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 * [Separated Interface](design-patterns/base/separated-interface)
 * [Registry](design-patterns/base/registry)
 * [Value Object](design-patterns/base/value-object)
-* [Money](design-patterns/base/money)
+  * [Money](design-patterns/base/value-object/money)
 * [Special Case](design-patterns/base/special-case)
 * [Plugin](design-patterns/base/plugin)
 * [Service Stub](design-patterns/base/service-stub)
