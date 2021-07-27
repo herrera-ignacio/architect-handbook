@@ -165,6 +165,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Page Controller](design-patterns/web-presentation/page-controller)
 * [Front Controller](design-patterns/web-presentation/front-controller)
 * [Template View](design-patterns/web-presentation/template-view)
+* [Transform View](design-patterns/web-presentation/transform-view)
 
 ## Anti-Patterns
 
