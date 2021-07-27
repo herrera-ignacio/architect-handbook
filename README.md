@@ -183,6 +183,12 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Pessimistic Offline Lock](design-patterns/offline-concurrency/pessimistic-offline-lock)
 * [Coarse-Grained Lock](design-patterns/offline-concurrency/coarse-grained-lock)
 
+### Session State
+
+* [Client Session State](design-patterns/session-state/client)
+* [Server Session State](design-patterns/session-state/server)
+* [Database Session State](design-patterns/session-state/database)
+
 ## Anti-Patterns
 
 * [Abstraction Inversion](anti-patterns/abstraction-inversion)
