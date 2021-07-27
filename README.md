@@ -83,12 +83,16 @@ The idea of this collection is not to help you become a expert of, let's say a p
 > [What is a design pattern?](https://github.com/herrera-ignacio/design_patterns/blob/master/introduction/design-pattern.md)
 * Base Patterns
 * General / Architectural
-* Gamma Design Patterns (GoF) 
+* Gang Of Four Patterns (GoF) 
 * Domain Logic
 * Data Source Pesistence
-* Object-Relational Behavioral 
-* Object-Relational Structusral
-* Object-Relational Metadata Mapping
+* Object-Relational
+  * Behavioral 
+  * Structural
+  * Metadata Mapping
+* Web Presentation
+* Distribution
+* Offline Concurrency
 
 ### Base Patterns
 
@@ -98,7 +102,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Event Sourcing](design-patterns/architectural/event-sourcing)
 
-### Gamma Design Patterns
+### Gang of Four Patterns
 
 Please check the [this repository](https://github.com/herrera-ignacio/design_patterns/) for a detailed explanation and examples of each of the following patterns.
 
@@ -116,7 +120,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 | | | [Template Method](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/template-method) |
 | | | [Visitor](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/visitor) |
 
-### Domain Logic 
+### Domain Logic
 
 * [Transaction Script](design-patterns/domain-logic/transaction-script)
 * [Domain Model](design-patterns/domain-logic/domain-model)
@@ -159,7 +163,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Query Object](design-patterns/object-relational/metadata-mapping/query-object)
 * [Repository](design-patterns/object-relational/metadata-mapping/repository)
 
-#### Web Presentation
+### Web Presentation
 
 * [Model View Controller](design-patterns/web-presentation/mvc)
 * [Page Controller](design-patterns/web-presentation/page-controller)
@@ -168,10 +172,16 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Transform View](design-patterns/web-presentation/transform-view)
 * [Two Step View](design-patterns/web-presentation/two-step-view)
 
-#### Distribution Patterns
+### Distribution
 
 * [Remote Facade](design-patterns/distribution/remote-facade)
 * [Data Transfer Object](design-patterns/distribution/dto)
+
+### Offline Concurrency
+
+* [Optimistic Offline Lock](design-patterns/offline-concurrency/optimistic-offline-lock)
+* [Pessimistic Offline Lock](design-patterns/offline-concurrency/pessimistic-offline-lock)
+* [Coarse-Grained Lock](design-patterns/offline-concurrency/coarse-grained-lock)
 
 ## Anti-Patterns
 
