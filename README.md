@@ -98,6 +98,7 @@ The idea of this collection is not to help you become a expert of, let's say a p
 
 * [Gateway](design-patterns/base/gateway)
 * [Mapper](design-patterns/base/mapper)
+* [Layer Supertype](design-patterns/base/layer-supertype)
 
 ### General / Architectural 
 
