@@ -171,6 +171,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 #### Distribution Patterns
 
 * [Remote Facade](design-patterns/distribution/remote-facade)
+* [Data Transfer Object](design-patterns/distribution/dto)
 
 ## Anti-Patterns
 
