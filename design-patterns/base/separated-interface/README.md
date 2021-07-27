@@ -24,7 +24,6 @@ You might need to invoke methods that contradict the general dependency structur
 
 * One of the awkward things about separate interfaces is **how to instantiate the implementation**. It usually requires knowledge of the implementation class. The common approach is to **use a separate factory object**, where again there is a separate interface for the factory. You still have to bind an implementation to the factory, and *Plugin* is a good way to do this.
 
-
 ## When to Use It
 
 * You use *Separated Interface* when **you need to break a dependency between two parts of the system**.
