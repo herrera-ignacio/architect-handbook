@@ -10,11 +10,15 @@
 
 ## Overview
 
+![](2021-07-28-00-04-18.png)
+
 When mapping from objects to databases we have to consider how to represent inheritance structures in relational tables.
 
 We try to **minimize the joins** that can quickly mount up when processing an inheritance structure in mmultiple tables. *Single Table Inheritance* **maps all fields of all classes of an inheritance structure into a single table**.
 
 ## How It Works
+
+![](2021-07-28-00-04-53.png)
 
 In this inheritance mapping scheme we have **one table that contains all the data for all the classes in the inheritance hierarchy**. Each class stores the data that's relevant to it in one table row, and any columns that aren't relevant are left empty.
 

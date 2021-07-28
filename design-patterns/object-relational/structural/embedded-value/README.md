@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-27-23-55-43.png)
+
 An *Embedded Value* maps the values of an object to fields in the record of the object's owner.
 
 > Many small objects make sense in an OO system that don't make sense as tables in a database (e.g. currency-aware money objects and date ranges).

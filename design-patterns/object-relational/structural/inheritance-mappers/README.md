@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-14-51.png)
+
 When you map from an object-oriented inheritance hierarchy in memory to a relational database you have to minimize the amount of code needed to save and load the data to the database, and **provide both abstract and concrete mapping behavior that allows you to save or load a superclass or a subclass**.
 
 ## How It Works

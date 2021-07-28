@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-27-23-54-18.png)
+
 Objects can handle multivalued fields quite easily by using collections as field values. Relational databases don't have this feature and are constrained to single-valued fields only.
 
 When you're mapping a one-to-many association you can handle this using *Foreign Key Mapping*, essentially using a foreign key for the single-valued end of the association. But to **handle a many-to-many association** you can't do tihs, so the answer is the classic resolution of **reating an extra table to record that relationship**. Then use *Association Table Mapping* to map the multivalued field to this link table.

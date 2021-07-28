@@ -11,6 +11,8 @@
 
 ## Overview
 
+![](2021-07-27-23-31-40.png)
+
 You can change the database with each change to your object model, but this can lead to lots of very small database calls, which ends up being very slow. Furthermore it requires you to have a transaction open for the whole interaction, which is impractical if you have a business transaction that spans multiple requests. The situation is even worse if you need to keep track of the objects you've read to avoid inconsistent reads.
 
 A *Unit of Work* keeps track of everything you do during a business transaction that can affect the database. When you're done, it figures out everything that needs to be done to alter the database as a result of your work.
@@ -35,12 +37,16 @@ Objects need to be able to find their current *Unit of Work*. A good way to do t
 
 ### Called Registration
 
+![](2021-07-27-23-31-52.png)
+
 With **called registration**, the user of an object has to remember to register the object with the *Unit of Work* for changes. Any objects that aren't registered won't be written out on commit. 
 
 * Allows forgetfulness to cause trouble
 * Gives flexibility in allowing people to make in-memory changes that they don't want written out.
 
 ### Object Registration
+
+![](2021-07-27-23-37-32.png)
 
 With **object registration**, the onus is removed from the caller.
 
@@ -49,6 +55,8 @@ With **object registration**, the onus is removed from the caller.
 * Setting methods register the object as dirty
 
 ### Unit Of Work Controller
+
+![](2021-07-27-23-37-55.png)
 
 * The *Unit of Work* handles all reads from the database and registers clean objects whenever they're read.
 * Rather than makring objects as dirty, the *Unit of Work* takes a copy at read time and then compares the object at commit time.

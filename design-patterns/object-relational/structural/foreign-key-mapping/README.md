@@ -10,7 +10,13 @@
 
 Objects can refer to each other directly by object references. To save these objects to a database, we need to keep these referecens.
 
+![](2021-07-27-23-50-01.png)
+
+![](2021-07-27-23-53-27.png)
+
 ## How It Works
+
+![](2021-07-27-23-53-45.png)
 
 * Each object contains the database key from the appropriate database table (*Identity Field*).
 

@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-04-03.png)
+
 Object models oftan contain complicated graphs of small objects which are not easy to put into a relational schema. Manipulating such a relational schema could require many joins, which are both slow and awkward.
 
  You can use *serialization*, where a whole graph of objects is **written out as a single _Large Object_ (LOB)** in a table. This *Serialized LOB* then becomes a form of *Memento*.

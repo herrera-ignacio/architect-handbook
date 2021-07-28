@@ -10,11 +10,15 @@
 
 ## Overview
 
+![](2021-07-28-00-12-28.png)
+
 Take each object in memory and map it to a single database row. With *Concrete Table Inheritance*, there's **a table for each concrete class in the inheritance hierarchy**.
 
 Most people think of it as a **leaf oriented** since you usually have **one table per leaf class** in a hierarchy. Strictly, however, a concrete class that isn't a leaf ususally gets a table as well.
 
 ## How It Works
+
+![](2021-07-28-00-12-49.png)
 
 *Concrete Table Inheritance* uses one database table for each concrete class in the hierarchy. **Each table contains columns for the concrete class and all it ancestors**, so any fields in a superclass are duplicated across the tables of the subclasses.
 

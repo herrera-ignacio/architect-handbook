@@ -10,11 +10,15 @@
 
 ## Overview
 
+![](2021-07-28-00-05-15.png)
+
 You want database structures that map to objects and allow links anywhere in the inheritance structure.
 
 *Class Table Inheritance* supports this by using **one database table per class in the inheritance structure**.
 
 ## How It Works
+
+![](2021-07-28-00-05-27.png)
 
 *Class Table Inheritance* has one table per class in the domain model. **The fields in the domain class map directly to the fields in the corresponding tables**. 
 

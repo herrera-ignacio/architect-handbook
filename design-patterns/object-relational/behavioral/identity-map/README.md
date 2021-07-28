@@ -15,6 +15,8 @@
 
 ## Overview
 
+![](2021-07-27-23-39-02.png)
+
 An *Identity Map* keeps a record of all objects that have been read from the database in a single business transaction.
 
 ## How It Works

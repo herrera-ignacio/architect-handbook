@@ -9,6 +9,8 @@
 
 ## Overview
 
+![](2021-07-27-23-40-45.png)
+
 Loading an object can have the effect of loading a huge number of related objects (when only a few are actually needed).
 
 A *Lazy Load* interrupts this loading process for the moment, leaving a marker in the object structure so that if the data is needed it can be loaded only when it is used.

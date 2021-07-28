@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-27-23-55-14.png)
+
 Some objects naturally appear in the context of other objects.
 
 > Tracks on an album may be loaded or saved whenever the underlying album is loaded or saved.
