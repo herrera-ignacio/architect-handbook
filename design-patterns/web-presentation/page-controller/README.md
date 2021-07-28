@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-25-18.png)
+
 *Page Controller* has one input controller for logical page of a web site. That controller may be the page itself, as it often is in server page environments, or it may be a separate object that corresponds to that page.
 
 ## How It Works

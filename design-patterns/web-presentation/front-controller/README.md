@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-25-39.png)
+
 In a complex Web site there are many similar things you need to do when handling a request (e.g., security, internationalization, providing particular views for certain users). If the controller behavior is scattered across multiple objects, much of this behavior can end up being duplicated and it's difficult to change at runtime.
 
 The *Front Controller* **consolidates all request handling by channeling requests through a single handler object**. This object can carry out common behavior, which can be modified at run time with decorators. The handler then dispatches to command objects for behavior particular to a request.

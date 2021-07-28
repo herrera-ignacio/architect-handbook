@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-35-50.png)
+
 You often want a consistent look and organization to the site. You may also want to make global changes to the appearence of the site easily, but common approaches using *Template View* or *Transform View* make this difficult because presentation decisions are often duplicated across multiple pages or transform modules.
 
 *Two Step View* deals with this problem by splitting the transformation into two stages:
@@ -27,6 +29,14 @@ This way **you can make a global change by altering the second stage**, or **you
   2. Transform the presntation-oriented structure and render it into HTML.
 
 * The intermediate form is a kind of logical screen. Its element might include things like fields, headers, footers, tables, choices, and the like.
+
+![](2021-07-28-00-36-07.png)
+
+![](2021-07-28-00-36-22.png)
+
+![](2021-07-28-00-36-34.png)
+
+![](2021-07-28-00-36-50.png)
 
 ## When to Use It
 

@@ -10,6 +10,8 @@
 
 ## Overview
 
+![](2021-07-28-00-33-55.png)
+
 For working with **dynamic Web pages**, those that take results of something like database queries and embed them into the HTML, a good approach is to compose the dynamic Web page as you do **a static page but put in markers that can be resolved into calls to gather dynamic informationi**.
 
 ## How It Works

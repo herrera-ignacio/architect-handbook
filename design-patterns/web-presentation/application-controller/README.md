@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-37-15.png)
+
 In some applications, the user is led through a series of screens in a certain order. In other cases we may see screens that are only brought in under certain conditions, or chioces between different screens that depend on earlier input.
 
 *Model View Controller*'s input controllers can make some of these decisions, but this can lead to duplicated code as application gets more complex. To avoid this duplication, __input controllers can ask an *Application Controller*for the appropriate commands__ for execution against a model __and the correct view__ to use depending on the application context.
@@ -16,6 +18,8 @@ An *Application Controller* has **two main responsibilities**:
 
 * Deciding which domain logic to run.
 * Deciding the view with which to display the response.
+
+![](2021-07-28-00-37-25.png)
 
 ## How It Works
 
@@ -26,6 +30,8 @@ An *Application Controller* has **two main responsibilities**:
 * May or may not have links to the UI machinery. This will impact on how difficult is to test it. It's also important to isolate them if you want to support the same *Application Controller* with multiple presentations.
 
 * An application can have multiple *Application Controllers* to handle each of its different parts, spliting up complex logic into several classes.
+
+![](2021-07-28-00-37-39.png)
 
 ## When to Use It
 

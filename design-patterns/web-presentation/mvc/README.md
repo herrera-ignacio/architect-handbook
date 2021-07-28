@@ -11,6 +11,8 @@
 
 ## Overview 
 
+![](2021-07-28-00-25-08.png)
+
 *Model View Controller* started as a framework developed by *Trygve Reensaukg* for the *Smalltalk* platform in the late 1970s. Since then it has played an influential role in most UI frameworks and in the thinking about UI design.
 
 > The best available reference is *Pattern-Oriented Software Architecture* series of books.
