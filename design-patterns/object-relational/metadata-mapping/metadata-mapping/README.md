@@ -10,6 +10,8 @@
 
 ## Overview
 
+![](2021-07-28-00-23-54.png)
+
 Much of the code that deals with object-relational mapping describes **how fields in the database correspond to fields in in-memory objects**.
 
 *Metadata Mapping* allows to **define the mappings in a tabular form, which can be processed by generic code** to carry out the details of reading, inserting, and updating the data.

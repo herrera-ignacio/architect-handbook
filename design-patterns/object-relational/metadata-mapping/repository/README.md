@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-24-27.png)
+
 *Repository* is another **layer of abstraction over the data mapping layer** where query construction code is concentrated. This can be worthwhile to build when there are a large numer of domain classes or heavy querying, because it **helps minimize duplicate query logic**.
 
 A *Repository* acts like an **in-memory domain object collection that mediates between the domain and data mapping layers**.

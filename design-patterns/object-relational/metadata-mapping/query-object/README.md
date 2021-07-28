@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-24-12.png)
+
 A *Query Object* is an *Interpreter* (Gang of Four), that is, a structure of objects that can form itself into a SQL query. You can create this query by refering to classes and fields rather than tables an columns.
 
 In this way those who write the queries can do so independently of the database schema and changes to the schema can be localized in a single place.
