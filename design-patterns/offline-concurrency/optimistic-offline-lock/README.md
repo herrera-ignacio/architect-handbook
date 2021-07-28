@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-53-52.png)
+
 *Optimistic Offline Lock* solves the problem of *lost updates* and *inconsistent reads* by **validating that the changes about to be committed by one session don't conflict with the changes of another session**.
 
 A successful pre-commit validation is, in a sense, obtaining a lock indicating it's okay to go ahead with the changes to the record data. So long as the validation and the updates occur within a single system transaction, the business transaction will display consistency.
@@ -25,6 +27,8 @@ A successful pre-commit validation is, in a sense, obtaining a lock indicating i
 * The most common implementation is to **associate a version number with each record** in your system. When a record is loaded that number is maintained by the session. Getting the *Optimistic Offline Lock* is a matter of comparing the version stored in your session data to the current version in the record data. Once the verification succeeds, all changes, including an increment of the version, can be committed. **The version increment is what prevents inconsistent record data**, as a session with an old version can't acquire the lock.
 
 * If the *Optimistic Offline Lock* fails to be obtained (e.g, the version of the current session doesn't match the one in the record data), **the business transaction must either abort or attempt to resolve the conflict and retry**.
+
+![](2021-07-28-00-54-45.png)
 
 ## When to Use It
 

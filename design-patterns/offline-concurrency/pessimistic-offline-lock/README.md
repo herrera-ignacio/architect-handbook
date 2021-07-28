@@ -9,6 +9,8 @@
 
 ## Overview
 
+![](2021-07-28-00-55-01.png)
+
 *Pessimistic Offline Lock* **prevents conflicts by avoiding them altogether**. It forces a business transaction to acquire a lock on a piece of data before it starts to use it, so that, most of the time, once you begin a business transaction you can be pretty sure you'll complete it without being bounced by concurrency control.
 
 ## How It Works
