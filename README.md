@@ -144,7 +144,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Data Mapper](design-patterns/data/data-mapper)
 * [Table Data Gateway](design-patterns/data/table-data-gateway)
 * [Row Data Gateway](design-patterns/data/row-data-gateway)
-* [Repository](./design-patterns/data/repository)
+* [Repository](design-patterns/data/repository)
 
 ### Object Relational
 
