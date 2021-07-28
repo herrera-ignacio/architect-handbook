@@ -6,6 +6,8 @@
 
 ## Overview
 
+![](2021-07-28-01-06-37.png)
+
 Once you involve multiple currencies you want to avoid adding your dollars to your yen without taking the currency differences into account. The more subtle problem is with rounding. Monetary calculations are often rounded to the smallest currency unit. When you do this it's easy to lose pennies (or your local equivalent) because of rounding errors.
 
 You can create a *Money* class that handles those kind of problems.

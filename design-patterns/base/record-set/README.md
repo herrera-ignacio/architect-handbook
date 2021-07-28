@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-01-08-36.png)
+
 For a long time, the dominant way to represent data in a database has been the tabular relational form. On top of this has come a wealth of tools for building UI's quickly that rely on the fact that the underlying data is relational, and they provide UI widgets fof various kinds that make it easy to view and manipulate this data with almost no programming.
 
 The idea of the *Record Set* is to **provide an in-memory structure that looks exactly like the result of an SQL query but can be generated and manipulated by other parts of the system**.

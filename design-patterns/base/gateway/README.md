@@ -9,6 +9,8 @@
 
 ## Overview
 
+![](2021-07-28-01-01-29.png)
+
 Anyone who needs to understand a resource needs to understand its API. Not only does this make the software harder to understand, it also makes it much harder to change should you shift some data, for example, from a relational database to an XML message at some point in the future.
 
 *Gateway* wraps all the special API code into a class whose interface looks like a regular object. Other objects access the resource through this *Gateway*, which **translates the simple method calls into the appropriate specialized API**.

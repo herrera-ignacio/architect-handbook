@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-01-06-48.png)
+
 Nulls are awkward things in object-oriented programs because they defeat polymorphism. If it's possible for a variable to be null, you have to remember to surround it with null test code so you'll do the right thing if a null is present. You often end up writing similar code in lots of places.
 
 Nulls are a common example of such problems and others crop up regularly (e.g., dealing with infinity, which has special rules for things like addition that break the usual invariants of real numbers).

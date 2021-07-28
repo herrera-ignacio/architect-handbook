@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-01-01-45.png)
+
 Sometimes you need to set up communications between two subsystems that still need to stay ignorant of each other. This may be because you can't modify them or you can but you don't want to create dependencies between them.
 
 ## How It Works

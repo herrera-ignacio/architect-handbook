@@ -8,7 +8,11 @@
 
 ## Overview
 
+![](2021-07-28-01-05-49.png)
+
 You might need to invoke methods that contradict the general dependency structure. If so, use *Separated Interface* **to define an interface in one package but implement it in another**. This way a client that needs the dependency to the interface can be **completely unaware of the implementation**.
+
+![](2021-07-28-01-06-04.png)
 
 ## How It Works
 

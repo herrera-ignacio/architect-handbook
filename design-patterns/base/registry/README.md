@@ -10,6 +10,8 @@
 
 ## Overview
 
+![](2021-07-28-01-06-17.png)
+
 You may know an object's ID number but not have a reference. A *Registry* acts as a global object (or at least looks like one) and **provides finder methods**.
 
 ## How It Works

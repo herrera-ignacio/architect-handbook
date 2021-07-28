@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-01-08-26.png)
+
 Enterprise systems often depend on access to third-party services. Quite likely, such dependencies will lead to times when tests can't execute, and then the development process is broken.
 
 **Replacing the service during testing** with a *Service Stub* that runs locally, fast, and in memory, **improves your development experience**.
