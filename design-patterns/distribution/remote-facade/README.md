@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-39-50.png)
+
 Remote calls are expensive: data may have to be marshaled, security may need to be checked, packets may need to be routed through swithces. Any inter-process call is orders of magnitude more expensive than an in-process call, even if both processes are on the same machine.
 
 As a result, **any object that's intended to be used as a remote object needs a coarse-grained interface that minimizes the number of calls needed to get somethind one**.
@@ -15,6 +17,8 @@ As a result, **any object that's intended to be used as a remote object needs a 
 A *Remote Facade* **provides a coarse-grained facade over a web of fine-grained object**. None of the fine-grained objects have a remote interface, and the *Remote Facade* contains no domain logic, all it does is translate coarse-grained methods onto the underlying fine-grained objects.
 
 ## How It Works
+
+![](2021-07-28-00-41-07.png)
 
 * **Any complex logic is placed in fine-grained objects** that are designed to collaborate within a single process, which is the standard object-oriented approach.
 
@@ -29,6 +33,8 @@ A *Remote Facade* **provides a coarse-grained facade over a web of fine-grained 
 * *Remote *Facade* can be **stateful or stateless**.
   * Stateless allows pooling, which can improve resource usage and efficiency, especially in a B2C situation.
   * Stateful requires storing session state somewhere using *Client Session State* or *Database Session State*, or an implementation of *Server Session State*.
+
+![](2021-07-28-00-41-46.png)
 
 ## When to Use It
 

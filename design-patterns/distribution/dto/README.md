@@ -8,6 +8,8 @@
 
 ## Overview
 
+![](2021-07-28-00-50-04.png)
+
 When you're working with a remote interface, each call to it is expensive. As a result you want to reduce the number of calls, and that means that **tansfering more data wit each call**.
 
 One solution is to create a *Data Transfer Object* that can **hold all the data for the call**. It needs to be **serializable** to go across the connection. Usually an assembler is used on the server side to transfer data between the DTO and any domain objects.
@@ -29,6 +31,8 @@ One solution is to create a *Data Transfer Object* that can **hold all the data 
 * You can't usually transfer objects from a *Domain Model* due to the complex interconnection that makes difficult, if not impossible, to serialize. Also you usually don't want the domain object classes on the client, instead you have to transfer a simplified form of the data from the domain objects.
 
 * A *Data Transfer Object* **doesn't know about how to connect with domain objects**. This is because it should be deployed on both sides of the connection. As a general rule, **keep the domain model independent of the external interfaces**. One approach is to **make a separate assembler object** responsible for creating a *Data Transfer Object* from the domain model and updating them odel from it. The assembler is an example of a *Mapper*.
+
+![](2021-07-28-00-50-31.png)
 
 * It makes sense to design the *Data Transfer Object* around the needs of a particular client. You may also see multiple *Data Transfer Objects* for a given domain object, depending on a particular view.
 
