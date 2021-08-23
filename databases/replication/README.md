@@ -1,6 +1,8 @@
 # Replication
 
-Replication involves **sharing information** so as to **ensure consistency between redundant resources**, to improve **reliability**, **fault-tolerance**, or **accessibility**.
+Replication involves **sharing information** so as to **ensure consistency between redundant resources**, to improve **reliability**, **fault-tolerance**, or **availability**. It can also provide better performance (e.g., allowing parallel queries).
+
+> It's usually used with a master/slave strategy: master generally only supports writes, slaves generally only support reads.
 
 ![](2021-06-28-22-46-23.png)
 

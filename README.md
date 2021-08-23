@@ -340,6 +340,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Availability](system-design/availability)
   * Fail-over
   * Replication
+* [Choosing a Database](system-design/choosing-database)
 
 ### Sources & Further Reading
 

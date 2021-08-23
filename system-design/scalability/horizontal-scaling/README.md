@@ -7,3 +7,5 @@ High-performance computing applications, such as seismic analysis and biotechnol
 Other workloads, such as large social networks, exceed the capacity of the largest supercomputer and can only be handled by horizontally scalable systems.
 
 > Exploiting this scalability requires software for efficient resource management and maintenance.
+
+Horizontal scaling enables **Failover** and **Redundacy** mechanisms, otherwise you'd have a single server and a SPOF.

@@ -2,9 +2,11 @@
 
 ## Overview
 
-*Load Balancing* refers to the process of **distributing a set of tasks over a set of resources** (computing units), with aim of making their overall processing more efficient.
+* *Load Balancing* refers to the process of **distributing a set of tasks over a set of resources** (computing units), with aim of making their overall processing more efficient.
 
-*Load Balancing* can optimize the response time and **avoid unevenly overloading** some compute nodes while other compute nodes are left idle.
+* *Load Balancing* can optimize the response time and **avoid unevenly overloading** some compute nodes while other compute nodes are left idle.
+
+* Allows for **failover** mechanisms in case of nodes failure.
 
 ## Algorithms
 
