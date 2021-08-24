@@ -346,6 +346,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Multi-data center](system-design/multi-data-center) 
 * [Message Queue](system-design/message-queue)
 * [Logging, metrics, automation](system-design/logging-metrics-automation)
+* [Scaling from zero to millions of users](system-design/from-zero-to-millions)
 
 ### Sources & Further Reading
 
