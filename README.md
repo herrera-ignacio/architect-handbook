@@ -470,6 +470,7 @@ Check my [java-handbook repository](https://github.com/herrera-ignacio/java-hand
 * [Leaky Abstraction](glossary/leaky-abstraction)
 * [First-class citizen](glossary/first-class-citizen)
 * [Side Effect](glossary/side-effect)
+* [*SPOF*: Single Point of Failure](glossary/spof)
 
 ### Laws & Theorems
 
