@@ -341,6 +341,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * Fail-over
   * Replication
 * [Choosing a Database](system-design/choosing-database)
+* [*CDN*: Content Delivery Network](system-design/cdn)
 
 ### Sources & Further Reading
 
