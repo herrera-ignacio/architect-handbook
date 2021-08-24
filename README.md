@@ -345,6 +345,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Stateless web tier](system-design/stateless-web-tier)
 * [Multi-data center](system-design/multi-data-center) 
 * [Message Queue](system-design/message-queue)
+* [Logging, metrics, automation](system-design/logging-metrics-automation)
 
 ### Sources & Further Reading
 
