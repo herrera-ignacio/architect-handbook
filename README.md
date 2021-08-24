@@ -341,7 +341,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * Fail-over
   * Replication
 * [Choosing a Database](system-design/choosing-database)
-* [*CDN*: Content Delivery Network](system-design/cdn)
+* [CDN: Content Delivery Network](system-design/cdn)
+* [Stateless web tier](system-design/stateless-web-tier)
+* [Multi-data center](system-design/multi-data-center) 
+* [Message Queue](system-design/message-queue)
 
 ### Sources & Further Reading
 
