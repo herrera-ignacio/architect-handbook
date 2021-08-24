@@ -366,6 +366,9 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Replication](databases/replication)
 * [CAP/Brewer's Theorem](databases/cap)
 * [Eventual Consistency/BASE](databases/base)
+* [Database Scaling](databases/scaling)
+  * Vertical Scaling (Scaling Up)
+  * Horizontal Scaling (Sharding)
 
 ### Relational Databases
 
