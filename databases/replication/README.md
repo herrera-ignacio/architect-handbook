@@ -4,11 +4,13 @@ Replication involves **sharing information** so as to **ensure consistency betwe
 
 > It's usually used with a master/slave strategy: master generally only supports writes, slaves generally only support reads.
 
-![](2021-06-28-22-46-23.png)
+![](2021-08-28-20-30-54.png)
 
 Replication is one of the many techniques to **scale a database**. Database replication becomes more complex when it scales-up horizontally and vertically. Horizontal scale-up has more data replicas while vertical scale-up has data replicas located at greater physical distances.
 
 > Problems raised by horizontal scale-up can be alleviated by a multi-layer, multi-view access protocol. The early problems of vertical scale-up have largely been addressed by improving Internet reliability and performance.
+
+![](2021-08-28-20-30-10.png)
 
 ## Disadvantages
 

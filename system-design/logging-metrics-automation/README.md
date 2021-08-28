@@ -10,3 +10,5 @@ When your application has grown to serve a large business, logging, metrics and 
   * Key business metrics: Daily active users, retentions, revenue, etc.
 
 * **Automation**: Build or leverage automation tools to improve productivity. Continuous integration allows teams to detect problems early. Automating build, test, deploy process, etc. could improve developer productivity significantly.
+
+![](2021-08-28-20-24-51.png)

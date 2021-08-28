@@ -1,5 +1,7 @@
 # Scaling From Zero to Millions of Users
 
+## Overview
+
 > The following text is from "System Design Interview" by Alex Xu.
 
 The following techniques can be applied to scale a system to support millions of users:
@@ -13,3 +15,11 @@ The following techniques can be applied to scale a system to support millions of
 * Split tiers into individual services
 * Favor asynchronous communication (e.g., message queues)
 * Monitor your system and use automation tools
+
+## Simple App
+
+![](2021-08-28-20-33-50.png)
+
+## Example scalable design
+
+![](2021-08-28-20-34-25.png)

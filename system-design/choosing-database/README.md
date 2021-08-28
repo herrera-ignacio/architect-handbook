@@ -7,6 +7,8 @@
 
 ## Overview
 
+![](2021-08-28-20-31-52.png)
+
 The reason that we have many database options available today is due to the [CAP theorem](../databases/CAP).
 
 > CAP Theorem: At any given time, you can only guarantee two of the following: consistency, availability, and partition tolerance. 

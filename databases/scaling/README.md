@@ -2,6 +2,8 @@
 
 There are two broad approaches for database scaling: *vertical* and *horizontal scaling*
 
+![](2021-08-28-20-25-30.png)
+
 ## Vertical scaling (Scaling up)
 
 Scaling by adding more power (CPU, RAM, DISK, etc) to an existing machine. There are powerful database servers, however, vertical scaling comes with some serious drawbacks:
@@ -14,11 +16,17 @@ Scaling by adding more power (CPU, RAM, DISK, etc) to an existing machine. There
 
 ## Horizontal scaling (Sharding)
 
+![](2021-08-28-20-26-43.png)
+
 It is the practice of adding more servers. Sharding separates large databases into smaller, more easily managed parts called shards. Each shard **shares the same schema**, though the actual **data on each shard is unique** to the shared.
 
 There are different techniques for sharding. For example, you could access user data based on user IDs. Anytime you access data, a hash function is used to find the corresponding shard (such as `user_id % 4` if you have 4 shards).
 
+![](2021-08-28-20-26-13.png)
+
 ### Sharding Key
+
+![](2021-08-28-20-26-01.png)
 
 The most important factor to consider when implementing a sharding strategy is the choice of **the sharding key**, also known as **partition key**. One of the most important criteria is to **choose a key that can evenly distribute data**.
 

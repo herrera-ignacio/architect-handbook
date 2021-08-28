@@ -319,7 +319,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 > For a complete System Design study, you should also be familiar with Databases related topics such as CAP Theorem.
 
 * [Introduction](system-design)
-* [How to approach](system-design/how-to)
+* [Where to start](system-design/how-to)
 * [Performance Measures](system-design/performance-measures)
   * Response time
   * Responsiveness
@@ -348,6 +348,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Logging, metrics, automation](system-design/logging-metrics-automation)
 * [Scaling from zero to millions of users](system-design/from-zero-to-millions)
 * [Back-of-the-envelope Estimation](system-design/estimation)
+* [A Framework for System Design Interviews](system-design/interview-framework)
 
 ### Sources & Further Reading
 

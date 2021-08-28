@@ -4,6 +4,8 @@
 
 A CDN is a network of geographically dispersed servers used to deliver static content. CDN servers cache static content like images, videos, text files, etc.
 
+![](2021-08-28-20-28-02.png)
+
 ## Considerations
 
 * **Cost**: CDNs are run by third-party providers and you are charged for data transfers in and out of the CDN.
@@ -15,3 +17,7 @@ A CDN is a network of geographically dispersed servers used to deliver static co
 * **Invalidating files**: You can remove a file from the CDN before it expires by performing one of the following operations:
   * Using APIs provided by CDN vendors.
   * Use object versioning to serve a different version of the object. To version an object, you can add a parameter to the URL, such as a version number.
+
+## Example Architecture
+
+![](2021-08-28-20-27-23.png)

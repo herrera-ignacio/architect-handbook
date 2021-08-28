@@ -7,6 +7,8 @@
 
 *Caching* is a technique that **stores a copy of a given resource and serves it back when requested**. It is a **temporary** data store layer, **much faster** than the database, and it usually stores the result of expensive responses or frequently accessed data in memory so that **subsequent requests are served more quickly**.
 
+![](2021-08-28-20-28-33.png)
+
 > When a web cache has a requested resource in its store, it intercepts the request and returns its copy instead of redownloading from the originating server.
 
 * This achieves several goals: it eases the load of the server that doesn't need to serve all clients itself, and improves performance by being closer to the client.
