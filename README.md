@@ -350,7 +350,9 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Back-of-the-envelope Estimation](system-design/estimation)
 * [A Framework for System Design Interviews](system-design/interview-framework)
 * Hashing
-  * [The rehashing problem](system-design/rehashing-problem)
+  * [The rehashing problem](system-design/hashing/rehashing-problem)
+  * [Consistent hashing](system-design/hashing/consistent-hashing)
+  * [Consistent Hash servers](system-design/hashing/hash-servers)
 
 ### Sources & Further Reading
 
