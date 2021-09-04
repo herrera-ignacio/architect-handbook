@@ -349,6 +349,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Scaling from zero to millions of users](system-design/from-zero-to-millions)
 * [Back-of-the-envelope Estimation](system-design/estimation)
 * [A Framework for System Design Interviews](system-design/interview-framework)
+* Hashing
+  * [The rehashing problem](system-design/rehashing-problem)
 
 ### Sources & Further Reading
 
