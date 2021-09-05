@@ -352,7 +352,6 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * Hashing
   * [The rehashing problem](system-design/hashing/rehashing-problem)
   * [Consistent hashing](system-design/hashing/consistent-hashing)
-  * [Consistent Hash servers](system-design/hashing/hash-servers)
 
 ### Sources & Further Reading
 
@@ -365,13 +364,14 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Case Studies
 
 * [Instagram News Feed - Gaurav Sen](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
-* [Software Engineering at Google](system-design/case-studies/google-software-engineering)
+* [Design a key-value store](system-design/case-studies/keyvalue-store)
 
 ## Databases
 
-* [Object-oriented databases](databases/object-oriented)
-* [Replication](databases/replication)
 * [CAP/Brewer's Theorem](databases/cap)
+* [Object-oriented databases](databases/object-oriented)
+* [Data Replication](databases/replication)
+* [Data partition](databases/partitioning)
 * [Eventual Consistency/BASE](databases/base)
 * [Database Scaling](databases/scaling)
   * Vertical Scaling (Scaling Up)
@@ -470,6 +470,10 @@ Check my [java-handbook repository](https://github.com/herrera-ignacio/java-hand
 ## Well-known Problems
 
 * [The Revenue Recognition Problem](problems/revenue-recognition)
+
+## Software Engineering Culture
+
+* [Software Engineering at Google](swe/google-software-engineering)
 
 ## Glossary
 
