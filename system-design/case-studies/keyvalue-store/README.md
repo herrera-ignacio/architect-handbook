@@ -43,7 +43,7 @@ There are a few core components and techniques used to build a key-value store:
 
 * [Data partition](../../../databases/partitioning)
 * [Data replication](../../../databases/replication)
-* [Consistency]()
+* [Consistency](../../../databases/consistency)
 * [Inconsistency resolution]()
 * [Handling failures]()
 * [System architecture diagram]()

@@ -1,24 +1,10 @@
-# Eventual Consistency / BASE
+# BASE
 
 * Overview
-* BASE
 * Conflict Resolution
 * Strong Eventual Consistency (SEC)
 
 ## Overview
-
-*Eventual Consistency* is a **consistency model** used in **distributed computing** to achieve **high availability** that informally guarantees (*liveness guarantee*) that, if no new updates are made to a given data item, eventually all accesses to that item will return the last updated value.
-
-> Eventual consistency is also called **optimistic replication**.
-
-A system that has achieved eventual consistency is often said to have **converged**, or achieved **replica convergence**.
-
-*Eventual Consistency* is a weak guarantee, most stronger models, like **linearizability**, are trivially eventually consistent, but a system that is merely eventually consistent does not usually fulfill these stronger constraints.
-
-> Eventual consistency is sometimes criticized as increasing the complexity of distributed software applications.
-
-
-## BASE
 
 Eventually-consistent services are often classified as providing *BASE* semantics (*Basically Available, Soft state, Eventual consistency*), in contrast to traditional *ACID* guarantees.
 
@@ -47,9 +33,3 @@ Reconcilliation of concurrent writes must occur sometime before the next read, a
 * **Write repair**: The correction takes place during a write operation, if an inconsistency has been found, slowing down the write operation.
 
 * **Asynchronous repair**: The correction is not part of a read or write operation.
-
-## Strong Eventual Consistency (SEC)
-
-Whereas eventual consistency is only a *liveness guarantee* (updates will be observed eventually), **SEC** adds the **safety guarantee** that any two nodes that have received the same (unordered) set of updates will be in the same state.
-
-If furthermore, the system is monotonic, the application will never suffer rollbacks. *Conflict-free replicated data types* are a common approach to ensuring SEC.

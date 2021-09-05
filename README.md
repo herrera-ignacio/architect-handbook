@@ -372,7 +372,12 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Object-oriented databases](databases/object-oriented)
 * [Data Replication](databases/replication)
 * [Data partition](databases/partitioning)
-* [Eventual Consistency/BASE](databases/base)
+* [Consistency Models](databases/consistency-models)
+  * Eventual Consistency
+  * Strong Eventual Consistency (SEC)
+* Synchronization techniques
+  * [Quorum consensus](databases/quorum-consensus)
+* [BASE](databases/base)
 * [Database Scaling](databases/scaling)
   * Vertical Scaling (Scaling Up)
   * Horizontal Scaling (Sharding)

@@ -74,8 +74,12 @@ The most common challenge is **transactional conflict prevention** or **resoluti
 
 We choose *N* servers for asynchronous replication. These *N* servers are choosing using the following logic:
 
-After a key is mapped to a position in the hash ring, walk clockwise from that position and choose the first $N$ servers on the ring to store data copies.
+After a key is mapped to a position in the hash ring, walk clockwise from that position and choose the first *N* servers on the ring to store data copies.
 
 ![](2021-09-04-21-51-43.png)
 
 > Given $N = 3$, *key0* is replicated at *s1*, *s3*, and *s3*.
+
+With virtual nodes, the first *N* nodes on the ring may be owned by fewer than *N* physical servers. To avoid this issue, we **only choose unique servers** while performing the clockwise walk logic.
+
+Nodes in the same data center often fail at the same time due to power outages, network issues, natural disasters, etc. For better reliability, replicas are placed in distinct data centers, and data centers are connected through high-speed networks.
