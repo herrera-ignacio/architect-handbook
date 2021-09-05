@@ -373,6 +373,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Data Replication](databases/replication)
 * [Data partition](databases/partitioning)
 * [Consistency Models](databases/consistency-models)
+  * Strong Consistency vs Weak Consistency
   * Eventual Consistency
   * Strong Eventual Consistency (SEC)
 * Synchronization techniques
