@@ -1,8 +1,18 @@
 # Replication
 
+* Overview
+* Disadvantages
+* Strategies
+  * Master-slave
+  * Master-master
+  * Multi master
+  * Consistent Hash Ring
+
+## Overview
+
 Replication involves **sharing information** so as to **ensure consistency between redundant resources**, to improve **reliability**, **fault-tolerance**, or **availability**. It can also provide better performance (e.g., allowing parallel queries).
 
-> It's usually used with a master/slave strategy: master generally only supports writes, slaves generally only support reads.
+> To achieve high availability and reliability, data must be replicated asynchronously over *N* servers, where *N* is a configurable parameter.
 
 ![](2021-08-28-20-30-54.png)
 
@@ -30,19 +40,17 @@ Replication presents some **disadvantages**:
 
 ### Master-Slave
 
+> This is the most commonly used strategy.
+
 The *master* serves reads and writes, replicating writes to one or more *slaves*, which serve only reads. *Slaves* can also replicate to additional slaves in a tree-like fashion.
 
 If the *master* goes offline, the system can continue to operate in read-only mode until a *slave* is promoted to a *master* or a new *master* is provisioned.
-
-![](2021-06-28-22-35-06.png)
 
 The **disadvantage** of *Master-Slave* is that it requires logic is needed to promote a *slave* to a *master*.
 
 ### Master-Master
 
 Both *masters* serve reads and writes and coordinate with each other on writes. if either *master* goes down, the system can continue to operate with both reads and writes.
-
-![](2021-06-28-22-37-02.png)
 
 The **disadvantages** with *Master-Master* are:
 
@@ -61,3 +69,13 @@ Updates can be submitted to any database node, and then ripple through to other 
 The most common challenge is **transactional conflict prevention** or **resolution**. Most *synchronous* (**eager**) replication solutions perform conflict prevention, while *asynchronous* (**lazy**) solutons have to perform conflict resolution. The resolution of such a conflict may be based on a timestamp of the transaction, on the hierarchy of the origin nodes, or on so much more complex logic, which decides consistently across all nodes.
 
 > For instance, if the same record is changed on two nodes simultaneously, an *eager replication* system would detect the conflict before confirming the commit and abort one of the transactions. A *lazy replication* system would allow both transactions to commit and run a conflict resolution during re-synchronization.
+
+### Consistent Hash Ring
+
+We choose *N* servers for asynchronous replication. These *N* servers are choosing using the following logic:
+
+After a key is mapped to a position in the hash ring, walk clockwise from that position and choose the first $N$ servers on the ring to store data copies.
+
+![](2021-09-04-21-51-43.png)
+
+> Given $N = 3$, *key0* is replicated at *s1*, *s3*, and *s3*.
