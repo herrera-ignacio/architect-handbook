@@ -384,6 +384,16 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Quorum consensus](databases/quorum-consensus)
 * Inconsistency resolution
   * [Versioning](databases/inconsistency-resolution/versioning)
+* [Handling failures](databases/handling-failures)
+  * Failure detection
+    * All-to-all multicasting
+    * Gossip protocol
+  * Handling temporary failures
+    * Sloppy quorum
+    * Hinted handoff
+  * Handling performance failures
+    * Anti-entropy protocol
+  * Handling data center outage
 
 
 ### Relational Databases
