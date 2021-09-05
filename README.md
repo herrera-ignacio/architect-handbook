@@ -369,19 +369,22 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ## Databases
 
 * [CAP/Brewer's Theorem](databases/cap)
+* [BASE](databases/base)
 * [Object-oriented databases](databases/object-oriented)
+* [Database Scaling](databases/scaling)
+  * Vertical Scaling (Scaling Up)
+  * Horizontal Scaling (Sharding)
 * [Data Replication](databases/replication)
-* [Data partition](databases/partitioning)
+* [Data Partition](databases/partitioning)
 * [Consistency Models](databases/consistency-models)
   * Strong Consistency vs Weak Consistency
   * Eventual Consistency
   * Strong Eventual Consistency (SEC)
 * Synchronization techniques
   * [Quorum consensus](databases/quorum-consensus)
-* [BASE](databases/base)
-* [Database Scaling](databases/scaling)
-  * Vertical Scaling (Scaling Up)
-  * Horizontal Scaling (Sharding)
+* Inconsistency resolution
+  * [Versioning](databases/inconsistency-resolution/versioning)
+
 
 ### Relational Databases
 

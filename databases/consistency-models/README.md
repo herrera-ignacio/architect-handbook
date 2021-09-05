@@ -1,6 +1,7 @@
 # Consistency Models
 
 * Overview
+* Inconsistency example
 * Strong Consistency
 * Weak Consistency
   * Eventual Consistency / Optimistic Replication
@@ -13,6 +14,20 @@
 Consistency model is an important factor to consider when designing a key-value store. It defines the **degree of data consistency**, and a wide spectrum of possible consistency models exist.
 
 > Since data is replicated at multiple nodes, it must be synchronized across replicas. A common technique for this is [quorum consensus](../quorum-consensus).
+
+## Inconsistency Example
+
+Let's see an example of how inconsistency happens:
+
+![](2021-09-04-22-29-22.png)
+
+Both replica nodes *n1* and *n2* have the same value. Let us call this value the original `value`. *Server 1* and *server 2* get the same value for `get("name")` operation.
+
+Next, *server 1* changes the name to "johnSanFrancisco", and *server 2* changes the name to "johnNewYork". These two changes are performed simultaneously. Now, we have conflict values, called versions *v1* and *v2*.
+
+![](2021-09-04-22-31-24.png)
+
+In this example, the original value could be ignored because the modifications were based on it. However, there is no clear way to resolve the conlfict of the last two versions. To resolve this issue, we need a versioning system that can detect conflicts and reconcile conflicts.
 
 ## Strong Consistency
 
