@@ -365,6 +365,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [Instagram News Feed - Gaurav Sen](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
 * [Design a key-value store](system-design/case-studies/keyvalue-store)
+* [Design a unique ID generator in distributed systems](system-design/case-studies/uniqueid-generator)
 
 ## Databases
 
