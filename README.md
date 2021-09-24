@@ -243,7 +243,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [MVC Problems](./architectures/clean/mvc)
 * [Tradeoffs](./architectures/clean/tradeoffs)
 * [What is Architecture](architectures/clean/architecture)
-* [Keeping options open](architecture/clean/keeping-options)
+* [Keeping options open](architectures/clean/keeping-options)
 * [Plugin Architecture: MCP](./architectures/clean/mcp)
 * [Request and Response Models](architectures/clean/req-res)
 * [Screaming Architecture](architectures/clean/screaming-architecture)
@@ -272,7 +272,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Boundaries](./architectures/clean/boundaries)
 * Objects
   * [Entities](architectures/clean/objects/entities)
-  * [Use Cases](architecture/clean/objects/use-cases)
+  * [Use Cases](architectures/clean/objects/use-cases)
   * [Interactor](architectures/clean/objects/interactor)
   * [Interface Adapters](architectures/clean/objects/iadapters)
   * [Presenter and View](architectures/clean/objects/presenter-view)
@@ -300,7 +300,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Architectural Constraints](./architectures/rest/constraints.md)
 * [Semantics of HTTP APIs](./architectures/rest/http-methods.md)
 
-### [Flux](./architecture/flux)
+### [Flux](./architectures/flux)
 
 * [MVC Comparison](architectures/flux/mvc-comparison)
 
