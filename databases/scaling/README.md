@@ -18,7 +18,7 @@ Scaling by adding more power (CPU, RAM, DISK, etc) to an existing machine. There
 
 ![](2021-08-28-20-26-43.png)
 
-It is the practice of adding more servers. Sharding separates large databases into smaller, more easily managed parts called shards. Each shard **shares the same schema**, though the actual **data on each shard is unique** to the shared.
+It is the practice of adding more servers. Sharding separates large databases into smaller, more easily managed parts called shards. Each shard **shares the same schema**, though the actual **data on each shard is unique** to the shard.
 
 There are different techniques for sharding. For example, you could access user data based on user IDs. Anytime you access data, a hash function is used to find the corresponding shard (such as `user_id % 4` if you have 4 shards).
 
