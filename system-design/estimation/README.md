@@ -19,6 +19,8 @@
 
 Although data volume can become enormous when dealing with distributed systems, calculation all boils down to the basics. To obtain correct calculations, it is critical to know the data volume unit using the power of two.
 
+![](2021-09-26-22-33-09.png)
+
 ### Latency Numbers
 
 Those are latency numbers every programmer should know. Some numbers may be outdated as computers become faster, however, they should still be able to give us an idea of the fastness and slowness of different computer operations.

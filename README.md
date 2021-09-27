@@ -367,6 +367,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Design a key-value store](system-design/case-studies/keyvalue-store)
 * [Design a unique ID generator in distributed systems](system-design/case-studies/uniqueid-generator)
 * [Design a URL shortener](system-design/case-studies/url-shortener)
+* [Design a web crawler](system-design/case-studies/web-crawler)
 
 ## Databases
 
@@ -396,7 +397,6 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * Handling performance failures
     * Anti-entropy protocol
   * Handling data center outage
-
 
 ### Relational Databases
 
