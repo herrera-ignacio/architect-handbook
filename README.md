@@ -368,6 +368,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Design a unique ID generator in distributed systems](system-design/case-studies/uniqueid-generator)
 * [Design a URL shortener](system-design/case-studies/url-shortener)
 * [Design a web crawler](system-design/case-studies/web-crawler)
+* [Design a notification system](system-design/case-studies/notification-system)
 
 ## Databases
 
