@@ -370,6 +370,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Design a web crawler](system-design/case-studies/web-crawler)
 * [Design a notification system](system-design/case-studies/notification-system)
 * [Design a news feed system](system-design/case-studies/news-feed)
+* [Design a chat system](system-design/case-studies/chat-system)
 
 ## Databases
 
