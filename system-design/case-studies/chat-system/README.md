@@ -143,7 +143,7 @@ No technologist would propose a design where everything fits in one server. It i
 * Presence servers manage online/offline status.
 * API servers handle everything including user login, signup, change profile, etc.
 * Notification servers send push notifications.
-* Finally, the key-value store is used to store chjat history. When an offline user comes online, he will see al his previous chat history.
+* Finally, the key-value store is used to store chat history. When an offline user comes online, he will see al his previous chat history.
 
 ### Storage
 
