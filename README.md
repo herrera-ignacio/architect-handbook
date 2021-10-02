@@ -373,6 +373,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Design a chat system](system-design/case-studies/chat-system)
 * [Design a Search Autocomplete System](system-design/case-studies/search-autocomplete)
 * [Design Youtube](system-design/case-studies/youtube)
+* [Design Google Drive](system-design/case-studies/google-drive)
 
 ## Databases
 
