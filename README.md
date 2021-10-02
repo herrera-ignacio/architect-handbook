@@ -372,6 +372,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Design a news feed system](system-design/case-studies/news-feed)
 * [Design a chat system](system-design/case-studies/chat-system)
 * [Design a Search Autocomplete System](system-design/case-studies/search-autocomplete)
+* [Design Youtube](system-design/case-studies/youtube)
 
 ## Databases
 
