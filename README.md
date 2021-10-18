@@ -207,10 +207,9 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 > Altouhgh some techniques and patterns are relevant for all kinds of software, many are relevant for only one particular branch.
 
-### Enterprise Applications
-
-* [EAPPs Challenges](enterprise/challenges)
-* [Kinds of EAPPs](enterprise/kinds)
+* Enterprise Applications
+  * [EAPPs Challenges](enterprise/challenges)
+  * [Kinds of EAPPs](enterprise/kinds)
 
 ## Architectural Styles
 
@@ -218,103 +217,19 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ### General Concerns
 
-* [Architecture](./architectures/general/definition)
-* [Development Overconfidence](./architectures/general/overconfidence)
-* [Developer Struggle](./architectures/general/developer-struggle)
-* [Layering](architectures/general/layering)
-* [Organizing Domain Logic](architectures/general/domain-logic)
-* [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
-* [Web Presentation](architectures/general/web-presentation)
+* [Architecture](architectures/general/definition)
 * [Concurrency](architectures/general/concurrency)
-* [Session State](architectures/general/session-state)
+* [Development Overconfidence](architectures/general/overconfidence)
+* [Developer Struggle](architectures/general/developer-struggle)
 * [Distribution Strategies](architectures/general/distribution-strategies)
+* [Layering](architectures/general/layering)
+* [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
+* [Organizing Domain Logic](architectures/general/domain-logic)
+* [Session State](architectures/general/session-state)
+* [Web Presentation](architectures/general/web-presentation)
 
-### Three-Layer System (Martin Fowler)
 
-* [Three Fundamental Layers](architectures/fowler/three-layers)
-* [Narratives summary](architectures/fowler/narratives)
-* [Other layering schemes](architectures/fowler/other-layering-schemes)
-
-### [Ports & Adapters / Hexagonal](./architectures/hexagonal)
-
-### [Clean Architecture](./architectures/clean)
-
-* [MVC and Hexagonal Architectures as Precursors](./architectures/clean/precursors)
-* [MVC Problems](./architectures/clean/mvc)
-* [Tradeoffs](./architectures/clean/tradeoffs)
-* [What is Architecture](architectures/clean/architecture)
-* [Keeping options open](architectures/clean/keeping-options)
-* [Plugin Architecture: MCP](./architectures/clean/mcp)
-* [Request and Response Models](architectures/clean/req-res)
-* [Screaming Architecture](architectures/clean/screaming-architecture)
-* [Testable Architecture](architectures/clean/testable-architecture)
-* [Humble Object Pattern](architectures/clean/humble-object-pattern)
-* [Services and boundaries](architectures/clean/services-boundaries)
-* [Test Boundaries](architectures/clean/test-boundaries)
-* [The Missing Advice](architectures/clean/missing-advice)
-
-#### Clean Architecture - Glossary
-
-* [Details](architectures/clean/details)
-* [Stable Abstractions Rule](./architectures/clean/stable-abstractions)
-* [Components](./architectures/clean/components)
-  * [Concrete Components](architectures/clean/concrete-components)
-* [Component Principles](architectures/clean/component-principles)
-  * [Component Cohesion](architectures/clean/component-principles/component-cohesion)
-    * [Reuse/Release Equivalence Principle](architectures/clean/component-principles/component-cohesion/rep)
-    * [Common Closure Principle](architectures/clean/component-principles/component-cohesion/ccp)
-    * [Common Reuse Principle](architectures/clean/component-principles/component-cohesion/crp)
-  * [Component Coupling](architectures/clean/component-principles/component-coupling)
-    * [Acyclic Dependencies Principle](architectures/clean/component-principles/component-coupling/adp)
-    * [Stable Dependencies Principle](architectures/clean/component-principles/component-coupling/sdp)
-    * [Stable Abstractions Principle](architectures/clean/component-principles/component-coupling/sap)
-* [Stability](architectures/clean/stability)
-* [Boundaries](./architectures/clean/boundaries)
-* Objects
-  * [Entities](architectures/clean/objects/entities)
-  * [Use Cases](architectures/clean/objects/use-cases)
-  * [Interactor](architectures/clean/objects/interactor)
-  * [Interface Adapters](architectures/clean/objects/iadapters)
-  * [Presenter and View](architectures/clean/objects/presenter-view)
-  * [Database Gateways](architectures/clean/objects/database-gateways)
-  * [Main Component](architectures/clean/objects/main)
-* [Policy](architectures/clean/policy)
-* [Business Rules](architectures/clean/business-rules)
-* [Dependency Rule](architectures/clean/dependency-rule)
-* [The Fragile Tests Problem](architectures/clean/fragile-tests)
-* [Target Hardware Bottleneck](architectures/clean/target-hardware-bottleneck)
-* Code organization
-  * [Package by layer](architectures/clean/code-org/by-layers)
-  * [Package by feature](architectures/clean/code-org/by-feature)
-  * [Package by component](architectures/clean/code-org/by-component)
-
-#### Clean Architecture - Extra material
-
-* [Clean Architecture Essentials](https://dev.to/ivanpaulovich/clean-architecture-essentials-5a0m)
-
-### REST: Representational State Transfer
-
-* [Introduction](./architectures/rest/intro.md)
-* [History](./architectures/rest/history.md)
-* [Architectural Properties](./architectures/rest/properties.md)
-* [Architectural Constraints](./architectures/rest/constraints.md)
-* [Semantics of HTTP APIs](./architectures/rest/http-methods.md)
-
-### [Flux](./architectures/flux)
-
-* [MVC Comparison](architectures/flux/mvc-comparison)
-
-### Micro Services
-
-* [Micro services overview](architectures/microservices/overview)
-* [Properties](architectures/microservices/properties)
-* [Service granularity](architectures/microservices/granularity)
-* [Benefits](architectures/microservices/benefits)
-* [Criticism](architectures/microservices/issues)
-* [Concerns](architectures/microservices/concerns)
-* [Event Streaming Platform](architectures/microservices/event-stremaing-platform)
-
-## System Design
+### System Design
 
 > For a complete System Design study, you should also be familiar with Databases related topics such as CAP Theorem.
 
@@ -344,7 +259,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [CDN: Content Delivery Network](system-design/cdn)
 * [Stateless web tier](system-design/stateless-web-tier)
 * [Multi-data center](system-design/multi-data-center) 
-* [Message Queue](system-design/message-queue)
+* [Message Queue/Message Broker](system-design/message-queue)
+  * [Kafka](system-design/message-queue/kafka)
 * [Logging, metrics, automation](system-design/logging-metrics-automation)
 * [Scaling from zero to millions of users](system-design/from-zero-to-millions)
 * [Back-of-the-envelope Estimation](system-design/estimation)
@@ -353,15 +269,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [The rehashing problem](system-design/hashing/rehashing-problem)
   * [Consistent hashing](system-design/hashing/consistent-hashing)
 
-### Sources & Further Reading
-
-* [Back of the envelope calculations](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html)
-* [How to ace a systems design interview](https://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
-* [The system design interview](https://www.hiredintech.com/system-design)
-* [Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
-* [System design template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)
-
-### Case Studies
+#### System Design - Case Studies
 
 * [Instagram News Feed - Gaurav Sen](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
 * [Design a key-value store](system-design/case-studies/keyvalue-store)
@@ -374,6 +282,85 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Design a Search Autocomplete System](system-design/case-studies/search-autocomplete)
 * [Design Youtube](system-design/case-studies/youtube)
 * [Design Google Drive](system-design/case-studies/google-drive)
+
+### Three-Layer System (Martin Fowler)
+
+* [Three Fundamental Layers](architectures/fowler/three-layers)
+* [Narratives summary](architectures/fowler/narratives)
+* [Other layering schemes](architectures/fowler/other-layering-schemes)
+
+### [Ports & Adapters / Hexagonal](architectures/hexagonal)
+
+### [Clean Architecture](architectures/clean)
+
+* [MVC and Hexagonal Architectures as Precursors](architectures/clean/precursors)
+* [MVC Problems](architectures/clean/mvc)
+* [Tradeoffs](architectures/clean/tradeoffs)
+* [What is Architecture](architectures/clean/architecture)
+* [Keeping options open](architectures/clean/keeping-options)
+* [Plugin Architecture: MCP](architectures/clean/mcp)
+* [Request and Response Models](architectures/clean/req-res)
+* [Screaming Architecture](architectures/clean/screaming-architecture)
+* [Testable Architecture](architectures/clean/testable-architecture)
+* [Humble Object Pattern](architectures/clean/humble-object-pattern)
+* [Services and boundaries](architectures/clean/services-boundaries)
+* [Test Boundaries](architectures/clean/test-boundaries)
+* [The Fragile Tests Problem](architectures/clean/fragile-tests)
+* Code organization
+  * [Package by layer](architectures/clean/code-org/by-layers)
+  * [Package by feature](architectures/clean/code-org/by-feature)
+  * [Package by component](architectures/clean/code-org/by-component)
+* [Target Hardware Bottleneck](architectures/clean/target-hardware-bottleneck)
+* [The Missing Advice](architectures/clean/missing-advice)
+* Glossary
+  * [Details](architectures/clean/details)
+  * [Stable Abstractions Rule](architectures/clean/stable-abstractions)
+  * [Components](architectures/clean/components)
+    * [Concrete Components](architectures/clean/concrete-components)
+    * [Component Principles](architectures/clean/component-principles)
+      * [Component Cohesion](architectures/clean/component-principles/component-cohesion)
+        * [Reuse/Release Equivalence Principle](architectures/clean/component-principles/component-cohesion/rep)
+        * [Common Closure Principle](architectures/clean/component-principles/component-cohesion/ccp)
+        * [Common Reuse Principle](architectures/clean/component-principles/component-cohesion/crp)
+      * [Component Coupling](architectures/clean/component-principles/component-coupling)
+        * [Acyclic Dependencies Principle](architectures/clean/component-principles/component-coupling/adp)
+        * [Stable Dependencies Principle](architectures/clean/component-principles/component-coupling/sdp)
+        * [Stable Abstractions Principle](architectures/clean/component-principles/component-coupling/sap)
+  * [Stability](architectures/clean/stability)
+  * [Boundaries](architectures/clean/boundaries)
+  * Objects
+    * [Entities](architectures/clean/objects/entities)
+    * [Use Cases](architectures/clean/objects/use-cases)
+    * [Interactor](architectures/clean/objects/interactor)
+    * [Interface Adapters](architectures/clean/objects/iadapters)
+    * [Presenter and View](architectures/clean/objects/presenter-view)
+    * [Database Gateways](architectures/clean/objects/database-gateways)
+    * [Main Component](architectures/clean/objects/main)
+  * [Policy](architectures/clean/policy)
+  * [Business Rules](architectures/clean/business-rules)
+  * [Dependency Rule](architectures/clean/dependency-rule)
+
+### REST: Representational State Transfer
+
+* [Introduction](architectures/rest/intro.md)
+* [History](architectures/rest/history.md)
+* [Architectural Properties](architectures/rest/properties.md)
+* [Architectural Constraints](architectures/rest/constraints.md)
+* [Semantics of HTTP APIs](architectures/rest/http-methods.md)
+
+### [Flux](architectures/flux)
+
+* [MVC Comparison](architectures/flux/mvc-comparison)
+
+### Micro Services
+
+* [Micro services overview](architectures/microservices/overview)
+* [Properties](architectures/microservices/properties)
+* [Service granularity](architectures/microservices/granularity)
+* [Benefits](architectures/microservices/benefits)
+* [Criticism](architectures/microservices/issues)
+* [Concerns](architectures/microservices/concerns)
+* [Event Streaming Platform](architectures/microservices/event-stremaing-platform)
 
 ## Databases
 
@@ -419,27 +406,24 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Wide-column store
 
 * [Overview](databases/wide-column)
+* HBase
+  * [Overview](databases/wide-column/hbase/overview)
+  * [Vs Relational Databases](databases/wide-column/hbase/vs-relational)
+  * [Architectural Components](databases/wide-column/hbase/architecture)
+  * [Write Mechanism](databases/wide-column/hbase/writes)
+  * [Interacting with Shell](databases/wide-column/hbase/shell)
+  * [ACID in HBase](https://hadoop-hbase.blogspot.com/2012/03/acid-in-hbase.html)
+  * [HBase Shell Interaction](databases/wide-column/hbase/shell)
+  * [HBase Interaction](https://www.youtube.com/watch?v=9YkurBN5Pt0)
+  * [HBase for Java Developers](https://www.youtube.com/playlist?list=PLf0swTFhTI8r6wUT9dcSQ-sLeaIMbbLm_)
 
-#### HBase
-
-* [Overview](databases/wide-column/hbase/overview)
-* [Vs Relational Databases](databases/wide-column/hbase/vs-relational)
-* [Architectural Components](databases/wide-column/hbase/architecture)
-* [Write Mechanism](databases/wide-column/hbase/writes)
-* [Interacting with Shell](databases/wide-column/hbase/shell)
-* [ACID in HBase](https://hadoop-hbase.blogspot.com/2012/03/acid-in-hbase.html)
-* [HBase Shell Interaction](databases/wide-column/hbase/shell)
-* [HBase Interaction](https://www.youtube.com/watch?v=9YkurBN5Pt0)
-* [HBase for Java Developers](https://www.youtube.com/playlist?list=PLf0swTFhTI8r6wUT9dcSQ-sLeaIMbbLm_)
-
-## Distributed Systems
-
-* Message Brokers
-  * [Kafka](distributed/message-brokers/kafka)
 
 ## Technology specifics
 
 Specifics that should be considered while developing a software solution relying on a particular technology.
+
+* [Golang Handbook](https://github.com/herrera-ignacio/go-handbook)
+* [Java Handbook](https://github.com/herrera-ignacio/java-handbook)
 
 ### Javascript & Node.js
 
@@ -447,56 +431,33 @@ Specifics that should be considered while developing a software solution relying
 * [AfterAcademy, backend architecture considerations](https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro)
 * [The Working Architecture, Viktor Turskyi](js/working-architecture)
 
-### Golang
-
-Check my [go-handbook repository](https://github.com/herrera-ignacio/go-handbook).
-
 ### React
 
 * [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 ### Redux
 
-* [When and when not to reach for Redux](./redux/when)
-* [Redux must know](./redux/introduction)
-* [Three Fundamental Principles](./redux/three-principles)
-* [Best Practices](./redux/best-practices)
+* [When and when not to reach for Redux](redux/when)
+* [Redux must know](redux/introduction)
+* [Three Fundamental Principles](redux/three-principles)
+* [Best Practices](redux/best-practices)
 * Structuring Reducers
-  * [Immutable Update Patterns](./redux/immutable-updates)
+  * [Immutable Update Patterns](redux/immutable-updates)
 * [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
-* [Flux Comparison](./redux/flux-comparison)
-
-### Java
-
-Check my [java-handbook repository](https://github.com/herrera-ignacio/java-handbook) that includes:
-
-* Java Basics, OOP, Functional Programing
-* JVM
-* Java SE
-* Maven
-* Spring
-* Sprint Boot
-* Apache Kafka
-* Apache Storm
+* [Flux Comparison](redux/flux-comparison)
 
 ## Operating Systems
 
-* [Multithreading](./os/multithreading)
-* [Parallelism & Concurrency](./os/parallelism)
-* [Process & Thread](./os/process-thread)
-
-## Models of Computation
-
-* [Finite State Machine](/./models-of-computation/fsm)
+* [Multithreading](os/multithreading)
+* [Parallelism & Concurrency](os/parallelism)
+* [Process & Thread](os/process-thread)
+* Models of Computation
+  * [Finite State Machine](models-of-computation/fsm)
 
 ## Data Science & Big Data
 
 * [Batch Processing](ds/batch-processing)
 * [ETL](ds/etl)
-
-## Well-known Problems
-
-* [The Revenue Recognition Problem](problems/revenue-recognition)
 
 ## Software Engineering Culture
 
@@ -504,22 +465,19 @@ Check my [java-handbook repository](https://github.com/herrera-ignacio/java-hand
 
 ## Glossary
 
-### Common Terms
-
-* [CRUD](glossary/crud)
-* [Abstract Syntax Tree](glossary/ast)
-* [Patterns](glossary/pattern)
-* [Anti-Pattern](glossary/anti-pattern)
-* [Micro Services Architecture](glossary/microservices)
-* [Modularization](glossary/modularization)
-* [Web API](glossary/web-api)
-* [Leaky Abstraction](glossary/leaky-abstraction)
-* [First-class citizen](glossary/first-class-citizen)
-* [Side Effect](glossary/side-effect)
-* [*SPOF*: Single Point of Failure](glossary/spof)
-
-### Laws & Theorems
-
-* [Hyrum's Law: The Law of Implicit Dependencies](glossary/laws/hyrum)
-* [Churn Rule](glossary/laws/churn-rule)
-* [Beyoncé Rule](glossary/laws/beyonce-rule)
+* Common Terms
+  * [Abstract Syntax Tree](glossary/ast)
+  * [Anti-Pattern](glossary/anti-pattern)
+  * [CRUD](glossary/crud)
+  * [First-class citizen](glossary/first-class-citizen)
+  * [Leaky Abstraction](glossary/leaky-abstraction)
+  * [Micro Services Architecture](glossary/microservices)
+  * [Modularization](glossary/modularization)
+  * [Patterns](glossary/pattern)
+  * [Side Effect](glossary/side-effect)
+  * [SPOF: Single Point of Failure](glossary/spof)
+  * [Web API](glossary/web-api)
+* Laws & Theorems
+  * [Beyoncé Rule](glossary/laws/beyonce-rule)
+  * [Churn Rule](glossary/laws/churn-rule)
+  * [Hyrum's Law: The Law of Implicit Dependencies](glossary/laws/hyrum)
