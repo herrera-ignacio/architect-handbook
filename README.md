@@ -1,27 +1,45 @@
 # Software Architect Handbook
 
-This attempts to be a collection of the minimal least required concepts, terminology, and skills that an architect should have.
-
-I won't be covering most of the topics in detail, some of them will be references to external sources, there's plenty of information out there if you want to do research on your own, books, blogs, videos, open source projects, etc, I rather prefer just presenting to you the fundamentals and plant the seed of curiosity in you to go and do a deeper research as needed.
-
-The idea of this collection is not to help you become a expert of, let's say a particular architectural style, but rather get an overall knowledge of different types of architectures, pros and cons, and technical concepts that have system impact and should be considered in the broader perspective an architect should have.
-
-## TOC
-
-* Design Principles
-* Programming Paradigms
-* Design Patterns & Principles
-* Anti-Patterns
-* Types of Software
-* Architectural styles
-* System Design
-* Databases
-* Distributed Systems
-* Technology Specifics
-* Models of Computation
-* Well-known problems
-* Glossary
-  * Laws & Theorems
+- [Software Architect Handbook](#software-architect-handbook)
+  - [Design Principles](#design-principles)
+  - [Programming Paradigms](#programming-paradigms)
+    - [Structured](#structured)
+    - [OOP: Object Oriented Programming](#oop-object-oriented-programming)
+    - [Functional](#functional)
+  - [Design Patterns & Principles](#design-patterns--principles)
+    - [Base Patterns](#base-patterns)
+    - [General / Architectural](#general--architectural)
+    - [Gang of Four Patterns](#gang-of-four-patterns)
+    - [Domain Logic](#domain-logic)
+    - [Data Source & Persistence](#data-source--persistence)
+    - [Object Relational](#object-relational)
+      - [Behavioral](#behavioral)
+      - [Structural](#structural)
+      - [Metadata Mapping](#metadata-mapping)
+    - [Web Presentation](#web-presentation)
+    - [Distribution](#distribution)
+    - [Offline Concurrency](#offline-concurrency)
+    - [Session State](#session-state)
+  - [Anti-Patterns](#anti-patterns)
+  - [Types of Software](#types-of-software)
+  - [Architectural Styles](#architectural-styles)
+    - [General Concerns](#general-concerns)
+    - [System Design](#system-design)
+      - [System Design - Case Studies](#system-design---case-studies)
+    - [Three-Layer System (Martin Fowler)](#three-layer-system-martin-fowler)
+    - [Ports & Adapters / Hexagonal](#ports--adapters--hexagonal)
+    - [Clean Architecture](#clean-architecture)
+    - [REST: Representational State Transfer](#rest-representational-state-transfer)
+    - [Flux](#flux)
+    - [Micro Services](#micro-services)
+  - [Databases](#databases)
+    - [Relational Databases](#relational-databases)
+    - [Wide-column store](#wide-column-store)
+  - [Technology specifics](#technology-specifics)
+  - [Operating Systems](#operating-systems)
+  - [Data Science & Big Data](#data-science--big-data)
+  - [Software Engineering Culture](#software-engineering-culture)
+  - [Glossary](#glossary)
 
 ## Design Principles
 
