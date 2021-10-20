@@ -6,7 +6,7 @@
     - [Structured](#structured)
     - [OOP: Object Oriented Programming](#oop-object-oriented-programming)
     - [Functional](#functional)
-  - [Design Patterns & Principles](#design-patterns--principles)
+  - [Design Patterns](#design-patterns)
     - [Base Patterns](#base-patterns)
     - [General / Architectural](#general--architectural)
     - [Gang of Four Patterns](#gang-of-four-patterns)
@@ -20,13 +20,14 @@
     - [Distribution](#distribution)
     - [Offline Concurrency](#offline-concurrency)
     - [Session State](#session-state)
-  - [Anti-Patterns](#anti-patterns)
+    - [Anti-Patterns](#anti-patterns)
   - [Types of Software](#types-of-software)
+  - [System Design](#system-design)
+    - [System Design - Case Studies](#system-design---case-studies)
   - [Architectural Styles](#architectural-styles)
     - [General Concerns](#general-concerns)
-    - [System Design](#system-design)
-      - [System Design - Case Studies](#system-design---case-studies)
     - [Three-Layer System (Martin Fowler)](#three-layer-system-martin-fowler)
+    - [Service Oriented Architecture (SOA)](#service-oriented-architecture-soa)
     - [Ports & Adapters / Hexagonal](#ports--adapters--hexagonal)
     - [Clean Architecture](#clean-architecture)
     - [REST: Representational State Transfer](#rest-representational-state-transfer)
@@ -96,7 +97,7 @@
 * [Immutability](./paradigms/functional/immutability)
 * [Idempotence](paradigms/functional/idempotence)
 
-## Design Patterns & Principles
+## Design Patterns
 
 > [What is a design pattern?](https://github.com/herrera-ignacio/design_patterns/blob/master/introduction/design-pattern.md)
 * Base Patterns
@@ -217,7 +218,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Server Session State](design-patterns/session-state/server)
 * [Database Session State](design-patterns/session-state/database)
 
-## Anti-Patterns
+### Anti-Patterns
 
 * [Abstraction Inversion](anti-patterns/abstraction-inversion)
 
@@ -229,25 +230,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [EAPPs Challenges](enterprise/challenges)
   * [Kinds of EAPPs](enterprise/kinds)
 
-## Architectural Styles
 
-> Recommended book: https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture
-
-### General Concerns
-
-* [Architecture](architectures/general/definition)
-* [Concurrency](architectures/general/concurrency)
-* [Development Overconfidence](architectures/general/overconfidence)
-* [Developer Struggle](architectures/general/developer-struggle)
-* [Distribution Strategies](architectures/general/distribution-strategies)
-* [Layering](architectures/general/layering)
-* [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
-* [Organizing Domain Logic](architectures/general/domain-logic)
-* [Session State](architectures/general/session-state)
-* [Web Presentation](architectures/general/web-presentation)
-
-
-### System Design
+## System Design
 
 > For a complete System Design study, you should also be familiar with Databases related topics such as CAP Theorem.
 
@@ -287,7 +271,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [The rehashing problem](system-design/hashing/rehashing-problem)
   * [Consistent hashing](system-design/hashing/consistent-hashing)
 
-#### System Design - Case Studies
+### System Design - Case Studies
 
 * [Instagram News Feed - Gaurav Sen](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
 * [Design a key-value store](system-design/case-studies/keyvalue-store)
@@ -301,11 +285,30 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Design Youtube](system-design/case-studies/youtube)
 * [Design Google Drive](system-design/case-studies/google-drive)
 
+## Architectural Styles
+
+> Recommended book: https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture
+
+### General Concerns
+
+* [Architecture](architectures/general/definition)
+* [Concurrency](architectures/general/concurrency)
+* [Development Overconfidence](architectures/general/overconfidence)
+* [Developer Struggle](architectures/general/developer-struggle)
+* [Distribution Strategies](architectures/general/distribution-strategies)
+* [Layering](architectures/general/layering)
+* [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
+* [Organizing Domain Logic](architectures/general/domain-logic)
+* [Session State](architectures/general/session-state)
+* [Web Presentation](architectures/general/web-presentation)
+
 ### Three-Layer System (Martin Fowler)
 
 * [Three Fundamental Layers](architectures/fowler/three-layers)
 * [Narratives summary](architectures/fowler/narratives)
 * [Other layering schemes](architectures/fowler/other-layering-schemes)
+
+### [Service Oriented Architecture (SOA)](architectures/soa)
 
 ### [Ports & Adapters / Hexagonal](architectures/hexagonal)
 
