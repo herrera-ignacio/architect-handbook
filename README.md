@@ -424,27 +424,17 @@ Specifics that should be considered while developing a software solution relying
 
 * [Golang Handbook](https://github.com/herrera-ignacio/go-handbook)
 * [Java Handbook](https://github.com/herrera-ignacio/java-handbook)
-
-### Javascript & Node.js
-
-* [Considerations for a better architecture](./js/considerations.md)
-* [AfterAcademy, backend architecture considerations](https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro)
-* [The Working Architecture, Viktor Turskyi](js/working-architecture)
-
-### React
-
-* [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
-
-### Redux
-
-* [When and when not to reach for Redux](redux/when)
-* [Redux must know](redux/introduction)
-* [Three Fundamental Principles](redux/three-principles)
-* [Best Practices](redux/best-practices)
-* Structuring Reducers
-  * [Immutable Update Patterns](redux/immutable-updates)
-* [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
-* [Flux Comparison](redux/flux-comparison)
+* [JS Handbook](https://github.com/herrera-ignacio/js-handbook)
+* React
+  * [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+* Redux
+  * [When and when not to reach for Redux](redux/when)
+  * [Redux must know](redux/introduction)
+  * [Three Fundamental Principles](redux/three-principles)
+  * [Best Practices](redux/best-practices)
+  * [Reducers: Immutable Update Patterns](redux/immutable-updates)
+  * [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
+  * [Flux Comparison](redux/flux-comparison)
 
 ## Operating Systems
 
@@ -462,10 +452,10 @@ Specifics that should be considered while developing a software solution relying
 ## Software Engineering Culture
 
 * [Software Engineering at Google](swe/google-software-engineering)
+* [Laws & Theorems](swe/laws)
 
 ## Glossary
 
-* Common Terms
   * [Abstract Syntax Tree](glossary/ast)
   * [Anti-Pattern](glossary/anti-pattern)
   * [CRUD](glossary/crud)
@@ -477,7 +467,3 @@ Specifics that should be considered while developing a software solution relying
   * [Side Effect](glossary/side-effect)
   * [SPOF: Single Point of Failure](glossary/spof)
   * [Web API](glossary/web-api)
-* Laws & Theorems
-  * [Beyoncé Rule](glossary/laws/beyonce-rule)
-  * [Churn Rule](glossary/laws/churn-rule)
-  * [Hyrum's Law: The Law of Implicit Dependencies](glossary/laws/hyrum)
