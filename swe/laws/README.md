@@ -5,6 +5,7 @@
 - [Churn Rule](#churn-rule)
 - [Conway's law](#conways-law)
 - [Hyrum's Law: The Law of Implicit Dependencies](#hyrums-law-the-law-of-implicit-dependencies)
+- [Constantine's law](#constantines-law)
 - [James Lewis on Microservices](#james-lewis-on-microservices)
 
 ## [Beyoncé Rule](beyonce-rule)
@@ -22,6 +23,10 @@
 ## [Hyrum's Law: The Law of Implicit Dependencies](hyrum)
 
 > "With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody."
+
+## Constantine's law
+
+> A structure is stable if *cohesion* is high, and *coupling* is low. - *Larry Constantine*.
 
 ## James Lewis on Microservices
 
