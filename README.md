@@ -474,6 +474,7 @@ Specifics that should be considered while developing a software solution relying
 
 * [Software Engineering at Google](swe/google-software-engineering)
 * [Laws & Theorems](swe/laws)
+* [Quotes](swe/quotes)
 
 ## Glossary
 

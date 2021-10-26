@@ -1,4 +1,4 @@
-## Laws, Theorems & Quotes
+## Laws, Theorems
 
 - [Laws, Theorems & Quotes](#laws-theorems--quotes)
 - [Beyoncé Rule](#beyoncé-rule)
@@ -27,7 +27,3 @@
 ## Constantine's law
 
 > A structure is stable if *cohesion* is high, and *coupling* is low. - *Larry Constantine*.
-
-## James Lewis on Microservices
-
-> "Microservices buy you options".
