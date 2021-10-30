@@ -1,18 +1,19 @@
 # Microservices Concerns
 
-* Configuration Management
-* Service Discovery
-* Load Balancing
-* API Gateway
-* Security Concerns
-* Centralized Logging
-* Centralized Metrics
-* Distributed Tracing
-* Resilience and Fault Tolerance
-* Autoscaling and Self-healing
-* Packaging, Deployment and Scheduling
-* Job Management
-* Singleton Application
+- [Microservices Concerns](#microservices-concerns)
+  - [Configuration Management](#configuration-management)
+  - [Service Discovery](#service-discovery)
+  - [Load Balancing](#load-balancing)
+  - [API Gateways](#api-gateways)
+  - [Security Concerns](#security-concerns)
+  - [Centralized logging](#centralized-logging)
+  - [Centralized Metrics](#centralized-metrics)
+  - [Distributed Tracing](#distributed-tracing)
+  - [Resilience and Fault Tolerance](#resilience-and-fault-tolerance)
+  - [Autoscaling and Self-healing](#autoscaling-and-self-healing)
+  - [Packaging, Deployment and Scheduling](#packaging-deployment-and-scheduling)
+  - [Job Management](#job-management)
+  - [Singleton Application](#singleton-application)
 
 ## Configuration Management
 

@@ -40,6 +40,7 @@
   - [Operating Systems](#operating-systems)
   - [Data Science & Big Data](#data-science--big-data)
   - [Software Engineering Culture](#software-engineering-culture)
+  - [Useful Tools](#useful-tools)
   - [Glossary](#glossary)
 
 ## Design Principles
@@ -375,13 +376,9 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ### Micro Services
 
-* [Micro services overview](architectures/microservices/overview)
-* [Properties](architectures/microservices/properties)
-* [Service granularity](architectures/microservices/granularity)
-* [Benefits](architectures/microservices/benefits)
-* [Criticism](architectures/microservices/issues)
-* [Concerns](architectures/microservices/concerns)
-* [Event Streaming Platform](architectures/microservices/event-stremaing-platform)
+> [Overview and Tradeoffs](architectures/microservices/overview)
+* [Event Streaming Platform](architectures/microservices/event-streaming-platform)
+* [Tools](architectures/microservices/tooling)
 
 ## Databases
 
@@ -475,6 +472,11 @@ Specifics that should be considered while developing a software solution relying
 * [Software Engineering at Google](swe/google-software-engineering)
 * [Laws & Theorems](swe/laws)
 * [Quotes](swe/quotes)
+
+## Useful Tools
+
+* [Telepresence](https://telepresence.io): tool that is aiming to make a hybrid local/remote developer workflow easier for Kubernetes users.
+* [Pact](https://pact.io): customer-driven contracts.
 
 ## Glossary
 

@@ -7,3 +7,5 @@
 ## Microservices
 
 * *"Microservices buy you options."* - James Lewis
+
+* *"We replaced our monolith with microservices so that every outage could be more like a muder mystery.* - @honest_update
