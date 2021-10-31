@@ -1,12 +1,11 @@
 ## Laws, Theorems
 
-- [Laws, Theorems & Quotes](#laws-theorems--quotes)
+- [Laws, Theorems](#laws-theorems)
 - [Beyoncé Rule](#beyoncé-rule)
 - [Churn Rule](#churn-rule)
 - [Conway's law](#conways-law)
 - [Hyrum's Law: The Law of Implicit Dependencies](#hyrums-law-the-law-of-implicit-dependencies)
 - [Constantine's law](#constantines-law)
-- [James Lewis on Microservices](#james-lewis-on-microservices)
 
 ## [Beyoncé Rule](beyonce-rule)
 

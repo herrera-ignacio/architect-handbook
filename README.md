@@ -377,8 +377,12 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Micro Services
 
 > [Overview and Tradeoffs](architectures/microservices/overview)
+
+* [Own their data](architectures/microservices/own-data)
 * [Event Streaming Platform](architectures/microservices/event-streaming-platform)
-* [Tools](architectures/microservices/tooling)
+* [Tradeoffs](architectures/microservices/tradeoffs)
+
+> [Tools](architectures/microservices/tooling)
 
 ## Databases
 
@@ -453,6 +457,7 @@ Specifics that should be considered while developing a software solution relying
   * [Reducers: Immutable Update Patterns](redux/immutable-updates)
   * [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
   * [Flux Comparison](redux/flux-comparison)
+  * [MVC Comparison](https://blog.gisspan.com/2017/02/Redux-Vs-MVC,-Why-and-How.html)
 
 ## Operating Systems
 

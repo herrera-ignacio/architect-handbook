@@ -2,14 +2,27 @@
 
 - [Service Oriented Architecture](#service-oriented-architecture)
   - [Overview](#overview)
+  - [SOA vs Three-tiered architecture](#soa-vs-three-tiered-architecture)
   - [Service definition](#service-definition)
   - [SOA Manifesto](#soa-manifesto)
 
 ## Overview
 
-SOA is an architectural style where different *services* can vbe used in conjunction as a *service mesh* to provide the functionality of a large software applicatioon. It integrates distributed, separately maintained and deployed software components. These services and their corresponding consumers communicate by passing data in a well-defined, shared format, through a *communication protocol* over a network.
+SOA is an architectural style where different *services* can be used in conjunction as a *service mesh* to provide the functionality of a large software applicatioon. It integrates distributed, separately maintained and deployed software components. These services and their corresponding consumers communicate by passing data in a well-defined, shared format, through a *communication protocol* over a network.
 
 > Service orientation is a way of thinking in terms of services and service-based development, and the outcomes of services.
+
+Our bisness domain becomes the primary force driving our system architecture, hopefully making it easier to make changes, and for us to **organize our teams around our business domain**.
+
+## SOA vs Three-tiered architecture
+
+The three-tiered architecture is so common partly because everyone has heard about it and it is based on how we usually organize our teams. In the past, the primary way IT organizations grouped people was in terms of their core competency. But this has changed. We now group people in poly-skilled teams, to reduce hand-offs and silos.
+
+Changes in functionality are imprimarly about changes in business functionality. But if our business functionality is in effect spread across all three tiers, it increases the chance that a change in functionality will cross layers. This is an architecture in which we have *high* cohesion of related technology, but *low* cohesion of business functionality.
+
+If we want to make it easier to make changes, instead we need to change how we group code. **We choose cohesion of business functionality**, rather than technology.
+
+> Each service may or may not end up containing a mix of these three-layers, but that is a local service implementation concern.
 
 ## Service definition
 
