@@ -3,7 +3,8 @@
 - [Quotes](#quotes)
   - [General](#general)
   - [MVC](#mvc)
-  - [Microservices](#microservices)
+  - [Distributed Services](#distributed-services)
+    - [Microservices](#microservices)
 
 ## General
 
@@ -13,7 +14,11 @@
 
 * *"MVC becomes more complicated and less predictable the bigger your app becomes."* - Tom Occhino, Facebook
 
-## Microservices
+## Distributed Services
+
+* *"A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable."* - Leslie Lamport
+
+### Microservices
 
 * *"Microservices buy you options."* - James Lewis
 

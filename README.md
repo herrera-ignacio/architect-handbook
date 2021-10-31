@@ -380,6 +380,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [Own their data](architectures/microservices/own-data)
 * [Event Streaming Platform](architectures/microservices/event-streaming-platform)
+* [Monolith](architectures/microservices/monolith)
 * [Tradeoffs](architectures/microservices/tradeoffs)
 
 > [Tools](architectures/microservices/tooling)
