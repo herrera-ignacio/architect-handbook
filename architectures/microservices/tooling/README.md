@@ -9,6 +9,7 @@
   - [Centralized logging](#centralized-logging)
   - [Centralized Metrics](#centralized-metrics)
   - [Distributed Tracing](#distributed-tracing)
+  - [Event Streaming](#event-streaming)
   - [Resilience and Fault Tolerance](#resilience-and-fault-tolerance)
   - [Autoscaling and Self-healing](#autoscaling-and-self-healing)
   - [Packaging, Deployment and Scheduling](#packaging-deployment-and-scheduling)
@@ -74,6 +75,12 @@ There's a need to reconstruct the complex paths that transactions take as they p
 
 * *Spring Clous Sleuth*.
 * *Kubernetes Ecosystem*: Hawkular, Jaeger.
+
+## Event Streaming
+
+Event streaming is the practice of capturing data in real-time from event sources (i.e, databases, sensors, mobile devices, cloud services etc) in the form of stream of events; storing these event streams durably for later retrieval; manipulating, processing, and reacting to the event streams in real-time as well as retrospectively; and routing the event streams to different destination technologies as needed.
+
+![](2021-06-08-12-03-59.png)
 
 ## Resilience and Fault Tolerance
 

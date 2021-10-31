@@ -32,7 +32,7 @@
     - [Clean Architecture](#clean-architecture)
     - [REST: Representational State Transfer](#rest-representational-state-transfer)
     - [Flux](#flux)
-    - [Micro Services](#micro-services)
+    - [Microservices](#microservices)
   - [Databases](#databases)
     - [Relational Databases](#relational-databases)
     - [Wide-column store](#wide-column-store)
@@ -374,12 +374,12 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [MVC Comparison](architectures/flux/mvc-comparison)
 
-### Micro Services
+### Microservices
 
 > [Overview and Tradeoffs](architectures/microservices/overview)
 
+* [Coupling and Cohesion](architectures/microservices/coupling-and-cohesion)
 * [Own their data](architectures/microservices/own-data)
-* [Event Streaming Platform](architectures/microservices/event-streaming-platform)
 * [Monolith](architectures/microservices/monolith)
 * [Tradeoffs](architectures/microservices/tradeoffs)
 
