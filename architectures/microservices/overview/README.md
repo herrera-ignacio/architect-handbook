@@ -11,7 +11,7 @@
 
 Microservice architecture is a *type of the service-oriented architecture (SOA)*, it arranges an application as a **collection of loosely-coupled services**.
 
-> A *microservice* is a self-contained piece of business functionality that encapsulate data storage and retrieval, exposing data, via well-defined interfaces.
+> A *microservice* is an independently deployable self-contained service modeled around a business domain that encapsulate data storage and retrieval, exposing data, via well-defined interfaces.
 
 Microservice architecture try to improve some of the disadvantages and restrictions of monolith applications caused by lack of modularity. *Modularity* supports reuse of parts of the application logic and also facilitates maintenance by allowing repair or replacement of parts of the application without requiring wholesale replacement.
 

@@ -32,6 +32,7 @@
     - [Clean Architecture](#clean-architecture)
     - [REST: Representational State Transfer](#rest-representational-state-transfer)
     - [Flux](#flux)
+    - [Domain-Driven Design](#domain-driven-design)
     - [Microservices](#microservices)
   - [Databases](#databases)
     - [Relational Databases](#relational-databases)
@@ -374,12 +375,20 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 * [MVC Comparison](architectures/flux/mvc-comparison)
 
+### Domain-Driven Design
+
+> [Overview]
+
+* [Aggregate](architectures/ddd/aggregate)
+* [Bounded Context](architectures/ddd/bounded-context)
+
 ### Microservices
 
 > [Overview and Tradeoffs](architectures/microservices/overview)
 
 * [Coupling and Cohesion](architectures/microservices/coupling-and-cohesion)
 * [Own their data](architectures/microservices/own-data)
+* [DDD - Mapping aggregates and bounded contexts](architectures/microservices/ddd-mapping)
 * [Monolith](architectures/microservices/monolith)
 * [Tradeoffs](architectures/microservices/tradeoffs)
 
