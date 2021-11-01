@@ -384,13 +384,16 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ### Microservices
 
-> [Overview and Tradeoffs](architectures/microservices/overview)
+> [Overview](architectures/microservices/overview)
 
+* [Benefits and alternatives](architectures/microservices/benefits)
 * [Coupling and Cohesion](architectures/microservices/coupling-and-cohesion)
 * [Own their data](architectures/microservices/own-data)
 * [DDD - Mapping aggregates and bounded contexts](architectures/microservices/ddd-mapping)
 * [Monolith](architectures/microservices/monolith)
+* [Planning a Migration](architectures/microservices/migration)
 * [Tradeoffs](architectures/microservices/tradeoffs)
+
 
 > [Tools](architectures/microservices/tooling)
 
@@ -486,7 +489,7 @@ Specifics that should be considered while developing a software solution relying
 
 * [Software Engineering at Google](swe/google-software-engineering)
 * [Laws & Theorems](swe/laws)
-* [Quotes](swe/quotes)
+* [Quotes](swe/quotes.md)
 
 ## Useful Tools
 
@@ -503,6 +506,7 @@ Specifics that should be considered while developing a software solution relying
   * [Micro Services Architecture](glossary/microservices)
   * [Modularization](glossary/modularization)
   * [Patterns](glossary/pattern)
+  * [Resilience vs Robustness](glossary/resilience-vs-robustness)
   * [Side Effect](glossary/side-effect)
   * [SPOF: Single Point of Failure](glossary/spof)
   * [Web API](glossary/web-api)

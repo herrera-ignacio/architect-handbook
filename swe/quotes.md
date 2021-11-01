@@ -2,6 +2,7 @@
 
 - [Quotes](#quotes)
   - [General](#general)
+  - [Leadership & Couching](#leadership--couching)
   - [MVC](#mvc)
   - [Distributed Services](#distributed-services)
     - [Microservices](#microservices)
@@ -9,6 +10,10 @@
 ## General
 
 * "*Choose the approach that works for you, and change things to address problems as and when you see them."* - Sam Newman
+
+## Leadership & Couching
+
+* *"Whatever industry you operate in, it is all about your people, and catching them doings things right, and providing them with the confidence, the motivation, the freedom and desire to achieve their true potential."* - John Timpson
 
 ## MVC
 
