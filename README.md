@@ -393,7 +393,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Monolith](architectures/microservices/monolith)
 * [Planning a Migration](architectures/microservices/migration)
 * [Tradeoffs](architectures/microservices/tradeoffs)
-
+* [When to avoid](architectures/microservices/when-to-avoid)
 
 > [Tools](architectures/microservices/tooling)
 

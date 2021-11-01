@@ -28,3 +28,5 @@
 * *"Microservices buy you options."* - James Lewis
 
 * *"We replaced our monolith with microservices so that every outage could be more like a muder mystery.* - @honest_update
+
+* *"If your initial idea is bad, it doesn't matter whether you built it with microservices or not."* - Sam Newman
