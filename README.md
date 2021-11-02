@@ -102,18 +102,6 @@
 ## Design Patterns
 
 > [What is a design pattern?](https://github.com/herrera-ignacio/design_patterns/blob/master/introduction/design-pattern.md)
-* Base Patterns
-* General / Architectural
-* Gang Of Four Patterns (GoF) 
-* Domain Logic
-* Data Source Pesistence
-* Object-Relational
-  * Behavioral 
-  * Structural
-  * Metadata Mapping
-* Web Presentation
-* Distribution
-* Offline Concurrency
 
 ### Base Patterns
 
@@ -392,7 +380,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [DDD - Mapping aggregates and bounded contexts](architectures/microservices/ddd-mapping)
 * [Monolith](architectures/microservices/monolith)
 * [Planning a Migration](architectures/microservices/migration)
-* [Tradeoffs](architectures/microservices/tradeoffs)
+* [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
 > [Tools](architectures/microservices/tooling)
@@ -488,6 +476,7 @@ Specifics that should be considered while developing a software solution relying
 ## Software Engineering Culture
 
 * [Software Engineering at Google](swe/google-software-engineering)
+* [Success stories](swe/success-stories)
 * [Laws & Theorems](swe/laws)
 * [Quotes](swe/quotes.md)
 

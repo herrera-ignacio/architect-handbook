@@ -11,6 +11,8 @@
 
 * "*Choose the approach that works for you, and change things to address problems as and when you see them."* - Sam Newman
 
+* "*If you do a big-bang rewrite, the only thing you're guaranteed of is a big bang*" - Martin Fowler
+
 ## Leadership & Couching
 
 * *"Whatever industry you operate in, it is all about your people, and catching them doings things right, and providing them with the confidence, the motivation, the freedom and desire to achieve their true potential."* - John Timpson
