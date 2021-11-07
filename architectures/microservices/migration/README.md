@@ -1,6 +1,7 @@
 # Planning a Migration
 
 - [Planning a Migration](#planning-a-migration)
+  - [Summary](#summary)
   - [Prioritize](#prioritize)
   - [Changing Organizations](#changing-organizations)
     - [1. Establishing a sense of urgency](#1-establishing-a-sense-of-urgency)
@@ -24,7 +25,7 @@
   - [A Combined Model](#a-combined-model)
   - [Reorganizing Teams](#reorganizing-teams)
     - [Shifiting Structures](#shifiting-structures)
-    - [It's Not ONe Size Fits All](#its-not-one-size-fits-all)
+    - [It's Not One Size Fits All](#its-not-one-size-fits-all)
     - [Making a Change](#making-a-change)
     - [Changing Skills](#changing-skills)
   - [How Will you Know if the Transition Is Working](#how-will-you-know-if-the-transition-is-working)
@@ -34,13 +35,27 @@
     - [Avoiding the Sunk Cost Fallacy (or Concorde Fallacy)](#avoiding-the-sunk-cost-fallacy-or-concorde-fallacy)
     - [Being Open to New Approaches](#being-open-to-new-approaches)
 
+## Summary
+
+Teams should ask themselves some key questions when deciding whether microservices are right for them:
+
+* What are you trying to accomplish?
+* Have you considered alternatives to using microservices?
+* How will you know if the transition is working?
+
+The importance of adopting an **incremental approach** cannot be overstated. Mistakes are inevitable, so if accepting that as a given, you should aim to make small mistakes rather than big ones.
+
+The job isn't done until it's in production and is being used. You learn a huge amount from the process of having your first few services actually *used*. Early on, that needs to be your focus.
+
+> We need to develop a series of techniques that allow us to create new microservices and integrate them with our (hopefully) shrinking monolith, and get them shipped to production.
+
 ## Prioritize
 
 It's common for people to be trying to change not one thing but many things at once. You want to *avoid* this. This can lead to confusing priorities than can quickly increase the amoung of change needed and delay seeing any benefits.
 
 It all starts innocently enough. After deciding microservices are the way forward. Someone else comes up and says, "well, if we're doing microservices, we can make our teams more autonomous at the same time!" Another person chimes in, "And this givecs us a great chance to try out Kotlin as a programming language!" Before you know it, you have a massive change initiative that is attempting to roll out team autonomy, scale the application, and bring in new technology all at once, along with other things.
 
-Moreover, microservices become locked in as *the* approach. If you focus on just the scaling aspect, during your migration you may come to realize that you'd better off just horizontally scaling out your existing monolithic application. But doint thatt won't help to the new secondary goals of improving team autonomy or brining a new programming language.
+Moreover, microservices become locked in as *the* approach. If you focus on just the scaling aspect, during your migration you may come to realize that you'd better off just horizontally scaling out your existing monolithic application. But doing that won't help to the new secondary goals of improving team autonomy or brining a new programming language.
 
 It is important, therefore, to *separate the core driver* behind the shift from any secondary benefits you might also like to achieve. Recognize that some things *are* more important than others.
 
@@ -198,28 +213,89 @@ We want some quick wins to make early progress, to build a sense of momentum, an
 
 ### Shifiting Structures
 
-### It's Not ONe Size Fits All
+Historically, IT organizations were structured around competency. When creating software, people from these teams would be assigned to work on often-short lived initiatives. The act of creating software therefore required multiple hand-offs between teams.
+
+**Silos** have been breaking down. The *DevOps* movement has also led in part to many organizations shifting away from centralized operations teams, instead pushing for more responsibility for operational considerations onto the delivery teams.
+
+The roles of dedicated teams have been pushed into the delivery teams and shifted. They've gone from doing the work themselves to helping the delivery teams do the work instead. Embedding specialists with the teams, creating self-service tooling, providing training, or a whole of other activities. Their responsibility has shifted **from doing to enabling**.
+
+Increasingly, therefore, we're seeing more independent, autonomous teams, able to be responsibile for more of the end-to-end delivery cycle than ever before. **Their focus is on different areas of the product, rather than a specific technology or activity**.
+
+### It's Not One Size Fits All
+
+Making changes in your organizational structure is critical. Understanding if and how your organization needs to change needs to be based on your context, your working culture, and your people.
+
+If you want to make a shift toward teams more fully owning the whole life cycle of their software, understand that the skills of those teams neeed to change.
+
+> No matter what change you want to bring about, you can make this happen in an incremental fashion.
 
 ### Making a Change
 
+1. Explicitly list all the activities and responsibilities that are involved in delivering software within the organization.
+2. Map these activities to your existing organizational structure.
+3. If you've already modeled your *path to production*, you could overlay those ownership boundaries on an existing view.
+
 ![](2021-11-02-20-32-54.png)
+
+> The nature of a siloed organization is that you can struggle to understand what one silo does when you're in a different silo.
+
+Once you have your *as-is picture*, redrwa thing with your vision for how things should be in the future, within some sensible timescale (six months to one year)
+
+* What responsibilities are changing hands?
+* How will you make that transition happen?
+* What is needed to make that shift?
+* What new skills will the teams need?
+* What are the priorities for the various changes you want to make?
 
 ![](2021-11-02-20-32-44.png)
 
+We want teams to be able to provision their own test environments. But to do that, the operations team will need to provide a self-service platform for the delivery team to use. They can also handle all incidents during the working day, giving them a chance to come up to speed with that process in a safe environment, where the existing operations team is on hand to coach them.
+
+> Focusing on elimating the need for the operations team to provision test environments is the right first step.
+
 ### Changing Skills
+
+You can have people self-assess and use that to build a wider understanding of what support the team mayh need to carry out the change. You can use this process to build up a visual representation of the areas where an individual may want to focus their time an effort.
 
 ![](2021-11-02-20-32-29.png)
 
+This might highlight the need for some group learning, and perhaps justify a bigger investment such as running an internal training course. Sharing this overall picture with your team can also help individuals understand how they can be part of heling the team as a whole find the balance it needs.
+
 ![](2021-11-02-20-32-16.png)
+
+The right answer could be to bring new people into the team that have the skills you need. This could solve the short-term problem, and you then have an in-team export who can help their colleagues learn more in this area too.
 
 ## How Will you Know if the Transition Is Working
 
+Based on the outcomes you are hoping to achieve, you should try defining some measures that can be tracked and can help you answer these questions.
+
 ### Having Regular Checkpoints
+
+Build into your delivery process some time for pause and reflection in order to analyze the available information and determine whether a change of course is required. For small teams, this could be informal, or perhaps folded into regular retrospective exercises. For larger programs of work, they may need to be planned in as explicit activities on a regular cadence.
+
+1. Restate what you are expecting the transition to microservices to achieve.
+2. Review any quantitative measures you have in place to track progress.
+3. Ask for qualitative feedback - do people think things are still working out?
+4. Decide what, if anything, you're going to change going forward.
 
 ### Quantitative Measures
 
+If you're focused on improving time to market, for example, measure cycle time, number of deployments, and failure rates make sense.
+
+Some metrics can be hard to change in a short period of time. Introducing a change in how things are done often negatively impacts productivity in the short term, while the team comes up to speed with the new way of working.
+
 ### Qualitative Measures
+
+Ignoring what your people are telling you in favor of relying entirely on quantitative metrics is a great way to get yourself into a lot of trouble.
 
 ### Avoiding the Sunk Cost Fallacy (or Concorde Fallacy)
 
+*Sunk cost fallacy* occurs when people become so invested in a previous approach to doing something that even if evidence shows the approach isn't working, they'll still proceed anyway.
+
+> Sometimes we justify it to ourselves: "It'll change any minute!" Other times we may have excreted so much political capital within our organization to make a change that we can't backpedal now.
+
+If you make each step a small one, it becomes easier to avoid the pitfalls of the sunk cost fallacy. It's easier to change direction. Use the checkpoint mechanisms to reflect on what is happening.
+
 ### Being Open to New Approaches
+
+the one certainity is that not everything will go smoothly, and you will need to be open to reverting changes you make, trying new things, or sometimes just letting this settle for a moment to let you see what impact it is having.
