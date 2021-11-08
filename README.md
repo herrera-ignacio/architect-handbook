@@ -380,6 +380,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [DDD - Mapping aggregates and bounded contexts](architectures/microservices/ddd-mapping)
 * [Monolith](architectures/microservices/monolith)
 * [Planning a Migration](architectures/microservices/migration)
+* [Splitting the Monolith](architectures/microservices/splitting-monolith)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
