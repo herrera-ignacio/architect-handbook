@@ -381,6 +381,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Monolith](architectures/microservices/monolith)
 * [Planning a Migration](architectures/microservices/migration)
 * [Splitting the Monolith](architectures/microservices/splitting-monolith)
+  * [Strangler Fig Application](architectures/microservices/splitting-monolith/strangler-fig)
+  * [UI Composition](architectures/microservices/splitting-monolith/ui-composition)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
