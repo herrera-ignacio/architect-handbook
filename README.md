@@ -383,6 +383,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Splitting the Monolith](architectures/microservices/splitting-monolith)
   * [Strangler Fig Application](architectures/microservices/splitting-monolith/strangler-fig)
   * [UI Composition](architectures/microservices/splitting-monolith/ui-composition)
+  * [Branch by Abstraction](architectures/microservices/splitting-monolith/branch-by-abstraction)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
