@@ -385,6 +385,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [UI Composition](architectures/microservices/splitting-monolith/ui-composition)
   * [Branch by Abstraction](architectures/microservices/splitting-monolith/branch-by-abstraction)
   * [Parallel Run](architectures/microservices/splitting-monolith/parallel-run)
+  * [Decorating Collaborator](architectures/microservices/splitting-monolith/decorating-collaborator)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
