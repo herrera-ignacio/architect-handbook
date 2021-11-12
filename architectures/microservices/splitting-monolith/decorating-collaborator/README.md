@@ -1,5 +1,9 @@
 # Decorating Collaborator
 
+- [Decorating Collaborator](#decorating-collaborator)
+  - [Overview](#overview)
+  - [Where To Use It](#where-to-use-it)
+
 ## Overview
 
 We are going to use the *decorator pattern* to make it appear that our monolith is making calls to our service directly, even though we haven't actually changed the underlying monolith.

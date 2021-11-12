@@ -386,6 +386,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Branch by Abstraction](architectures/microservices/splitting-monolith/branch-by-abstraction)
   * [Parallel Run](architectures/microservices/splitting-monolith/parallel-run)
   * [Decorating Collaborator](architectures/microservices/splitting-monolith/decorating-collaborator)
+  * [Change Data Capture](architectures/microservices/splitting-monolith/change-data-capture)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
