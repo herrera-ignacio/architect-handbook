@@ -1,13 +1,14 @@
 # Open-Closed Principle
 
-* Definition
-* Example Problem
-    * Directional Control
-    * Information Hiding
+- [Open-Closed Principle](#open-closed-principle)
+  - [Overview](#overview)
+  - [Mayer's Definition](#mayers-definition)
+  - [Other References](#other-references)
+  - [Example Problem](#example-problem)
+    - [Directional Control](#directional-control)
+    - [Information Hiding](#information-hiding)
 
-> Coined in 1988 by Bertrand Meyer.
-
-## Definition
+## Overview
 
 > A software artifact should be __open for extension but closed for modification__. - Bertrand Mayer
 
@@ -16,7 +17,22 @@ The behavior of a software artifact ought to be extendible, without having to mo
 This is the most fundamental reason that we study software architecture. Clearly, if simply extensions to the requirements for massive changes to the software, then the architects of that software system have engaged in a failure.
 
 > The OCP is one of the driving forces behind the architecture of systems. We want to make systems easy to extend without incurring a high impact of change.
+
 > This goal is accomplished by partitioning the system into components, and arranging those components into a dependency hierarchy that protects higher-level components from changes in lower-level components.
+
+## Mayer's Definition
+
+* A module will be said to be **open if it is still available for extension**. For example, it should be possible to add fields to the data structures it contains, or new elements to the set of functions it performs.
+
+* A module will be said to be **closed if it is available for use by other modules**. This assumes that the module has been given a well-defined, stable description (the interface in the sense of information hiding)
+
+> At the time Meyer was writing, adding fields or functions to a library inevitably required changes to any programs depending on that library (1988 - *Object Oriented Software Construction*).
+
+## Other References
+
+* Robert C. Martin's 1996 article ["The Open-Closed Principle"](https://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgN2M5MTkwM2EtNWFkZC00ZTI3LWFjZTUtNTFhZGZiYmUzODc1&hl=en).
+
+* Craig Larman related the open–closed principle to the pattern by Alistair Cockburn called Protected Variations, and to the David Parnas discussion of information hiding.
 
 ## Example Problem
 
