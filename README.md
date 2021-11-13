@@ -387,6 +387,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Parallel Run](architectures/microservices/splitting-monolith/parallel-run)
   * [Decorating Collaborator](architectures/microservices/splitting-monolith/decorating-collaborator)
   * [Change Data Capture](architectures/microservices/splitting-monolith/change-data-capture)
+* [Decomposing the Database](architectures/microservices/decomposing-database)
+  * [Shared Database](architectures/microservices/decomposing-database/shared-database)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
