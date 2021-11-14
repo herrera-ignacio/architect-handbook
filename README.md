@@ -404,7 +404,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
     * [Monolith as Data Access Layer](architectures/microservices/splitting-apart-database/monolith-as-dal)
     * [Multischema Storage](architectures/microservices/splitting-apart-database/multischema-storage)
   * Schema Separation
-    * [Split Table](architectures/micrioservices/splitting-apart-database/split-table)
+    * [Split Table](architectures/microservices/splitting-apart-database/split-table)
+    * [Move Foreign-Key Relationship to Code](architectures/microservices/splitting-apart-database/move-fk-to-code)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
