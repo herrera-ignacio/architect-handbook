@@ -394,6 +394,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Database-as-a-Service Interface](architectures/microservices/decomposing-database/das-interface)
   * [Aggregate Exposing Monolith](architectures/microservices/decomposing-database/aggregate-exposing-monolith)
   * [Change Data Ownership](architectures/microservices/decomposing-database/change-data-ownership)
+  * [Synchronize Data in Application](architectures/microservices/decomposing-database/synchronize-data-in-application)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
