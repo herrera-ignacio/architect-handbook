@@ -397,8 +397,11 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Synchronize Data in Application](architectures/microservices/decomposing-database/synchronize-data-in-application)
   * [Tracer Write](architectures/microservices/decomposing-database/tracer-write)
 * [Splitting Apart the Database](architectures/microservices/splitting-apart-database)
-  * [Repository per Bounded Context](architectures/microservices/splitting-apart-database/repository-per-bounded-context)
-  * [Database per Bounded Context](architectures/microservices/splitting-apart-database/databas-per-bounded-context)
+  * Split the Database First
+    * [Repository per Bounded Context](architectures/microservices/splitting-apart-database/repository-per-bounded-context)
+    * [Database per Bounded Context](architectures/microservices/splitting-apart-database/databas-per-bounded-context)
+  * Split the Code First
+    * [Monolith as Data Access Layer](architectures/microservices/splitting-apart-database/monolith-as-dal)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 

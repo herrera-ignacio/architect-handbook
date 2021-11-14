@@ -4,6 +4,7 @@
   - [Physical vs Logical Separation](#physical-vs-logical-separation)
   - [Splitting the Database First, or the Code?](#splitting-the-database-first-or-the-code)
     - [Split the Database First](#split-the-database-first)
+    - [Split the Code First](#split-the-code-first)
 
 ## Physical vs Logical Separation
 
@@ -38,3 +39,19 @@ Once we are satisfied that the DB separation makes sense, we could then think ab
 The flip side is that this approach is unlikely to yield much short-term benefit. We still have a monolithic code deployment. Arguably, the pain of a shared database is something you feel over time, so we're spending time and effort now to give us return in the long run, without getting enough of the short-term benefit.
 
 We can go this route if we are *specially concerned* about the potential performance or data consistency issues.
+
+> See *repository-* and *database-* *per bounded context* patterns.
+
+### Split the Code First
+
+Most teams split the code first, then the database. They get the short-term improvement (hopefully) from the new service, which gives them confidence to complete the decomposition by separating out the database.
+
+![](2021-11-14-16-40-04.png)
+
+By splitting out the application tier, it becomes much easier to understand what data is needed by the new service. You also get the benefit of having an *independently deployable* code artifact earlier.
+
+We have to *be careful* of teams that may get this far and then stop, leaving a shared database in play on an ongoing basis.
+
+Another potential challenge is that you *may be delaying* finding out nasty surprises caused by pushing join operations up into the application layer.
+
+> See *monolith as data access layer* and *multischema storage* patterns.
