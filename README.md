@@ -403,7 +403,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * Split the Code First
     * [Monolith as Data Access Layer](architectures/microservices/splitting-apart-database/monolith-as-dal)
     * [Multischema Storage](architectures/microservices/splitting-apart-database/multischema-storage)
-  * Split Database and Code Together
+  * Schema Separation
+    * [Split Table](architectures/micrioservices/splitting-apart-database/split-table)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
