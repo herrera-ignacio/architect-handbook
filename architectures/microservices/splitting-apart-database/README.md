@@ -5,6 +5,8 @@
   - [Splitting the Database First, or the Code?](#splitting-the-database-first-or-the-code)
     - [Split the Database First](#split-the-database-first)
     - [Split the Code First](#split-the-code-first)
+    - [Split Database and Code Together](#split-database-and-code-together)
+  - [So, Which Should I Split First?](#so-which-should-i-split-first)
 
 ## Physical vs Logical Separation
 
@@ -55,3 +57,19 @@ We have to *be careful* of teams that may get this far and then stop, leaving a 
 Another potential challenge is that you *may be delaying* finding out nasty surprises caused by pushing join operations up into the application layer.
 
 > See *monolith as data access layer* and *multischema storage* patterns.
+
+### Split Database and Code Together
+
+We have the option to just break things apart in *one big step*.
+
+![](2021-11-14-19-11-28.png)
+
+This is a much *bigger step* to take, and it will be longer before you can assess the impact of your decision as a result.
+
+## So, Which Should I Split First?
+
+**It depends**. But as a general rule:
+
+* If you are able to change the monolith *and* you are concerned about the potential impact to performance or data consistence, look to *split the schema* apart first.
+
+* Otherwise, look to *split the code* out, and use that to help understand how that impacts data ownership.
