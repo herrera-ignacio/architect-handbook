@@ -90,4 +90,3 @@ With the new Fulfillments service now holding all the required information for t
 Derek Hammer said that getting to the point where all consumers had switched over ended up being pretty much a non-event. It was just another small change done during a routine release.
 
 In Square's case, it decided to keep the duplicated data for restaurant and delivery-related order information in the existing system. This allowd the company to provide visibility of this information in the event of the Fulfillments service being unavailable. This requires keeping the synchronization in place. However, once there is sufficient confidence in the availability of the Fulfillments service, removing the background worker and need for consumers to make two sets of update calls may well help streamline the architecture.
-

@@ -396,6 +396,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Change Data Ownership](architectures/microservices/decomposing-database/change-data-ownership)
   * [Synchronize Data in Application](architectures/microservices/decomposing-database/synchronize-data-in-application)
   * [Tracer Write](architectures/microservices/decomposing-database/tracer-write)
+* [Splitting Apart the Database](architectures/microservices/splitting-apart-database)
+  * [Repository per Bounded Context](architectures/microservices/splitting-apart-database/repository-per-bounded-context)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
