@@ -390,6 +390,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Decomposing the Database](architectures/microservices/decomposing-database)
   * [Shared Database](architectures/microservices/decomposing-database/shared-database)
   * [Database View](architectures/microservices/decomposing-database/database-view)
+  * [Database Wrapping Service](architectures/microservices/decomposing-database/database-wrapping-service)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
