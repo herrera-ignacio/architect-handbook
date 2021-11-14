@@ -398,6 +398,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Tracer Write](architectures/microservices/decomposing-database/tracer-write)
 * [Splitting Apart the Database](architectures/microservices/splitting-apart-database)
   * [Repository per Bounded Context](architectures/microservices/splitting-apart-database/repository-per-bounded-context)
+  * [Database per Bounded Context](architectures/microservices/splitting-apart-database/databas-per-bounded-context)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
