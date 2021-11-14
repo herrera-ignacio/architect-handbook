@@ -14,6 +14,10 @@ Rather than accessing the data from the monolith directly, we can just move to a
 
 This pattern can work as a way of *identifying other candidate services*.
 
+![](2021-11-14-18-52-24.png)
+
+> Using the Employee API to identify the boundary of an Employee service to be split from the monolith.
+
 ## Where to Use It
 
 This pattern works best when the code managing this data is still in the monolith. If the state transitions of this data are still provided in the monolith, it follows that the microservice that wants to access (or change) that state needs to go via the state transitions in the monolith.
