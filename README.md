@@ -391,6 +391,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Shared Database](architectures/microservices/decomposing-database/shared-database)
   * [Database View](architectures/microservices/decomposing-database/database-view)
   * [Database Wrapping Service](architectures/microservices/decomposing-database/database-wrapping-service)
+  * [Database-as-a-Service Interface](architectures/microservices/decomposing-database/das-interface)
+  * [Aggregate Exposing Monolith](architectures/microservices/decomposing-database/aggregate-exposing-monolith)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
