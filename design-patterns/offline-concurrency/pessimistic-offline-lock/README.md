@@ -21,7 +21,7 @@
   2. Building a *lock manager* (a table that maps locks to owners).
   3. Defining procedures for a business transaction to use locks.
 
-* If you are using *Pessimistic Offline Lock* as a complement to *Optimistic Offlien Lock* you need to determine which record types to lock.
+* If you are using *Pessimistic Offline Lock* as a complement to *Optimistic Offline Lock* you need to determine which record types to lock.
 
 ### Lock Types
 

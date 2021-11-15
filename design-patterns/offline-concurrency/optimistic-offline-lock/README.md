@@ -14,9 +14,9 @@
 
 A successful pre-commit validation is, in a sense, obtaining a lock indicating it's okay to go ahead with the changes to the record data. So long as the validation and the updates occur within a single system transaction, the business transaction will display consistency.
 
-*Optimistic Offline Lock* **assumes that the chance of conflict is low**. The expectation that sessio nconflict isn't likely allows multiple users to work with the same data at the same time.
+*Optimistic Offline Lock* **assumes that the chance of conflict is low**. The expectation that session conflict isn't likely allows multiple users to work with the same data at the same time.
 
-> Source Code Management (SCM) system uses *Optimistic Offline Lock*. When it detects a conflict between programmers it usually can figure out the correct merge and retry the commit. A quality merge strategy makes *Optimistic Offline Lock* very powerful not only because the system's concurrency is quite high but because users rarely have to reody any work.
+> Source Code Management (SCM) system uses *Optimistic Offline Lock*. When it detects a conflict between programmers it usually can figure out the correct merge and retry the commit. A quality merge strategy makes *Optimistic Offline Lock* very powerful not only because the system's concurrency is quite high but because users rarely have to redo any work.
 
 ## How It Works
 
