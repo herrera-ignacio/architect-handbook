@@ -407,6 +407,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
     * [Split Table](architectures/microservices/splitting-apart-database/split-table)
     * [Move Foreign-Key Relationship to Code](architectures/microservices/splitting-apart-database/move-fk-to-code)
   * [Shared Static Data](architectures/microservices/splitting-apart-database/shared-static-data)
+  * [Dealing with Transactions](architectures/microservices/splitting-apart-database/transactions)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
