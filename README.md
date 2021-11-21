@@ -409,6 +409,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [Shared Static Data](architectures/microservices/splitting-apart-database/shared-static-data)
   * [Dealing with Transactions](architectures/microservices/splitting-apart-database/transactions)
     * [Sagas](architectures/microservices/splitting-apart-database/transactions/sagas)
+* [Growing Pains](architectures/microservices/growing-pains)
 * [Trade-Offs](architectures/microservices/tradeoffs)
 * [When to avoid](architectures/microservices/when-to-avoid)
 
