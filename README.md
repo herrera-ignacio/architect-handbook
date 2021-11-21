@@ -37,6 +37,7 @@
   - [Databases](#databases)
     - [Relational Databases](#relational-databases)
     - [Wide-column store](#wide-column-store)
+    - [GraphQL](#graphql)
   - [Technology specifics](#technology-specifics)
   - [Operating Systems](#operating-systems)
   - [Data Science & Big Data](#data-science--big-data)
@@ -470,6 +471,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   * [HBase Interaction](https://www.youtube.com/watch?v=9YkurBN5Pt0)
   * [HBase for Java Developers](https://www.youtube.com/playlist?list=PLf0swTFhTI8r6wUT9dcSQ-sLeaIMbbLm_)
 
+### GraphQL
+
+* [Overview](databases/graphql)
+* [Why use GraphQL?](databases/graphql/why)
 
 ## Technology specifics
 
