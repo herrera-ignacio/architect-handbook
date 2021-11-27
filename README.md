@@ -47,20 +47,22 @@
   - [Useful Tools](#useful-tools)
   - [Glossary](#glossary)
 
-
 ## General Concerns
 
-* [What is Software Architecture?](architectures/general/definition)
-* [Is quality worth the cost?](architectures/general/quality)
+> [What is Software Architecture?](architectures/general/definition)
+
 * [Concurrency](architectures/general/concurrency)
 * [Development Overconfidence](architectures/general/overconfidence)
 * [Developer Struggle](architectures/general/developer-struggle)
 * [Distribution Strategies](architectures/general/distribution-strategies)
+* [Evolutionary Design](https://www.martinfowler.com/articles/designDead.html)
+* [Is Quality Worth the Cost?](architectures/general/quality)
 * [Layering](architectures/general/layering)
 * [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
 * [Organizing Domain Logic](architectures/general/domain-logic)
-* [Session State](architectures/general/session-state)
 * [Resilience vs Robustness](architectures/general/resilience-vs-robustness)
+* [Session State](architectures/general/session-state)
+* [Technical Debt](architectures/general/technical-debt)
 
 ## Design Principles
 
