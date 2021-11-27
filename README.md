@@ -1,6 +1,9 @@
 # Software Architect Handbook
 
+> [What is software architecture?](architectures/general/definition/README.md)
+
 - [Software Architect Handbook](#software-architect-handbook)
+  - [General Concerns](#general-concerns)
   - [Design Principles](#design-principles)
   - [Programming Paradigms](#programming-paradigms)
     - [Structured](#structured)
@@ -25,7 +28,6 @@
   - [System Design](#system-design)
     - [System Design - Case Studies](#system-design---case-studies)
   - [Architectural Styles](#architectural-styles)
-    - [General Concerns](#general-concerns)
     - [Three-Layer System (Martin Fowler)](#three-layer-system-martin-fowler)
     - [Service Oriented Architecture (SOA)](#service-oriented-architecture-soa)
     - [Ports & Adapters / Hexagonal](#ports--adapters--hexagonal)
@@ -44,6 +46,21 @@
   - [Software Engineering Culture](#software-engineering-culture)
   - [Useful Tools](#useful-tools)
   - [Glossary](#glossary)
+
+
+## General Concerns
+
+* [What is Software Architecture?](architectures/general/definition)
+* [Is quality worth the cost?](architectures/general/quality)
+* [Concurrency](architectures/general/concurrency)
+* [Development Overconfidence](architectures/general/overconfidence)
+* [Developer Struggle](architectures/general/developer-struggle)
+* [Distribution Strategies](architectures/general/distribution-strategies)
+* [Layering](architectures/general/layering)
+* [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
+* [Organizing Domain Logic](architectures/general/domain-logic)
+* [Session State](architectures/general/session-state)
+* [Resilience vs Robustness](architectures/general/resilience-vs-robustness)
 
 ## Design Principles
 
@@ -102,7 +119,7 @@
 
 ## Design Patterns
 
-> [What is a design pattern?](https://github.com/herrera-ignacio/design_patterns/blob/master/introduction/design-pattern.md)
+> [What is a design pattern?](glossary/pattern)
 
 ### Base Patterns
 
@@ -183,7 +200,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Query Object](design-patterns/object-relational/metadata-mapping/query-object)
 * [Repository](design-patterns/object-relational/metadata-mapping/repository)
 
-### Web Presentation
+### [Web Presentation](architectures/general/web-presentation)
 
 * [Model View Controller](design-patterns/web-presentation/mvc)
 * [Page Controller](design-patterns/web-presentation/page-controller)
@@ -210,6 +227,8 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Database Session State](design-patterns/session-state/database)
 
 ### Anti-Patterns
+
+> [What is an Anti-Pattern?](glossary/anti-pattern)
 
 * [Abstraction Inversion](anti-patterns/abstraction-inversion)
 
@@ -279,19 +298,6 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ## Architectural Styles
 
 > Recommended book: https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture
-
-### General Concerns
-
-* [Architecture](architectures/general/definition)
-* [Concurrency](architectures/general/concurrency)
-* [Development Overconfidence](architectures/general/overconfidence)
-* [Developer Struggle](architectures/general/developer-struggle)
-* [Distribution Strategies](architectures/general/distribution-strategies)
-* [Layering](architectures/general/layering)
-* [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
-* [Organizing Domain Logic](architectures/general/domain-logic)
-* [Session State](architectures/general/session-state)
-* [Web Presentation](architectures/general/web-presentation)
 
 ### Three-Layer System (Martin Fowler)
 
@@ -523,14 +529,10 @@ Specifics that should be considered while developing a software solution relying
 ## Glossary
 
   * [Abstract Syntax Tree](glossary/ast)
-  * [Anti-Pattern](glossary/anti-pattern)
   * [CRUD](glossary/crud)
   * [First-class citizen](glossary/first-class-citizen)
   * [Leaky Abstraction](glossary/leaky-abstraction)
-  * [Micro Services Architecture](glossary/microservices)
   * [Modularization](glossary/modularization)
-  * [Patterns](glossary/pattern)
-  * [Resilience vs Robustness](glossary/resilience-vs-robustness)
   * [Side Effect](glossary/side-effect)
   * [SPOF: Single Point of Failure](glossary/spof)
   * [Web API](glossary/web-api)

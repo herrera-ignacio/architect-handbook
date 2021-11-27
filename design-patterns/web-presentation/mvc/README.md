@@ -2,12 +2,13 @@
 
 > Splits user interface interaction into three distinct roles. It decouples objects so that changes to one can affect any number of others without requiring the changed object to know details of the others. Particularly, allow for multiple representations by decoupling views from application logic.
 
-* Overview
-* How It Works
-  * Separation of Presentation from Model
-    * Common Issue
-  * Separation of View and Controller
-* When to Use It
+- [Model View Controller](#model-view-controller)
+  - [Overview](#overview)
+  - [How It Works](#how-it-works)
+    - [Separation of Presentation from Model](#separation-of-presentation-from-model)
+      - [Common Issue](#common-issue)
+    - [Separation of View and Controller](#separation-of-view-and-controller)
+  - [When to Use It](#when-to-use-it)
 
 ## Overview 
 
@@ -35,7 +36,7 @@ This is one of the most fundamental heuristics of good software design for sever
 
 * Depending on context, users want to see the same basic *model* information in different ways. Separating *presentation* and *view* allows you to develop multiple presentations and yet use the same *model* code.
 
-* Nonvisual objects are usually easier to test than visual ones. This allows you to test all the domain logic easily.
+* Non-visual objects are usually easier to test than visual ones. This allows you to test all the domain logic easily.
 
 * *Model* code should be entirely unaware of what *presentation* is being used, which both simplifies their tasks and makes it easier to add new *presentations* latter on. It also menas that *presentation* changes can be made freely without altering the model.
 
@@ -49,7 +50,7 @@ The *presentation* acts as the *observer* of the *model*: **wherever the model c
 
 > In practice most systems have only one controller per view, so this separation is usually not done. This has led to many misquotations of MVC. The common misconception is that the *controller* sits between the *model* and the *view*, as in the *Application Controller*, but whatever the merits of a *Application Controller*, it's a very different beast from an MVC controller.
 
-* Support **editable and noneditable behavior**, which you can do with one view and two controllers for the two cases, where the controllers are *Strategies* (Gang of Four) for the *view*.
+Support **editable and noneditable behavior** (e.g. which you can do with one view and two controllers). The controllers act as *Strategies* (Gang of Four) for the *views*.
 
 ## When to Use It
 
