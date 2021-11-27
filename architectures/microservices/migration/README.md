@@ -3,15 +3,15 @@
 - [Planning a Migration](#planning-a-migration)
   - [Summary](#summary)
   - [Prioritize](#prioritize)
-  - [Changing Organizations](#changing-organizations)
-    - [1. Establishing a sense of urgency](#1-establishing-a-sense-of-urgency)
-    - [2. Creating the Guiding Coalition](#2-creating-the-guiding-coalition)
-    - [3. Developing a Vision and Strategy](#3-developing-a-vision-and-strategy)
-    - [4. Communicating the Change Vision](#4-communicating-the-change-vision)
-    - [5. Empowering Employees for Broad-Based Action](#5-empowering-employees-for-broad-based-action)
-    - [6. Generating Short-Term Wins](#6-generating-short-term-wins)
-    - [7. Consolidating Gains and Producing More Change](#7-consolidating-gains-and-producing-more-change)
-    - [8. Anchoring New Approaches in the Culture](#8-anchoring-new-approaches-in-the-culture)
+  - [Changing Organizations (Kotter's 8 steps)](#changing-organizations-kotters-8-steps)
+    - [1. Create a Sense of Urgency](#1-create-a-sense-of-urgency)
+    - [2. Build a Guiding Coalition](#2-build-a-guiding-coalition)
+    - [3. Form a Strategic Vision](#3-form-a-strategic-vision)
+    - [4. Enlist a Volunteer Army](#4-enlist-a-volunteer-army)
+    - [5. Enable Action by Removing Barriers](#5-enable-action-by-removing-barriers)
+    - [6. Generate Short-Term Wins](#6-generate-short-term-wins)
+    - [7. Sustain Acceleration](#7-sustain-acceleration)
+    - [8. Institute Chnage](#8-institute-chnage)
   - [Importance of Incremental Migration](#importance-of-incremental-migration)
   - [It's Production That Counts](#its-production-that-counts)
   - [Cost of Change](#cost-of-change)
@@ -53,7 +53,7 @@ The job isn't done until it's in production and is being used. You learn a huge 
 
 It's common for people to be trying to change not one thing but many things at once. You want to *avoid* this. This can lead to confusing priorities than can quickly increase the amoung of change needed and delay seeing any benefits.
 
-It all starts innocently enough. After deciding microservices are the way forward. Someone else comes up and says, "well, if we're doing microservices, we can make our teams more autonomous at the same time!" Another person chimes in, "And this givecs us a great chance to try out Kotlin as a programming language!" Before you know it, you have a massive change initiative that is attempting to roll out team autonomy, scale the application, and bring in new technology all at once, along with other things.
+It all starts innocently enough. After deciding microservices are the way forward. Someone else comes up and says, "well, if we're doing microservices, we can make our teams more autonomous at the same time!" Another person chimes in, "And this gives us a great chance to try out Kotlin as a programming language!" Before you know it, you have a massive change initiative that is attempting to roll out team autonomy, scale the application, and bring in new technology all at once, along with other things.
 
 Moreover, microservices become locked in as *the* approach. If you focus on just the scaling aspect, during your migration you may come to realize that you'd better off just horizontally scaling out your existing monolithic application. But doing that won't help to the new secondary goals of improving team autonomy or brining a new programming language.
 
@@ -65,33 +65,41 @@ These relative priorities can change; and should change as you learn more. But t
 
 You need to have a *shared understanding* about *what* you are trying to achieve. If you're on the same page about that and people disagree about an approach, then at least you know they're disagreeing only about *how* to get there.
 
-## Changing Organizations
+## Changing Organizations (Kotter's 8 steps)
 
-Dr. John Kotter's eigth-step process is used to instute large-scale organizational shifts in behavior.
+Dr. John Kotter's *8-step process* is used to instute large-scale organizational shifts in behavior.
 
-![](2021-11-02-19-36-04.png)
+![](2021-11-27-12-31-47.png)
 
-### 1. Establishing a sense of urgency
+![](2021-11-27-12-38-26.png)
+
+### 1. Create a Sense of Urgency
 
 Help people understand that *now* the time to make this particular change. In the moments after a crisis has been dealt with, you have a brief moment in people's consciousness where pushing for change can work.
 
-### 2. Creating the Guiding Coalition
+### 2. Build a Guiding Coalition
 
 Identify the people inside your organization who can help you *drive* this change forward. Someone is much more likely to back your big idea if they've already worked with you on smaller, quick wins.
 
 it's important to have involvement of people oustide software delivery/IT silos because many of the changes you make can potentially have significant impacts on how the software works and behaves. You'll need to make different trade-offs based on this.
 
-### 3. Developing a Vision and Strategy
+### 3. Form a Strategic Vision
 
 Make an agreement on *what* change you're hoping to bring (the *vision*) and *how* you're going to get there (the *strategy*). Vision needs to be realistic yet aspirational, and finding the balance between the two is key.
 
 Microservices are going to achive the vision (you hope; they'll be part of your strategy). Remember that your strategy *may change*. Being committed to a vision is important, but being overly committed to a specific strategy in the face of contrary evidence is dangerous, and can lead to significant *sunk cost fallacy*.
 
-### 4. Communicating the Change Vision
+> Having a big vision can be great, but don't make it so big that people won't believe it is possible.
 
-Having a big vision can be great, but don't make it so big that people won't believe it is possible.
+### 4. Enlist a Volunteer Army
 
-### 5. Empowering Employees for Broad-Based Action
+Large-scale change can only occur when massive numbers of people rally around a common opportunity. They must be bought-in and urgent to drive change – moving in the same direction.
+
+> It’s not a project. It’s a movement. It’s a journey. Join us and leave your mark. - Gert Bosscher / Bunge
+
+### 5. Enable Action by Removing Barriers
+
+Removing barriers such as inefficient processes and hierarchies provides the freedom necessary to work across silos and generate real impact.
 
 *Empowering employees* is management consultancy speak for helping them do their job. Most often this means something pretty straightforward, *removing road-blocks*.
 
@@ -99,7 +107,9 @@ Having a big vision can be great, but don't make it so big that people won't bel
 
 Work with your organization, discover pain points, learn from that, and then invest time in briginig new tools. *Start small*.
 
-### 6. Generating Short-Term Wins
+### 6. Generate Short-Term Wins
+
+> Wins are the molecules of results. They must be recognized, collected and communicated – early and often – to track progress and energize volunteers to persist.
 
 Focusing initially on small, easy, low-hanging fruit will help *build momentum*.
 
@@ -107,13 +117,15 @@ When it comes to microservice decomposition, functionality that can easily be ex
 
 If you focus on something easy first, you're like to *gain insight early*. Making mistakes is natural, all we can do is structure things to make sure we learn from mistakes as quickly as possible.
 
-### 7. Consolidating Gains and Producing More Change
+### 7. Sustain Acceleration
 
-Quick wins might be the only wins if you don't continue to *push on*. Pause and reflect after successes (and failures) so you can think about how to keep driving the change.
+Quick wins might be the only wins if you don't continue to *push on*. Pause and reflect after successes (and failures) so you can think about how to keep driving the change. We seek to *consolidate gains* and produce *more change*.
 
 You may need to change your approach as you reach different parts of the organization.
 
-### 8. Anchoring New Approaches in the Culture
+### 8. Institute Chnage
+
+Articulate the connections between the new behaviors and organizational success, making sure they continue until they become strong enough to replace old habits.
 
 By continuing to iterate, roll out changes, and share the stories of successes (and failures), the new way of working will start to become business as usual.
 
