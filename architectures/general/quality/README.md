@@ -64,13 +64,13 @@ The fundamental role of internal quality is that it **lowers the cost of future 
 
 My changes also **affect the future**. A may see a quick way to put in this feature, but it's a route that goes against the modular structure of the program, *adding cruft*. If I take that path, I'll make it **quicker for me today, but slow down everyone else** who has to deal with this code in future weeks and months. Once other members of the team make the same direction, it can quickly accumulate cruft.
 
-![](2021-11-27-18-49-21.png)
+![](2021-11-28-12-52-08.png)
 
 > This is what happens with poor internal quality. Progress is rapid initially, but as time goes on it gets harder to add new features. Even small changes require programmers to understand large areas of code, code that's difficult to understand. When they make changes, unexpected breakages occur, leading to long test times and defects that need to be fixed.
 
 While it is true that **we can sacrifice quality for faster delivery in the short term**, before the build up of cruft has an impact, people understimate how quickly the cruft leads to an overall slower delivery. While this isn't something that can be objectively measured, experienced developers reckon that **attention to internal quality pays off in weeks not months**.
 
-![](2021-11-27-17-37-59.png)
+![](2021-11-28-12-52-29.png)
 
 > The subtlety here is that there is a period where the low internal quality is more productive than the high track. During this time there is some kind of trade-off between quality and cost.
 
