@@ -1,9 +1,10 @@
 # Flux
 
-* The Need for Flux
-* How Flux Works
+- [Flux](#flux)
+  - [The Need for Flux](#the-need-for-flux)
+  - [How Flux Works](#how-flux-works)
 
-![flux data flow](./flux.png)
+> I don't agree with most of this; I consider Facebook's description of MVC to be erratic. If you are interested about this point of view, I invite you to read my notes on [MVC - Unidirectional Data Flow](../../design-patterns/web-presentation/mvc).
 
 ## The Need for Flux
 

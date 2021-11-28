@@ -33,7 +33,7 @@
     - [Ports & Adapters / Hexagonal](#ports--adapters--hexagonal)
     - [Clean Architecture](#clean-architecture)
     - [REST: Representational State Transfer](#rest-representational-state-transfer)
-    - [Flux](#flux)
+    - [Flux & Redux](#flux--redux)
     - [Domain-Driven Design](#domain-driven-design)
     - [Microservices](#microservices)
   - [Databases](#databases)
@@ -368,9 +368,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Architectural Constraints](architectures/rest/constraints.md)
 * [Semantics of HTTP APIs](architectures/rest/http-methods.md)
 
-### [Flux](architectures/flux)
+### [Flux & Redux](architectures/flux)
 
-* [MVC Comparison](architectures/flux/mvc-comparison)
+* [What the flux?! Let's Redux](https://blog.andyet.com/2015/08/06/what-the-flux-lets-redux/)
+* [Facebook's MVC Comparison](architectures/flux/mvc-comparison)
 
 ### Domain-Driven Design
 
