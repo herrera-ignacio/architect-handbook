@@ -7,8 +7,14 @@
   - [How It Works](#how-it-works)
   - [Supervising Controller](#supervising-controller)
   - [MVC Comparison](#mvc-comparison)
+    - [Three User Interface Questions](#three-user-interface-questions)
+  - [Programming Model Frameworks](#programming-model-frameworks)
+    - [Programming Model Classes](#programming-model-classes)
+  - [Client/Server](#clientserver)
 
 ## Overview
+
+![](2021-11-28-20-55-41.png)
 
 MVP is an architecture that first appeared in IBM and more visibly at Taligent during the 1990's.
 
@@ -24,6 +30,8 @@ The *presenter* decides how to react to the *event*. As the presenter *updates t
 
 ## How It Works
 
+> The role of the presenter within MVP is to interpret the events and gestures initiated by the user and provide the business logic that maps them onto the appropriate commands for manipulating the model in the intended fashion
+
 * User gestures are handed off by the widgets to a *supervising controller*.
 * The presenter coordinates changes in a domain model.
 * Different variants of MVP handle view updates differently (e.g., from *observer synchronization* to having the presenter handling all the view updates).
@@ -36,7 +44,46 @@ The direction behind *Dolphin Smalltalk* was towards what Martin Fowler describe
 
 ## MVC Comparison
 
-* Potel implies that MVC controllers were *overall coordinators*, while MVP uses a *supervising controller* to manipulate the model
+* Potel implies that MVC controllers were *overall coordinators*, while MVP uses a *supervising controller* to manipulate the model.
 
 * **You can think of presenters as being like a loose form of MVC controllers without the initial handling of the user gesture**. Widgets hand off user gestures to the supervising controller but aren't separated into views and controllers.
 
+### Three User Interface Questions
+
+From the MVC we had the *tree data management questions*:
+
+![](2021-11-28-20-40-47.png)
+
+Now we're also focusing on the *interactive user interface* of the application.
+
+![](2021-11-28-20-37-13.png)
+
+**Interactors** (or *interactor events*) are the user-initiated actions like mouse movements and clicks, keyboard keystrokes, etc.
+
+The third question *"How do I put it all together?* represents the function of the *classic Smalltalk controller*, but *elevated* to an application level and taking into account the intermediate *selection*, *command*, and *interactor* concepts. To capture this distinction we refer to this kind of controller as a *presenter*.
+
+> As a result, we refer to the overall resulting programming model as *Model-View-Presenter* (MVP), acknowledging its origins as a generalized form of MVC.
+
+## Programming Model Frameworks
+
+![](2021-11-28-21-01-30.png)
+
+The MVP model rests on top of a *component architecture*, so that the models, views, and events map to an underlying component runtime. Event processing system underlying the MVP programming model is embodied in a Notification Framework, which provides for interest-based notification of events, senders and receivers of events, type checking of events, distribution of events, etc. to mediate all the interactions among the programming model abstractions. 
+
+### Programming Model Classes
+
+Here's a simplified but illustrative overview of the MVP relationships.
+
+![](2021-11-28-21-03-23.png)
+
+> Notice that there are base classes for each of the MVP concepts: IModel, IView, ISelection, ICommand, IInteractor, and IPresenter. Developers create their own particular versions of these abstractions by subclassing these base classes and overriding their methods as appropriate to implement the desired functionality. 
+
+## Client/Server
+
+Client/server versions of applications involve deciding which of the MVP abstractions are implemented in whole or in part on the client or the server.
+
+![](2021-11-28-21-06-26.png)
+
+The model, selections, and commands represent typical server-side functionality. The view and interactor represent typical client-side functionality. The presenter then "straddles" the boundary between client and server, that is, code appears on both sides representing a single *conceptual presenter*.
+
+![](2021-11-28-21-10-51.png)

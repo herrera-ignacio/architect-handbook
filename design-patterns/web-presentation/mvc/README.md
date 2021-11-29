@@ -10,15 +10,19 @@
     - [Observer Synchronization](#observer-synchronization)
     - [Unidirectional Data Flow / One-way Data Binding](#unidirectional-data-flow--one-way-data-binding)
       - [Facebook MVC/Flux](#facebook-mvcflux)
-    - [Separation of Presentation from Model](#separation-of-presentation-from-model)
+  - [Architectural Benefits](#architectural-benefits)
+    - [Models enable Encapsulation - Separation of Presentation from Model](#models-enable-encapsulation---separation-of-presentation-from-model)
+    - [Models enable Persistence](#models-enable-persistence)
+    - [Models enable Sharing](#models-enable-sharing)
     - [Separation of View and Controller](#separation-of-view-and-controller)
+  - [Three Data Managment Questions](#three-data-managment-questions)
   - [When to Use It](#when-to-use-it)
 
 ## Overview 
 
 > Splits user interface interaction into three distinct roles. It decouples objects so that changes to one can affect any number of others without requiring the changed object to know details of the others. Particularly, allow for multiple representations by decoupling views from application logic.
 
-![](2021-07-28-00-25-08.png)
+![](2021-11-28-20-10-17.png)
 
 *Model View Controller* started as a framework developed by *Trygve Reensaukg* for the *Smalltalk* platform in the late 1970s. Since then it has played an influential role in most UI frameworks and in the thinking about UI design.
 
@@ -123,7 +127,9 @@ The article [Facebook: MVC does not scale, use flux instead](https://www.infoq.c
 
 > Looks like your programmers created flux because they didn't know how to properly use MVC and event dispatchers.
 
-### Separation of Presentation from Model
+## Architectural Benefits
+
+### Models enable Encapsulation - Separation of Presentation from Model
 
 This is one of the most fundamental heuristics of good software design for several reasons:
 
@@ -137,11 +143,35 @@ This is one of the most fundamental heuristics of good software design for sever
 
 * *Model* code should be entirely unaware of what *presentation* is being used, which both simplifies their tasks and makes it easier to add new *presentations* latter on. It also menas that *presentation* changes can be made freely without altering the model.
 
+* Over time I'm *able to change the underlying data structures in my model*, and still reuse the same presentation code without modification.
+
+### Models enable Persistence
+
+How the model actually stores its data is up to the model. This can be achieved *transparently* to the presentation and can be changed over time or for different installations.
+
+* The model could implement:
+  * Access control and authentication
+  * Accounting
+  * Cache
+  * Databases from different vendors 
+
+### Models enable Sharing
+
+Abstracting out the model also permits greater flexibility of use among multiple users. Having different program models encapsulate the same remote data allows multiple users to share the same data and collaborate simulatenously.
+
+![](2021-11-28-20-35-43.png)
+
 ### Separation of View and Controller
 
 > In practice most systems have only one controller per view, so this separation is usually not done. This has led to many misquotations of MVC. The common misconception is that the *controller* sits between the *model* and the *view*, as in the *Application Controller*, but whatever the merits of a *Application Controller*, it's a very different beast from an MVC controller.
 
 Support **editable and noneditable behavior** (e.g. which you can do with one view and two controllers). The controllers act as *Strategies* (Gang of Four) for the *views*.
+
+## Three Data Managment Questions
+
+![](2021-11-28-20-36-32.png)
+
+![](2021-11-28-20-36-49.png)
 
 ## When to Use It
 
