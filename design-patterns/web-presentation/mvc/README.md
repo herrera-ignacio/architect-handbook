@@ -51,6 +51,8 @@ The **presentation** part of MVC is made of the two remaining elements: *view* a
 
 * Have views (not controllers!) observe the model to allow multiple widgets to update without needed to communicate directly.
 
+> [John Gossman's post: *Confusion over definition of controller in MVC*](https://docs.microsoft.com/en-us/archive/blogs/johngossman/confusion-over-definition-of-controller-in-mvc)
+
 ### Observer Pattern
 
 Like later environments, Smalltalk figured out that you wanted *generic UI components that could be reused*. In this case the component would be the *view-controller pair*. Both were generic classes, so needed to be plugged into the application specific behavior. So the first part of reacting to the user's input is the various controllers collaborating to see who got edited.

@@ -44,6 +44,8 @@ The direction behind *Dolphin Smalltalk* was towards what Martin Fowler describe
 
 ## MVC Comparison
 
+Classic MVC doesn't work well with modern rich client tools because they design things so that the *view handles all the user events* such as mouse and keyboard clicks. In MVP the view continues to handle these, but then *immediately delegates these to the presenter*. The *presenter then decides* what to do with the *event*, communicating with the domain and the data in the view's controls.
+
 * Potel implies that MVC controllers were *overall coordinators*, while MVP uses a *supervising controller* to manipulate the model.
 
 * **You can think of presenters as being like a loose form of MVC controllers without the initial handling of the user gesture**. Widgets hand off user gestures to the supervising controller but aren't separated into views and controllers.
