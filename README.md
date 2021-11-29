@@ -204,12 +204,12 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ### [Web Presentation](architectures/general/web-presentation)
 
+* [Application Model / Presentation Model](design-patterns/web-presentation/presentation-model)
 * [Humble View / Passive View](design-patterns/web-presentation/passive-view)
 * [MVC: Model View Controller](design-patterns/web-presentation/mvc)
 * [MVP: Model View Presenter](design-patterns/web-presentation/mvp)
 * [MVVM: Model View View-Model](design-patterns/web-presentation/mvvm)
 * [Page Controller](design-patterns/web-presentation/page-controller)
-* [Presentation Model](design-patterns/web-presentation/presentation-model)
 * [Front Controller](design-patterns/web-presentation/front-controller)
 * [Template View](design-patterns/web-presentation/template-view)
 * [Transform View](design-patterns/web-presentation/transform-view)
