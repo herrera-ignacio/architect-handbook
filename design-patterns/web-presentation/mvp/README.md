@@ -5,7 +5,7 @@
 - [Model View Presenter](#model-view-presenter)
   - [Overview](#overview)
   - [How It Works](#how-it-works)
-  - [Supervising Controller](#supervising-controller)
+  - [Potel vs Doplhin form](#potel-vs-doplhin-form)
   - [MVC Comparison](#mvc-comparison)
     - [Three User Interface Questions](#three-user-interface-questions)
   - [Programming Model Frameworks](#programming-model-frameworks)
@@ -32,23 +32,23 @@ The *presenter* decides how to react to the *event*. As the presenter *updates t
 
 > The role of the presenter within MVP is to interpret the events and gestures initiated by the user and provide the business logic that maps them onto the appropriate commands for manipulating the model in the intended fashion
 
-* User gestures are handed off by the widgets to a *supervising controller*.
+* User gestures are handed off by the widgets to a [Supervising Controller](../supervising-controller).
 * The presenter coordinates changes in a domain model.
 * Different variants of MVP handle view updates differently (e.g., from *observer synchronization* to having the presenter handling all the view updates).
 
-## Supervising Controller
+## Potel vs Doplhin form 
 
-One of the variations about MVP is **the degree to which the presenter controls the widgets in the view**. On one hand there is the case where *all* view logic is left in the view and the presenter doesn't get involved in deciding how to render the model. This style is the one implied by *Potel*.
+One of the variations about MVP is **the degree to which the presenter controls the widgets in the view**. On one hand there is the case where *all* view logic is left in the view and the presenter doesn't get involved in deciding how to render the model. **This style is the one implied by Potel**.
 
-The direction behind *Dolphin Smalltalk* was towards what Martin Fowler describes as *Supervising Controller*, where the view handles a good deal of the view logic that can be described declaratively and the presenter then comes in to handle more complex cases.
+The direction behind **Dolphin Smalltalk** was towards what Martin Fowler describes as [Supervising Controller](../supervising-controller), where the view handles a good deal of the view logic that can be described declaratively and the presenter then comes in to handle more complex cases.
 
 ## MVC Comparison
 
 Classic MVC doesn't work well with modern rich client tools because they design things so that the *view handles all the user events* such as mouse and keyboard clicks. In MVP the view continues to handle these, but then *immediately delegates these to the presenter*. The *presenter then decides* what to do with the *event*, communicating with the domain and the data in the view's controls.
 
-* Potel implies that MVC controllers were *overall coordinators*, while MVP uses a *supervising controller* to manipulate the model.
+* MVC controllers can be considered *overall coordinators*, while MVP uses a [Supervising Controller](../supervising-controller) to manipulate the model.
 
-* **You can think of presenters as being like a loose form of MVC controllers without the initial handling of the user gesture**. Widgets hand off user gestures to the supervising controller but aren't separated into views and controllers.
+* **You can think of presenters as being like a loose form of MVC controllers without the initial handling of the user gesture**. Widgets hand off user gestures to the *supervising controller* but aren't separated into views and controllers.
 
 ### Three User Interface Questions
 
