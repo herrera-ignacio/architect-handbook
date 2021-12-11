@@ -88,30 +88,33 @@
 
 ### OOP: Object Oriented Programming
 
-* [OOP Introduction](./paradigms/oop)
+* [OOP Introduction](./paradigms/oop/README.md)
   * Objects and Classes
   * Class-based vs Prototype-based languages
-* [4 Pillars of OOP](./paradigms/oop/4pillars.md)
-  * Abstraction
-  * Inheritance
-  * Encapsulation
-  * Polymorphism
-* [The Power of Polymorphism](./paradigms/oop/polymorphism)
-* [Abstract Class](./paradigms/oop/abstract-class.md)
-* [Mixin Class](./paradigms/oop/mixin.md)
-* [Traits](./paradigms/oop/traits.md)
-* [Interface & Type](./paradigms/oop/interface.md)
-* [Subtyping: Interface Inheritance](./paradigms/oop/subtyping.md)
-* [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)]
-  * [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
-* [Parameterized Types](./paradigms/oop/inheritance-parameterized.md)
-* [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
-* [OMT Notation & UML](./paradigms/oop/omt-notations.md)
-* [Object-Oriented Design Principles](./paradigms/oop/design-principles.md)
-  * Program to an interface, not an implementation
-  * Favor object composition over class inheritance
-* [Gamma Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
-* [Prototypal OO](./paradigms/oop/prototypal-oo)
+* Foundational concepts
+  * [4 Pillars of OOP](./paradigms/oop/4pillars.md)
+    * Abstraction
+    * Inheritance
+    * Encapsulation
+    * Polymorphism
+  * [Abstract Class](./paradigms/oop/abstract-class.md)
+  * [Mixin Class](./paradigms/oop/mixin.md)
+  * [Traits](./paradigms/oop/traits.md)
+  * [Interface & Type](./paradigms/oop/interface.md)
+* Techniques
+  * [Subtyping: Interface Inheritance](./paradigms/oop/subtyping.md)
+  * [Composition, Aggregation and Delegation](./paradigms/oop/cad.md)
+    * [Composition vs Inheritance](./paradigms/oop/inheritance-composition.md)
+  * [Parameterized Types](./paradigms/oop/inheritance-parameterized.md)
+  * [Dynamic Dispatch / Message Passing](./paradigms/oop/dynamic-dispatch.md)
+  * [OMT Notation & UML](./paradigms/oop/omt-notations.md) 
+* Advanced concepts
+  * [Object-Oriented Design Principles](./paradigms/oop/design-principles.md)
+    * Program to an interface, not an implementation
+    * Favor object composition over class inheritance
+  * [Gamma Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
+  * [The Power of Polymorphism: Dependency Inversion](./paradigms/oop/polymorphism)
+  * [Prototypal vs Classical Inheritance](./paradigms/oop/prototypal-oo)
 
 ### [Functional](./paradigms/functional/README.md) 
 
