@@ -68,8 +68,8 @@
 
 * [SOLID](./principles/solid)
   * [Single Responsibility Principle](./principles/solid/srp)
-  * [Open-Closed Principle](./principles/solid/ocp)
-  * [Liskov-Substitution Principle](./principles/solid/lsp)
+  * [Open Closed Principle](./principles/solid/ocp)
+  * [Liskov Substitution Principle](./principles/solid/lsp)
   * [Interface Segregation Principle](./principles/solid/isp)
   * [Dependency Inversion Principle](./principles/solid/dip)
 * DRY

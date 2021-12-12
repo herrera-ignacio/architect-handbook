@@ -16,9 +16,9 @@ The behavior of a software artifact ought to be extendible, without having to mo
 
 This is the most fundamental reason that we study software architecture. Clearly, if simply extensions to the requirements for massive changes to the software, then the architects of that software system have engaged in a failure.
 
-> The OCP is one of the driving forces behind the architecture of systems. We want to make systems easy to extend without incurring a high impact of change.
+> The OCP is one of the driving forces behind the architecture of systems. We want to make systems easy to extend without incurring a high impact of change. This goal is accomplished by *partitioning* the system into components, and arranging those components into a dependency hierarchy that protects higher-level components from changes in lower-level components.
 
-> This goal is accomplished by partitioning the system into components, and arranging those components into a dependency hierarchy that protects higher-level components from changes in lower-level components.
+Be careful when choosing the areas of code that need to be extended; applying the Open Closed Principle *everywhere* is wasteful and unnecessary, and can lead to complex, hard-to-understand code.
 
 ## Mayer's Definition
 
