@@ -1,24 +1,24 @@
 # Dependency Inversion Principle
 
-* Definition
-* Traditional Layers Pattern Problem
-* Implementations
-  * Direct
-  * Flexible
-  * Factories
-  * General Restrictions
+- [Dependency Inversion Principle](#dependency-inversion-principle)
+  - [Definition](#definition)
+  - [Traditional Layers Pattern Problem](#traditional-layers-pattern-problem)
+  - [Implementations](#implementations)
+    - [Direct](#direct)
+    - [Flexible](#flexible)
+    - [Factories](#factories)
+      - [Factories - Example](#factories---example)
+    - [General Restrictions](#general-restrictions)
 
 ## Definition
 
-> Most flexible systems are those in which __source code dependencies refer only to abstractions__, not to concretions.
-
-> DIP relies on "[Stable Abstractions](../../architectures/clean/stable-abstractions)" and "[Concrete Components](../../architectures/clean/concrete-components)".
+> Most flexible systems are those in which __dependencies refer only to abstractions__, not to concretions.
 
 In statically typed languages, this means that import/include statements should refer only to source modules containing interfaces/abstract classes.
 
-In dynamically typed languages, source code dependencies should not refer to concrete modules (functions already implemented).
+DIP leverages [Stable Abstractions](../../architectures/clean/stable-abstractions) and [Concrete Components](../../architectures/clean/concrete-components) concepts.
 
-We tend to ignore the stable background of operating system and platform facilities when it comes to DIP, because __we know we can rely on them not to change__.
+In dynamically typed languages, source code dependencies should not refer to concrete modules (functions already implemented).
 
 > It is the _volatile_ concrete elements of our system that we want to avoid depending on. Those are the modules that we are actively developing, and that are undergoing frequent change.
 
@@ -31,6 +31,8 @@ In conventional application architecture, lower-level components (e.g. Utility L
 The hoal of DIP is to avoid this highly coupled distribution with the mediation of an abstract layer, and to increase the re-usability of higher/policy layers.
 
 ## Implementations
+
+We tend to ignore the stable background of operating system and platform facilities when it comes to DIP, because __we know we can rely on them not to change__.
 
 ### Direct
 

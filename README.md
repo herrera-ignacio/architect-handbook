@@ -110,8 +110,6 @@
   * [OMT Notation & UML](./paradigms/oop/omt-notations.md) 
 * Advanced concepts
   * [Object-Oriented Design Principles](./paradigms/oop/design-principles.md)
-    * Program to an interface, not an implementation
-    * Favor object composition over class inheritance
   * [Gamma Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
   * [The Power of Polymorphism: Dependency Inversion](./paradigms/oop/polymorphism)
   * [Prototypal vs Classical Inheritance](./paradigms/oop/prototypal-oo)

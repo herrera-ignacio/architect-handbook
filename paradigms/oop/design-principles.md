@@ -1,7 +1,21 @@
 # Design principles of OOP
 
-* Program to an interface, not an implementation
-* Favor object composition over class inheritance
+- [Design principles of OOP](#design-principles-of-oop)
+  - [Encapsulate what varies](#encapsulate-what-varies)
+  - [Program to an interface, not an implementation](#program-to-an-interface-not-an-implementation)
+  - [Favor object composition over class inheritance](#favor-object-composition-over-class-inheritance)
+  - [Strive for loosely coupled designs between objects that interact](#strive-for-loosely-coupled-designs-between-objects-that-interact)
+  - [Classes should be open for extension but closed for modification](#classes-should-be-open-for-extension-but-closed-for-modification)
+
+## Encapsulate what varies
+
+> It's all about letting one part of the system vary independently of another part.
+
+This principle has two aspects that roughly dcorrespond to [SRP](../../principles/solid/srp) and [OCP](../../principles/solid/ocp) principles.
+
+1. **Make changes local**. Everything which is supposed to change in the future should be encapsulated in a single module. This means *cross-cutting concerns* are avoided as much as possible.
+
+2. **Introduce abstractions**. Sometimes the varying concept is one which varies at runtime rather than by maintenance. In this case, there has to be an *abstract base class* or an *interface* which encapsulates the varying concepts.
 
 ## Program to an interface, not an implementation
 
@@ -25,3 +39,9 @@ Ideally, __you shouldn't have to create new components to achieve reuse. You sho
 This is rarely the case, because the set of available components is never quite rich enough in practice. Reuse by inheritance makes it easier to make new components that can be composed with the old ones. Inheritance and object composition thus work together.
 
 Nevertheless, designs are often made more reusable (and simple) by depending more on object composition.
+
+## Strive for loosely coupled designs between objects that interact
+
+## Classes should be open for extension but closed for modification
+
+The [OCP Principle](../../principles/solid/ocp) guide us here. We strive to design systems so that the closed parts are *isolated* from new extensions.
