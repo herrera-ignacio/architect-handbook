@@ -17,6 +17,11 @@
     - [Separation of View and Controller](#separation-of-view-and-controller)
   - [Three Data Managment Questions](#three-data-managment-questions)
   - [When to Use It](#when-to-use-it)
+  - [MVC as Compound Patterns](#mvc-as-compound-patterns)
+    - [Data Flow](#data-flow)
+    - [View = Composite](#view--composite)
+    - [View + Controller = Strategy](#view--controller--strategy)
+    - [Model = Observer](#model--observer)
 
 ## Overview 
 
@@ -180,3 +185,41 @@ Support **editable and noneditable behavior** (e.g. which you can do with one vi
 __The separation of *presentation* and *model*__ is one of the most important design principles in software, and the only time you shouldn't follow it is in very simple systems where the model has no real behavior in it anyway. **As soon as you get some nonvisual logic you should apply the separation**.
 
 __The separation of *view* and *controller*__ is less important, you should evaluate when it's helpful. For rich-client systems, that ends up being hardly ever.
+
+## MVC as Compound Patterns
+
+![](2021-12-19-15-20-01.png)
+
+![](2021-12-19-15-33-00.png)
+
+### Data Flow
+
+1. **The user interacts with the view**: The *view* is your window to the model. When you do something to the view (e.g., click the Play button) then the *vew tells the controller what you did*. It's the controller's job to handle that.
+
+2. **The controller asks the model to change its state**: The controller *takes your actions* and *interprets* them. If you click on a button, it's the controller's job to figure out what that means and how the *model* should be manipulated based on that action.
+
+3. **The controller may also ask the view to change**: When the controller receives an action from the view, it *may* need to tell the view to change as a result. For example, the controller could enable or disable certain buttons or menu items in the interface.
+
+4. **The model notifies the view when its state has changed**: When something changes in the model, based either on some action you took or some other internal change, the *model notifies the view* that its state has changed.
+
+5. **The view asks the model for state**: The view gets the state it displays directly from the model. The view might also ask the model for state as the result of the controller requesting some change in the view.
+
+### View = Composite
+
+The display consists of a *nested set* of windows, planels, buttons, text labels and so on. Each display component is a *composite* or a *leaf*.
+
+When the controller tells the view to update, it only has to tell the top view component, and *Composite* takes care of the rest.
+
+### View + Controller = Strategy
+
+The *view and controller* implement the classic Strategy pattern: The view is an object that is configured with a strategy. The *controller provides the strategy*. We can *swap* in another behavior for the view by changing the controller.
+
+The view is concerned only with the visual aspects of the application, and *delegates to the controller* for any decisions about the interface behavior.
+
+Using the Strategy pattern also keeps the *view decoupled from the model* because it is the controller that is responsible for interacting with the model to carry out user requests.
+
+### Model = Observer
+
+The model implements the Observer pattern to *keep interested objects updated when state changes occur*.
+
+Using the Observer pattern keeps the *model completely independent* of the views and controllers. It allows us to use different views with the same model, or even multiple views at once.
