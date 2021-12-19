@@ -66,16 +66,17 @@
 
 ## Design Principles
 
+* [Common Architectural Principles](principles/general)
+* [OOP Principles](paradigms/oop/design-principles.md)
+* DRY
+* [Hollywood Principle](principles/hollywood.md)
 * [SOLID](./principles/solid)
   * [Single Responsibility Principle](principles/solid/srp)
   * [Open Closed Principle](principles/solid/ocp)
   * [Liskov Substitution Principle](principles/solid/lsp)
   * [Interface Segregation Principle](principles/solid/isp)
   * [Dependency Inversion Principle](principles/solid/dip)
-* DRY
 * KISS
-* [General Architectural Principles](principles/architectural)
-* [General OOP Principles](paradigms/oop/design-principles.md)
 
 ## Programming Paradigms
 
