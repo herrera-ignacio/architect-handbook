@@ -5,6 +5,7 @@
 - [Software Architect Handbook](#software-architect-handbook)
   - [General Concerns](#general-concerns)
   - [Design Principles](#design-principles)
+  - [Refactoring](#refactoring)
   - [Programming Paradigms](#programming-paradigms)
     - [Structured](#structured)
     - [OOP: Object Oriented Programming](#oop-object-oriented-programming)
@@ -68,6 +69,12 @@
 
 * [Common Architectural Principles](principles/general)
 * [OOP Principles](paradigms/oop/design-principles.md)
+* [OO Design Principles](https://wiki.c2.com/?PrinciplesOfObjectOrientedDesign)
+  * [Encapsulate what varies](principles/oo/encapsulate.md)
+  * [Program to an interface, not an implementation](principles/oo/favor-interfaces.md)
+  * [Favor object composition over class inheritance](principles/oo/favor-composition.md)
+  * [Strive for loosely coupled designs between objects that interact](principles/oo/loosely-coupled-interaction.md)
+  * [Least Knowledge](principles/oo/least-knowledge.md)
 * DRY
 * [Hollywood Principle](principles/hollywood.md)
 * [SOLID](./principles/solid)
@@ -76,7 +83,12 @@
   * [Liskov Substitution Principle](principles/solid/lsp)
   * [Interface Segregation Principle](principles/solid/isp)
   * [Dependency Inversion Principle](principles/solid/dip)
-* KISS
+* [KISS](principles/kiss.md)
+* [YAGNI](principles/yagni.md)
+
+## Refactoring
+
+* [Code Smell](https://wiki.c2.com/?CodeSmell)
 
 ## Programming Paradigms
 
@@ -249,7 +261,6 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * Enterprise Applications
   * [EAPPs Challenges](enterprise/challenges)
   * [Kinds of EAPPs](enterprise/kinds)
-
 
 ## System Design
 
