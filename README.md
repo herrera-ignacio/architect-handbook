@@ -45,6 +45,7 @@
   - [Operating Systems](#operating-systems)
   - [Data Science & Big Data](#data-science--big-data)
   - [Software Engineering Culture](#software-engineering-culture)
+    - [Working Methodologies](#working-methodologies)
   - [Useful Tools](#useful-tools)
   - [Glossary](#glossary)
 
@@ -542,6 +543,10 @@ Specifics that should be considered while developing a software solution relying
 * [Success stories](swe/success-stories)
 * [Laws & Theorems](swe/laws)
 * [Quotes](swe/quotes.md)
+
+### Working Methodologies
+
+* [XP: Extreme Programming](swe/xp)
 
 ## Useful Tools
 
