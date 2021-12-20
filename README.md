@@ -539,6 +539,7 @@ Specifics that should be considered while developing a software solution relying
 
 ## Software Engineering Culture
 
+* [Unix Philosophy](swe/unix-philosophy)
 * [Software Engineering at Google](swe/google-software-engineering)
 * [Success stories](swe/success-stories)
 * [Laws & Theorems](swe/laws)
