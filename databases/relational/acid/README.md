@@ -11,10 +11,7 @@
 
 ## Overview
 
-* Atomiciy
-* Consistency
-* Isolation
-* Durability
+![](2022-01-02-16-26-09.png)
 
 Set of properties of database _transactions_ intended to guarantee data validity despite errors, power failures, and other mishaps.
 

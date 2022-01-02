@@ -477,13 +477,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ### Relational Databases
 
-* [ACID](databases/relational/acid.md)
-  * Atomiciy
-  * Consistency
-  * Isolation
-  * Durability
+* [ACID](databases/relational/acid/README.md): Atomicity, Consistency, Isolation, Durability
 * [Isolation Levels](databases/relational/isolation-levels)
 * [Transactions](databases/relational/transactions.md)
+* [Read Phenomena](databases/relational/read-phenomena/README.md)
 * [2PC Protocol / XA Transactions](databases/relational/2pc.md)
 * [Views](databases/relational/view.md)
 * [Joins](databases/relational/joins.md)
