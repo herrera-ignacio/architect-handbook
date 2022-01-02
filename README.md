@@ -48,6 +48,7 @@
     - [Working Methodologies](#working-methodologies)
   - [Useful Tools](#useful-tools)
   - [Glossary](#glossary)
+  - [Z-Index (Other repositories)](#z-index-other-repositories)
 
 ## General Concerns
 
@@ -564,3 +565,7 @@ Specifics that should be considered while developing a software solution relying
   * [Side Effect](glossary/side-effect)
   * [SPOF: Single Point of Failure](glossary/spof)
   * [Web API](glossary/web-api)
+
+## Z-Index (Other repositories)
+
+* [Cybersecurity Handbook](https://github.com/herrera-ignacio/cybersecurity_guidelines): Everything related to cybersecurity, networking, telecommunications, encryption, etc.
