@@ -513,6 +513,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 Specifics that should be considered while developing a software solution relying on a particular technology.
 
 * [Golang Handbook](https://github.com/herrera-ignacio/go-handbook)
+* [Go In Practice](https://github.com/herrera-ignacio/go-in-practice)
 * [Java Handbook](https://github.com/herrera-ignacio/java-handbook)
 * [JS Handbook](https://github.com/herrera-ignacio/js-handbook)
 * React
