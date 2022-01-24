@@ -86,6 +86,7 @@
   * [Interface Segregation Principle](principles/solid/isp)
   * [Dependency Inversion Principle](principles/solid/dip)
 * [KISS](principles/kiss.md)
+* [WET](https://dev.to/wuz/stop-trying-to-be-so-dry-instead-write-everything-twice-wet-5g33)
 * [YAGNI](principles/yagni.md)
 
 ## Refactoring
