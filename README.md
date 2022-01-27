@@ -92,6 +92,7 @@
 ## Refactoring
 
 * [Code Smell](https://wiki.c2.com/?CodeSmell)
+* [Refactoring Guru](https://refactoring.guru/)
 
 ## Programming Paradigms
 
