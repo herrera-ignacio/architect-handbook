@@ -78,8 +78,9 @@
   * [Strive for loosely coupled designs between objects that interact](principles/oo/loosely-coupled-interaction.md)
   * [Least Knowledge](principles/oo/least-knowledge.md)
 * DRY
+* [GRASP](principles/grasp.md)
 * [Hollywood Principle](principles/hollywood.md)
-* [SOLID](./principles/solid)
+* [SOLID](principles/solid)
   * [Single Responsibility Principle](principles/solid/srp)
   * [Open Closed Principle](principles/solid/ocp)
   * [Liskov Substitution Principle](principles/solid/lsp)
