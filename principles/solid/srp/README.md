@@ -1,5 +1,7 @@
 # Single Responsibility Principle
 
+> See: [Is there a conflict between YAGNI and SRP?](https://softwareengineering.stackexchange.com/a/401801)
+
 * Definition
 * Usual mistake
 * Symptoms of violating SRP
