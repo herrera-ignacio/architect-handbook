@@ -15,7 +15,7 @@
 
 ## Definition
 
-General REsponsibility Assignment Software Patterns/Principles is a set of nine fundamental principles in object design.
+General Responsibility Assignment Software Patterns/Principles is a set of nine fundamental principles in object design.
 
 First published by Craig Larman in his 1997 book _Applying UML and Patterns_.
 
@@ -24,6 +24,14 @@ First published by Craig Larman in his 1997 book _Applying UML and Patterns_.
 ## Patterns
 
 ### Information expert
+
+> Also known as the _expert principle_. It is related to [high cohesion](#high-cohesion) and [low coupling](#low-coupling) patterns.
+
+It is a principle used to determine where to delegate responsibilities such as methods, computed fields, and so on.
+
+Using this principle, a general approach is to look at a given responsibility, determine the information needed to fulfill it, and then determine where that information is stored.
+
+This will lead to __placing the responsibility on the class with the most information required to fulfill it__.
 
 ### Creator
 
