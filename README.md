@@ -48,7 +48,7 @@
     - [Working Methodologies](#working-methodologies)
   - [Useful Tools](#useful-tools)
   - [Glossary](#glossary)
-  - [Z-Index (Other repositories)](#z-index-other-repositories)
+  - [Z-Index, other repositories)](#z-index-other-repositories)
 
 ## General Concerns
 
@@ -572,6 +572,10 @@ Specifics that should be considered while developing a software solution relying
   * [SPOF: Single Point of Failure](glossary/spof)
   * [Web API](glossary/web-api)
 
-## Z-Index (Other repositories)
+## Z-Index, other repositories
 
-* [Cybersecurity Handbook](https://github.com/herrera-ignacio/cybersecurity_guidelines): Everything related to cybersecurity, networking, telecommunications, encryption, etc.
+* [Cybersecurity Handbook](https://github.com/herrera-ignacio/cybersecurity_guidelines)
+  * Networking
+  * Telecommunications
+  * Encryption
+  * etc.
