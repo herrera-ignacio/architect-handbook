@@ -386,9 +386,12 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ### REST: Representational State Transfer
 
+> [Recommended reference: restfulapi.net](https://restfulapi.net/)
+
 * [Introduction](architectures/rest/intro.md)
 * [History](architectures/rest/history.md)
 * [Architectural Properties](architectures/rest/properties.md)
+  * [Stateless vs Stateful](architectures/rest/stateless.md)
 * [Architectural Constraints](architectures/rest/constraints.md)
 * [Semantics of HTTP APIs](architectures/rest/http-methods.md)
 
