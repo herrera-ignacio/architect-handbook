@@ -393,6 +393,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 * [Architectural Properties](architectures/rest/properties.md)
   * [Stateless vs Stateful](architectures/rest/stateless.md)
 * [Architectural Constraints](architectures/rest/constraints.md)
+* [Five key principles](https://www.infoq.com/articles/rest-introduction/)
 * [Semantics of HTTP APIs](architectures/rest/http-methods.md)
 
 ### [Flux & Redux](architectures/flux)
