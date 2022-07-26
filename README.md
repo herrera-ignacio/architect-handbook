@@ -560,11 +560,11 @@ Specifics that should be considered while developing a software solution relying
 
 ### [Laws & Theorems](swe/laws)
 
-- [Beyoncé Rule](swe/laws/beyonce.md)
-- [Churn Rule](swe/laws/churn.md)
-- [Conway's law](swe/laws/conway.md)
-- [Hyrum's Law: The Law of Implicit Dependencies](swe/laws/hyrum.md)
-- [Constantine's law](swe/laws/constantine.md)
+- [_Beyoncé Rule_: If you liked it, put a CI test](swe/laws/beyonce.md)
+- [_Churn Rule_: Teams should internalize deprecation](swe/laws/churn.md)
+- [_Conway's law_: Systems reflect organization's communication structure](swe/laws/conway.md)
+- [_Hyrum's Law_: The Law of Implicit Dependencies](swe/laws/hyrum.md)
+- [_Constantine's law_: Favor high cohesion](swe/laws/constantine.md)
 
 ### Working Methodologies
 
