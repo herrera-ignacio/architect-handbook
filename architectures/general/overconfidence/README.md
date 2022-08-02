@@ -2,7 +2,7 @@
 
 Developers usually buy into a familiar lie: "_We can clean it up later; we just have to get to market first_". Of course, things never do get cleaned up later, because market pressures never abate. Getting to market first simlpy means that you've now got a horde of competitors on your tail, and you have to stay ahead of them by running as fast as you can.
 
-And so, deveolpers can't go back and clean things up because they've got to get the next feature done, and the next, and the next. And so them ess builds, and __productivity continues its asymptotic approach toward zero__.
+And so, deveolpers can't go back and clean things up because they've got to get the next feature done, and the next, and the next. Therefore __productivity continues its asymptotic approach toward zero__.
 
 > Developers are overconfident in their ability to remain productive.
 

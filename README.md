@@ -4,6 +4,8 @@
 
 - [Software Architect Handbook](#software-architect-handbook)
   - [General Concerns](#general-concerns)
+    - [About Architecture](#about-architecture)
+    - [About Engineering](#about-engineering)
   - [Design Principles](#design-principles)
   - [Refactoring](#refactoring)
   - [Programming Paradigms](#programming-paradigms)
@@ -37,7 +39,7 @@
     - [Flux & Redux](#flux--redux)
     - [Domain-Driven Design](#domain-driven-design)
     - [Microservices](#microservices)
-  - [Databases](#databases)
+  - [Data Storage](#data-storage)
     - [Relational Databases](#relational-databases)
     - [Wide-column store](#wide-column-store)
     - [GraphQL](#graphql)
@@ -55,14 +57,18 @@
 
 ## General Concerns
 
-> [What is Software Architecture?](architectures/general/definition)
+### About Architecture
+
+- [What is Software Architecture?](architectures/general/definition)
+- [Evolutionary Design](https://www.martinfowler.com/articles/designDead.html)
+- [Development Overconfidence](architectures/general/overconfidence)
+- [Is Quality Worth the Cost?](architectures/general/quality)
+
+### About Engineering
 
 - [Concurrency](architectures/general/concurrency)
-- [Development Overconfidence](architectures/general/overconfidence)
 - [Developer Struggle](architectures/general/developer-struggle)
 - [Distribution Strategies](architectures/general/distribution-strategies)
-- [Evolutionary Design](https://www.martinfowler.com/articles/designDead.html)
-- [Is Quality Worth the Cost?](architectures/general/quality)
 - [Layering](architectures/general/layering)
 - [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
 - [Organizing Domain Logic](architectures/general/domain-logic)
@@ -456,7 +462,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 > [Tools](architectures/microservices/tooling)
 
-## Databases
+## Data Storage
 
 - [CAP/Brewer's Theorem](databases/cap)
 - [BASE](databases/base)
@@ -560,7 +566,7 @@ Specifics that should be considered while developing a software solution relying
 
 ### [Laws & Theorems]
 
-- [80/20 Rule](swe/laws/80-20.md)
+- [_80/20 Rule_](swe/laws/80-20.md)
 - [_Beyoncé Rule_: If you liked it, put a CI test](swe/laws/beyonce.md)
 - [_Churn Rule_: Teams should internalize deprecation](swe/laws/churn.md)
 - [_Constantine's law_: Favor high cohesion](swe/laws/constantine.md)

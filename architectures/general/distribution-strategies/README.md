@@ -1,11 +1,12 @@
 # Distribution Strategies
 
-* Distribution by Class Model
-  * Remote and Local Interfaces
-* Clustering
-  * Where you have to distribute
-* Distribution Boundary
-* Interfaces for Synchronous Distribution
+- [Distribution Strategies](#distribution-strategies)
+  - [Distribution by Class Model](#distribution-by-class-model)
+    - [Remote and Local Interfaces](#remote-and-local-interfaces)
+  - [Clustering](#clustering)
+    - [Where you have to distribute](#where-you-have-to-distribute)
+  - [Distribution Boundary](#distribution-boundary)
+  - [Interfaces for Synchronous Distribution](#interfaces-for-synchronous-distribution)
 
 ## Distribution by Class Model
 
@@ -49,12 +50,12 @@ You can also use **fine-grained interfaces** for all classes within the process 
 
 You want to minimize distribution boundaries and utilize your nodes through clustering as much as possible, but there are places where you **might need to separate the processes**.
 
-* Clients and servers of business software.
-* Server-based application and database.
-  * You could run all your application software in the database process itself using stored procedures (not so practical).
-  * SQL is designed as a remote interface so it minimizes the cost of remote calls.
-* Web system between web server and application server.
-* Vendor differences / Vendor specific packages.
+- Clients and servers of business software.
+- Server-based application and database.
+  - You could run all your application software in the database process itself using stored procedures (not so practical).
+  - SQL is designed as a remote interface so it minimizes the cost of remote calls.
+- Web system between web server and application server.
+- Vendor differences / Vendor specific packages.
 
 ## Distribution Boundary
 
