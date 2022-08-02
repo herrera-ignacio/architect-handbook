@@ -61,6 +61,7 @@
 
 - [What is Software Architecture?](architectures/general/definition)
 - [The Software Architect](architectures/general/the-software-architect.md)
+- [The First Derivative](architectures/general/the-first-derivative.md)
 - [Evolutionary Design](https://www.martinfowler.com/articles/designDead.html)
 - [Development Overconfidence](architectures/general/overconfidence)
 - [Is Quality Worth the Cost?](architectures/general/quality)
