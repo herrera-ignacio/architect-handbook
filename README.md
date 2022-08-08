@@ -30,7 +30,7 @@
   - [Types of Software](#types-of-software)
   - [System Design](#system-design)
     - [System Design - Case Studies](#system-design---case-studies)
-  - [Architectural Styles](#architectural-styles)
+  - [Architectural Styles & Patterns](#architectural-styles--patterns)
     - [Three-Layer System (Martin Fowler)](#three-layer-system-martin-fowler)
     - [Service Oriented Architecture (SOA)](#service-oriented-architecture-soa)
     - [Ports & Adapters / Hexagonal](#ports--adapters--hexagonal)
@@ -170,7 +170,8 @@
 
 ### General / Architectural
 
-- [Event Sourcing](design-patterns/architectural/event-sourcing)
+- [Event Sourcing](design-patterns/architectural/event-sourcing.md)
+- [CQRS: Command and Query Responsibility Segregation](design-patterns/architectural/cqrs.md)
 
 ### Gang of Four Patterns
 
@@ -332,7 +333,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 - [Design Youtube](system-design/case-studies/youtube)
 - [Design Google Drive](system-design/case-studies/google-drive)
 
-## Architectural Styles
+## Architectural Styles & Patterns
 
 > Recommended book: <https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture>
 
