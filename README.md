@@ -172,6 +172,7 @@
 
 - [Event Sourcing](design-patterns/architectural/event-sourcing.md)
 - [CQRS: Command and Query Responsibility Segregation](design-patterns/architectural/cqrs.md)
+- [Saga: distributed transactions](design-patterns/architectural/saga.md)
 
 ### Gang of Four Patterns
 
