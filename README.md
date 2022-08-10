@@ -40,6 +40,8 @@
     - [Domain-Driven Design](#domain-driven-design)
     - [Microservices](#microservices)
   - [Data Storage](#data-storage)
+    - [Data Consistency](#data-consistency)
+    - [Data partitioning](#data-partitioning)
     - [Relational Databases](#relational-databases)
     - [Wide-column store](#wide-column-store)
     - [GraphQL](#graphql)
@@ -475,15 +477,13 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   - Vertical Scaling (Scaling Up)
   - Horizontal Scaling (Sharding)
 - [Data Replication](databases/replication)
-- [Data Partition](databases/partitioning)
 - [Consistency Models](databases/consistency-models)
   - Strong Consistency vs Weak Consistency
   - Eventual Consistency
   - Strong Eventual Consistency (SEC)
 - Synchronization techniques
   - [Quorum consensus](databases/quorum-consensus)
-- Inconsistency resolution
-  - [Versioning](databases/inconsistency-resolution/versioning)
+
 - [Handling failures](databases/handling-failures)
   - Failure detection
     - All-to-all multicasting
@@ -494,6 +494,19 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   - Handling performance failures
     - Anti-entropy protocol
   - Handling data center outage
+
+### Data Consistency
+
+- [Data consistency primer](databases/consistency/README.md)
+- [Strong consistency](databases/consistency/strong.md)
+- [Eventual consistency](databases/consistency/eventual.md)
+- Inconsistency resolution
+  - [Versioning](databases/inconsistency-resolution/versioning)
+
+### Data partitioning
+
+- [Data partitionioning primer](databases/partitioning/README.md)
+- [Consistent hashing](databases/partitioning/consistent-hashing.md)
 
 ### Relational Databases
 
