@@ -506,7 +506,10 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 ### Data partitioning
 
 - [Data partitionioning primer](databases/partitioning/README.md)
-- [Consistent hashing](databases/partitioning/consistent-hashing.md)
+- [Horizontal partitioning (_sharding_)](databases/partitioning/horizontal.md)
+  - [Consistent hashing](databases/partitioning/consistent-hashing.md)
+- [Vertical partitioning](databases/partitioning/vertical.md)
+- [Fuctional partitioning](databases/partitioning/functional.md)
 
 ### Relational Databases
 
