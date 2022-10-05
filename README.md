@@ -49,7 +49,7 @@
   - [Operating Systems](#operating-systems)
   - [Data Science & Big Data](#data-science--big-data)
   - [Software Engineering Culture](#software-engineering-culture)
-    - [[Laws & Theorems]](#laws--theorems)
+    - [Laws & Theorems](#laws--theorems)
     - [Working Methodologies](#working-methodologies)
   - [Testing](#testing)
     - [E2E Testing](#e2e-testing)
@@ -584,7 +584,7 @@ Specifics that should be considered while developing a software solution relying
 - [Success stories](swe/success-stories)
 - [Quotes](swe/quotes.md)
 
-### [Laws & Theorems]
+### Laws & Theorems
 
 - [_80/20 Rule_](swe/laws/80-20.md)
 - [_Beyoncé Rule_: If you liked it, put a CI test](swe/laws/beyonce.md)
