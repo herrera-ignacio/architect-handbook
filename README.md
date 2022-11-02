@@ -141,7 +141,7 @@
   - [Dynamic Dispatch / Message Passing](paradigms/oop/dynamic-dispatch.md)
   - [OMT Notation & UML](paradigms/oop/omt-notations.md)
 - Advanced concepts
-  - [Object-Oriented Design Principles](paradigms/oop/design-principles.md)
+  - [Object-Oriented Design Principles](#design-principles)
   - [Gamma Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
   - [The Power of Polymorphism: Dependency Inversion](paradigms/oop/polymorphism)
   - [Prototypal vs Classical Inheritance](paradigms/oop/prototypal-oo)
