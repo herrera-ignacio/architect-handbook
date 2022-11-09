@@ -53,8 +53,9 @@
     - [Working Methodologies](#working-methodologies)
   - [Testing](#testing)
     - [E2E Testing](#e2e-testing)
-  - [Tooling - Language Agnostic](#tooling---language-agnostic)
+  - [Frontend](#frontend)
   - [Glossary](#glossary)
+  - [Tooling - Language Agnostic](#tooling---language-agnostic)
   - [Z-Index, other repositories](#z-index-other-repositories)
 
 ## General Concerns
@@ -604,10 +605,9 @@ Specifics that should be considered while developing a software solution relying
 - [Anti Patterns](testing/e2e/anti-patterns.md)
 - [Best Practices](https://docs.cypress.io/guides/references/best-practices)
 
-## Tooling - Language Agnostic
+## Frontend
 
-- [Telepresence](https://telepresence.io): tool that is aiming to make a hybrid local/remote developer workflow easier for Kubernetes users.
-- [Pact](https://pact.io): customer-driven contracts.
+- [Design system](frontend/design-system/README.md)
 
 ## Glossary
 
@@ -619,6 +619,11 @@ Specifics that should be considered while developing a software solution relying
 - [Side Effect](glossary/side-effect)
 - [SPOF: Single Point of Failure](glossary/spof)
 - [Web API](glossary/web-api)
+
+## Tooling - Language Agnostic
+
+- [Telepresence](https://telepresence.io): tool that is aiming to make a hybrid local/remote developer workflow easier for Kubernetes users.
+- [Pact](https://pact.io): customer-driven contracts.
 
 ## Z-Index, other repositories
 
