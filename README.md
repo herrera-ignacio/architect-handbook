@@ -607,6 +607,7 @@ Specifics that should be considered while developing a software solution relying
 
 ## Frontend
 
+- [Atomic design](frontend/atomic-design/README.md)
 - [Design system](frontend/design-system/README.md)
 
 ## Glossary
