@@ -17,7 +17,7 @@
     - [General / Architectural](#general--architectural)
     - [Gang of Four Patterns](#gang-of-four-patterns)
     - [Domain Logic](#domain-logic)
-    - [Data Source & Persistence](#data-source--persistence)
+    - [Data Source \& Persistence](#data-source--persistence)
     - [Object Relational](#object-relational)
       - [Behavioral](#behavioral)
       - [Structural](#structural)
@@ -30,13 +30,13 @@
   - [Types of Software](#types-of-software)
   - [System Design](#system-design)
     - [System Design - Case Studies](#system-design---case-studies)
-  - [Architectural Styles & Patterns](#architectural-styles--patterns)
+  - [Architectural Styles \& Patterns](#architectural-styles--patterns)
     - [Three-Layer System (Martin Fowler)](#three-layer-system-martin-fowler)
     - [Service Oriented Architecture (SOA)](#service-oriented-architecture-soa)
-    - [Ports & Adapters / Hexagonal](#ports--adapters--hexagonal)
+    - [Ports \& Adapters / Hexagonal](#ports--adapters--hexagonal)
     - [Clean Architecture](#clean-architecture)
     - [REST: Representational State Transfer](#rest-representational-state-transfer)
-    - [Flux & Redux](#flux--redux)
+    - [Flux \& Redux](#flux--redux)
     - [Domain-Driven Design](#domain-driven-design)
     - [Microservices](#microservices)
   - [Data Storage](#data-storage)
@@ -47,9 +47,9 @@
     - [GraphQL](#graphql)
   - [Technology specifics](#technology-specifics)
   - [Operating Systems](#operating-systems)
-  - [Data Science & Big Data](#data-science--big-data)
+  - [Data Science \& Big Data](#data-science--big-data)
   - [Software Engineering Culture](#software-engineering-culture)
-    - [Laws & Theorems](#laws--theorems)
+    - [Laws \& Theorems](#laws--theorems)
     - [Working Methodologies](#working-methodologies)
   - [Testing](#testing)
     - [E2E Testing](#e2e-testing)
@@ -607,8 +607,13 @@ Specifics that should be considered while developing a software solution relying
 
 ## Frontend
 
+> [Frontend developer roadmap](https://roadmap.sh/frontend).
+
 - [Atomic design](frontend/atomic-design/README.md)
 - [Design system](frontend/design-system/README.md)
+- [Legacy lifecycle of frontend](frontend/legacy-lifecycle/README.md)
+- [Areas of frontend](frontend/areas/README.md)
+  - [Backbone goals and OKRs](frontend/backbone-OKRs/README.md)
 
 ## Glossary
 
