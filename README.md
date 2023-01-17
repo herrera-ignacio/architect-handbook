@@ -614,6 +614,7 @@ Specifics that should be considered while developing a software solution relying
 - [Legacy lifecycle of frontend](frontend/legacy-lifecycle/README.md)
 - [Areas of frontend](frontend/areas/README.md)
   - [Backbone goals and OKRs](frontend/backbone-OKRs/README.md)
+- [Accessibility testing](frontend/accessibility-testing/README.md)
 
 ## Glossary
 
