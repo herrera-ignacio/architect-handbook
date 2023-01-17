@@ -325,17 +325,19 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 ### System Design - Case Studies
 
-- [Instagram News Feed - Gaurav Sen](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
-- [Design a key-value store](system-design/case-studies/keyvalue-store)
-- [Design a unique ID generator in distributed systems](system-design/case-studies/uniqueid-generator)
-- [Design a URL shortener](system-design/case-studies/url-shortener)
-- [Design a web crawler](system-design/case-studies/web-crawler)
-- [Design a notification system](system-design/case-studies/notification-systevm)
-- [Design a news feed system](system-design/case-studies/news-feed)
-- [Design a chat system](system-design/case-studies/chat-system)
-- [Design a Search Autocomplete System](system-design/case-studies/search-autocomplete)
-- [Design Youtube](system-design/case-studies/youtube)
-- [Design Google Drive](system-design/case-studies/google-drive)
+| Problems                                   | Solutions                                                   |
+|--------------------------------------------|-------------------------------------------------------------|
+| Instagram News Feed - Gaurav Sen           | [Solution](https://www.youtube.com/watch?v=fMZMm_0ZhK4)     |
+| Key-value store                            | [Solution](system-design/case-studies/keyvalue-store)       |
+| Unique ID generator in distributed systems | [Solution](system-design/case-studies/uniqueid-generator)   |
+| URL shortener                              | [Solution](system-design/case-studies/url-shortener)        |
+| Web crawler                                | [Solution](system-design/case-studies/web-crawler)          |
+| Notification system                        | [Solution](system-design/case-studies/notification-systevm) |
+| News feed system                           | [Solution](system-design/case-studies/news-feed)            |
+| Chat system                                | [Solution](system-design/case-studies/chat-system)          |
+| Search autocomplete system                 | [Solution](system-design/case-studies/search-autocomplete)  |
+| Youtube                                    | [Solution](system-design/case-studies/youtube)              |
+| Google Drive                               | [Solution](system-design/case-studies/google-drive)         |
 
 ## Architectural Styles & Patterns
 
