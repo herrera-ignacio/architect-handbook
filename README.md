@@ -360,7 +360,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 - [Tradeoffs](architectures/clean/tradeoffs)
 - [What is Architecture](architectures/clean/architecture)
 - [Keeping options open](architectures/clean/keeping-options)
-- [Plugin Architecture: MCP](architectures/clean/mcp)
+- [Plugin Architecture - Model Controller Presenter (MCP)](architectures/clean/mcp)
 - [Request and Response Models](architectures/clean/req-res)
 - [Screaming Architecture](architectures/clean/screaming-architecture)
 - [Testable Architecture](architectures/clean/testable-architecture)

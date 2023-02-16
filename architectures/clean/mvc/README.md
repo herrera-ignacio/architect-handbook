@@ -1,11 +1,12 @@
 # MVC Architecture Analysis
 
-* Not Clean
-* Clean Architecture Proposal: MVP
+- [MVC Architecture Analysis](#mvc-architecture-analysis)
+  - [Not Clean](#not-clean)
+  - [Clean Architecture Proposal: Model View Presenter](#clean-architecture-proposal-model-view-presenter)
 
 ## Not Clean
 
-![how mvc goes wrong](.wrong.jpg)
+![how mvc goes wrong](./wrong.jpg)
 
 User make a requests, Controllers are responsible for processing the request, url query params, etc, and then invoke and orchestate Business Model objects. Then, controller delegates control to View, which queries resulting data from Business Model objects, and returns with a proper response to the user.
 
@@ -17,4 +18,4 @@ Controller-like / View-like functions end up in business objects, and easily get
 
 ## Clean Architecture Proposal: Model View Presenter
 
-![clean](../mvp/mvp.jpg)
+![clean](../mcp/mcp.gif)
