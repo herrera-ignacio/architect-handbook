@@ -1,5 +1,17 @@
 # REST Architectural Constraints
 
+- [REST Architectural Constraints](#rest-architectural-constraints)
+  - [1. Client-Server Architecture](#1-client-server-architecture)
+  - [2. Statelessness](#2-statelessness)
+  - [3. Cacheability](#3-cacheability)
+  - [4. Layered System](#4-layered-system)
+  - [5. Code on demand / Client-side scripting (optional)](#5-code-on-demand--client-side-scripting-optional)
+  - [6. Uniform Interface](#6-uniform-interface)
+    - [A. Resource identification in requests](#a-resource-identification-in-requests)
+    - [B. Resource manipulation through representations](#b-resource-manipulation-through-representations)
+    - [C. Self-descriptive messages](#c-self-descriptive-messages)
+    - [D. Hypermedia as the Engine of Application State (HATEOAS)](#d-hypermedia-as-the-engine-of-application-state-hateoas)
+
 Six guiding constraints define a RESTful system. These constraints restrict the way the server can process and respond to client requests so that, by operating within these contraints, the system gains desirable _non-functional properties_ (architectural properties).
 
 ## 1. Client-Server Architecture
