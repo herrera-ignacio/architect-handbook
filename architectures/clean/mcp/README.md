@@ -10,7 +10,7 @@ MCP, Also known as a __Plugin Architecture__.
 
 > It introduces the concept of _Architectural Boundary_ (do not confuse with Boundary object), that separates the business rules from whatever technology dependency we use.
 
-You first partitionn the system into components. Some of those compopnents aree corer business rules, others are plugins that contain necessary functions that are not directly related to the core business. Then you arrange the code in those components such that the arrows between them point in one direction, toward the core business.
+You first partition the system into components. Some of those compopnents aree corer business rules, others are plugins that contain necessary functions that are not directly related to the core business. Then you arrange the code in those components such that the arrows between them point in one direction, toward the core business.
 
 Dependency arrows are arranged to point from lower-level details to higher-level abstractions.
 
