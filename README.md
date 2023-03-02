@@ -613,7 +613,6 @@ Specifics that should be considered while developing a software solution relying
 
 - [Atomic design](frontend/atomic-design/README.md)
 - [Design system](frontend/design-system/README.md)
-- [Metrics](frontend/metrics/README.md)
 - [Legacy lifecycle of frontend](frontend/legacy-lifecycle/README.md)
 - [Areas of frontend](frontend/areas/README.md)
   - [Backbone goals and OKRs](frontend/backbone-OKRs/README.md)
