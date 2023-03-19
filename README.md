@@ -595,6 +595,7 @@ Specifics that should be considered while developing a software solution relying
 - [_Constantine's law_: Favor high cohesion](swe/laws/constantine.md)
 - [_Conway's law_: Systems reflect organization's communication structure](swe/laws/conway.md)
 - [_Hyrum's Law_: The Law of Implicit Dependencies](swe/laws/hyrum.md)
+- [_Occam's Razor_: The simplest explanation](swe/laws/occam.md)
 
 ### Working Methodologies
 
