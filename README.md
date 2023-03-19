@@ -596,6 +596,7 @@ Specifics that should be considered while developing a software solution relying
 - [_Conway's law_: Systems reflect organization's communication structure](swe/laws/conway.md)
 - [_Hyrum's Law_: The Law of Implicit Dependencies](swe/laws/hyrum.md)
 - [_Occam's Razor_: The simplest explanation](swe/laws/occam.md)
+- [_Pareto principle_: The 80/20 rule](swe/laws/pareto.md)
 
 ### Working Methodologies
 
