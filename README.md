@@ -47,6 +47,7 @@
     - [GraphQL](#graphql)
   - [Technology specifics](#technology-specifics)
   - [Operating Systems](#operating-systems)
+    - [Linux](#linux)
   - [Data Science \& Big Data](#data-science--big-data)
   - [Software Engineering Culture](#software-engineering-culture)
     - [Laws \& Theorems](#laws--theorems)
@@ -574,6 +575,10 @@ Specifics that should be considered while developing a software solution relying
 - [Process & Thread](os/process-thread)
 - Models of Computation
   - [Finite State Machine](models-of-computation/fsm)
+
+### Linux
+
+- [Core principles](os/linux/core-principles/README.md)
 
 ## Data Science & Big Data
 
