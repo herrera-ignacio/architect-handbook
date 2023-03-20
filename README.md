@@ -579,6 +579,7 @@ Specifics that should be considered while developing a software solution relying
 
 - [Core principles](os/linux/core-principles/README.md)
 - [Components](os/linux/components/README.md)
+- [File system](os/linux/file-system/README.md)
 
 ## Data Science & Big Data
 
