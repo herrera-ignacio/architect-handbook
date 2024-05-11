@@ -13,7 +13,7 @@ The reason that we have many database options available today is due to the [CAP
 
 > CAP Theorem: At any given time, you can only guarantee two of the following: consistency, availability, and partition tolerance. 
 
-## Importat Questions to Ask
+## Important Questions to Ask
 
 * How many relationships are in your data?
 * What is the level of complexity in your data?

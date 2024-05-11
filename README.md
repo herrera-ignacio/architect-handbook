@@ -2,289 +2,66 @@
 
 > [What is software architecture?](architectures/general/definition/README.md)
 
-- [Software Architect Handbook](#software-architect-handbook)
-  - [General Concerns](#general-concerns)
-    - [About Architecture](#about-architecture)
-    - [About Engineering](#about-engineering)
-  - [Design Principles](#design-principles)
-  - [Refactoring](#refactoring)
-  - [Programming Paradigms](#programming-paradigms)
-    - [Structured](#structured)
-    - [OOP: Object Oriented Programming](#oop-object-oriented-programming)
-    - [Functional](#functional)
-  - [Design Patterns](#design-patterns)
-    - [Base Patterns](#base-patterns)
-    - [General / Architectural](#general--architectural)
-    - [Gang of Four Patterns](#gang-of-four-patterns)
-    - [Domain Logic](#domain-logic)
-    - [Data Source \& Persistence](#data-source--persistence)
-    - [Object Relational](#object-relational)
-      - [Behavioral](#behavioral)
-      - [Structural](#structural)
-      - [Metadata Mapping](#metadata-mapping)
-    - [Web Presentation](#web-presentation)
-    - [Distribution](#distribution)
-    - [Offline Concurrency](#offline-concurrency)
-    - [Session State](#session-state)
-    - [Anti-Patterns](#anti-patterns)
-  - [Types of Software](#types-of-software)
-  - [System Design](#system-design)
-    - [System Design - Case Studies](#system-design---case-studies)
-  - [Architectural Styles \& Patterns](#architectural-styles--patterns)
-    - [Three-Layer System (Martin Fowler)](#three-layer-system-martin-fowler)
-    - [Service Oriented Architecture (SOA)](#service-oriented-architecture-soa)
-    - [Ports \& Adapters / Hexagonal](#ports--adapters--hexagonal)
-    - [Clean Architecture](#clean-architecture)
-    - [REST: Representational State Transfer](#rest-representational-state-transfer)
-    - [Flux \& Redux](#flux--redux)
-    - [Domain-Driven Design](#domain-driven-design)
-    - [Microservices](#microservices)
-  - [Data Storage](#data-storage)
-    - [Data Consistency](#data-consistency)
-    - [Data partitioning](#data-partitioning)
-    - [Relational Databases](#relational-databases)
-    - [Wide-column store](#wide-column-store)
-    - [GraphQL](#graphql)
-  - [Technology specifics](#technology-specifics)
-  - [Operating Systems](#operating-systems)
-    - [Linux](#linux)
-  - [Data Science \& Big Data](#data-science--big-data)
-  - [Software Engineering Culture](#software-engineering-culture)
-    - [Laws \& Theorems](#laws--theorems)
-    - [Working Methodologies](#working-methodologies)
-  - [Testing](#testing)
-    - [E2E Testing](#e2e-testing)
-  - [Frontend](#frontend)
-  - [Glossary](#glossary)
-  - [Tooling - Language Agnostic](#tooling---language-agnostic)
-  - [Z-Index, other repositories](#z-index-other-repositories)
+<!-- TOC -->
+* [Software Architect Handbook](#software-architect-handbook)
+  * [System design](#system-design)
+    * [System Design - Case Studies](#system-design---case-studies)
+  * [Design principles](#design-principles)
+  * [Design patterns](#design-patterns)
+    * [Base patterns](#base-patterns)
+    * [System-level or architectural patterns](#system-level-or-architectural-patterns)
+    * [Gang of Four Patterns](#gang-of-four-patterns)
+    * [Domain logic patterns](#domain-logic-patterns)
+    * [Data source & persistence patterns](#data-source--persistence-patterns)
+    * [Object relational patterns](#object-relational-patterns)
+      * [Behavioral patterns](#behavioral-patterns)
+      * [Structural patterns](#structural-patterns)
+      * [Metadata mapping patterns](#metadata-mapping-patterns)
+    * [Web presentation patterns](#web-presentation-patterns)
+    * [Distribution patterns](#distribution-patterns)
+    * [Offline concurrency patterns](#offline-concurrency-patterns)
+    * [Session state patterns](#session-state-patterns)
+    * [Anti-Patterns](#anti-patterns)
+  * [Architectural Styles & Patterns](#architectural-styles--patterns)
+    * [Three-Layer System (Martin Fowler)](#three-layer-system-martin-fowler)
+    * [Service Oriented Architecture (SOA)](#service-oriented-architecture--soa-)
+    * [Ports & Adapters / Hexagonal](#ports--adapters--hexagonal)
+    * [Clean Architecture](#clean-architecture)
+    * [REST: Representational State Transfer](#rest-representational-state-transfer)
+    * [Flux & Redux](#flux--redux)
+    * [Domain-Driven Design](#domain-driven-design)
+    * [Microservices](#microservices)
+  * [Data storage](#data-storage)
+    * [General concepts](#general-concepts)
+      * [Data Consistency](#data-consistency)
+      * [Data partitioning](#data-partitioning)
+    * [Types](#types)
+      * [Relational Databases](#relational-databases)
+      * [Wide-column store](#wide-column-store)
+      * [GraphQL](#graphql)
+  * [Software types](#software-types)
+  * [Operating systems](#operating-systems)
+    * [Linux](#linux)
+  * [Refactoring & code smells](#refactoring--code-smells)
+  * [Programming paradigms](#programming-paradigms)
+    * [Structured programming](#structured-programming)
+    * [OOP: Object-oriented programming](#oop-object-oriented-programming)
+    * [Functional programming](#functional-programming)
+  * [Software Engineering Culture](#software-engineering-culture)
+    * [Laws & Theorems](#laws--theorems)
+    * [Working Methodologies](#working-methodologies)
+  * [Testing](#testing)
+    * [E2E Testing](#e2e-testing)
+  * [General concepts](#general-concepts-1)
+    * [About system-design and architecture](#about-system-design-and-architecture)
+    * [About software engineering](#about-software-engineering)
+    * [Common jargon](#common-jargon)
+  * [Tooling - Language Agnostic](#tooling---language-agnostic)
+  * [Technology specifics](#technology-specifics)
+    * [Frontend](#frontend)
+<!-- TOC -->
 
-## General Concerns
-
-### About Architecture
-
-- [What is Software Architecture?](architectures/general/definition)
-- [The Software Architect](architectures/general/the-software-architect.md)
-- [The First Derivative](architectures/general/the-first-derivative.md)
-- [Evolutionary Design](https://www.martinfowler.com/articles/designDead.html)
-- [Development Overconfidence](architectures/general/overconfidence)
-- [Is Quality Worth the Cost?](architectures/general/quality)
-
-### About Engineering
-
-- [Concurrency](architectures/general/concurrency)
-- [Developer Struggle](architectures/general/developer-struggle)
-- [Distribution Strategies](architectures/general/distribution-strategies)
-- [Layering](architectures/general/layering)
-- [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
-- [Organizing Domain Logic](architectures/general/domain-logic)
-- [Resilience vs Robustness](architectures/general/resilience-vs-robustness)
-- [Session State](architectures/general/session-state)
-- [Technical Debt](architectures/general/technical-debt)
-
-## Design Principles
-
-- [Common Architectural Principles](principles/general)
-- [OOP Principles](paradigms/oop/design-principles.md)
-- [OO Design Principles](https://wiki.c2.com/?PrinciplesOfObjectOrientedDesign)
-  - [Encapsulate what varies](principles/oo/encapsulate.md)
-  - [Program to an interface, not an implementation](principles/oo/favor-interfaces.md)
-  - [Favor object composition over class inheritance](principles/oo/favor-composition.md)
-  - [Strive for loosely coupled designs between objects that interact](principles/oo/loosely-coupled-interaction.md)
-  - [Least Knowledge](principles/oo/least-knowledge.md)
-- DRY
-- [GRASP](principles/grasp.md)
-- [Hollywood Principle](principles/hollywood.md)
-- [SOLID](principles/solid)
-  - [Single Responsibility Principle](principles/solid/srp)
-  - [Open Closed Principle](principles/solid/ocp)
-  - [Liskov Substitution Principle](principles/solid/lsp)
-  - [Interface Segregation Principle](principles/solid/isp)
-  - [Dependency Inversion Principle](principles/solid/dip)
-- [KISS](principles/kiss.md)
-- [WET](https://dev.to/wuz/stop-trying-to-be-so-dry-instead-write-everything-twice-wet-5g33)
-- [YAGNI](principles/yagni.md)
-
-## Refactoring
-
-- [Code Smell](https://wiki.c2.com/?CodeSmell)
-- [Refactoring Guru](https://refactoring.guru/)
-
-## Programming Paradigms
-
-- [Imperative and Procedural](paradigms/imperative)
-- [Declarative](paradigms/declarative)
-
-### [Structured](paradigms/structured)
-
-- [Functional Decomposition](paradigms/structured/functional-decomposition)
-- [Structured Tests](paradigms/structured/tests)
-
-### OOP: Object Oriented Programming
-
-- [OOP Introduction](paradigms/oop/README.md)
-  - Objects and Classes
-  - Class-based vs Prototype-based languages
-- Foundational concepts
-  - [4 Pillars of OOP](paradigms/oop/4pillars.md)
-    - Abstraction
-    - Inheritance
-    - Encapsulation
-    - Polymorphism
-  - [Abstract Class](paradigms/oop/abstract-class.md)
-  - [Mixin Class](paradigms/oop/mixin.md)
-  - [Traits](paradigms/oop/traits.md)
-  - [Interface & Type](paradigms/oop/interface.md)
-- Techniques
-  - [Subtyping: Interface Inheritance](paradigms/oop/subtyping.md)
-  - [Composition, Aggregation and Delegation](paradigms/oop/cad.md)
-    - [Composition vs Inheritance](paradigms/oop/inheritance-composition.md)
-  - [Parameterized Types](paradigms/oop/inheritance-parameterized.md)
-  - [Dynamic Dispatch / Message Passing](paradigms/oop/dynamic-dispatch.md)
-  - [OMT Notation & UML](paradigms/oop/omt-notations.md)
-- Advanced concepts
-  - [Object-Oriented Design Principles](#design-principles)
-  - [Gamma Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
-  - [The Power of Polymorphism: Dependency Inversion](paradigms/oop/polymorphism)
-  - [Prototypal vs Classical Inheritance](paradigms/oop/prototypal-oo)
-
-### [Functional](paradigms/functional/README.md)
-
-- [Referentially Transparent (No Side Effects)](paradigms/functional/referentially-transparent.md)
-- [Immutability](paradigms/functional/immutability)
-- [Idempotence](paradigms/functional/idempotence)
-
-## Design Patterns
-
-> [What is a design pattern?](glossary/pattern)
-
-### Base Patterns
-
-- [Gateway](design-patterns/base/gateway)
-- [Mapper](design-patterns/base/mapper)
-- [Layer Supertype](design-patterns/base/layer-supertype)
-- [Separated Interface](design-patterns/base/separated-interface)
-- [Registry](design-patterns/base/registry)
-- [Value Object](design-patterns/base/value-object)
-  - [Money](design-patterns/base/value-object/money)
-- [Special Case](design-patterns/base/special-case)
-- [Plugin](design-patterns/base/plugin)
-- [Service Stub](design-patterns/base/service-stub)
-- [Record Set](design-patterns/base/record-set)
-
-### General / Architectural
-
-- [Event Sourcing](design-patterns/architectural/event-sourcing.md)
-- [CQRS: Command and Query Responsibility Segregation](design-patterns/architectural/cqrs.md)
-- [Saga: distributed transactions](design-patterns/architectural/saga.md)
-
-### Gang of Four Patterns
-
-Please check the [this repository](https://github.com/herrera-ignacio/design_patterns/) for a detailed explanation and examples of each of the following patterns.
-
-| [Creational](https://github.com/herrera-ignacio/design_patterns/tree/master/creational) | [Structural](https://github.com/herrera-ignacio/design_patterns/tree/master/structural) | [Behavioral](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/behavioral-patterns) |
-|------------------ |------------ |------------ |
-| [Abstract Factory](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/abstract-factory) | [Adapter](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/adapter) | [Chain of Responsibility](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/chain-of-responsibility) |
-| [Builder](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/builder) | [Bridge](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/bridge) | [Command](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/command) |
-| [Factory Method](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/factory-method) | [Composite](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/composite) | [Interpreter](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/interpreter) |
-| [Prototype](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/prototype) | [Decorator](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/decorator) | [Iterator](./behavioral/iterator) |
-| [Singleton](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/singleton) | [Facade](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/facade) | [Mediator](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/mediator) |
-| | [Flyweight](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/flyweight) | [Memento](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/memento) |
-| | [Proxy](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/proxy) | [Observer](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/observer) |
-| | | [State](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/state) |
-| | | [Strategy](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/strategy) |
-| | | [Template Method](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/template-method) |
-| | | [Visitor](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/visitor) |
-
-### Domain Logic
-
-- [Transaction Script](design-patterns/domain-logic/transaction-script)
-- [Domain Model](design-patterns/domain-logic/domain-model)
-- [Table Module](design-patterns/domain-logic/table-module)
-- [Service Layer](design-patterns/domain-logic/service-layer)
-
-### Data Source & Persistence
-
-- [DAO: Data Access Object](design-patterns/data/dao)
-- [Active Record](design-patterns/data/active-record)
-- [Data Mapper](design-patterns/data/data-mapper)
-- [Table Data Gateway](design-patterns/data/table-data-gateway)
-- [Row Data Gateway](design-patterns/data/row-data-gateway)
-- [Repository](design-patterns/data/repository)
-
-### Object Relational
-
-#### Behavioral
-
-- [Unit of Work](design-patterns/object-relational/behavioral/unit-of-work)
-- [Identity Map](design-patterns/object-relational/behavioral/identity-map)
-- [Lazy Load](design-patterns/object-relational/behavioral/lazy-load)
-
-#### Structural
-
-- [Identity Field](design-patterns/object-relational/structural/identity-field)
-- [Foreign Key Mapping](design-patterns/object-relational/structural/foreign-key-mapping)
-- [Association Table Mapping](design-patterns/object-relational/structural/association-table-mapping)
-- [Dependent Mapping](design-patterns/object-relational/structural/dependent-mapping)
-- [Embedded Value / Aggregate Mapping](design-patterns/object-relational/structural/embedded-value)
-- [Serializd LOB](design-patterns/object-relational/structural/serialized-lob)
-- [Single Table Inheritance](design-patterns/object-relational/structural/single-table-inheritance)
-- [Class Table Inheritance / Root-Leaf Mapping](design-patterns/object-relational/structural/class-table-inheritance)
-- [Concrete Table Inheritance](design-patterns/object-relational/structural/concrete-table-inheritance)
-- [Inheritance Mappers](design-patterns/object-relational/structural/inheritance-mappers)
-
-#### Metadata Mapping
-
-- [Metadata Mapping](design-patterns/object-relational/metadata-mapping/metadata-mapping)
-- [Query Object](design-patterns/object-relational/metadata-mapping/query-object)
-- [Repository](design-patterns/object-relational/metadata-mapping/repository)
-
-### [Web Presentation](architectures/general/web-presentation)
-
-- [Application Model / Presentation Model](design-patterns/web-presentation/presentation-model)
-- [Humble View / Passive View](design-patterns/web-presentation/passive-view)
-- [MVC: Model View Controller](design-patterns/web-presentation/mvc)
-- [MVP: Model View Presenter](design-patterns/web-presentation/mvp)
-- [MVVM: Model View View-Model](design-patterns/web-presentation/mvvm)
-- [Front Controller](design-patterns/web-presentation/front-controller)
-- [Page Controller](design-patterns/web-presentation/page-controller)
-- [Supervising Controller](design-patterns/web-presentation/supervising-controller)
-- [Template View](design-patterns/web-presentation/template-view)
-- [Transform View](design-patterns/web-presentation/transform-view)
-- [Two Step View](design-patterns/web-presentation/two-step-view)
-
-### Distribution
-
-- [Remote Facade](design-patterns/distribution/remote-facade)
-- [Data Transfer Object](design-patterns/distribution/dto)
-
-### Offline Concurrency
-
-- [Optimistic Offline Lock](design-patterns/offline-concurrency/optimistic-offline-lock)
-- [Pessimistic Offline Lock](design-patterns/offline-concurrency/pessimistic-offline-lock)
-- [Coarse-Grained Lock](design-patterns/offline-concurrency/coarse-grained-lock)
-
-### Session State
-
-- [Client Session State](design-patterns/session-state/client)
-- [Server Session State](design-patterns/session-state/server)
-- [Database Session State](design-patterns/session-state/database)
-
-### Anti-Patterns
-
-> [What is an Anti-Pattern?](glossary/anti-pattern)
-
-- [Abstraction Inversion](anti-patterns/abstraction-inversion)
-
-## Types of Software
-
-> Altouhgh some techniques and patterns are relevant for all kinds of software, many are relevant for only one particular branch.
-
-- Enterprise Applications
-  - [EAPPs Challenges](enterprise/challenges)
-  - [Kinds of EAPPs](enterprise/kinds)
-
-## System Design
+## System design
 
 > For a complete System Design study, you should also be familiar with Databases related topics such as CAP Theorem.
 
@@ -339,6 +116,152 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 | Search autocomplete system                 | [Solution](system-design/case-studies/search-autocomplete)  |
 | Youtube                                    | [Solution](system-design/case-studies/youtube)              |
 | Google Drive                               | [Solution](system-design/case-studies/google-drive)         |
+
+## Design principles
+
+- [Common Architectural Principles](principles/general)
+- [OO Design Principles](https://wiki.c2.com/?PrinciplesOfObjectOrientedDesign)
+  - [Encapsulate what varies](principles/oo/encapsulate.md)
+  - [Program to an interface, not an implementation](principles/oo/favor-interfaces.md)
+  - [Favor object composition over class inheritance](principles/oo/favor-composition.md)
+  - [Strive for loosely coupled designs between objects that interact](principles/oo/loosely-coupled-interaction.md)
+  - [Least Knowledge](principles/oo/least-knowledge.md)
+- DRY
+- [GRASP](principles/grasp.md)
+- [Hollywood Principle](principles/hollywood.md)
+- [SOLID](principles/solid)
+  - [Single Responsibility Principle](principles/solid/srp)
+  - [Open Closed Principle](principles/solid/ocp)
+  - [Liskov Substitution Principle](principles/solid/lsp)
+  - [Interface Segregation Principle](principles/solid/isp)
+  - [Dependency Inversion Principle](principles/solid/dip)
+- [KISS](principles/kiss.md)
+- [WET](https://dev.to/wuz/stop-trying-to-be-so-dry-instead-write-everything-twice-wet-5g33)
+- [YAGNI](principles/yagni.md)
+
+## Design patterns
+
+> [What is a design pattern?](glossary/pattern)
+
+### Base patterns
+
+- [Gateway](design-patterns/base/gateway)
+- [Mapper](design-patterns/base/mapper)
+- [Layer Supertype](design-patterns/base/layer-supertype)
+- [Separated Interface](design-patterns/base/separated-interface)
+- [Registry](design-patterns/base/registry)
+- [Value Object](design-patterns/base/value-object)
+  - [Money](design-patterns/base/value-object/money)
+- [Special Case](design-patterns/base/special-case)
+- [Plugin](design-patterns/base/plugin)
+- [Service Stub](design-patterns/base/service-stub)
+- [Record Set](design-patterns/base/record-set)
+
+### System-level or architectural patterns
+
+- [Event Sourcing](design-patterns/architectural/event-sourcing.md)
+- [CQRS: Command and Query Responsibility Segregation](design-patterns/architectural/cqrs.md)
+- [Saga: distributed transactions](design-patterns/architectural/saga.md)
+
+### Gang of Four Patterns
+
+Please check the [this repository](https://github.com/herrera-ignacio/design_patterns/) for a detailed explanation and examples of each of the following patterns.
+
+| [Creational](https://github.com/herrera-ignacio/design_patterns/tree/master/creational) | [Structural](https://github.com/herrera-ignacio/design_patterns/tree/master/structural) | [Behavioral](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/behavioral-patterns) |
+|------------------ |------------ |------------ |
+| [Abstract Factory](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/abstract-factory) | [Adapter](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/adapter) | [Chain of Responsibility](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/chain-of-responsibility) |
+| [Builder](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/builder) | [Bridge](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/bridge) | [Command](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/command) |
+| [Factory Method](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/factory-method) | [Composite](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/composite) | [Interpreter](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/interpreter) |
+| [Prototype](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/prototype) | [Decorator](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/decorator) | [Iterator](./behavioral/iterator) |
+| [Singleton](https://github.com/herrera-ignacio/design_patterns/tree/master/creational/singleton) | [Facade](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/facade) | [Mediator](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/mediator) |
+| | [Flyweight](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/flyweight) | [Memento](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/memento) |
+| | [Proxy](https://github.com/herrera-ignacio/design_patterns/tree/master/structural/proxy) | [Observer](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/observer) |
+| | | [State](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/state) |
+| | | [Strategy](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/strategy) |
+| | | [Template Method](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/template-method) |
+| | | [Visitor](https://github.com/herrera-ignacio/design_patterns/tree/master/behavioral/visitor) |
+
+### Domain logic patterns
+
+- [Transaction Script](design-patterns/domain-logic/transaction-script)
+- [Domain Model](design-patterns/domain-logic/domain-model)
+- [Table Module](design-patterns/domain-logic/table-module)
+- [Service Layer](design-patterns/domain-logic/service-layer)
+
+### Data source & persistence patterns
+
+- [DAO: Data Access Object](design-patterns/data/dao)
+- [Active Record](design-patterns/data/active-record)
+- [Data Mapper](design-patterns/data/data-mapper)
+- [Table Data Gateway](design-patterns/data/table-data-gateway)
+- [Row Data Gateway](design-patterns/data/row-data-gateway)
+- [Repository](design-patterns/data/repository)
+
+### Object relational patterns
+
+#### Behavioral patterns
+
+- [Unit of Work](design-patterns/object-relational/behavioral/unit-of-work)
+- [Identity Map](design-patterns/object-relational/behavioral/identity-map)
+- [Lazy Load](design-patterns/object-relational/behavioral/lazy-load)
+
+#### Structural patterns
+
+- [Identity Field](design-patterns/object-relational/structural/identity-field)
+- [Foreign Key Mapping](design-patterns/object-relational/structural/foreign-key-mapping)
+- [Association Table Mapping](design-patterns/object-relational/structural/association-table-mapping)
+- [Dependent Mapping](design-patterns/object-relational/structural/dependent-mapping)
+- [Embedded Value / Aggregate Mapping](design-patterns/object-relational/structural/embedded-value)
+- [Serializd LOB](design-patterns/object-relational/structural/serialized-lob)
+- [Single Table Inheritance](design-patterns/object-relational/structural/single-table-inheritance)
+- [Class Table Inheritance / Root-Leaf Mapping](design-patterns/object-relational/structural/class-table-inheritance)
+- [Concrete Table Inheritance](design-patterns/object-relational/structural/concrete-table-inheritance)
+- [Inheritance Mappers](design-patterns/object-relational/structural/inheritance-mappers)
+
+#### Metadata mapping patterns
+
+- [Metadata Mapping](design-patterns/object-relational/metadata-mapping/metadata-mapping)
+- [Query Object](design-patterns/object-relational/metadata-mapping/query-object)
+- [Repository](design-patterns/object-relational/metadata-mapping/repository)
+
+### Web presentation patterns
+
+> [What are web presentation patterns?](architectures/general/web-presentation)
+
+- [Application Model / Presentation Model](design-patterns/web-presentation/presentation-model)
+- [Humble View / Passive View](design-patterns/web-presentation/passive-view)
+- [MVC: Model View Controller](design-patterns/web-presentation/mvc)
+- [MVP: Model View Presenter](design-patterns/web-presentation/mvp)
+- [MVVM: Model View View-Model](design-patterns/web-presentation/mvvm)
+- [Front Controller](design-patterns/web-presentation/front-controller)
+- [Page Controller](design-patterns/web-presentation/page-controller)
+- [Supervising Controller](design-patterns/web-presentation/supervising-controller)
+- [Template View](design-patterns/web-presentation/template-view)
+- [Transform View](design-patterns/web-presentation/transform-view)
+- [Two Step View](design-patterns/web-presentation/two-step-view)
+
+### Distribution patterns
+
+- [Remote Facade](design-patterns/distribution/remote-facade)
+- [Data Transfer Object](design-patterns/distribution/dto)
+
+### Offline concurrency patterns
+
+- [Optimistic Offline Lock](design-patterns/offline-concurrency/optimistic-offline-lock)
+- [Pessimistic Offline Lock](design-patterns/offline-concurrency/pessimistic-offline-lock)
+- [Coarse-Grained Lock](design-patterns/offline-concurrency/coarse-grained-lock)
+
+### Session state patterns
+
+- [Client Session State](design-patterns/session-state/client)
+- [Server Session State](design-patterns/session-state/server)
+- [Database Session State](design-patterns/session-state/database)
+
+### Anti-Patterns
+
+> [What is an Anti-Pattern?](glossary/anti-pattern)
+
+- [Abstraction Inversion](anti-patterns/abstraction-inversion)
 
 ## Architectural Styles & Patterns
 
@@ -472,7 +395,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 
 > [Tools](architectures/microservices/tooling)
 
-## Data Storage
+## Data storage
 
 - [CAP/Brewer's Theorem](databases/cap)
 - [BASE](databases/base)
@@ -487,7 +410,6 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   - Strong Eventual Consistency (SEC)
 - Synchronization techniques
   - [Quorum consensus](databases/quorum-consensus)
-
 - [Handling failures](databases/handling-failures)
   - Failure detection
     - All-to-all multicasting
@@ -499,7 +421,9 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
     - Anti-entropy protocol
   - Handling data center outage
 
-### Data Consistency
+### General concepts
+
+#### Data Consistency
 
 - [Data consistency primer](databases/consistency/README.md)
 - [Strong consistency](databases/consistency/strong.md)
@@ -507,7 +431,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 - Inconsistency resolution
   - [Versioning](databases/inconsistency-resolution/versioning)
 
-### Data partitioning
+#### Data partitioning
 
 - [Data partitionioning primer](databases/partitioning/README.md)
 - [Horizontal partitioning (_sharding_)](databases/partitioning/horizontal.md)
@@ -515,7 +439,9 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 - [Vertical partitioning](databases/partitioning/vertical.md)
 - [Fuctional partitioning](databases/partitioning/functional.md)
 
-### Relational Databases
+### Types
+
+#### Relational Databases
 
 - [ACID](databases/relational/acid/README.md): Atomicity, Consistency, Isolation, Durability
 - [Isolation Levels](databases/relational/isolation-levels/README.md)
@@ -529,7 +455,7 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
 - [ORM: Object-relational Mapping](databases/relational/orm)
 - [Object-relational impedance mismatch](databases/relational/impedance-mismatch)
 
-### Wide-column store
+#### Wide-column store
 
 - [Overview](databases/wide-column)
 - HBase
@@ -543,32 +469,20 @@ Please check the [this repository](https://github.com/herrera-ignacio/design_pat
   - [HBase Interaction](https://www.youtube.com/watch?v=9YkurBN5Pt0)
   - [HBase for Java Developers](https://www.youtube.com/playlist?list=PLf0swTFhTI8r6wUT9dcSQ-sLeaIMbbLm_)
 
-### GraphQL
+#### GraphQL
 
 - [Overview](databases/graphql)
 - [Why use GraphQL?](databases/graphql/why)
 
-## Technology specifics
+## Software types
 
-Specifics that should be considered while developing a software solution relying on a particular technology.
+> Although some techniques and patterns are relevant for all kinds of software, many are relevant for only one particular branch.
 
-- [Golang Handbook](https://github.com/herrera-ignacio/go-handbook)
-- [Go In Practice](https://github.com/herrera-ignacio/go-in-practice)
-- [Java Handbook](https://github.com/herrera-ignacio/java-handbook)
-- [JS Handbook](https://github.com/herrera-ignacio/js-handbook)
-- React
-  - [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
-- Redux
-  - [When and when not to reach for Redux](redux/when)
-  - [Redux must know](redux/introduction)
-  - [Three Fundamental Principles](redux/three-principles)
-  - [Best Practices](redux/best-practices)
-  - [Reducers: Immutable Update Patterns](redux/immutable-updates)
-  - [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
-  - [Flux Comparison](redux/flux-comparison)
-  - [MVC Comparison](https://blog.gisspan.com/2017/02/Redux-Vs-MVC,-Why-and-How.html)
+- Enterprise Applications
+  - [EAPPs Challenges](enterprise/challenges)
+  - [Kinds of EAPPs](enterprise/kinds)
 
-## Operating Systems
+## Operating systems
 
 - [Multithreading](os/multithreading)
 - [Parallelism & Concurrency](os/parallelism)
@@ -582,10 +496,58 @@ Specifics that should be considered while developing a software solution relying
 - [Components](os/linux/components/README.md)
 - [File system](os/linux/file-system/README.md)
 
-## Data Science & Big Data
+## Refactoring & code smells
 
-- [Batch Processing](ds/batch-processing)
-- [ETL](ds/etl)
+- [Code Smell](https://wiki.c2.com/?CodeSmell)
+- [Refactoring Guru](https://refactoring.guru/)
+
+## Programming paradigms
+
+- [Imperative and Procedural](paradigms/imperative)
+- [Declarative](paradigms/declarative)
+
+### Structured programming
+
+> [What is structured programming?](paradigms/structured)
+
+- [Functional Decomposition](paradigms/structured/functional-decomposition)
+- [Structured Tests](paradigms/structured/tests)
+
+### OOP: Object-oriented programming
+
+- [OOP Introduction](paradigms/oop/README.md)
+  - Objects and Classes
+  - Class-based vs Prototype-based languages
+- Foundational concepts
+  - [4 Pillars of OOP](paradigms/oop/4pillars.md)
+    - Abstraction
+    - Inheritance
+    - Encapsulation
+    - Polymorphism
+  - [Abstract Class](paradigms/oop/abstract-class.md)
+  - [Mixin Class](paradigms/oop/mixin.md)
+  - [Traits](paradigms/oop/traits.md)
+  - [Interface & Type](paradigms/oop/interface.md)
+- Techniques
+  - [Subtyping: Interface Inheritance](paradigms/oop/subtyping.md)
+  - [Composition, Aggregation and Delegation](paradigms/oop/cad.md)
+    - [Composition vs Inheritance](paradigms/oop/inheritance-composition.md)
+  - [Parameterized Types](paradigms/oop/inheritance-parameterized.md)
+  - [Dynamic Dispatch / Message Passing](paradigms/oop/dynamic-dispatch.md)
+  - [OMT Notation & UML](paradigms/oop/omt-notations.md)
+- Advanced concepts
+  - [Object-Oriented Design Principles](#design-principles)
+  - [Gamma Design Patterns](https://github.com/herrera-ignacio/design_patterns/)
+  - [The Power of Polymorphism: Dependency Inversion](paradigms/oop/polymorphism)
+  - [Prototypal vs Classical Inheritance](paradigms/oop/prototypal-oo)
+
+### Functional programming
+
+> [What is functional programming?](paradigms/functional/README.md)
+
+- [Referentially Transparent (No Side Effects)](paradigms/functional/referentially-transparent.md)
+- [Immutability](paradigms/functional/immutability)
+- [Idempotence](paradigms/functional/idempotence)
 
 ## Software Engineering Culture
 
@@ -616,24 +578,35 @@ Specifics that should be considered while developing a software solution relying
 - [Anti Patterns](testing/e2e/anti-patterns.md)
 - [Best Practices](https://docs.cypress.io/guides/references/best-practices)
 
-## Frontend
+## General concepts
 
-> [Frontend developer roadmap](https://roadmap.sh/frontend).
+### About system-design and architecture
 
-- [Atomic design](frontend/atomic-design/README.md)
-- [Design system](frontend/design-system/README.md)
-- [Legacy lifecycle of frontend](frontend/legacy-lifecycle/README.md)
-- [Areas of frontend](frontend/areas/README.md)
-  - [Backbone goals and OKRs](frontend/backbone-OKRs/README.md)
-- [Accessibility testing](frontend/accessibility-testing/README.md)
-- [CSR vs SSR](frontend/csr-vs-ssr/README.md)
+- [What is Software Architecture?](architectures/general/definition)
+- [The Software Architect](architectures/general/the-software-architect.md)
+- [The First Derivative](architectures/general/the-first-derivative.md)
+- [Evolutionary Design](https://www.martinfowler.com/articles/designDead.html)
+- [Development Overconfidence](architectures/general/overconfidence)
+- [Is Quality Worth the Cost?](architectures/general/quality)
+- [Concurrency](architectures/general/concurrency)
+- [Distribution Strategies](architectures/general/distribution-strategies)
+- [Layering](architectures/general/layering)
+- [Resilience vs Robustness](architectures/general/resilience-vs-robustness)
 
-## Glossary
+### About software engineering
+
+- [Developer Struggle](architectures/general/developer-struggle)
+- [Mapping to Relational Databases](architectures/general/mapping-to-rdbs)
+- [Organizing Domain Logic](architectures/general/domain-logic)
+- [Session State (stateful vs stateless sessions)](architectures/general/session-state)
+- [Technical Debt](architectures/general/technical-debt)
+- [Leaky Abstractions](architectures/general/leaky-abstraction)
+
+### Common jargon
 
 - [Abstract Syntax Tree](glossary/ast)
 - [CRUD](glossary/crud)
 - [First-class citizen](glossary/first-class-citizen)
-- [Leaky Abstraction](glossary/leaky-abstraction)
 - [Modularization](glossary/modularization)
 - [Side Effect](glossary/side-effect)
 - [SPOF: Single Point of Failure](glossary/spof)
@@ -644,10 +617,40 @@ Specifics that should be considered while developing a software solution relying
 - [Telepresence](https://telepresence.io): tool that is aiming to make a hybrid local/remote developer workflow easier for Kubernetes users.
 - [Pact](https://pact.io): customer-driven contracts.
 
-## Z-Index, other repositories
+## Technology specifics
 
 - [Cybersecurity Handbook](https://github.com/herrera-ignacio/cybersecurity_guidelines)
   - Networking
   - Telecommunications
   - Encryption
   - etc.
+- [Golang Handbook](https://github.com/herrera-ignacio/go-handbook)
+- [Go In Practice](https://github.com/herrera-ignacio/go-in-practice)
+- [Java Handbook](https://github.com/herrera-ignacio/java-handbook)
+- [JS Handbook](https://github.com/herrera-ignacio/js-handbook)
+- React
+  - [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+- Redux
+  - [When and when not to reach for Redux](redux/when)
+  - [Redux must know](redux/introduction)
+  - [Three Fundamental Principles](redux/three-principles)
+  - [Best Practices](redux/best-practices)
+  - [Reducers: Immutable Update Patterns](redux/immutable-updates)
+  - [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
+  - [Flux Comparison](redux/flux-comparison)
+  - [MVC Comparison](https://blog.gisspan.com/2017/02/Redux-Vs-MVC,-Why-and-How.html)
+- Data Science
+  - [Batch Processing](ds/batch-processing)
+  - [ETL](ds/etl)
+
+### Frontend
+
+> [Frontend developer roadmap](https://roadmap.sh/frontend).
+
+- [Atomic design](frontend/atomic-design/README.md)
+- [Design system](frontend/design-system/README.md)
+- [Legacy lifecycle of frontend](frontend/legacy-lifecycle/README.md)
+- [Areas of frontend](frontend/areas/README.md)
+  - [Backbone goals and OKRs](frontend/backbone-OKRs/README.md)
+- [Accessibility testing](frontend/accessibility-testing/README.md)
+- [CSR vs SSR](frontend/csr-vs-ssr/README.md)

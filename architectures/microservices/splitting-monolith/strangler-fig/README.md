@@ -112,7 +112,7 @@ We're typically optimizing for independent deployability of our services, but if
 
 We want to reduce howhow much functionality gets pushed into shared middleware layers.
 
-If you want to migrate the protocol being used, I'd much rather push the mappingi nto the service itself, with the service supporting both the old and new protocols. Inside the service, calls to our old protocol could just get remapped internally to the new communication protocol. This avoids the need to manage changes in shared proxy layers and **puts the service in full control** over how this functionality changes over time.
+If you want to migrate the protocol being used, I'd much rather push the mapping into the service itself, with the service supporting both the old and new protocols. Inside the service, calls to our old protocol could just get remapped internally to the new communication protocol. This avoids the need to manage changes in shared proxy layers and **puts the service in full control** over how this functionality changes over time.
 
 You might expose the same functionality in different ways to different consumers; by supporting different message or request formats inside this service.
 
