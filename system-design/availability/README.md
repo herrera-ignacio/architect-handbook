@@ -1,16 +1,23 @@
 # Availability
 
-Definition from [CAP Theorem](../cap): Every request receives a response, without guarantee that it contains the most recent version of the information.
+<!-- TOC -->
+* [Availability](#availability)
+  * [Definition](#definition)
+  * [Availability patterns](#availability-patterns)
+    * [Fail-over](#fail-over)
+      * [Active-Passive / Master-Slave](#active-passive--master-slave)
+      * [Active-Active / Master-Master](#active-active--master-master)
+    * [Replication](#replication)
+  * [In Parallel vs In Sequence](#in-parallel-vs-in-sequence)
+<!-- TOC -->
 
-## In Parallel vs In Sequence
+## Definition
 
-If a servir consists of multiple components prone to failure, the service's overall availability depends on whether the components are in sequence or in parallel
+Availability is defined on the [CAP Theorem](../cap) as:
 
-* In Sequence: `Availability (Total) = Availability (c1) * Availability (c2) * ...`
+Every request receives a response, without guarantee that it contains the most recent version of the information.
 
-* In Parallel: `Availability (Total) = 1 - (1 - Availability (c1)) * (1 - Availability (c2)) * ...`
-
-## Availability Patterns
+## Availability patterns
 
 There are two complementary patterns to support *high availability*: **fail-over** and **replication**.
 
@@ -36,3 +43,11 @@ if the servers are public-facing, the DNS would need to know about the public IP
 ### Replication
 
 See [Replication in Databases](../../databases/replication).
+
+## In Parallel vs In Sequence
+
+If a service consists of multiple components prone to failure, the service's overall availability depends on whether the components are in sequence or in parallel
+
+* In Sequence: `Availability (Total) = Availability (c1) * Availability (c2) * ...`
+
+* In Parallel: `Availability (Total) = 1 - (1 - Availability (c1)) * (1 - Availability (c2)) * ...`

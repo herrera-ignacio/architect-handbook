@@ -1,5 +1,13 @@
 # How To Approach
 
+<!-- TOC -->
+* [How To Approach](#how-to-approach)
+  * [1. Outline use cases, constraints and assumptions](#1-outline-use-cases-constraints-and-assumptions)
+  * [2. Create a high level design](#2-create-a-high-level-design)
+  * [3. Design core components](#3-design-core-components)
+  * [4. Scale the design](#4-scale-the-design)
+<!-- TOC -->
+
 > The system design interview is an open-ended conversation. You are expected to lead it.
 
 You can use the following steps to guide the discussion. As an exercise, you can work through [system design interview questions with solutions](https://github.com/donnemartin/system-design-primer#system-design-interview-questions-with-solutions) using these steps.

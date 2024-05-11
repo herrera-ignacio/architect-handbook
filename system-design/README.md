@@ -4,11 +4,15 @@
 
 System design is a broad topic. There is a vast amount of resources scattered throughout the web on system design principles.
 
-> Everything is a trade off
+> Everything is a trade-off.
 
-## Study Guide
+## The getting started architecture
 
-![](2021-06-28-09-42-20.png)
+You should be familiar with the classic "getting started" architecture. This is what most applications get started with, a simple web server that communicates with a single database and is exposed via a public DNS.
+
+![img.png](img.png)
+
+This is more than enough to get an application working as fast as possible, but you'll start finding limitations soon.
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-![](2021-08-28-20-31-28.png)
+![img_1.png](img_1.png)
 
 * *Load Balancing* refers to the process of **distributing a set of tasks over a set of resources** (computing units), with aim of making their overall processing more efficient.
 
@@ -18,4 +18,4 @@ Two main approaches exist:
 
 * **Static Algorithms**: Don't take into account the state of the different machines.
   
-* **Dynamic algorithms**: Usually more general and more efficient, but requiere exchanges of information between the different computing units, at the risk of a loss of efficiency.
+* **Dynamic algorithms**: Usually more general and more efficient, but require exchanges of information between the different computing units, at the risk of a loss of efficiency.

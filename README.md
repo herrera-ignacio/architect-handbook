@@ -63,10 +63,10 @@
 
 ## System design
 
-> For a complete System Design study, you should also be familiar with Databases related topics such as CAP Theorem.
+> For a complete System Design study, you should also be familiar with Databases related topics such as CAP Theorem. This section assumes prior knowledge about such topics, but you can also read about those in this very same repo.
 
-- [Introduction](system-design)
-- [Where to start](system-design/how-to)
+- [Introduction](system-design/README.md)
+- [How to approach a design](system-design/how-to)
 - [Performance Measures](system-design/performance-measures)
   - Response time
   - Responsiveness
@@ -76,11 +76,11 @@
   - Load sensitivity
   - Capacity
   - Scalability
+- [Load Balancing](system-design/load-balancing)
 - [Sustainability](system-design/sustainability)
 - [Scalability](system-design/scalability)
   - [Vertical Scaling (scale up/down)](system-design/scalability/vertical-scaling)
   - [Horizontal Scaling (scale out/in)](system-design/scalability/horizontal-scaling)
-- [Load Balancing](system-design/load-balancing)
 - [Caching](system-design/caching)
 - [RAID](system-design/raid)
 - [Consistency](system-design/consistency)

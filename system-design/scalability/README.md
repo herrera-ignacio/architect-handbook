@@ -21,7 +21,7 @@ A service is scalable if it results in **increased performance in a manner propo
 
 ## Domains
 
-* A scalable **database managment system** or **online transaction processing system** is one that can be upgraded to process more transactions by adding new processors, devices and storage, and which can be upgraded easily and transparently without shutting it down.
+* A scalable **database management system** or **online transaction processing system** is one that can be upgraded to process more transactions by adding new processors, devices and storage, and which can be upgraded easily and transparently without shutting it down.
 
 * A **routing protocol** is considered scalable with respect to network size, if the size of the necessary *routing table* on each node grows as *O(log n)*, where *n* is the number of nodes in the network.
   * Some P2P systems like BitTorrent scale well because the demand on each peer is independent of the number of peers. Nothing is centralized, so the system can expand indefinitely without any resources other than the peer themselves.
