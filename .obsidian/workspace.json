@@ -148,6 +148,7 @@
   },
   "active": "52498258d4d68030",
   "lastOpenFiles": [
+    "READMEv2.md",
     "legacy/glossary/web-api/README.md",
     "legacy/glossary/spof/README.md",
     "legacy/glossary/modularization/README.md",
@@ -192,7 +193,6 @@
     "legacy/ds/batch-processing/README.md",
     "legacy/design-patterns/object-relational/structural/single-table-inheritance/README.md",
     "legacy/design-patterns/object-relational/structural/serialized-lob/README.md",
-    "legacy/design-patterns/object-relational/structural/inheritance-mappers/README.md",
-    "legacy/design-patterns/object-relational/structural/identity-field/README.md"
+    "legacy/design-patterns/object-relational/structural/inheritance-mappers/README.md"
   ]
 }

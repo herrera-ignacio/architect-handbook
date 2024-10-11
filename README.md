@@ -1,5 +1,9 @@
 # Software Architect Handbook
 
+__UPDATE!__: I will be updating this repository with a new structure that better supports [Obsidian](https://obsidian.md/).
+This README won't be updated anymore and it will reference content from the `/legacy` folder.
+I'll iteratively move new versions of such content (and new stuff!) to [./READMEv2.md](./READMEv2.md) which will eventually become the main README and can be opened with Obsidian for better navigation.
+
 > [What is software architecture?](./legacy/architectures/general/definition/README.md)
 
 <!-- TOC -->
