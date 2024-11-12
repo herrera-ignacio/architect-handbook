@@ -1,3 +1,6 @@
 {
-  "vimMode": true
+  "vimMode": true,
+  "showInlineTitle": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./_attachments"
 }

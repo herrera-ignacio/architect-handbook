@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Data structures/Arrays/Sliding window.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Sliding window"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Data structures/Arrays/Sliding window.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Sliding window"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Data structures/Arrays/Sliding window.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Sliding window"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,11 +139,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
-              }
+                "file": "Data structures/Arrays/Sliding window.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Sliding window"
+            }
+          },
+          {
+            "id": "e2e1cc2ab4e046f8",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -143,12 +170,27 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "52498258d4d68030",
+  "active": "5052b16fd8bdb461",
   "lastOpenFiles": [
+    "Data structures/Arrays/Prefix sum.md",
+    "Data structures/Arrays/_attachments/Pasted image 20241112114017.png",
+    "Data structures/Arrays/Sliding window.md",
+    "Data structures/Arrays/Two pointers.md",
+    "Data structures/README.md",
+    "Data structures/Arrays/_attachments/Pasted image 20241111194533.png",
+    "Data structures/Arrays/Array.md",
+    "Data structures/Arrays/_attachments/Pasted image 20241111172708.png",
+    "README.md",
+    "Data structures/Arrays/_attachments",
+    "Pasted image 20241111172836.png",
     "READMEv2.md",
+    "Data Structures.md",
+    "Data structures/Arrays",
+    "Data structures",
     "legacy/glossary/web-api/README.md",
     "legacy/glossary/spof/README.md",
     "legacy/glossary/modularization/README.md",
@@ -165,9 +207,6 @@
     "legacy/glossary/modularization",
     "legacy/glossary/first-class-citizen",
     "legacy/glossary/crud",
-    "legacy/glossary/ast",
-    "legacy/glossary/anti-pattern",
-    "legacy/glossary",
     "legacy/frontend/legacy-lifecycle/README.md",
     "legacy/frontend/legacy-lifecycle/2022-12-28-22-40-07.png",
     "legacy/frontend/legacy-lifecycle/2022-12-28-22-39-07.png",
@@ -179,20 +218,8 @@
     "legacy/frontend/design-system/2022-11-09-09-25-46.png",
     "legacy/frontend/design-system/2022-11-09-09-23-27.png",
     "legacy/frontend/design-system/2022-11-09-09-22-44.png",
-    "legacy/frontend/design-system/2022-11-08-22-48-28.png",
-    "legacy/frontend/design-system/2022-11-09-00-00-22.png",
-    "legacy/frontend/atomic-design/2022-11-17-22-06-23.png",
     "legacy/frontend/core-team/README.md",
     "legacy/frontend/areas/README.md",
-    "legacy/frontend/areas/2022-12-28-22-54-59.png",
-    "legacy/frontend/backbone-OKRs/README.md",
-    "legacy/frontend/atomic-design/README.md",
-    "legacy/enterprise/kinds/README.md",
-    "legacy/enterprise/challenges/README.md",
-    "legacy/ds/etl/README.md",
-    "legacy/ds/batch-processing/README.md",
-    "legacy/design-patterns/object-relational/structural/single-table-inheritance/README.md",
-    "legacy/design-patterns/object-relational/structural/serialized-lob/README.md",
-    "legacy/design-patterns/object-relational/structural/inheritance-mappers/README.md"
+    "legacy/frontend/backbone-OKRs/README.md"
   ]
 }
