@@ -169,3 +169,84 @@ int findBestSubarray(vector<int>& nums, int k) {
     return ans;
 }
 ```
+## Examples: Sliding window with hash map
+A hash map opens the door to solving problems where the constraint involves multiple elements.
+### Longest substring with at most k distinct characters
+You are given a string `s` and an integer `k`. Find the length of the longest substring that contains **at most** `k` distinct characters.
+For example, given `s = "eceba"` and `k = 2`, return `3`. The longest substring with at most `2` distinct characters is `"ece"`.
+Remember, the idea of a sliding window is to **add elements by sliding to the right until the window violates the constraint**. Once it does, we shrink the window from the left until it no longer violates the constraint.
+```js
+let findLongestSubstring = (s, k) => {
+	let counts = new Map();
+	let left = 0, ans = 0;
+	for let(right = 0; right < s.length; right++) {
+		// expand window until constraint is violated
+		counts.set(s[right], (counts.get(s[right]) || 0) + 1)
+		while (counts.size > k) {
+		  // shrink window until valid again
+		  counts.set(s[left], counts.get(s[left]) - 1);
+		  if (counts.get(s[left]) === 0) {
+			  counts.delete(s[left]);
+		  }
+		  left++;
+		}
+		// save if it's the next valid substring
+		ans = Math.max(ans, right - left + 1);
+	}
+	return ans;
+}
+```
+We know that the time complexity of sliding window problems are $O(n)$ if the work done inside each for loop iteration is amortized constant, which is the case here due to a hash map having $O(1)$ operations.
+Also, the hash map occupies $O(k)$ space, as the algorithm will delete elements from the hash map once it grows beyond $k$.
+## Examples: Count the number of subarrays with an "exact" constraint
+### Subarray whose sum is equal to k
+Given an integer array `nums` and an integer `k`, find the number of subarrays whose sum is equal to `k`.
+Let's say we have `nums = [1, 2, 1, 2, 1], k = 3`. There are four subarrays with sum `3` - `[1, 2]` twice and `[2, 1]` twice.
+```js
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+var subarraySum = function(nums, k) {
+    let counts = new Map();
+    counts.set(0, 1);
+    let ans = 0, curr = 0;
+
+    for (const num of nums) {
+        curr += num;
+        ans += counts.get(curr - k) || 0;
+        counts.set(curr, (counts.get(curr) || 0) + 1);
+    }
+
+    return ans;
+};
+```
+- We use `curr` to track the prefix sum. At any index `i`, the sum up to `i` is `curr`.
+- If there's an index `j` whose prefix is `curr - k`, then the sum of the subarray with elements from `j + 1` to `i` is `curr - (curr - k) = k`.
+- Because the array can have negative numbers, the same prefix can occur multiple times. We use a hash map `counts` to track how many times a prefix has occurred.
+- At every index `i`, the frequency of `curr - k` prefix is equal to the number of subarrays whose sum is equal to `k` that end at `i`. Add it to the answer.
+The time and space complexity of this algorithm are both $O(n)$, where $n$ is the length of `nums`.
+### Subarrays with k odd numbers in them
+Given an array of positive integers `nums` and an integer `k`. Find the number of subarrays with exactly `k` odd numbers in them.
+For example, given `nums = [1, 1, 2, 1, 1], k = 3`, the answer is `2`. The subarrays with `3` odd numbers in them are `[1, 1, 2, 1, 1]` and `[1, 1, 2, 1, 1]`.
+This is the same as the problem above but instead of using `curr` to track the prefix sum (i.e., the constraint metric was a sum), we track the odd number count instead. Then, at every element, we can query `curr - k` again.
+```js
+function numberOfSubarrays(nums: number[], k: number): number {  
+    // tracks how many times a prefix odd numbers count appears  
+    const counts = new Map();  
+    counts.set(0, 1);  
+    // track prefix of odd numbers count  
+    let curr = 0;  
+    let ans = 0;  
+  
+    for (const num of nums) {  
+        curr += num % 2;  
+        ans += counts.get(curr - k) || 0;  
+        counts.set(curr, (counts.get(curr) || 0) + 1);  
+    }  
+  
+    return ans;  
+};
+```
+The time and space complexity of this algorithm is also $O(n)$ for both.

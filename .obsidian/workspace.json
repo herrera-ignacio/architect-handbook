@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data structures/Hashing/Sets.md",
+                "file": "Data structures/Arrays/Sliding window.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sets"
+              "title": "Sliding window"
             }
           }
         ],
@@ -205,8 +205,8 @@
   },
   "active": "26cfaac60005359e",
   "lastOpenFiles": [
-    "Data structures/README.md",
     "Data structures/Hashing/Sets.md",
+    "Data structures/README.md",
     "Data structures/Hashing/Collisions.md",
     "Data structures/Hashing/Hash map.md",
     "Data structures/Hashing/Universal hashing.md",
