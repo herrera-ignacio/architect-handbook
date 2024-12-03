@@ -2,5 +2,6 @@
   "vimMode": true,
   "showInlineTitle": false,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "./_attachments"
+  "attachmentFolderPath": "./_attachments",
+  "showLineNumber": true
 }
