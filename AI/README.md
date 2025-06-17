@@ -7,3 +7,5 @@
 - [Learn prompting](https://learnprompting.org/docs/introduction)
 - [[Reverse prompt engineering]]
 - [Sparse Priming Representation](https://github.com/daveshap/SparsePrimingRepresentations) for in-context learning (e.g., drop into ChatGPT custom instructions).
+- [[SEO and Copywriting]]
+- [[Scripting for videos or podcast]]
