@@ -1,2 +1,0 @@
-# CQRS with Event Sourcing
-
